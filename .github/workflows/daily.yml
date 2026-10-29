@@ -1,46 +1,258 @@
-name: Daily scan
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Domain status</title>
+<style>
+  :root {
+    --bg:#ffffff; --fg:#1b1b1f; --muted:#6b6b76; --line:#e2e2e8; --card:#f6f6f9; --accent:#1b1b1f;
+    --critical:#b00020; --high:#e65100; --medium:#b28900; --low:#2e7d32; --unknown:#6b6b76; --none:#9a9aa5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14141a; --fg:#ececf1; --muted:#9a9aa8; --line:#2c2c36; --card:#1c1c24; --accent:#ececf1;
+      --critical:#ff5370; --high:#ff9248; --medium:#f0c24a; --low:#6fcf7a; --unknown:#9a9aa8; --none:#6b6b76; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:16px; background:var(--bg); color:var(--fg);
+    font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin-bottom:12px; }
+  .tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+  .tab { display:flex; align-items:center; gap:6px; }
+  .tab.active { background:var(--accent); color:var(--bg); border-color:var(--accent); }
+  .stats { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+  .stat { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; min-width:92px; }
+  .stat b { display:block; font-size:20px; }
+  .stat span { color:var(--muted); font-size:12px; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+  input, select, button { font:inherit; color:var(--fg); background:var(--card);
+    border:1px solid var(--line); border-radius:6px; padding:6px 10px; }
+  button { cursor:pointer; } button:hover { border-color:var(--muted); }
+  input { flex:1; min-width:180px; }
+  .wrap { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--card); cursor:pointer; white-space:nowrap; user-select:none; }
+  tr:last-child td { border-bottom:0; }
+  .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; font-weight:600;
+    border:1px solid currentColor; margin:0 4px 2px 0; }
+  .critical{color:var(--critical)} .high{color:var(--high)} .medium{color:var(--medium)}
+  .low{color:var(--low)} .unknown{color:var(--unknown)} .none{color:var(--none)}
+  .port { display:inline-block; background:var(--card); border:1px solid var(--line);
+    border-radius:4px; padding:0 6px; margin:0 4px 2px 0; font-family:ui-monospace,Consolas,monospace; font-size:12px; }
+  .names div { word-break:break-all; }
+  details summary { cursor:pointer; color:var(--muted); }
+  .cvelist { margin-top:6px; min-width:280px; max-width:560px; }
+  .cve { border-left:3px solid currentColor; padding:2px 0 2px 8px; margin:6px 0; }
+  .cve .id { font-family:ui-monospace,Consolas,monospace; font-size:12px; font-weight:600; }
+  .cve .id a { color:inherit; }
+  .cve .desc { color:var(--fg); font-size:13px; margin-top:2px; }
+  .empty { padding:24px; text-align:center; color:var(--muted); }
+  .warn { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; margin-bottom:12px; color:var(--muted); }
+  .note { color:var(--muted); font-size:12px; margin-top:12px; }
+</style>
+</head>
+<body>
+<h1>Domain status</h1>
+<div class="sub" id="meta">Nacitavam...</div>
+<div class="tabs" id="tabs"></div>
+<div id="warn"></div>
+<div class="stats" id="stats"></div>
 
-on:
-  schedule:
-    - cron: "17 3 * * *"   # kazdy den 03:17 UTC
-  workflow_dispatch:        # umoznuje spustit rucne z karty Actions
+<div class="bar">
+  <input id="q" type="search" placeholder="Hladat hostname, port, CVE, IP...">
+  <select id="sev">
+    <option value="">Kritickost: vsetky</option>
+    <option value="critical">Critical</option><option value="high">High</option>
+    <option value="medium">Medium</option><option value="low">Low</option>
+    <option value="unknown">Unknown</option><option value="none">Bez CVE</option>
+  </select>
+  <button id="expand">Rozbalit vsetky CVE</button>
+  <button id="csv">Export CSV</button>
+  <button id="json">Export JSON</button>
+</div>
 
-permissions:
-  contents: write
+<div class="wrap"><table>
+  <thead><tr id="head"></tr></thead>
+  <tbody id="body"></tbody>
+</table></div>
+<div class="note">Pasivne OSINT data (crt.sh, DNS, Shodan InternetDB/CVEDB), aktualizovane denne.
+CVE su odhad podla verzie softveru, nie overena zranitelnost; udaje mozu byt zastarane.</div>
 
-concurrency:
-  group: daily-scan
-  cancel-in-progress: false
+<script>
+const SEV = ["critical","high","medium","low","unknown","none"];
+const rank = s => SEV.indexOf(s);
+let DATA = {companies: [], mode: "summary"}, active = null, sortKey = "sev", sortDir = 1, expandAll = false;
 
-jobs:
-  scan:
-    runs-on: ubuntu-latest
-    timeout-minutes: 120
-    steps:
-      - uses: actions/checkout@v4
+const el = (tag, cls, text) => {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+};
+const company = () => DATA.companies.find(c => c.id === active) || {assets: []};
+const full = () => DATA.mode === "full";
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+function columns() {
+  const cols = [["names","Host"]];
+  if (full()) cols.push(["ip","IP"]);
+  cols.push(["ports","Porty"], ["sev","Kritickost"], ["cves","Zranitelnosti"]);
+  return cols;
+}
 
-      - name: Run scan
-        env:
-          # Nastav v Settings -> Secrets and variables -> Actions -> Variables
-          DOMAINS: ${{ vars.DOMAINS }}               # napr. orange.sk
-          ASNS: ${{ vars.ASNS }}                     # napr. 12345 (volitelne)
-          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}     # summary (default) | full
-          SCAN_PREFIXES: ${{ vars.SCAN_PREFIXES }}   # 1 = skenuj aj prefixy
-          MAX_IPS: ${{ vars.MAX_IPS }}
-        run: python scan.py
+function haystack(a) {
+  return [(a.names||[]).join(" "), a.ip||"", (a.ports||[]).join(" "),
+    (a.cves||[]).map(c => c.id + " " + (c.summary||"")).join(" "), (a.tags||[]).join(" ")].join(" ").toLowerCase();
+}
 
-      - name: Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/cve_cache.json
-          if git diff --cached --quiet; then
-            echo "Bez zmien."
-          else
-            git commit -m "Daily scan $(date -u +%F)"
-            git push
-          fi
+function sortVal(a, k) {
+  switch (k) {
+    case "names": return a.names[0] || "";
+    case "ip": return a.ip || "";
+    case "ports": return a.ports.length;
+    case "sev": return rank(a.max_severity) * 1000 - (a.max_cvss || 0);
+    case "cves": return -a.cve_count;
+  }
+}
+
+function filtered() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const sev = document.getElementById("sev").value;
+  return company().assets.filter(a => (!sev || a.max_severity === sev) && (!q || haystack(a).includes(q)))
+    .sort((x, y) => {
+      const a = sortVal(x, sortKey), b = sortVal(y, sortKey);
+      return (a < b ? -1 : a > b ? 1 : 0) * sortDir;
+    });
+}
+
+function renderTabs() {
+  const box = document.getElementById("tabs"); box.replaceChildren();
+  for (const c of DATA.companies) {
+    const b = el("button", "tab" + (c.id === active ? " active" : ""));
+    b.appendChild(el("span", "", c.name));
+    b.appendChild(el("span", "", "(" + c.assets.length + ")"));
+    b.onclick = () => { active = c.id; location.hash = c.id; renderAll(); };
+    box.appendChild(b);
+  }
+}
+
+function renderHead() {
+  const tr = document.getElementById("head"); tr.replaceChildren();
+  for (const [k, label] of columns()) {
+    const th = el("th", "", label + (sortKey === k ? (sortDir > 0 ? " ▲" : " ▼") : ""));
+    th.onclick = () => { sortDir = (sortKey === k) ? -sortDir : 1; sortKey = k; renderTable(); };
+    tr.appendChild(th);
+  }
+}
+
+function cveBlock(a) {
+  const wrap = el("div", "cvelist");
+  a.cves.slice().sort((x, y) => rank(x.severity) - rank(y.severity) || (y.cvss||0) - (x.cvss||0)).forEach(c => {
+    const box = el("div", "cve " + c.severity);
+    const head = el("div", "id");
+    if (/^CVE-\d{4}-\d{4,}$/.test(c.id)) {
+      const link = el("a", "", c.id);
+      link.href = "https://nvd.nist.gov/vuln/detail/" + c.id;
+      link.target = "_blank"; link.rel = "noopener noreferrer";
+      head.appendChild(link);
+    } else head.appendChild(el("span", "", c.id));
+    head.appendChild(el("span", "", "  " + c.severity.toUpperCase() + " " + (c.cvss ?? "?") + (c.kev ? "  [KEV]" : "")));
+    box.appendChild(head);
+    box.appendChild(el("div", "desc", c.summary || "Popis nie je k dispozicii."));
+    wrap.appendChild(box);
+  });
+  return wrap;
+}
+
+function renderTable() {
+  renderHead();
+  const rows = filtered(), body = document.getElementById("body");
+  body.replaceChildren();
+  if (!rows.length) {
+    const tr = el("tr"), td = el("td", "empty", "Ziadne zaznamy.");
+    td.colSpan = columns().length; tr.appendChild(td); body.appendChild(tr); return;
+  }
+  for (const a of rows) {
+    const tr = el("tr");
+    const names = el("td", "names");
+    (a.names.length ? a.names : ["(bez nazvu)"]).forEach(n => names.appendChild(el("div", "", n)));
+    tr.appendChild(names);
+    if (full()) tr.appendChild(el("td", "", a.ip));
+    const ports = el("td");
+    a.ports.forEach(p => ports.appendChild(el("span", "port", p)));
+    tr.appendChild(ports);
+    const sev = el("td");
+    sev.appendChild(el("span", "badge " + a.max_severity,
+      a.max_severity === "none" ? "bez CVE" : a.max_severity + (a.max_cvss != null ? " " + a.max_cvss : "")));
+    if (a.kev_count) sev.appendChild(el("span", "badge critical", "KEV " + a.kev_count));
+    tr.appendChild(sev);
+    const cv = el("td");
+    for (const s of SEV.slice(0, 5)) if (a.counts[s]) cv.appendChild(el("span", "badge " + s, s[0].toUpperCase() + ":" + a.counts[s]));
+    if (full() && a.cves && a.cves.length) {
+      const d = el("details"); d.open = expandAll;
+      d.appendChild(el("summary", "", "Zobrazit " + a.cves.length + " CVE s popisom"));
+      d.appendChild(cveBlock(a));
+      cv.appendChild(d);
+    } else if (!a.cve_count) cv.appendChild(el("span", "none", "-"));
+    tr.appendChild(cv);
+    body.appendChild(tr);
+  }
+}
+
+function renderStats() {
+  const A = company().assets, n = s => A.filter(a => a.max_severity === s).length;
+  const items = [["Hosty", A.length], ["Critical", n("critical")], ["High", n("high")],
+    ["Medium", n("medium")], ["Low", n("low")], ["KEV", A.filter(a => a.kev_count).length]];
+  const box = document.getElementById("stats"); box.replaceChildren();
+  for (const [l, v] of items) { const s = el("div", "stat"); s.appendChild(el("b", "", v)); s.appendChild(el("span", "", l)); box.appendChild(s); }
+  const w = document.getElementById("warn"); w.replaceChildren();
+  const c = company();
+  if (c.stale) w.appendChild(el("div", "warn", "Pozor: posledny beh pre tuto firmu zlyhal alebo nema data, zobrazene su starsie udaje."));
+  if (!full()) w.appendChild(el("div", "warn", "Detaily CVE (ID a popisy) su vypnute: rezim 'summary'. Zobrazuju sa len pocty podla kritickosti."));
+}
+
+function renderAll() {
+  renderTabs(); renderStats(); renderTable();
+  document.getElementById("expand").style.display = full() ? "" : "none";
+}
+
+function download(name, type, text) {
+  const a = el("a"); a.href = URL.createObjectURL(new Blob([text], {type}));
+  a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+const csvCell = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
+
+document.getElementById("csv").onclick = () => {
+  const f = full();
+  const head = ["hosts", ...(f ? ["ip"] : []), "ports", "max_severity", "max_cvss",
+    "critical", "high", "medium", "low", "unknown", "kev", ...(f ? ["cves"] : [])];
+  const lines = [head.join(",")];
+  for (const a of filtered()) lines.push([
+    a.names.join(";"), ...(f ? [a.ip] : []), a.ports.join(";"), a.max_severity, a.max_cvss,
+    a.counts.critical, a.counts.high, a.counts.medium, a.counts.low, a.counts.unknown, a.kev_count,
+    ...(f ? [(a.cves || []).map(c => c.id + " (" + c.severity + " " + (c.cvss ?? "?") + "): " + (c.summary || "")).join(" | ")] : [])
+  ].map(csvCell).join(","));
+  download(active + "-assets.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
+};
+document.getElementById("json").onclick = () =>
+  download(active + "-assets.json", "application/json", JSON.stringify(filtered(), null, 2));
+document.getElementById("expand").onclick = e => {
+  expandAll = !expandAll; e.target.textContent = expandAll ? "Zbalit vsetky CVE" : "Rozbalit vsetky CVE"; renderTable();
+};
+document.getElementById("q").oninput = renderTable;
+document.getElementById("sev").onchange = renderTable;
+
+fetch("data/assets.json", {cache: "no-store"}).then(r => r.json()).then(d => {
+  DATA = d;
+  const h = location.hash.slice(1);
+  active = (d.companies.find(c => c.id === h) || d.companies[0] || {}).id;
+  document.getElementById("meta").textContent = d.generated
+    ? "Posledna aktualizacia: " + new Date(d.generated).toLocaleString("sk-SK") + " | rezim: " + d.mode
+    : "Zatial ziadne data - spusti workflow 'Daily scan'.";
+  renderAll();
+}).catch(() => { document.getElementById("meta").textContent = "Nepodarilo sa nacitat data."; });
+</script>
+</body>
+</html>
