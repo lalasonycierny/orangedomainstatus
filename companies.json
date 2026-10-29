@@ -1,0 +1,6 @@
+[
+  {"id": "orange",  "name": "Orange Slovensko", "domains": ["orange.sk"],   "asns": []},
+  {"id": "telekom", "name": "Telekom",          "domains": ["telekom.sk"],  "asns": []},
+  {"id": "o2",      "name": "O2",               "domains": ["o2.sk"],       "asns": []},
+  {"id": "4ka",     "name": "4ka",              "domains": ["4ka.sk"],      "asns": []}
+]
