@@ -41,5 +41,6 @@ jobs:
             echo "Bez zmien."
           else
             git commit -m "Daily scan $(date -u +%F)"
+            git pull --rebase origin main
             git push
           fi
