@@ -9,23 +9,27 @@
   :root {
     --bg:#ffffff; --fg:#1b1b1f; --muted:#6b6b76; --line:#e2e2e8; --card:#f6f6f9; --accent:#1b1b1f;
     --critical:#b00020; --high:#e65100; --medium:#b28900; --low:#2e7d32; --unknown:#6b6b76; --none:#9a9aa5;
+    --add:#2e7d32; --rem:#b00020;
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg:#14141a; --fg:#ececf1; --muted:#9a9aa8; --line:#2c2c36; --card:#1c1c24; --accent:#ececf1;
-      --critical:#ff5370; --high:#ff9248; --medium:#f0c24a; --low:#6fcf7a; --unknown:#9a9aa8; --none:#6b6b76; }
+      --critical:#ff5370; --high:#ff9248; --medium:#f0c24a; --low:#6fcf7a; --unknown:#9a9aa8; --none:#6b6b76;
+      --add:#6fcf7a; --rem:#ff5370; }
   }
   * { box-sizing: border-box; }
   body { margin:0; padding:16px; background:var(--bg); color:var(--fg);
     font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
   h1 { font-size:20px; margin:0 0 4px; }
+  h2 { font-size:15px; margin:20px 0 8px; }
   .sub { color:var(--muted); margin-bottom:12px; }
   .tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; border-bottom:1px solid var(--line); padding-bottom:8px; }
-  .tab { display:flex; align-items:center; gap:6px; }
   .tab.active { background:var(--accent); color:var(--bg); border-color:var(--accent); }
   .stats { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
   .stat { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; min-width:92px; }
   .stat b { display:block; font-size:20px; }
   .stat span { color:var(--muted); font-size:12px; }
+  .stat.hl-new b, .stat.hl-new span { color:var(--add); }
+  .stat.hl-gone b, .stat.hl-gone span { color:var(--rem); }
   .bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
   input, select, button { font:inherit; color:var(--fg); background:var(--card);
     border:1px solid var(--line); border-radius:6px; padding:6px 10px; }
@@ -36,22 +40,32 @@
   th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { background:var(--card); cursor:pointer; white-space:nowrap; user-select:none; }
   tr:last-child td { border-bottom:0; }
+  tr.row-new { background: color-mix(in srgb, var(--add) 8%, transparent); }
+  tr.row-changed { background: color-mix(in srgb, var(--high) 8%, transparent); }
   .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; font-weight:600;
     border:1px solid currentColor; margin:0 4px 2px 0; }
   .critical{color:var(--critical)} .high{color:var(--high)} .medium{color:var(--medium)}
   .low{color:var(--low)} .unknown{color:var(--unknown)} .none{color:var(--none)}
+  .add{color:var(--add)} .rem{color:var(--rem)}
   .port { display:inline-block; background:var(--card); border:1px solid var(--line);
     border-radius:4px; padding:0 6px; margin:0 4px 2px 0; font-family:ui-monospace,Consolas,monospace; font-size:12px; }
+  .port.add { border-color:var(--add); color:var(--add); }
+  .port.rem { border-color:var(--rem); color:var(--rem); text-decoration:line-through; }
   .names div { word-break:break-all; }
   details summary { cursor:pointer; color:var(--muted); }
-  .cvelist { margin-top:6px; min-width:280px; max-width:560px; }
+  .cvelist, .histlist { margin-top:6px; min-width:260px; max-width:560px; }
   .cve { border-left:3px solid currentColor; padding:2px 0 2px 8px; margin:6px 0; }
   .cve .id { font-family:ui-monospace,Consolas,monospace; font-size:12px; font-weight:600; }
   .cve .id a { color:inherit; }
   .cve .desc { color:var(--fg); font-size:13px; margin-top:2px; }
+  .hist-row { display:flex; gap:8px; padding:3px 0; border-bottom:1px dashed var(--line); font-size:12px; }
+  .hist-row .d { color:var(--muted); white-space:nowrap; }
+  .changes-line { font-size:12px; }
+  .changes-line .badge { margin:1px 3px 1px 0; }
   .empty { padding:24px; text-align:center; color:var(--muted); }
   .warn { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; margin-bottom:12px; color:var(--muted); }
   .note { color:var(--muted); font-size:12px; margin-top:12px; }
+  .ghost { opacity:.75; }
 </style>
 </head>
 <body>
@@ -69,6 +83,10 @@
     <option value="medium">Medium</option><option value="low">Low</option>
     <option value="unknown">Unknown</option><option value="none">Bez CVE</option>
   </select>
+  <select id="chf">
+    <option value="">Zmeny: vsetky</option>
+    <option value="changed">Len zmenene / nove</option>
+  </select>
   <button id="expand">Rozbalit vsetky CVE</button>
   <button id="csv">Export CSV</button>
   <button id="json">Export JSON</button>
@@ -78,7 +96,16 @@
   <thead><tr id="head"></tr></thead>
   <tbody id="body"></tbody>
 </table></div>
+
+<div id="gone-section" style="display:none">
+  <h2>Zmiznute hosty</h2>
+  <div class="wrap"><table><thead><tr>
+    <th>Host</th><th>Naposledy videny</th><th>Prvy krat videny</th><th>Posledna kritickost</th>
+  </tr></thead><tbody id="gone-body"></tbody></table></div>
+</div>
+
 <div class="note">Pasivne OSINT data (crt.sh, DNS, Shodan InternetDB/CVEDB), aktualizovane denne.
+Zelena = novy/pridany prvok, cervena = odstraneny/zmiznuty prvok oproti predoslemu behu.
 CVE su odhad podla verzie softveru, nie overena zranitelnost; udaje mozu byt zastarane.</div>
 
 <script>
@@ -92,13 +119,14 @@ const el = (tag, cls, text) => {
   if (text !== undefined) e.textContent = text;
   return e;
 };
-const company = () => DATA.companies.find(c => c.id === active) || {assets: []};
+const company = () => DATA.companies.find(c => c.id === active) || {assets: [], disappeared: [], changes_summary: {}};
 const full = () => DATA.mode === "full";
+const fmtDate = s => s ? new Date(s).toLocaleString("sk-SK") : "-";
 
 function columns() {
   const cols = [["names","Host"]];
   if (full()) cols.push(["ip","IP"]);
-  cols.push(["ports","Porty"], ["sev","Kritickost"], ["cves","Zranitelnosti"]);
+  cols.push(["ports","Porty"], ["sev","Kritickost"], ["zmeny","Zmeny"], ["cves","Zranitelnosti / historia"]);
   return cols;
 }
 
@@ -117,10 +145,14 @@ function sortVal(a, k) {
   }
 }
 
+function hasChange(a) { return a.is_new || (a.changes && Object.keys(a.changes).length > 0); }
+
 function filtered() {
   const q = document.getElementById("q").value.trim().toLowerCase();
   const sev = document.getElementById("sev").value;
-  return company().assets.filter(a => (!sev || a.max_severity === sev) && (!q || haystack(a).includes(q)))
+  const chf = document.getElementById("chf").value;
+  return company().assets.filter(a =>
+      (!sev || a.max_severity === sev) && (!q || haystack(a).includes(q)) && (!chf || hasChange(a)))
     .sort((x, y) => {
       const a = sortVal(x, sortKey), b = sortVal(y, sortKey);
       return (a < b ? -1 : a > b ? 1 : 0) * sortDir;
@@ -131,8 +163,11 @@ function renderTabs() {
   const box = document.getElementById("tabs"); box.replaceChildren();
   for (const c of DATA.companies) {
     const b = el("button", "tab" + (c.id === active ? " active" : ""));
-    b.appendChild(el("span", "", c.name));
-    b.appendChild(el("span", "", "(" + c.assets.length + ")"));
+    const cs = c.changes_summary || {};
+    let label = c.name + " (" + c.assets.length + ")";
+    if (cs.new) label += " 🆕" + cs.new;
+    if (cs.disappeared) label += " ⚠" + cs.disappeared;
+    b.textContent = label;
     b.onclick = () => { active = c.id; location.hash = c.id; renderAll(); };
     box.appendChild(b);
   }
@@ -142,7 +177,7 @@ function renderHead() {
   const tr = document.getElementById("head"); tr.replaceChildren();
   for (const [k, label] of columns()) {
     const th = el("th", "", label + (sortKey === k ? (sortDir > 0 ? " ▲" : " ▼") : ""));
-    th.onclick = () => { sortDir = (sortKey === k) ? -sortDir : 1; sortKey = k; renderTable(); };
+    th.onclick = () => { if (!["zmeny"].includes(k)) { sortDir = (sortKey === k) ? -sortDir : 1; sortKey = k; renderTable(); } };
     tr.appendChild(th);
   }
 }
@@ -166,51 +201,103 @@ function cveBlock(a) {
   return wrap;
 }
 
+function historyBlock(a) {
+  const wrap = el("div", "histlist");
+  if (!a.history || !a.history.length) { wrap.appendChild(el("div", "", "Zatial ziadna historia.")); return wrap; }
+  a.history.forEach(h => {
+    const row = el("div", "hist-row");
+    row.appendChild(el("span", "d", fmtDate(h.date)));
+    row.appendChild(el("span", "badge " + h.max_severity, h.max_severity));
+    row.appendChild(el("span", "", "porty: " + (h.ports.join(", ") || "-")));
+    if (h.cve_ids) row.appendChild(el("span", "", "CVE: " + (h.cve_ids.join(", ") || "-")));
+    else row.appendChild(el("span", "", "CVE: " + h.cve_count));
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
+function changesCell(a) {
+  const td = el("td");
+  if (a.is_new) { td.appendChild(el("span", "badge add", "NOVY HOST")); return td; }
+  const c = a.changes || {};
+  if (!Object.keys(c).length) { td.appendChild(el("span", "none", "bez zmien")); return td; }
+  const line = el("div", "changes-line");
+  if (c.ports_added) c.ports_added.forEach(p => line.appendChild(el("span", "badge add", "+port " + p)));
+  if (c.ports_removed) c.ports_removed.forEach(p => line.appendChild(el("span", "badge rem", "-port " + p)));
+  if (c.cves_added) c.cves_added.forEach(id => line.appendChild(el("span", "badge rem", "+CVE " + id)));
+  if (c.cves_resolved) c.cves_resolved.forEach(id => line.appendChild(el("span", "badge add", "-CVE " + id)));
+  if (c.severity_delta) for (const [s, d] of Object.entries(c.severity_delta))
+    line.appendChild(el("span", "badge " + (d > 0 ? "rem" : "add"), (d > 0 ? "+" : "") + d + " " + s));
+  if (c.severity_from) line.appendChild(el("span", "badge " + c.severity_to, "kritickost: " + c.severity_from + " → " + c.severity_to));
+  td.appendChild(line);
+  return td;
+}
+
 function renderTable() {
   renderHead();
   const rows = filtered(), body = document.getElementById("body");
   body.replaceChildren();
   if (!rows.length) {
     const tr = el("tr"), td = el("td", "empty", "Ziadne zaznamy.");
-    td.colSpan = columns().length; tr.appendChild(td); body.appendChild(tr); return;
-  }
-  for (const a of rows) {
-    const tr = el("tr");
+    td.colSpan = columns().length; tr.appendChild(td); body.appendChild(tr);
+  } else for (const a of rows) {
+    const tr = el("tr", a.is_new ? "row-new" : (hasChange(a) ? "row-changed" : ""));
     const names = el("td", "names");
     (a.names.length ? a.names : ["(bez nazvu)"]).forEach(n => names.appendChild(el("div", "", n)));
     tr.appendChild(names);
     if (full()) tr.appendChild(el("td", "", a.ip));
     const ports = el("td");
-    a.ports.forEach(p => ports.appendChild(el("span", "port", p)));
+    const added = new Set((a.changes && a.changes.ports_added) || []);
+    a.ports.forEach(p => ports.appendChild(el("span", "port" + (added.has(p) ? " add" : ""), p)));
     tr.appendChild(ports);
     const sev = el("td");
     sev.appendChild(el("span", "badge " + a.max_severity,
       a.max_severity === "none" ? "bez CVE" : a.max_severity + (a.max_cvss != null ? " " + a.max_cvss : "")));
     if (a.kev_count) sev.appendChild(el("span", "badge critical", "KEV " + a.kev_count));
     tr.appendChild(sev);
+    tr.appendChild(changesCell(a));
     const cv = el("td");
-    for (const s of SEV.slice(0, 5)) if (a.counts[s]) cv.appendChild(el("span", "badge " + s, s[0].toUpperCase() + ":" + a.counts[s]));
     if (full() && a.cves && a.cves.length) {
       const d = el("details"); d.open = expandAll;
-      d.appendChild(el("summary", "", "Zobrazit " + a.cves.length + " CVE s popisom"));
+      d.appendChild(el("summary", "", "Zranitelnosti (" + a.cves.length + ")"));
       d.appendChild(cveBlock(a));
       cv.appendChild(d);
-    } else if (!a.cve_count) cv.appendChild(el("span", "none", "-"));
+    } else if (!a.cve_count) cv.appendChild(el("span", "none", "bez CVE "));
+    const hd = el("details");
+    hd.appendChild(el("summary", "", "Historia (" + (a.history ? a.history.length : 0) + ")"));
+    hd.appendChild(historyBlock(a));
+    cv.appendChild(hd);
     tr.appendChild(cv);
     body.appendChild(tr);
   }
+
+  const gone = company().disappeared || [];
+  const sec = document.getElementById("gone-section"), gb = document.getElementById("gone-body");
+  gb.replaceChildren();
+  sec.style.display = gone.length ? "" : "none";
+  gone.forEach(h => {
+    const tr = el("tr", "ghost");
+    tr.appendChild(el("td", "", (h.names || []).join(", ") || "(bez nazvu)"));
+    tr.appendChild(el("td", "", fmtDate(h.last_seen)));
+    tr.appendChild(el("td", "", fmtDate(h.first_seen)));
+    tr.appendChild(el("td", "", h.last_severity || "-"));
+    gb.appendChild(tr);
+  });
 }
 
 function renderStats() {
-  const A = company().assets, n = s => A.filter(a => a.max_severity === s).length;
-  const items = [["Hosty", A.length], ["Critical", n("critical")], ["High", n("high")],
-    ["Medium", n("medium")], ["Low", n("low")], ["KEV", A.filter(a => a.kev_count).length]];
+  const A = company().assets, cs = company().changes_summary || {}, n = s => A.filter(a => a.max_severity === s).length;
+  const items = [["Hosty", A.length, ""], ["Critical", n("critical"), ""], ["High", n("high"), ""],
+    ["Medium", n("medium"), ""], ["Low", n("low"), ""], ["Nove", cs.new || 0, "hl-new"],
+    ["Zmenene", cs.changed || 0, ""], ["Zmiznute", cs.disappeared || 0, "hl-gone"]];
   const box = document.getElementById("stats"); box.replaceChildren();
-  for (const [l, v] of items) { const s = el("div", "stat"); s.appendChild(el("b", "", v)); s.appendChild(el("span", "", l)); box.appendChild(s); }
+  for (const [l, v, cls] of items) {
+    const s = el("div", "stat " + cls); s.appendChild(el("b", "", v)); s.appendChild(el("span", "", l)); box.appendChild(s);
+  }
   const w = document.getElementById("warn"); w.replaceChildren();
   const c = company();
   if (c.stale) w.appendChild(el("div", "warn", "Pozor: posledny beh pre tuto firmu zlyhal alebo nema data, zobrazene su starsie udaje."));
-  if (!full()) w.appendChild(el("div", "warn", "Detaily CVE (ID a popisy) su vypnute: rezim 'summary'. Zobrazuju sa len pocty podla kritickosti."));
+  if (!full()) w.appendChild(el("div", "warn", "Detaily CVE (ID a popisy) su vypnute: rezim 'summary'. Pri zmenach sa zobrazuju len pocty podla kritickosti."));
 }
 
 function renderAll() {
@@ -227,11 +314,12 @@ const csvCell = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
 document.getElementById("csv").onclick = () => {
   const f = full();
   const head = ["hosts", ...(f ? ["ip"] : []), "ports", "max_severity", "max_cvss",
-    "critical", "high", "medium", "low", "unknown", "kev", ...(f ? ["cves"] : [])];
+    "critical", "high", "medium", "low", "unknown", "kev", "is_new", "changes", ...(f ? ["cves"] : [])];
   const lines = [head.join(",")];
   for (const a of filtered()) lines.push([
     a.names.join(";"), ...(f ? [a.ip] : []), a.ports.join(";"), a.max_severity, a.max_cvss,
     a.counts.critical, a.counts.high, a.counts.medium, a.counts.low, a.counts.unknown, a.kev_count,
+    a.is_new ? "yes" : "no", JSON.stringify(a.changes || {}),
     ...(f ? [(a.cves || []).map(c => c.id + " (" + c.severity + " " + (c.cvss ?? "?") + "): " + (c.summary || "")).join(" | ")] : [])
   ].map(csvCell).join(","));
   download(active + "-assets.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
@@ -243,6 +331,7 @@ document.getElementById("expand").onclick = e => {
 };
 document.getElementById("q").oninput = renderTable;
 document.getElementById("sev").onchange = renderTable;
+document.getElementById("chf").onchange = renderTable;
 
 fetch("data/assets.json", {cache: "no-store"}).then(r => r.json()).then(d => {
   DATA = d;
