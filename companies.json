@@ -1,6 +1,6 @@
 [
-  {"id": "orange",  "name": "Orange Slovensko", "domains": ["orange.sk"],   "asns": [AS15962]},
-  {"id": "telekom", "name": "Telekom",          "domains": ["telekom.sk"],  "asns": [AS6855]},
-  {"id": "o2",      "name": "O2",               "domains": ["o2.sk"],       "asns": [AS28952]},
-  {"id": "4ka",     "name": "4ka",              "domains": ["4ka.sk"],      "asns": [AS5578]}
+  {"id": "orange",  "name": "Orange Slovensko", "domains": ["orange.sk"],   "asns": ["AS15962"]},
+  {"id": "telekom", "name": "Telekom",          "domains": ["telekom.sk"],  "asns": ["AS6855"]},
+  {"id": "o2",      "name": "O2",               "domains": ["o2.sk"],       "asns": ["AS28952"]},
+  {"id": "4ka",     "name": "4ka",              "domains": ["4ka.sk"],      "asns": ["AS5578"]}
 ]
