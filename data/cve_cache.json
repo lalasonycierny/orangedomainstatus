@@ -2708,6 +2708,13 @@
   "kev": false,
   "summary": "Unspecified vulnerability in Oracle MySQL 5.5.51 and earlier, 5.6.32 and earlier, and 5.7.14 and earlier allows remote authenticated users to affect availability via vectors related to Server: Optimizer."
  },
+ "CVE-2016-3495": {
+  "cvss": 4.9,
+  "epss": 0.02703,
+  "fetched": "2026-10-29T14:36:50+00:00",
+  "kev": false,
+  "summary": "Unspecified vulnerability in Oracle MySQL 5.7.13 and earlier allows remote administrators to affect availability via vectors related to Server: InnoDB."
+ },
  "CVE-2016-3501": {
   "cvss": 6.5,
   "epss": 0.03781,
@@ -3008,6 +3015,13 @@
   "fetched": "2026-10-29T14:14:29+00:00",
   "kev": false,
   "summary": "Unspecified vulnerability in Oracle MySQL 5.5.50 and earlier, 5.6.31 and earlier, and 5.7.13 and earlier allows remote authenticated users to affect availability via vectors related to DML."
+ },
+ "CVE-2016-5625": {
+  "cvss": 7.0,
+  "epss": 0.00414,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Unspecified vulnerability in Oracle MySQL 5.7.14 and earlier allows local users to affect confidentiality, integrity, and availability via vectors related to Server: Packaging."
  },
  "CVE-2016-5626": {
   "cvss": 6.5,
@@ -4724,6 +4738,13 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server : Security : Privileges). Supported versions that are affected are 5.6.38 and prior and 5.7.20 and prior. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to…"
  },
+ "CVE-2018-2703": {
+  "cvss": 6.5,
+  "epss": 0.03183,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server : Security : Privileges). Supported versions that are affected are 5.6.38 and prior and 5.7.20 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
+ },
  "CVE-2018-2755": {
   "cvss": 7.7,
   "epss": 0.00849,
@@ -4815,6 +4836,13 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: InnoDB). Supported versions that are affected are 5.7.21 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks…"
  },
+ "CVE-2018-2778": {
+  "cvss": 4.9,
+  "epss": 0.02752,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Optimizer). Supported versions that are affected are 5.7.21 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.…"
+ },
  "CVE-2018-2779": {
   "cvss": 4.9,
   "epss": 0.02752,
@@ -4892,6 +4920,13 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Optimizer). Supported versions that are affected are 5.7.21 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.…"
  },
+ "CVE-2018-2817": {
+  "cvss": 6.5,
+  "epss": 0.03176,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: DDL). Supported versions that are affected are 5.5.59 and prior, 5.6.39 and prior and 5.7.21 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
+ },
  "CVE-2018-2818": {
   "cvss": 4.9,
   "epss": 0.03479,
@@ -4905,6 +4940,13 @@
   "fetched": "2026-10-29T14:16:41+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: InnoDB). Supported versions that are affected are 5.5.59 and prior, 5.6.39 and prior and 5.7.21 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
+ },
+ "CVE-2018-2839": {
+  "cvss": 4.9,
+  "epss": 0.02752,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: DML). Supported versions that are affected are 5.7.21 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful…"
  },
  "CVE-2018-2846": {
   "cvss": 4.9,
@@ -5004,6 +5046,13 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Client component of Oracle MySQL (subcomponent: Client programs). Supported versions that are affected are 5.5.60 and prior, 5.6.40 and prior, 5.7.22 and prior and 8.0.11 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via…"
  },
+ "CVE-2018-3123": {
+  "cvss": 5.9,
+  "epss": 0.02062,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: libmysqld). Supported versions that are affected are 5.6.42 and prior, 5.7.24 and prior and 8.0.13 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple…"
+ },
  "CVE-2018-3133": {
   "cvss": 6.5,
   "epss": 0.02924,
@@ -5017,6 +5066,13 @@
   "fetched": "2026-10-29T14:18:20+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: InnoDB). Supported versions that are affected are 5.6.41 and prior, 5.7.23 and prior and 8.0.12 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
+ },
+ "CVE-2018-3144": {
+  "cvss": 5.9,
+  "epss": 0.04445,
+  "fetched": "2026-10-29T14:36:17+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Security: Audit). Supported versions that are affected are 5.7.23 and prior and 8.0.12 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to…"
  },
  "CVE-2018-3155": {
   "cvss": 7.7,
@@ -5045,6 +5101,13 @@
   "fetched": "2026-10-29T14:18:21+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: InnoDB). Supported versions that are affected are 5.7.23 and prior and 8.0.12 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.…"
+ },
+ "CVE-2018-3171": {
+  "cvss": 5.0,
+  "epss": 0.02086,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Partition). Supported versions that are affected are 5.7.23 and prior and 8.0.12 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise…"
  },
  "CVE-2018-3173": {
   "cvss": 4.9,
@@ -5381,6 +5444,13 @@
   "fetched": "2026-10-29T14:20:54+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Parser). Supported versions that are affected are 5.7.24 and prior and 8.0.13 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL…"
+ },
+ "CVE-2019-2455": {
+  "cvss": 6.5,
+  "epss": 0.03795,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Parser). Supported versions that are affected are 5.6.42 and prior, 5.7.24 and prior and 8.0.13 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
  },
  "CVE-2019-2481": {
   "cvss": 4.9,
@@ -5921,6 +5991,13 @@
   "kev": false,
   "summary": "The client side in OpenSSH 5.7 through 8.4 has an Observable Discrepancy leading to an information leak in the algorithm negotiation. This allows man-in-the-middle attackers to target initial connection attempts (where no host key for the server has been cached by the client). NOTE: some reports…"
  },
+ "CVE-2020-14539": {
+  "cvss": 6.5,
+  "epss": 0.02237,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 5.6.48 and prior, 5.7.30 and prior and 8.0.20 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to…"
+ },
  "CVE-2020-14540": {
   "cvss": 4.9,
   "epss": 0.02154,
@@ -5934,6 +6011,13 @@
   "fetched": "2026-10-29T14:23:42+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 5.7.30 and prior and 8.0.20 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…"
+ },
+ "CVE-2020-14550": {
+  "cvss": 5.3,
+  "epss": 0.02239,
+  "fetched": "2026-10-29T14:36:15+00:00",
+  "kev": false,
+  "summary": "Vulnerability in the MySQL Client product of Oracle MySQL (component: C API). Supported versions that are affected are 5.6.48 and prior, 5.7.30 and prior and 8.0.20 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise…"
  },
  "CVE-2020-14553": {
   "cvss": 4.3,
