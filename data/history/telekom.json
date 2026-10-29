@@ -1,0 +1,4704 @@
+{
+ "acs.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "acs.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     3306,
+     3478
+    ]
+   }
+  ]
+ },
+ "admin.cloud.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "admin.cloud.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "admin.tarsius.nike.cust.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "admin.tarsius.nike.cust.telekom.sk",
+   "api.tarsius.nike.cust.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     6001
+    ]
+   }
+  ]
+ },
+ "admin.tarsius.skoda.cust.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "admin.tarsius.skoda.cust.telekom.sk",
+   "api.tarsius.skoda.cust.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     123,
+     161,
+     443
+    ]
+   }
+  ]
+ },
+ "analytics.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "analytics.telekom.sk",
+   "crt.analytics.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880
+    ]
+   }
+  ]
+ },
+ "api-analytics.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "api-analytics.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "api1.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "api1.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "apigw-ext.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "apigw-ext.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "autodiscover.external.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "autodiscover.external.telekom.sk",
+   "autodiscover.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "autodiscover.predajna.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "autodiscover.predajna.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "autodiscover.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "autodiscover.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "bsp.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "bsp.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "bspt.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "bspt.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "cap.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cap.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "cappor.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cappor.telekom.sk",
+   "db.cappor.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     1812
+    ]
+   }
+  ]
+ },
+ "citrix.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "citrix.telekom.sk",
+   "ecitrix.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "cloud.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cloud.telekom.sk",
+   "m.telekom.sk",
+   "mail.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "cloudportal.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cloudportal.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "cloudvpn.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cloudvpn.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "db.kaufland-hotspot.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "db.kaufland-hotspot.telekom.sk",
+   "kaufland-hotspot.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "db.tale-hotspot.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "db.tale-hotspot.telekom.sk",
+   "tale-hotspot.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 11,
+     "high": 43,
+     "low": 3,
+     "medium": 22,
+     "unknown": 0
+    },
+    "cve_count": 79,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-38709",
+     "CVE-2024-24795",
+     "CVE-2024-27316",
+     "CVE-2024-36387",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-55753",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-48005",
+     "CVE-2026-48913",
+     "CVE-2026-49975",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443,
+     1812
+    ]
+   }
+  ]
+ },
+ "dc.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dc.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ditra.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ditra.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "dm.vvn-test.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dm.vvn-test.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "dm.vvn.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dm.vvn.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "dms.vvn.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dms.vvn.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "dns.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dns.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     53
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     53
+    ]
+   }
+  ]
+ },
+ "dokuwiki-panip.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dokuwiki-panip.telekom.sk",
+   "git-panip.telekom.sk",
+   "mattermost-panip.telekom.sk",
+   "owncloud-panip.telekom.sk",
+   "wekan-panip.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "dummy.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dummy.telekom.sk",
+   "nahravanie-hovorov.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "eshop.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "eshop.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "ews1.vvn.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ews1.vvn.telekom.sk",
+   "ews2.vvn.telekom.sk",
+   "portal.vvn.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "expe01.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "expe01.telekom.sk",
+   "jabber.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "expe02.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "expe02.telekom.sk",
+   "jabber.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "fax2mail.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "fax2mail.telekom.sk",
+   "mail2fax.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25,
+     80,
+     8080
+    ]
+   }
+  ]
+ },
+ "faz.sdwancc.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "faz.sdwancc.telekom.sk",
+   "fmg.sdwancc.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "fic.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "fic.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "forum-stage.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "forum-stage.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 1,
+    "cve_ids": [
+     "CVE-2022-27227"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     22,
+     53,
+     80,
+     443,
+     500,
+     4500
+    ]
+   }
+  ]
+ },
+ "genesys-byoc.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "genesys-byoc.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "hybrid.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "hybrid.telekom.sk",
+   "st-mail.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ict-support.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ict-support.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25,
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "ict-tech-support.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ict-tech-support.telekom.sk",
+   "otrs.ict.telekom.sk",
+   "support.ict.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     179
+    ]
+   }
+  ]
+ },
+ "ict-znuny.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ict-znuny.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 28,
+     "high": 96,
+     "low": 6,
+     "medium": 61,
+     "unknown": 0
+    },
+    "cve_count": 191,
+    "cve_ids": [
+     "CVE-2006-20001",
+     "CVE-2007-4723",
+     "CVE-2009-0663",
+     "CVE-2009-0796",
+     "CVE-2009-1390",
+     "CVE-2009-1884",
+     "CVE-2009-2299",
+     "CVE-2009-3765",
+     "CVE-2009-3766",
+     "CVE-2009-3767",
+     "CVE-2010-1168",
+     "CVE-2011-1176",
+     "CVE-2011-2201",
+     "CVE-2011-2688",
+     "CVE-2011-3599",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2016-1246",
+     "CVE-2018-17189",
+     "CVE-2018-17199",
+     "CVE-2019-0190",
+     "CVE-2019-0196",
+     "CVE-2019-0197",
+     "CVE-2019-0211",
+     "CVE-2019-0215",
+     "CVE-2019-0217",
+     "CVE-2019-0220",
+     "CVE-2019-10081",
+     "CVE-2019-10082",
+     "CVE-2019-10092",
+     "CVE-2019-10097",
+     "CVE-2019-10098",
+     "CVE-2019-17567",
+     "CVE-2019-9517",
+     "CVE-2020-10878",
+     "CVE-2020-11984",
+     "CVE-2020-11993",
+     "CVE-2020-12723",
+     "CVE-2020-13938",
+     "CVE-2020-1927",
+     "CVE-2020-1934",
+     "CVE-2020-35452",
+     "CVE-2020-9490",
+     "CVE-2021-26690",
+     "CVE-2021-26691",
+     "CVE-2021-32785",
+     "CVE-2021-32786",
+     "CVE-2021-32791",
+     "CVE-2021-32792",
+     "CVE-2021-33193",
+     "CVE-2021-34798",
+     "CVE-2021-36160",
+     "CVE-2021-36770",
+     "CVE-2021-3711",
+     "CVE-2021-3712",
+     "CVE-2021-39275",
+     "CVE-2021-40438",
+     "CVE-2021-4160",
+     "CVE-2021-44224",
+     "CVE-2021-44790",
+     "CVE-2022-0778",
+     "CVE-2022-1292",
+     "CVE-2022-2068",
+     "CVE-2022-2097",
+     "CVE-2022-22719",
+     "CVE-2022-22720",
+     "CVE-2022-22721",
+     "CVE-2022-23943",
+     "CVE-2022-26377",
+     "CVE-2022-28330",
+     "CVE-2022-28614",
+     "CVE-2022-28615",
+     "CVE-2022-29404",
+     "CVE-2022-30556",
+     "CVE-2022-31813",
+     "CVE-2022-36760",
+     "CVE-2022-37436",
+     "CVE-2022-4304",
+     "CVE-2022-4450",
+     "CVE-2023-0215",
+     "CVE-2023-0286",
+     "CVE-2023-0464",
+     "CVE-2023-0465",
+     "CVE-2023-0466",
+     "CVE-2023-25690",
+     "CVE-2023-2650",
+     "CVE-2023-27522",
+     "CVE-2023-31122",
+     "CVE-2023-31484",
+     "CVE-2023-31486",
+     "CVE-2023-3817",
+     "CVE-2023-38709",
+     "CVE-2023-45802",
+     "CVE-2023-47039",
+     "CVE-2023-4807",
+     "CVE-2023-5678",
+     "CVE-2024-0727",
+     "CVE-2024-24795",
+     "CVE-2024-27316",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2025-68160",
+     "CVE-2025-69418",
+     "CVE-2025-69419",
+     "CVE-2025-69420",
+     "CVE-2025-69421",
+     "CVE-2026-13221",
+     "CVE-2026-22795",
+     "CVE-2026-22796",
+     "CVE-2026-24072",
+     "CVE-2026-28387",
+     "CVE-2026-28388",
+     "CVE-2026-28389",
+     "CVE-2026-28390",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34180",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-35189",
+     "CVE-2026-4176",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-42766",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-45447",
+     "CVE-2026-46729",
+     "CVE-2026-48005",
+     "CVE-2026-49975",
+     "CVE-2026-54872",
+     "CVE-2026-54874",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57432",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-7383",
+     "CVE-2026-75806",
+     "CVE-2026-77696",
+     "CVE-2026-79768",
+     "CVE-2026-8376",
+     "CVE-2026-84782",
+     "CVE-2026-9076",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 3,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     25,
+     80,
+     443,
+     587
+    ]
+   }
+  ]
+ },
+ "ict.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ict.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     500,
+     2222,
+     4500
+    ]
+   }
+  ]
+ },
+ "icttt.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "icttt.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 11,
+     "high": 52,
+     "low": 8,
+     "medium": 34,
+     "unknown": 0
+    },
+    "cve_count": 105,
+    "cve_ids": [
+     "CVE-2007-3205",
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-1390",
+     "CVE-2009-2299",
+     "CVE-2009-3765",
+     "CVE-2009-3766",
+     "CVE-2009-3767",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2220",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2015-9253",
+     "CVE-2017-7272",
+     "CVE-2017-7963",
+     "CVE-2017-8923",
+     "CVE-2018-19395",
+     "CVE-2018-19396",
+     "CVE-2019-0190",
+     "CVE-2019-9637",
+     "CVE-2019-9638",
+     "CVE-2019-9639",
+     "CVE-2019-9641",
+     "CVE-2020-11579",
+     "CVE-2022-31628",
+     "CVE-2022-31629",
+     "CVE-2022-4900",
+     "CVE-2024-25117",
+     "CVE-2024-3566",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-55753",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2026-109619",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-35189",
+     "CVE-2026-35191",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-42772",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-48913",
+     "CVE-2026-49975",
+     "CVE-2026-54872",
+     "CVE-2026-54873",
+     "CVE-2026-54875",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-72897",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-75804",
+     "CVE-2026-75805",
+     "CVE-2026-75806",
+     "CVE-2026-77696",
+     "CVE-2026-79768",
+     "CVE-2026-84782",
+     "CVE-2026-84784",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "iot.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "iot.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     1883,
+     8883
+    ]
+   }
+  ]
+ },
+ "kdeje.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "kdeje.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "lojalita-biznis-a.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "lojalita-biznis-a.telekom.sk",
+   "lojalita-biznis-b.telekom.sk",
+   "lojalita-rezid-a.telekom.sk",
+   "lojalita-rezid-b.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880
+    ]
+   }
+  ]
+ },
+ "meraki.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "meraki.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "moja-firma.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "moja-firma.telekom.sk",
+   "www.moja-firma.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "mojafirma.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mojafirma.telekom.sk",
+   "www.mojafirma.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "mwfp.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mwfp.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "mwfrinta.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mwfrinta.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "mwftsta.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mwftsta.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "nip.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "nip.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "o365customer.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "o365customer.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "oldmail.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oldmail.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "omniapi.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "omniapi.telekom.sk",
+   "omnichannel.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25,
+     80,
+     443,
+     6775
+    ]
+   }
+  ]
+ },
+ "oneportal.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oneportal.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "openstack.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "openstack.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 1,
+    "cve_ids": [
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 4.3,
+    "max_severity": "medium",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "partner.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "partner.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "pbx-tls.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "pbx-tls.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "perf-t-app.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "perf-t-app.telekom.sk",
+   "staging-t-app.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "pma.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "pma.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "podpora.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "podpora.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "portal.vvn-test.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "portal.vvn-test.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "posta.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "posta.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "prieskum.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "prieskum.telekom.sk",
+   "www.prieskum.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "public-analytics.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "public-analytics.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "ra.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     4433
+    ]
+   }
+  ]
+ },
+ "ra1.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra1.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     10443
+    ]
+   }
+  ]
+ },
+ "ra2.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra2.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ra3.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra3.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ra4.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra4.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ra5.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ra5.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ragw2.sdwan.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ragw2.sdwan.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "raportal.sdwan.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "raportal.sdwan.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "rcs-go-test.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "rcs-go-test.telekom.sk",
+   "rcs-go.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "roaming.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "roaming.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     13,
+     15,
+     17,
+     19,
+     37,
+     49,
+     53,
+     80,
+     97,
+     175,
+     221,
+     285,
+     314,
+     340,
+     443,
+     445,
+     541,
+     587,
+     591,
+     593,
+     666,
+     873,
+     902,
+     990,
+     993,
+     1027,
+     1099,
+     1195,
+     1198,
+     1457,
+     1604,
+     1605,
+     1801,
+     1883,
+     1970,
+     2051,
+     2067,
+     2081,
+     2087,
+     2121,
+     2126,
+     2154,
+     2201,
+     2202,
+     2222,
+     2224,
+     2250,
+     2320,
+     2345,
+     2352,
+     2423,
+     2443,
+     2506,
+     2570,
+     2761,
+     3006,
+     3016,
+     3042,
+     3050,
+     3057,
+     3060,
+     3073,
+     3082,
+     3117,
+     3137,
+     3156,
+     3165,
+     3183,
+     3189,
+     3211,
+     3306,
+     3341,
+     3389,
+     3409,
+     3410,
+     3443,
+     3524,
+     3551,
+     3559,
+     3590,
+     3791,
+     4063,
+     4117,
+     4150,
+     4242,
+     4250,
+     4282,
+     4321,
+     4401,
+     4506,
+     4700,
+     4949,
+     5003,
+     5007,
+     5080,
+     5222,
+     5223,
+     5240,
+     5252,
+     5269,
+     5271,
+     5272,
+     5400,
+     5432,
+     5439,
+     5454,
+     5495,
+     5567,
+     5593,
+     5608,
+     5672,
+     5858,
+     5905,
+     5906,
+     6001,
+     6005,
+     6006,
+     6008,
+     6060,
+     6432,
+     6500,
+     6603,
+     6653,
+     6661,
+     6667,
+     6998,
+     7005,
+     7087,
+     7105,
+     7171,
+     7348,
+     7403,
+     7480,
+     7535,
+     7634,
+     7788,
+     8027,
+     8041,
+     8056,
+     8070,
+     8100,
+     8102,
+     8113,
+     8126,
+     8143,
+     8144,
+     8149,
+     8155,
+     8158,
+     8160,
+     8161,
+     8166,
+     8170,
+     8171,
+     8190,
+     8195,
+     8200,
+     8222,
+     8284,
+     8291,
+     8315,
+     8383,
+     8385,
+     8388,
+     8403,
+     8420,
+     8424,
+     8435,
+     8444,
+     8446,
+     8453,
+     8457,
+     8470,
+     8475,
+     8493,
+     8494,
+     8554,
+     8575,
+     8591,
+     8593,
+     8595,
+     8605,
+     8606,
+     8640,
+     8649,
+     8686,
+     8706,
+     8708,
+     8731,
+     8789,
+     8817,
+     8822,
+     8831,
+     8832,
+     8852,
+     8868,
+     8869,
+     8899,
+     8902,
+     8911,
+     8988,
+     9011,
+     9020,
+     9023,
+     9026,
+     9041,
+     9050,
+     9058,
+     9059,
+     9073,
+     9074,
+     9089,
+     9097,
+     9115,
+     9118,
+     9124,
+     9140,
+     9141,
+     9146,
+     9148,
+     9160,
+     9169,
+     9185,
+     9186,
+     9204,
+     9208,
+     9289,
+     9303,
+     9312,
+     9418,
+     9529,
+     9530,
+     9600,
+     9606,
+     9611,
+     9682,
+     9758,
+     9761,
+     9797,
+     9811,
+     9876,
+     9885,
+     9916,
+     9988,
+     9999,
+     10013,
+     10030,
+     10048,
+     10081,
+     10087,
+     10100,
+     10101,
+     10205,
+     10240,
+     10348,
+     10380,
+     10533,
+     10894,
+     10911,
+     11110,
+     11211,
+     11602,
+     11701,
+     12000,
+     12082,
+     12106,
+     12108,
+     12120,
+     12156,
+     12157,
+     12164,
+     12178,
+     12180,
+     12187,
+     12191,
+     12238,
+     12250,
+     12251,
+     12252,
+     12261,
+     12276,
+     12281,
+     12288,
+     12295,
+     12304,
+     12305,
+     12322,
+     12328,
+     12335,
+     12357,
+     12358,
+     12377,
+     12393,
+     12414,
+     12419,
+     12425,
+     12428,
+     12458,
+     12461,
+     12499,
+     12521,
+     12524,
+     12531,
+     12533,
+     12535,
+     12546,
+     12549,
+     12556,
+     12557,
+     12580,
+     13333,
+     14082,
+     14104,
+     14147,
+     14402,
+     14897,
+     15038,
+     16002,
+     16019,
+     16024,
+     16027,
+     16032,
+     16036,
+     16039,
+     16068,
+     16084,
+     16085,
+     16098,
+     16992,
+     17776,
+     17778,
+     18038,
+     18043,
+     18053,
+     18078,
+     18102,
+     18111,
+     19000,
+     19015,
+     19902,
+     20050,
+     20070,
+     20151,
+     20325,
+     20547,
+     21025,
+     21236,
+     21239,
+     21247,
+     21263,
+     21285,
+     21292,
+     21328,
+     22556,
+     22609,
+     22705,
+     30006,
+     30007,
+     30027,
+     30029,
+     30501,
+     32764,
+     33060,
+     35002,
+     35101,
+     35522,
+     35524,
+     37777,
+     40471,
+     41800,
+     44158,
+     44303,
+     45333,
+     45555,
+     45886,
+     47080,
+     49210,
+     49502,
+     49688,
+     50000,
+     53400,
+     53481,
+     55000,
+     55475,
+     55554,
+     57779,
+     58585,
+     59012,
+     61616,
+     62237,
+     63676
+    ]
+   }
+  ]
+ },
+ "sbc-sprinklr.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sbc-sprinklr.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sdwan.versa.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sdwan.versa.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "sdwan1.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sdwan1.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     9182
+    ]
+   }
+  ]
+ },
+ "sip-trunk.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sip-trunk.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "smsapi.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smsapi.telekom.sk",
+   "smsdirect.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25,
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "sst-nonprod.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sst-nonprod.telekom.sk",
+   "sst.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "static.eshop.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "static.eshop.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "t-app.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "t-app.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "tapigw-ext.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tapigw-ext.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "telekom.sk",
+   "www.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "test-t-app.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "test-t-app.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "test2-t-app.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "test2-t-app.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "test3-t-app.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "test3-t-app.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "tmsp.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tmsp.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "tower.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tower.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "tscreen.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tscreen.telekom.sk",
+   "tshops.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 3,
+     "high": 16,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 32,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "tufin.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tufin.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "twic.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "twic.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "uctovnictvo.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "uctovnictvo.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "validate.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "validate.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     15,
+     17,
+     21,
+     22,
+     26,
+     37,
+     43,
+     49,
+     53,
+     65,
+     70,
+     79,
+     80,
+     81,
+     83,
+     88,
+     97,
+     102,
+     104,
+     111,
+     113,
+     135,
+     143,
+     175,
+     179,
+     195,
+     221,
+     263,
+     264,
+     311,
+     337,
+     343,
+     385,
+     443,
+     444,
+     445,
+     452,
+     461,
+     465,
+     503,
+     513,
+     515,
+     541,
+     548,
+     554,
+     593,
+     631,
+     743,
+     771,
+     873,
+     902,
+     987,
+     992,
+     993,
+     1000,
+     1025,
+     1063,
+     1080,
+     1099,
+     1153,
+     1177,
+     1193,
+     1200,
+     1234,
+     1235,
+     1244,
+     1249,
+     1283,
+     1311,
+     1337,
+     1343,
+     1365,
+     1433,
+     1443,
+     1455,
+     1515,
+     1577,
+     1599,
+     1604,
+     1720,
+     1723,
+     1800,
+     1801,
+     1830,
+     1833,
+     1911,
+     1926,
+     1935,
+     1950,
+     1957,
+     1962,
+     1965,
+     1969,
+     1971,
+     1977,
+     1984,
+     1987,
+     2000,
+     2001,
+     2003,
+     2008,
+     2012,
+     2018,
+     2022,
+     2051,
+     2053,
+     2054,
+     2055,
+     2057,
+     2067,
+     2069,
+     2077,
+     2082,
+     2083,
+     2087,
+     2096,
+     2109,
+     2121,
+     2156,
+     2181,
+     2222,
+     2223,
+     2345,
+     2353,
+     2375,
+     2379,
+     2404,
+     2455,
+     2480,
+     2537,
+     2553,
+     2572,
+     2628,
+     2761,
+     2762,
+     2806,
+     3000,
+     3001,
+     3013,
+     3021,
+     3048,
+     3050,
+     3054,
+     3056,
+     3074,
+     3078,
+     3079,
+     3083,
+     3091,
+     3094,
+     3097,
+     3110,
+     3124,
+     3126,
+     3133,
+     3136,
+     3144,
+     3153,
+     3157,
+     3159,
+     3168,
+     3169,
+     3170,
+     3186,
+     3188,
+     3192,
+     3200,
+     3221,
+     3260,
+     3268,
+     3269,
+     3299,
+     3301,
+     3306,
+     3311,
+     3333,
+     3349,
+     3405,
+     3408,
+     3460,
+     3541,
+     3542,
+     3548,
+     3551,
+     3559,
+     3567,
+     3568,
+     3631,
+     3677,
+     3749,
+     3780,
+     3791,
+     3838,
+     3954,
+     4040,
+     4042,
+     4063,
+     4064,
+     4080,
+     4147,
+     4150,
+     4157,
+     4165,
+     4200,
+     4242,
+     4282,
+     4369,
+     4435,
+     4443,
+     4444,
+     4482,
+     4488,
+     4502,
+     4506,
+     4543,
+     4567,
+     4643,
+     4664,
+     4700,
+     4782,
+     4786,
+     4840,
+     4848,
+     4949,
+     5000,
+     5006,
+     5007,
+     5009,
+     5025,
+     5090,
+     5105,
+     5180,
+     5201,
+     5222,
+     5223,
+     5224,
+     5225,
+     5231,
+     5242,
+     5247,
+     5270,
+     5272,
+     5432,
+     5433,
+     5440,
+     5503,
+     5555,
+     5560,
+     5601,
+     5604,
+     5672,
+     5797,
+     5801,
+     5858,
+     5900,
+     5901,
+     5913,
+     5919,
+     5984,
+     5985,
+     5987,
+     5991,
+     5992,
+     6000,
+     6020,
+     6308,
+     6379,
+     6400,
+     6405,
+     6432,
+     6505,
+     6633,
+     6653,
+     6661,
+     6664,
+     6668,
+     6748,
+     6779,
+     6955,
+     7000,
+     7001,
+     7020,
+     7071,
+     7079,
+     7080,
+     7084,
+     7172,
+     7173,
+     7283,
+     7349,
+     7415,
+     7443,
+     7444,
+     7465,
+     7474,
+     7548,
+     7634,
+     7657,
+     7777,
+     7779,
+     7801,
+     7822,
+     7919,
+     8000,
+     8001,
+     8008,
+     8009,
+     8016,
+     8019,
+     8021,
+     8022,
+     8025,
+     8027,
+     8033,
+     8038,
+     8044,
+     8056,
+     8060,
+     8069,
+     8072,
+     8075,
+     8081,
+     8083,
+     8084,
+     8085,
+     8087,
+     8090,
+     8098,
+     8099,
+     8104,
+     8109,
+     8115,
+     8120,
+     8125,
+     8126,
+     8127,
+     8128,
+     8129,
+     8132,
+     8133,
+     8135,
+     8138,
+     8139,
+     8147,
+     8166,
+     8172,
+     8177,
+     8181,
+     8185,
+     8190,
+     8200,
+     8243,
+     8248,
+     8284,
+     8315,
+     8350,
+     8410,
+     8426,
+     8442,
+     8443,
+     8449,
+     8453,
+     8454,
+     8460,
+     8461,
+     8463,
+     8464,
+     8485,
+     8515,
+     8530,
+     8540,
+     8545,
+     8549,
+     8554,
+     8566,
+     8570,
+     8575,
+     8590,
+     8593,
+     8606,
+     8622,
+     8637,
+     8643,
+     8649,
+     8666,
+     8688,
+     8703,
+     8707,
+     8728,
+     8745,
+     8782,
+     8788,
+     8800,
+     8803,
+     8813,
+     8821,
+     8822,
+     8827,
+     8834,
+     8839,
+     8842,
+     8848,
+     8854,
+     8861,
+     8872,
+     8876,
+     8880,
+     8888,
+     8891,
+     8899,
+     8989,
+     9000,
+     9001,
+     9002,
+     9006,
+     9009,
+     9019,
+     9020,
+     9040,
+     9042,
+     9047,
+     9048,
+     9055,
+     9066,
+     9072,
+     9075,
+     9083,
+     9089,
+     9090,
+     9094,
+     9095,
+     9099,
+     9100,
+     9104,
+     9113,
+     9119,
+     9121,
+     9124,
+     9132,
+     9133,
+     9146,
+     9151,
+     9154,
+     9160,
+     9172,
+     9173,
+     9175,
+     9178,
+     9179,
+     9195,
+     9196,
+     9201,
+     9204,
+     9207,
+     9219,
+     9222,
+     9223,
+     9247,
+     9250,
+     9251,
+     9280,
+     9289,
+     9306,
+     9383,
+     9393,
+     9398,
+     9418,
+     9443,
+     9458,
+     9530,
+     9633,
+     9663,
+     9682,
+     9710,
+     9734,
+     9800,
+     9811,
+     9837,
+     9869,
+     9898,
+     9901,
+     9943,
+     9944,
+     9981,
+     9997,
+     9998,
+     10001,
+     10007,
+     10010,
+     10011,
+     10017,
+     10026,
+     10028,
+     10043,
+     10047,
+     10066,
+     10134,
+     10180,
+     10210,
+     10250,
+     10909,
+     11065,
+     11210,
+     11211,
+     11288,
+     11300,
+     11401,
+     11443,
+     11481,
+     11596,
+     11601,
+     11846,
+     11920,
+     11926,
+     12000,
+     12056,
+     12082,
+     12104,
+     12105,
+     12113,
+     12137,
+     12138,
+     12147,
+     12151,
+     12152,
+     12157,
+     12167,
+     12178,
+     12192,
+     12193,
+     12196,
+     12197,
+     12202,
+     12211,
+     12229,
+     12232,
+     12241,
+     12242,
+     12243,
+     12257,
+     12258,
+     12265,
+     12269,
+     12286,
+     12287,
+     12290,
+     12301,
+     12334,
+     12344,
+     12345,
+     12347,
+     12372,
+     12374,
+     12378,
+     12382,
+     12386,
+     12390,
+     12393,
+     12405,
+     12414,
+     12422,
+     12430,
+     12433,
+     12443,
+     12444,
+     12448,
+     12460,
+     12474,
+     12476,
+     12486,
+     12490,
+     12492,
+     12497,
+     12499,
+     12509,
+     12517,
+     12520,
+     12531,
+     12540,
+     12542,
+     12545,
+     12546,
+     12549,
+     12554,
+     12565,
+     12570,
+     12571,
+     12572,
+     12574,
+     12575,
+     12578,
+     12601,
+     13128,
+     13579,
+     14130,
+     14265,
+     14344,
+     14402,
+     14403,
+     14443,
+     14524,
+     14903,
+     15001,
+     15123,
+     15151,
+     16006,
+     16010,
+     16013,
+     16018,
+     16030,
+     16038,
+     16040,
+     16048,
+     16062,
+     16063,
+     16066,
+     16070,
+     16072,
+     16080,
+     16089,
+     16092,
+     16095,
+     16096,
+     16722,
+     16992,
+     16993,
+     17020,
+     17776,
+     17987,
+     18004,
+     18012,
+     18022,
+     18026,
+     18027,
+     18030,
+     18038,
+     18044,
+     18052,
+     18073,
+     18081,
+     18103,
+     18113,
+     18181,
+     18225,
+     18245,
+     18264,
+     18789,
+     19000,
+     19071,
+     19091,
+     19176,
+     20000,
+     20040,
+     20060,
+     20100,
+     20121,
+     20128,
+     20256,
+     20547,
+     20880,
+     20892,
+     21025,
+     21081,
+     21116,
+     21257,
+     21264,
+     21265,
+     21274,
+     21276,
+     21287,
+     21310,
+     21379,
+     22345,
+     22380,
+     22403,
+     22556,
+     22740,
+     24442,
+     24510,
+     25001,
+     25003,
+     25007,
+     25332,
+     25565,
+     25952,
+     25980,
+     26099,
+     27017,
+     28015,
+     28017,
+     28080,
+     29302,
+     29984,
+     30001,
+     30017,
+     30025,
+     30046,
+     30532,
+     30701,
+     31210,
+     31309,
+     31337,
+     31408,
+     32443,
+     32508,
+     32800,
+     33060,
+     33344,
+     34500,
+     34611,
+     35000,
+     35004,
+     35240,
+     35251,
+     35522,
+     35977,
+     36932,
+     36982,
+     37215,
+     37516,
+     37777,
+     38295,
+     38880,
+     38923,
+     40000,
+     40147,
+     40892,
+     40894,
+     41149,
+     41800,
+     42208,
+     42667,
+     43008,
+     43080,
+     44142,
+     44158,
+     44302,
+     44334,
+     44510,
+     44818,
+     45005,
+     45039,
+     45471,
+     45582,
+     45668,
+     45786,
+     45886,
+     45888,
+     45902,
+     46125,
+     47984,
+     48013,
+     49144,
+     49153,
+     49502,
+     49692,
+     50000,
+     50050,
+     50070,
+     50202,
+     50744,
+     50777,
+     50995,
+     51003,
+     51106,
+     51294,
+     51434,
+     52311,
+     52626,
+     53200,
+     53484,
+     54022,
+     55000,
+     55197,
+     55442,
+     55481,
+     55484,
+     55490,
+     55550,
+     55553,
+     55554,
+     55726,
+     56943,
+     57363,
+     57546,
+     57786,
+     58000,
+     58176,
+     58392,
+     58443,
+     58961,
+     60000,
+     60030,
+     60129,
+     61044,
+     61125,
+     61355,
+     61613,
+     61616,
+     62078,
+     63031,
+     63443,
+     63870,
+     64342
+    ]
+   }
+  ]
+ },
+ "vysielackydb.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vysielackydb.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 11,
+     "high": 42,
+     "low": 3,
+     "medium": 22,
+     "unknown": 0
+    },
+    "cve_count": 78,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-38709",
+     "CVE-2024-24795",
+     "CVE-2024-27316",
+     "CVE-2024-36387",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-48005",
+     "CVE-2026-48913",
+     "CVE-2026-49975",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "webex-site.scph.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "webex-site.scph.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "whistleblower.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "whistleblower.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "whps.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "whps.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "wic.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "wic.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "xpweext.scph.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "xpweext.scph.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "young-test.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "young-test.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "young.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "young.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "zona.telekom.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "zona.telekom.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ }
+}

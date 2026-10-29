@@ -1,0 +1,5889 @@
+{
+ "213-151-206-134.static.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "213-151-206-134.static.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "78-141-77-248.static.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "78-141-77-248.static.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     6443,
+     8080,
+     8443
+    ]
+   }
+  ]
+ },
+ "85-237-231-24.static.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "85-237-231-24.static.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     22,
+     443
+    ]
+   }
+  ]
+ },
+ "accessmanagement.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "accessmanagement.orange.sk",
+   "apis.ocp.orange.sk",
+   "apis.orange.sk",
+   "auth.orange.sk",
+   "b2b-cm-be.ocp.orange.sk",
+   "biznisportal.orange.sk",
+   "ec2.ocp.orange.sk",
+   "hello-admin.ocp.orange.sk",
+   "hello.orange.sk",
+   "merchcontrol.orange.sk",
+   "openly.orange.sk",
+   "otvorene.orange.sk",
+   "talk.orange.sk",
+   "wifilp.ocp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "aes-test.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "aes-test.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "aes.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "aes.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "alert1.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "alert1.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "alert2.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "alert2.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "anonym01-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "anonym01-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "api.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "api.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "apigw1.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "apigw1.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "apigw2.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "apigw2.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "apis.oct.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "apis.oct.orange.sk",
+   "apist.orange.sk",
+   "wifilp.oct.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "apit.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "apit.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "app01-sagem.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "app01-sagem.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     80,
+     8080
+    ]
+   }
+  ]
+ },
+ "app01.devel.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "app01.devel.orange.sk",
+   "oauth01.devel.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "app01.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "app01.gtm-stage.orange.sk",
+   "pcportal01.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "app01.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "app01.gtm.orange.sk",
+   "tv.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "auth-int.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "auth-int.orange.sk",
+   "tb1n.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "autodiscover.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "autodiscover.orange.sk",
+   "owa.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "autodiscover.predajca.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "autodiscover.predajca.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "ba.guest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ba.guest.orange.sk",
+   "guest.orange.sk",
+   "jira2.orange.sk",
+   "sponsor.guest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "backup-demo.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "backup-demo.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "backup.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "backup.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "bb.guest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "bb.guest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "beta.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "beta.orange.sk",
+   "chat.orange.sk",
+   "m.beta.orange.sk",
+   "m.orange.sk",
+   "nonstop.orange.sk",
+   "orange.sk",
+   "search.orange.sk",
+   "sport.orange.sk",
+   "www.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "biznis.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "biznis.orange.sk",
+   "login.orange.sk",
+   "obm.biznis.orange.sk",
+   "uam.biznis.orange.sk",
+   "web-bff.biznis.orange.sk",
+   "websheet-apple.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "bloom-api.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "bloom-api.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "bloom-cdn.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "bloom-cdn.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "cag-test.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cag-test.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "cag.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cag.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "callcentrum.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "callcentrum.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "cf-prov.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cf-prov.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "chry-acs.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "chry-acs.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     443,
+     9443,
+     10443
+    ]
+   }
+  ]
+ },
+ "ciscodm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ciscodm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ciscodm.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ciscodm.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ciscodm.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ciscodm.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ciscotestdm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ciscotestdm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "citrix-ag.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "citrix-ag.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "citrix-rsa.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "citrix-rsa.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "citrix-simau.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "citrix-simau.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "citrix.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "citrix.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "cnt01.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cnt01.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "cnt01.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "cnt01.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "ctx-external.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ctx-external.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "customercare.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "customercare.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ddos.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ddos.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "demo-vmrc.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "demo-vmrc.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "demo.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "demo.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "demo.ou.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "demo.ou.orange.sk",
+   "office.ou.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "denylist-t.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "denylist-t.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "denylist.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "denylist.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "dialin.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dialin.orange.sk",
+   "falcon.orange.sk",
+   "git.devel.orange.sk",
+   "jira-test.orange.sk",
+   "jira.orange.sk",
+   "lync.orange.sk",
+   "lyncdiscover.orange.sk",
+   "lyncwebapps.orange.sk",
+   "meet.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 3,
+     "high": 16,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 32,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "dm.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dm.hvps.orange.sk",
+   "yealinkdm.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "dm.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "dm.hvpstest.orange.sk",
+   "yealinkdm.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "drop1-dov.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop1-dov.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "drop1.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop1.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "drop2-dov.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop2-dov.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "drop2.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop2.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8080,
+     8443
+    ]
+   }
+  ]
+ },
+ "drop3-dov.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop3-dov.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "drop3.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop3.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8080,
+     8443
+    ]
+   }
+  ]
+ },
+ "drop4-dov.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop4-dov.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "drop4.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "drop4.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8080,
+     8443
+    ]
+   }
+  ]
+ },
+ "epay.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "epay.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 24,
+     "high": 63,
+     "low": 4,
+     "medium": 37,
+     "unknown": 0
+    },
+    "cve_count": 128,
+    "cve_ids": [
+     "CVE-2006-20001",
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2019-0196",
+     "CVE-2019-0197",
+     "CVE-2019-0211",
+     "CVE-2019-0215",
+     "CVE-2019-0217",
+     "CVE-2019-0220",
+     "CVE-2019-10081",
+     "CVE-2019-10082",
+     "CVE-2019-10092",
+     "CVE-2019-10097",
+     "CVE-2019-10098",
+     "CVE-2019-17567",
+     "CVE-2019-9517",
+     "CVE-2020-11984",
+     "CVE-2020-11993",
+     "CVE-2020-13938",
+     "CVE-2020-1927",
+     "CVE-2020-1934",
+     "CVE-2020-35452",
+     "CVE-2020-9490",
+     "CVE-2021-26690",
+     "CVE-2021-26691",
+     "CVE-2021-32785",
+     "CVE-2021-32786",
+     "CVE-2021-32791",
+     "CVE-2021-32792",
+     "CVE-2021-33193",
+     "CVE-2021-34798",
+     "CVE-2021-36160",
+     "CVE-2021-39275",
+     "CVE-2021-40438",
+     "CVE-2021-44224",
+     "CVE-2021-44790",
+     "CVE-2022-22719",
+     "CVE-2022-22720",
+     "CVE-2022-22721",
+     "CVE-2022-23943",
+     "CVE-2022-26377",
+     "CVE-2022-28330",
+     "CVE-2022-28614",
+     "CVE-2022-28615",
+     "CVE-2022-29404",
+     "CVE-2022-30556",
+     "CVE-2022-31813",
+     "CVE-2022-36760",
+     "CVE-2022-37436",
+     "CVE-2023-25690",
+     "CVE-2023-27522",
+     "CVE-2023-31122",
+     "CVE-2023-38709",
+     "CVE-2023-45802",
+     "CVE-2024-24795",
+     "CVE-2024-27316",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-55753",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-48005",
+     "CVE-2026-49975",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 3,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "epaytest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "epaytest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "eudm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "eudm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 81,
+     "high": 141,
+     "low": 15,
+     "medium": 199,
+     "unknown": 0
+    },
+    "cve_count": 436,
+    "cve_ids": [
+     "CVE-2006-20001",
+     "CVE-2006-7243",
+     "CVE-2006-7250",
+     "CVE-2007-3205",
+     "CVE-2007-4723",
+     "CVE-2008-0455",
+     "CVE-2009-0796",
+     "CVE-2009-1390",
+     "CVE-2009-2299",
+     "CVE-2009-3560",
+     "CVE-2009-3720",
+     "CVE-2009-3765",
+     "CVE-2009-3766",
+     "CVE-2009-3767",
+     "CVE-2010-1623",
+     "CVE-2010-2950",
+     "CVE-2010-3436",
+     "CVE-2010-3709",
+     "CVE-2010-3710",
+     "CVE-2010-3864",
+     "CVE-2010-3870",
+     "CVE-2010-4150",
+     "CVE-2010-4156",
+     "CVE-2010-4180",
+     "CVE-2010-4252",
+     "CVE-2010-4409",
+     "CVE-2010-4645",
+     "CVE-2010-4657",
+     "CVE-2010-4697",
+     "CVE-2010-4698",
+     "CVE-2010-4699",
+     "CVE-2010-4700",
+     "CVE-2010-5298",
+     "CVE-2011-0014",
+     "CVE-2011-0419",
+     "CVE-2011-0421",
+     "CVE-2011-0708",
+     "CVE-2011-0753",
+     "CVE-2011-0754",
+     "CVE-2011-0755",
+     "CVE-2011-1092",
+     "CVE-2011-1148",
+     "CVE-2011-1153",
+     "CVE-2011-1176",
+     "CVE-2011-1398",
+     "CVE-2011-1464",
+     "CVE-2011-1466",
+     "CVE-2011-1467",
+     "CVE-2011-1468",
+     "CVE-2011-1469",
+     "CVE-2011-1470",
+     "CVE-2011-1471",
+     "CVE-2011-1473",
+     "CVE-2011-1938",
+     "CVE-2011-1939",
+     "CVE-2011-1945",
+     "CVE-2011-2202",
+     "CVE-2011-2483",
+     "CVE-2011-2688",
+     "CVE-2011-3182",
+     "CVE-2011-3192",
+     "CVE-2011-3210",
+     "CVE-2011-3267",
+     "CVE-2011-3268",
+     "CVE-2011-3336",
+     "CVE-2011-3348",
+     "CVE-2011-3368",
+     "CVE-2011-3607",
+     "CVE-2011-3639",
+     "CVE-2011-4108",
+     "CVE-2011-4109",
+     "CVE-2011-4317",
+     "CVE-2011-4415",
+     "CVE-2011-4566",
+     "CVE-2011-4576",
+     "CVE-2011-4577",
+     "CVE-2011-4619",
+     "CVE-2011-4718",
+     "CVE-2011-4885",
+     "CVE-2012-0027",
+     "CVE-2012-0031",
+     "CVE-2012-0053",
+     "CVE-2012-0057",
+     "CVE-2012-0788",
+     "CVE-2012-0789",
+     "CVE-2012-0831",
+     "CVE-2012-0883",
+     "CVE-2012-0884",
+     "CVE-2012-1165",
+     "CVE-2012-1171",
+     "CVE-2012-1172",
+     "CVE-2012-1823",
+     "CVE-2012-2110",
+     "CVE-2012-2143",
+     "CVE-2012-2311",
+     "CVE-2012-2333",
+     "CVE-2012-2336",
+     "CVE-2012-2376",
+     "CVE-2012-2386",
+     "CVE-2012-2687",
+     "CVE-2012-2688",
+     "CVE-2012-3365",
+     "CVE-2012-3450",
+     "CVE-2012-3499",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2012-4388",
+     "CVE-2012-4557",
+     "CVE-2012-4558",
+     "CVE-2013-0166",
+     "CVE-2013-0169",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-1635",
+     "CVE-2013-1643",
+     "CVE-2013-1824",
+     "CVE-2013-1862",
+     "CVE-2013-1896",
+     "CVE-2013-2110",
+     "CVE-2013-2220",
+     "CVE-2013-2765",
+     "CVE-2013-3735",
+     "CVE-2013-4113",
+     "CVE-2013-4248",
+     "CVE-2013-4365",
+     "CVE-2013-4635",
+     "CVE-2013-5704",
+     "CVE-2013-6420",
+     "CVE-2013-6438",
+     "CVE-2013-6449",
+     "CVE-2013-6501",
+     "CVE-2013-6712",
+     "CVE-2013-7327",
+     "CVE-2013-7456",
+     "CVE-2014-0076",
+     "CVE-2014-0098",
+     "CVE-2014-0118",
+     "CVE-2014-0185",
+     "CVE-2014-0195",
+     "CVE-2014-0207",
+     "CVE-2014-0221",
+     "CVE-2014-0224",
+     "CVE-2014-0226",
+     "CVE-2014-0231",
+     "CVE-2014-0236",
+     "CVE-2014-0237",
+     "CVE-2014-0238",
+     "CVE-2014-2020",
+     "CVE-2014-2270",
+     "CVE-2014-2497",
+     "CVE-2014-3470",
+     "CVE-2014-3478",
+     "CVE-2014-3479",
+     "CVE-2014-3480",
+     "CVE-2014-3487",
+     "CVE-2014-3505",
+     "CVE-2014-3506",
+     "CVE-2014-3507",
+     "CVE-2014-3508",
+     "CVE-2014-3510",
+     "CVE-2014-3515",
+     "CVE-2014-3566",
+     "CVE-2014-3567",
+     "CVE-2014-3568",
+     "CVE-2014-3570",
+     "CVE-2014-3571",
+     "CVE-2014-3572",
+     "CVE-2014-3587",
+     "CVE-2014-3597",
+     "CVE-2014-3668",
+     "CVE-2014-3669",
+     "CVE-2014-3670",
+     "CVE-2014-3981",
+     "CVE-2014-4049",
+     "CVE-2014-4670",
+     "CVE-2014-4721",
+     "CVE-2014-5459",
+     "CVE-2014-8142",
+     "CVE-2014-8176",
+     "CVE-2014-8275",
+     "CVE-2014-9425",
+     "CVE-2014-9426",
+     "CVE-2014-9427",
+     "CVE-2014-9652",
+     "CVE-2014-9653",
+     "CVE-2014-9705",
+     "CVE-2014-9767",
+     "CVE-2014-9912",
+     "CVE-2015-0204",
+     "CVE-2015-0209",
+     "CVE-2015-0228",
+     "CVE-2015-0231",
+     "CVE-2015-0232",
+     "CVE-2015-0273",
+     "CVE-2015-0286",
+     "CVE-2015-0287",
+     "CVE-2015-0288",
+     "CVE-2015-0289",
+     "CVE-2015-0292",
+     "CVE-2015-0293",
+     "CVE-2015-1351",
+     "CVE-2015-1352",
+     "CVE-2015-1788",
+     "CVE-2015-1789",
+     "CVE-2015-1790",
+     "CVE-2015-1791",
+     "CVE-2015-1792",
+     "CVE-2015-2331",
+     "CVE-2015-2348",
+     "CVE-2015-2783",
+     "CVE-2015-2787",
+     "CVE-2015-3183",
+     "CVE-2015-3195",
+     "CVE-2015-3307",
+     "CVE-2015-3329",
+     "CVE-2015-3330",
+     "CVE-2015-3411",
+     "CVE-2015-3412",
+     "CVE-2015-4000",
+     "CVE-2015-4021",
+     "CVE-2015-4022",
+     "CVE-2015-4024",
+     "CVE-2015-4025",
+     "CVE-2015-4026",
+     "CVE-2015-4116",
+     "CVE-2015-4147",
+     "CVE-2015-4148",
+     "CVE-2015-4598",
+     "CVE-2015-4599",
+     "CVE-2015-4600",
+     "CVE-2015-4601",
+     "CVE-2015-4602",
+     "CVE-2015-4603",
+     "CVE-2015-4604",
+     "CVE-2015-4605",
+     "CVE-2015-4642",
+     "CVE-2015-4643",
+     "CVE-2015-4644",
+     "CVE-2015-5589",
+     "CVE-2015-5590",
+     "CVE-2015-6497",
+     "CVE-2015-6831",
+     "CVE-2015-6832",
+     "CVE-2015-6833",
+     "CVE-2015-6834",
+     "CVE-2015-6835",
+     "CVE-2015-6836",
+     "CVE-2015-6837",
+     "CVE-2015-6838",
+     "CVE-2015-7803",
+     "CVE-2015-7804",
+     "CVE-2015-8835",
+     "CVE-2015-8838",
+     "CVE-2015-8865",
+     "CVE-2015-8873",
+     "CVE-2015-8874",
+     "CVE-2015-8877",
+     "CVE-2015-8879",
+     "CVE-2015-8935",
+     "CVE-2015-8994",
+     "CVE-2015-9253",
+     "CVE-2016-0703",
+     "CVE-2016-0704",
+     "CVE-2016-10158",
+     "CVE-2016-10159",
+     "CVE-2016-10161",
+     "CVE-2016-10397",
+     "CVE-2016-10712",
+     "CVE-2016-1903",
+     "CVE-2016-2106",
+     "CVE-2016-2107",
+     "CVE-2016-2108",
+     "CVE-2016-2109",
+     "CVE-2016-2176",
+     "CVE-2016-2554",
+     "CVE-2016-3141",
+     "CVE-2016-3142",
+     "CVE-2016-3167",
+     "CVE-2016-3171",
+     "CVE-2016-3185",
+     "CVE-2016-4070",
+     "CVE-2016-4342",
+     "CVE-2016-4343",
+     "CVE-2016-4537",
+     "CVE-2016-4538",
+     "CVE-2016-4539",
+     "CVE-2016-4540",
+     "CVE-2016-4541",
+     "CVE-2016-4542",
+     "CVE-2016-4543",
+     "CVE-2016-4975",
+     "CVE-2016-5093",
+     "CVE-2016-5094",
+     "CVE-2016-5095",
+     "CVE-2016-5096",
+     "CVE-2016-5114",
+     "CVE-2016-5387",
+     "CVE-2016-5399",
+     "CVE-2016-5766",
+     "CVE-2016-5767",
+     "CVE-2016-5768",
+     "CVE-2016-5769",
+     "CVE-2016-5770",
+     "CVE-2016-5771",
+     "CVE-2016-5772",
+     "CVE-2016-5773",
+     "CVE-2016-6174",
+     "CVE-2016-6288",
+     "CVE-2016-6289",
+     "CVE-2016-6290",
+     "CVE-2016-6291",
+     "CVE-2016-6292",
+     "CVE-2016-6294",
+     "CVE-2016-6295",
+     "CVE-2016-6296",
+     "CVE-2016-6297",
+     "CVE-2016-7056",
+     "CVE-2016-7124",
+     "CVE-2016-7125",
+     "CVE-2016-7126",
+     "CVE-2016-7127",
+     "CVE-2016-7128",
+     "CVE-2016-7129",
+     "CVE-2016-7130",
+     "CVE-2016-7131",
+     "CVE-2016-7132",
+     "CVE-2016-7411",
+     "CVE-2016-7412",
+     "CVE-2016-7413",
+     "CVE-2016-7414",
+     "CVE-2016-7416",
+     "CVE-2016-7417",
+     "CVE-2016-7418",
+     "CVE-2016-7478",
+     "CVE-2016-8612",
+     "CVE-2016-8670",
+     "CVE-2016-8743",
+     "CVE-2016-9137",
+     "CVE-2016-9138",
+     "CVE-2016-9933",
+     "CVE-2016-9934",
+     "CVE-2016-9935",
+     "CVE-2017-11142",
+     "CVE-2017-11143",
+     "CVE-2017-11144",
+     "CVE-2017-11145",
+     "CVE-2017-11147",
+     "CVE-2017-11628",
+     "CVE-2017-12868",
+     "CVE-2017-12933",
+     "CVE-2017-16642",
+     "CVE-2017-3167",
+     "CVE-2017-3169",
+     "CVE-2017-3735",
+     "CVE-2017-7272",
+     "CVE-2017-7679",
+     "CVE-2017-7890",
+     "CVE-2017-7963",
+     "CVE-2017-8923",
+     "CVE-2017-9067",
+     "CVE-2017-9224",
+     "CVE-2017-9226",
+     "CVE-2017-9788",
+     "CVE-2017-9798",
+     "CVE-2018-10545",
+     "CVE-2018-10546",
+     "CVE-2018-10547",
+     "CVE-2018-10548",
+     "CVE-2018-10549",
+     "CVE-2018-1301",
+     "CVE-2018-1302",
+     "CVE-2018-1303",
+     "CVE-2018-14851",
+     "CVE-2018-14883",
+     "CVE-2018-15132",
+     "CVE-2018-17082",
+     "CVE-2018-19395",
+     "CVE-2018-19396",
+     "CVE-2018-19520",
+     "CVE-2018-20783",
+     "CVE-2018-5711",
+     "CVE-2018-5712",
+     "CVE-2018-7584",
+     "CVE-2019-6977",
+     "CVE-2019-9020",
+     "CVE-2019-9021",
+     "CVE-2019-9023",
+     "CVE-2019-9024",
+     "CVE-2019-9637",
+     "CVE-2019-9638",
+     "CVE-2019-9639",
+     "CVE-2019-9641",
+     "CVE-2020-11579",
+     "CVE-2020-7041",
+     "CVE-2020-7042",
+     "CVE-2020-7043",
+     "CVE-2021-32785",
+     "CVE-2021-32786",
+     "CVE-2021-32791",
+     "CVE-2021-32792",
+     "CVE-2021-34798",
+     "CVE-2021-39275",
+     "CVE-2021-40438",
+     "CVE-2021-4044",
+     "CVE-2021-44790",
+     "CVE-2022-22719",
+     "CVE-2022-22720",
+     "CVE-2022-22721",
+     "CVE-2022-28330",
+     "CVE-2022-28614",
+     "CVE-2022-28615",
+     "CVE-2022-29404",
+     "CVE-2022-30556",
+     "CVE-2022-31628",
+     "CVE-2022-31629",
+     "CVE-2022-31813",
+     "CVE-2022-37436",
+     "CVE-2022-4900",
+     "CVE-2023-31122",
+     "CVE-2023-38709",
+     "CVE-2024-25117",
+     "CVE-2024-3566",
+     "CVE-2024-40898",
+     "CVE-2025-49812",
+     "CVE-2025-58098",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-42535",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 2,
+    "max_cvss": 10.0,
+    "max_severity": "critical",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "git.ci.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "git.ci.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "graphql01.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "graphql01.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 3,
+     "high": 17,
+     "low": 3,
+     "medium": 11,
+     "unknown": 0
+    },
+    "cve_count": 34,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-44487",
+     "CVE-2025-23419",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     3001
+    ]
+   }
+  ]
+ },
+ "graphql01.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "graphql01.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 3,
+     "high": 16,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 32,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
+   },
+   {
+    "counts": {
+     "critical": 3,
+     "high": 17,
+     "low": 3,
+     "medium": 11,
+     "unknown": 0
+    },
+    "cve_count": 34,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-44487",
+     "CVE-2025-23419",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
+   }
+  ]
+ },
+ "graphql02.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "graphql02.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     3002
+    ]
+   }
+  ]
+ },
+ "graphql02.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "graphql02.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     3002
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "idp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "idp.orange.sk",
+   "idp1.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 2,
+     "high": 7,
+     "low": 0,
+     "medium": 2,
+     "unknown": 0
+    },
+    "cve_count": 11,
+    "cve_ids": [
+     "CVE-2016-0742",
+     "CVE-2016-0746",
+     "CVE-2016-0747",
+     "CVE-2016-1247",
+     "CVE-2016-4450",
+     "CVE-2017-20005",
+     "CVE-2017-7529",
+     "CVE-2018-16845",
+     "CVE-2019-20372",
+     "CVE-2021-23017",
+     "CVE-2021-3618"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "idp2.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "idp2.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "img.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "img.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 2,
+     "high": 8,
+     "low": 0,
+     "medium": 4,
+     "unknown": 0
+    },
+    "cve_count": 14,
+    "cve_ids": [
+     "CVE-2013-0337",
+     "CVE-2013-2070",
+     "CVE-2013-4547",
+     "CVE-2014-3616",
+     "CVE-2016-0742",
+     "CVE-2016-0746",
+     "CVE-2016-0747",
+     "CVE-2016-1247",
+     "CVE-2017-20005",
+     "CVE-2017-7529",
+     "CVE-2018-16845",
+     "CVE-2019-20372",
+     "CVE-2021-23017",
+     "CVE-2021-3618"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "imspp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "imspp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "int-smtp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "int-smtp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25
+    ]
+   }
+  ]
+ },
+ "jitsi.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "jitsi.cloud.orange.sk",
+   "meet.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "kontrolpanel.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "kontrolpanel.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "legacydm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "legacydm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "legacytestdm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "legacytestdm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "login.wifi.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "login.wifi.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     161
+    ]
+   }
+  ]
+ },
+ "mail.predajca.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mail.predajca.orange.sk",
+   "sts.predajca.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 1,
+    "cve_ids": [
+     "CVE-2014-4078"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 5.1,
+    "max_severity": "medium",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "meet.uc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "meet.uc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "micore.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "micore.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "microsoft365.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "microsoft365.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880,
+     22082
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8317,
+     8443,
+     8880,
+     12263
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880
+    ]
+   }
+  ]
+ },
+ "misentry1.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "misentry1.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "mitcore.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mitcore.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "mitsentry1.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "mitsentry1.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "monitoringvozidiel.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "monitoringvozidiel.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 6,
+     "high": 31,
+     "low": 3,
+     "medium": 48,
+     "unknown": 0
+    },
+    "cve_count": 88,
+    "cve_ids": [
+     "CVE-2007-3205",
+     "CVE-2013-2220",
+     "CVE-2014-9750",
+     "CVE-2014-9751",
+     "CVE-2015-3405",
+     "CVE-2015-5146",
+     "CVE-2015-5300",
+     "CVE-2015-7691",
+     "CVE-2015-7692",
+     "CVE-2015-7701",
+     "CVE-2015-7702",
+     "CVE-2015-7703",
+     "CVE-2015-7704",
+     "CVE-2015-7705",
+     "CVE-2015-7848",
+     "CVE-2015-7849",
+     "CVE-2015-7850",
+     "CVE-2015-7851",
+     "CVE-2015-7852",
+     "CVE-2015-7853",
+     "CVE-2015-7854",
+     "CVE-2015-7855",
+     "CVE-2015-7871",
+     "CVE-2015-7973",
+     "CVE-2015-7974",
+     "CVE-2015-7975",
+     "CVE-2015-7976",
+     "CVE-2015-7977",
+     "CVE-2015-7978",
+     "CVE-2015-7979",
+     "CVE-2015-8138",
+     "CVE-2015-8139",
+     "CVE-2015-8140",
+     "CVE-2015-8158",
+     "CVE-2016-1547",
+     "CVE-2016-1548",
+     "CVE-2016-1549",
+     "CVE-2016-1550",
+     "CVE-2016-1551",
+     "CVE-2016-2516",
+     "CVE-2016-2517",
+     "CVE-2016-2518",
+     "CVE-2016-2519",
+     "CVE-2016-4953",
+     "CVE-2016-4954",
+     "CVE-2016-4955",
+     "CVE-2016-4956",
+     "CVE-2016-4957",
+     "CVE-2016-7426",
+     "CVE-2016-7427",
+     "CVE-2016-7428",
+     "CVE-2016-7429",
+     "CVE-2016-7431",
+     "CVE-2016-7433",
+     "CVE-2016-7434",
+     "CVE-2016-9042",
+     "CVE-2016-9310",
+     "CVE-2016-9311",
+     "CVE-2016-9312",
+     "CVE-2017-6451",
+     "CVE-2017-6452",
+     "CVE-2017-6455",
+     "CVE-2017-6458",
+     "CVE-2017-6459",
+     "CVE-2017-6460",
+     "CVE-2017-6462",
+     "CVE-2017-6463",
+     "CVE-2017-6464",
+     "CVE-2018-12327",
+     "CVE-2018-7170",
+     "CVE-2018-7182",
+     "CVE-2018-7183",
+     "CVE-2018-7184",
+     "CVE-2018-7185",
+     "CVE-2018-8956",
+     "CVE-2019-8936",
+     "CVE-2020-11868",
+     "CVE-2020-13817",
+     "CVE-2020-15025",
+     "CVE-2022-4900",
+     "CVE-2023-26551",
+     "CVE-2023-26552",
+     "CVE-2023-26553",
+     "CVE-2023-26554",
+     "CVE-2023-26555",
+     "CVE-2024-25117",
+     "CVE-2024-3566",
+     "CVE-2024-5458"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     21,
+     80,
+     123,
+     443,
+     8021,
+     8236,
+     8743
+    ]
+   }
+  ]
+ },
+ "msg001.uc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "msg001.uc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "msm60.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "msm60.cloud.orange.sk",
+   "msmajernikova60.cloud.orange.sk",
+   "www.msm60.cloud.orange.sk",
+   "www.msmajernikova60.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ntrapp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ntrapp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "ntv-st01-vod01-bts10-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ntv-st01-vod01-bts10-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8083
+    ]
+   }
+  ]
+ },
+ "ntv-st01-vod01-sld02-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ntv-st01-vod01-sld02-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8083
+    ]
+   }
+  ]
+ },
+ "ntv-st01-vod02-bts10-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ntv-st01-vod02-bts10-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "ntv-st01-vod02-sld02-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ntv-st01-vod02-sld02-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "oauth01.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oauth01.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "oauth01.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oauth01.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "oblak-vmrc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oblak-vmrc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "oblak.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oblak.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "oblak2.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "oblak2.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "office.uc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "office.uc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "onlinerecepcia.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "onlinerecepcia.hvps.orange.sk",
+   "www.onlinerecepcia.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "otp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "otp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "output.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "output.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8008,
+     8020
+    ]
+   }
+  ]
+ },
+ "predajne.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "predajne.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "prieskumy.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "prieskumy.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "push-stretto.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "push-stretto.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "pushtest-stretto.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "pushtest-stretto.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "rc.uc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "rc.uc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "s3.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "s3.orange.sk",
+   "s3.s3.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sap-bo-mobile.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sap-bo-mobile.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sif.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sif.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sip.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sip.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sip01.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sip01.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sip02.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sip02.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "skinner.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "skinner.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "sl1.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sl1.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "sl2.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "sl2.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "smsgw-test.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smsgw-test.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "smsgw.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smsgw.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "smtp01.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smtp01.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25
+    ]
+   }
+  ]
+ },
+ "smtp02.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smtp02.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25
+    ]
+   }
+  ]
+ },
+ "smz.cloudprebiznis.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "smz.cloudprebiznis.orange.sk",
+   "smzwp.cloudprebiznis.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "speedmeter-bb-new.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "speedmeter-bb-new.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 1,
+     "high": 1,
+     "low": 0,
+     "medium": 2,
+     "unknown": 0
+    },
+    "cve_count": 4,
+    "cve_ids": [
+     "CVE-2007-3205",
+     "CVE-2013-2220",
+     "CVE-2024-3566",
+     "CVE-2024-5458"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "speedmeter-bb.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "speedmeter-bb.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 4,
+     "high": 6,
+     "low": 14,
+     "medium": 29,
+     "unknown": 0
+    },
+    "cve_count": 53,
+    "cve_ids": [
+     "CVE-2007-2768",
+     "CVE-2007-3205",
+     "CVE-2008-3844",
+     "CVE-2013-2220",
+     "CVE-2016-20012",
+     "CVE-2017-15906",
+     "CVE-2017-8923",
+     "CVE-2018-15473",
+     "CVE-2018-15919",
+     "CVE-2018-20685",
+     "CVE-2019-6109",
+     "CVE-2019-6110",
+     "CVE-2019-6111",
+     "CVE-2020-14145",
+     "CVE-2020-15778",
+     "CVE-2021-36368",
+     "CVE-2021-41617",
+     "CVE-2022-31628",
+     "CVE-2022-31629",
+     "CVE-2022-4900",
+     "CVE-2023-38408",
+     "CVE-2023-48795",
+     "CVE-2023-51385",
+     "CVE-2023-51767",
+     "CVE-2024-25117",
+     "CVE-2024-3566",
+     "CVE-2024-5458",
+     "CVE-2025-26465",
+     "CVE-2025-32728",
+     "CVE-2026-106552",
+     "CVE-2026-106553",
+     "CVE-2026-106555",
+     "CVE-2026-106582",
+     "CVE-2026-106583",
+     "CVE-2026-106584",
+     "CVE-2026-106585",
+     "CVE-2026-106586",
+     "CVE-2026-106587",
+     "CVE-2026-35385",
+     "CVE-2026-35387",
+     "CVE-2026-35388",
+     "CVE-2026-35414",
+     "CVE-2026-59995",
+     "CVE-2026-59996",
+     "CVE-2026-59997",
+     "CVE-2026-59998",
+     "CVE-2026-59999",
+     "CVE-2026-60000",
+     "CVE-2026-60001",
+     "CVE-2026-60002",
+     "CVE-2026-73281",
+     "CVE-2026-73282",
+     "CVE-2026-73283"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     22,
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "speedmeter-ke.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "speedmeter-ke.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 1,
+     "high": 1,
+     "low": 0,
+     "medium": 2,
+     "unknown": 0
+    },
+    "cve_count": 4,
+    "cve_ids": [
+     "CVE-2007-3205",
+     "CVE-2013-2220",
+     "CVE-2024-3566",
+     "CVE-2024-5458"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "speedmeter.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "speedmeter.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
+   }
+  ]
+ },
+ "ssoui1.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ssoui1.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "ssoui2.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "ssoui2.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "techpark-vdc-vmrc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "techpark-vdc-vmrc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "techpark-vdc.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "techpark-vdc.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "testhuavpp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "testhuavpp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "trk.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "trk.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "vac-demo.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vac-demo.cloud.orange.sk",
+   "vac-pp.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "vac.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vac.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "vcda-demo.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vcda-demo.cloud.orange.sk",
+   "vcg-pp.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "vcda-oblak.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vcda-oblak.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "vcda-techpark.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vcda-techpark.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "vcg.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vcg.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voip1.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip1.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voip1.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip1.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voip2.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip2.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voip2.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip2.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     5080
+    ]
+   }
+  ]
+ },
+ "voip3.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip3.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voip3.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voip3.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voipdm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voipdm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "voiptestdm.bwks.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "voiptestdm.bwks.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "vpn01.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vpn01.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     4500
+    ]
+   }
+  ]
+ },
+ "vpn02.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vpn02.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "vpn03.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "vpn03.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443,
+     500
+    ]
+   }
+  ]
+ },
+ "webapp.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "webapp.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "webchat.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "webchat.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "webconf.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "webconf.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "websheet-apple-test.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "websheet-apple-test.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "websocket01-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "websocket01-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "websocket01.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "websocket01.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "wep.onlineochrana.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "wep.onlineochrana.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     8443
+    ]
+   }
+  ]
+ },
+ "wiki.cloud.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "wiki.cloud.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     22,
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "wvp01.gtm-stage.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "wvp01.gtm-stage.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "wvp01.gtm.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "wvp01.gtm.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "www.callcentrum.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.callcentrum.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "www.callcentrum.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.callcentrum.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   }
+  ]
+ },
+ "www.hvps-en.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.hvps-en.orange.sk",
+   "www.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "www.hvpstest-en.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.hvpstest-en.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 22,
+     "high": 45,
+     "low": 3,
+     "medium": 51,
+     "unknown": 0
+    },
+    "cve_count": 121,
+    "cve_ids": [
+     "CVE-2006-20001",
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4352",
+     "CVE-2013-4365",
+     "CVE-2013-5704",
+     "CVE-2013-6438",
+     "CVE-2014-0098",
+     "CVE-2014-0117",
+     "CVE-2014-0118",
+     "CVE-2014-0226",
+     "CVE-2014-0231",
+     "CVE-2014-3523",
+     "CVE-2014-3581",
+     "CVE-2014-8109",
+     "CVE-2015-0228",
+     "CVE-2015-3183",
+     "CVE-2015-3184",
+     "CVE-2015-3185",
+     "CVE-2016-0736",
+     "CVE-2016-2161",
+     "CVE-2016-4975",
+     "CVE-2016-5387",
+     "CVE-2016-8612",
+     "CVE-2016-8743",
+     "CVE-2017-15710",
+     "CVE-2017-15715",
+     "CVE-2017-3167",
+     "CVE-2017-7679",
+     "CVE-2017-9788",
+     "CVE-2017-9798",
+     "CVE-2018-1283",
+     "CVE-2018-1301",
+     "CVE-2018-1302",
+     "CVE-2018-1303",
+     "CVE-2018-1312",
+     "CVE-2018-17199",
+     "CVE-2019-0217",
+     "CVE-2019-0220",
+     "CVE-2019-10092",
+     "CVE-2019-10098",
+     "CVE-2019-17567",
+     "CVE-2020-11985",
+     "CVE-2020-13938",
+     "CVE-2020-1927",
+     "CVE-2020-1934",
+     "CVE-2020-35452",
+     "CVE-2021-26690",
+     "CVE-2021-26691",
+     "CVE-2021-32785",
+     "CVE-2021-32786",
+     "CVE-2021-32791",
+     "CVE-2021-32792",
+     "CVE-2021-34798",
+     "CVE-2021-39275",
+     "CVE-2021-40438",
+     "CVE-2021-44790",
+     "CVE-2022-22719",
+     "CVE-2022-22720",
+     "CVE-2022-22721",
+     "CVE-2022-23943",
+     "CVE-2022-26377",
+     "CVE-2022-28330",
+     "CVE-2022-28614",
+     "CVE-2022-28615",
+     "CVE-2022-29404",
+     "CVE-2022-30556",
+     "CVE-2022-31813",
+     "CVE-2022-36760",
+     "CVE-2022-37436",
+     "CVE-2023-25690",
+     "CVE-2023-31122",
+     "CVE-2023-38709",
+     "CVE-2024-24795",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-49812",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-48005",
+     "CVE-2026-56153"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 2,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "www.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 25,
+     "high": 54,
+     "low": 4,
+     "medium": 54,
+     "unknown": 0
+    },
+    "cve_count": 137,
+    "cve_ids": [
+     "CVE-2006-20001",
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4352",
+     "CVE-2013-4365",
+     "CVE-2013-5704",
+     "CVE-2013-6438",
+     "CVE-2014-0098",
+     "CVE-2014-0117",
+     "CVE-2014-0118",
+     "CVE-2014-0226",
+     "CVE-2014-0231",
+     "CVE-2014-3523",
+     "CVE-2014-3581",
+     "CVE-2014-8109",
+     "CVE-2015-0228",
+     "CVE-2015-3183",
+     "CVE-2015-3184",
+     "CVE-2015-3185",
+     "CVE-2016-0736",
+     "CVE-2016-2161",
+     "CVE-2016-4975",
+     "CVE-2016-5387",
+     "CVE-2016-8612",
+     "CVE-2016-8743",
+     "CVE-2017-15710",
+     "CVE-2017-15715",
+     "CVE-2017-3167",
+     "CVE-2017-7679",
+     "CVE-2017-9788",
+     "CVE-2017-9798",
+     "CVE-2018-1283",
+     "CVE-2018-1301",
+     "CVE-2018-1302",
+     "CVE-2018-1303",
+     "CVE-2018-1312",
+     "CVE-2018-17199",
+     "CVE-2019-0217",
+     "CVE-2019-0220",
+     "CVE-2019-10092",
+     "CVE-2019-10098",
+     "CVE-2019-17567",
+     "CVE-2020-11985",
+     "CVE-2020-13938",
+     "CVE-2020-1927",
+     "CVE-2020-1934",
+     "CVE-2020-35452",
+     "CVE-2021-26690",
+     "CVE-2021-26691",
+     "CVE-2021-32785",
+     "CVE-2021-32786",
+     "CVE-2021-32791",
+     "CVE-2021-32792",
+     "CVE-2021-34798",
+     "CVE-2021-39275",
+     "CVE-2021-40438",
+     "CVE-2021-44790",
+     "CVE-2022-22719",
+     "CVE-2022-22720",
+     "CVE-2022-22721",
+     "CVE-2022-23943",
+     "CVE-2022-26377",
+     "CVE-2022-28330",
+     "CVE-2022-28614",
+     "CVE-2022-28615",
+     "CVE-2022-29404",
+     "CVE-2022-30556",
+     "CVE-2022-31813",
+     "CVE-2022-36760",
+     "CVE-2022-37436",
+     "CVE-2023-25690",
+     "CVE-2023-31122",
+     "CVE-2023-38709",
+     "CVE-2024-24795",
+     "CVE-2024-38472",
+     "CVE-2024-38473",
+     "CVE-2024-38474",
+     "CVE-2024-38475",
+     "CVE-2024-38476",
+     "CVE-2024-38477",
+     "CVE-2024-39573",
+     "CVE-2024-40898",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-49812",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2026-24072",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-33006",
+     "CVE-2026-33007",
+     "CVE-2026-33523",
+     "CVE-2026-33857",
+     "CVE-2026-34032",
+     "CVE-2026-34059",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 2,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "www.nahravanie.hvps.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.nahravanie.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "www.onlinerecepcia.hvpstest.orange.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "www.onlinerecepcia.hvpstest.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ }
+}

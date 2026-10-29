@@ -1,0 +1,339 @@
+{
+ "4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "4ka.sk",
+   "stats.4ka.sk",
+   "www.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "chat.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "chat.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "chatbot-preprod.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "chatbot-preprod.4ka.sk",
+   "chatbot-test.4ka.sk",
+   "chatbot.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "comm.upomienka.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "comm.upomienka.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ },
+ "e-prieskumy.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "e-prieskumy.4ka.sk",
+   "www.e-prieskumy.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "posta-wp1.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "posta-wp1.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "spotreba.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "spotreba.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "tracking.upomienka.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tracking.upomienka.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "tst-posta-wp1.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "tst-posta-wp1.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
+ "upomienka.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "upomienka.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 3,
+     "high": 16,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 32,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     179,
+     443
+    ]
+   }
+  ]
+ },
+ "webtest-docker.4ka.sk": {
+  "first_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-29T21:06:45+00:00",
+  "names": [
+   "webtest-docker.4ka.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   }
+  ]
+ }
+}
