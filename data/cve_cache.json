@@ -2463,6 +2463,13 @@
   "kev": false,
   "summary": "In PHP before 5.5.32, 5.6.x before 5.6.18, and 7.x before 7.0.3, all of the return values of stream_get_meta_data can be controlled if the input can be controlled (e.g., during file uploads). For example, a \"$uri = stream_get_meta_data(fopen($file, \"r\"))['uri']\" call mishandles the case where $file…"
  },
+ "CVE-2016-10735": {
+  "cvss": 6.1,
+  "epss": 0.0404,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap 3.x before 3.4.0 and 4.x-beta before 4.0.0-beta.2, XSS is possible in the data-target attribute, a different vulnerability than CVE-2018-14041."
+ },
  "CVE-2016-1246": {
   "cvss": 7.5,
   "epss": 0.0406,
@@ -4493,6 +4500,20 @@
   "kev": false,
   "summary": "By specially crafting HTTP/2 requests, workers would be allocated 60 seconds longer than necessary, leading to worker exhaustion and a denial of service. Fixed in Apache HTTP Server 2.4.34 (Affected 2.4.18-2.4.30,2.4.33)."
  },
+ "CVE-2018-14040": {
+  "cvss": 6.1,
+  "epss": 0.04135,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap before 4.1.2, XSS is possible in the collapse data-parent attribute."
+ },
+ "CVE-2018-14042": {
+  "cvss": 6.1,
+  "epss": 0.04009,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip."
+ },
  "CVE-2018-14851": {
   "cvss": 5.5,
   "epss": 0.04252,
@@ -4590,6 +4611,20 @@
   "fetched": "2026-10-29T21:06:09+00:00",
   "kev": false,
   "summary": "An issue was discovered in SDCMS 1.6 with PHP 5.x. app/admin/controller/themecontroller.php uses a check_bad function in an attempt to block certain PHP functions such as eval, but does not prevent use of preg_replace 'e' calls, allowing users to execute arbitrary code by leveraging access to admin…"
+ },
+ "CVE-2018-20676": {
+  "cvss": 6.1,
+  "epss": 0.03835,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap before 3.4.0, XSS is possible in the tooltip data-viewport attribute."
+ },
+ "CVE-2018-20677": {
+  "cvss": 6.1,
+  "epss": 0.03984,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap before 3.4.0, XSS is possible in the affix configuration target property."
  },
  "CVE-2018-20685": {
   "cvss": 5.3,
@@ -5368,6 +5403,13 @@
   "kev": true,
   "summary": "In PHP versions 7.1.x below 7.1.33, 7.2.x below 7.2.24 and 7.3.x below 7.3.11 in certain configurations of FPM setup it is possible to cause FPM module to write past allocated buffers into the space reserved for FCGI protocol data, thus opening the possibility of remote code execution."
  },
+ "CVE-2019-11358": {
+  "cvss": 6.1,
+  "epss": 0.8682,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
+ },
  "CVE-2019-12815": {
   "cvss": 9.8,
   "epss": 0.57606,
@@ -5830,6 +5872,13 @@
   "kev": false,
   "summary": "png_image_free in png.c in libpng 1.6.x before 1.6.37 has a use-after-free because png_image_free_function is called under png_safe_execute."
  },
+ "CVE-2019-8331": {
+  "cvss": 6.1,
+  "epss": 0.16404,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In Bootstrap before 3.4.1 and 4.3.x before 4.3.1, XSS is possible in the tooltip or popover data-template attribute."
+ },
  "CVE-2019-8936": {
   "cvss": 7.5,
   "epss": 0.05726,
@@ -5927,6 +5976,20 @@
   "fetched": "2026-10-29T21:06:22+00:00",
   "kev": false,
   "summary": "Perl before 5.30.3 has an integer overflow related to mishandling of a \"PL_regkind[OP(n)] == NOTHING\" situation. A crafted regular expression could lead to malformed bytecode with a possibility of instruction injection."
+ },
+ "CVE-2020-11022": {
+  "cvss": 6.9,
+  "epss": 0.99215,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "In jQuery starting with 1.12.0 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
+ },
+ "CVE-2020-11023": {
+  "cvss": 6.9,
+  "epss": 0.84887,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": true,
+  "summary": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in…"
  },
  "CVE-2020-11579": {
   "cvss": 7.5,
@@ -7040,6 +7103,13 @@
   "fetched": "2026-10-29T21:06:34+00:00",
   "kev": false,
   "summary": "Prior to Apache HTTP Server 2.4.55, a malicious backend can cause the response headers to be truncated early, resulting in some headers being incorporated into the response body. If the later headers have any security purpose, they will not be interpreted by the client."
+ },
+ "CVE-2022-37454": {
+  "cvss": 9.8,
+  "epss": 0.07413,
+  "fetched": "2026-10-30T21:26:50+00:00",
+  "kev": false,
+  "summary": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This occurs in the sponge function interface."
  },
  "CVE-2022-4304": {
   "cvss": 5.9,

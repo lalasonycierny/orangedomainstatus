@@ -1,7 +1,7 @@
 {
  "4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "4ka.sk",
    "stats.4ka.sk",
@@ -31,7 +31,7 @@
  },
  "chat.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "chat.4ka.sk"
   ],
@@ -56,7 +56,7 @@
  },
  "chatbot-preprod.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "chatbot-preprod.4ka.sk",
    "chatbot-test.4ka.sk",
@@ -86,7 +86,7 @@
  },
  "comm.upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "comm.upomienka.4ka.sk"
   ],
@@ -111,7 +111,7 @@
  },
  "e-prieskumy.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "e-prieskumy.4ka.sk",
    "www.e-prieskumy.4ka.sk"
@@ -140,7 +140,7 @@
  },
  "posta-wp1.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "posta-wp1.4ka.sk"
   ],
@@ -167,7 +167,7 @@
  },
  "spotreba.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "spotreba.4ka.sk"
   ],
@@ -195,7 +195,7 @@
  },
  "tracking.upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "tracking.upomienka.4ka.sk"
   ],
@@ -223,7 +223,7 @@
  },
  "tst-posta-wp1.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "tst-posta-wp1.4ka.sk"
   ],
@@ -251,7 +251,7 @@
  },
  "upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "upomienka.4ka.sk"
   ],
@@ -313,7 +313,7 @@
  },
  "webtest-docker.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T21:26:50+00:00",
   "names": [
    "webtest-docker.4ka.sk"
   ],
