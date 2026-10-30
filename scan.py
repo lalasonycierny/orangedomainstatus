@@ -197,7 +197,10 @@ def enrich_cves(cve_ids, threads=5):
 
 
 # ---------- zber pre jednu firmu ----------
-def collect(company, args, memo):
+def collect(company, args, memo, dns_merge=None):
+    """dns_merge: {domena: [normalizovane DNS zaznamy s poľom 'ips']} - hosty najdene cez
+    DNSDumpster sa pridaju do host_ips PRED dopytom na InternetDB, takze dostanu rovnake
+    porty/CVE detaily ako hosty najdene cez crt.sh."""
     prefixes = []
     for a in company.get("asns", []):
         p = get_prefixes(a)
@@ -216,6 +219,18 @@ def collect(company, args, memo):
             for host, ips in ex.map(resolve, subs):
                 for ip in ips:
                     host_ips.setdefault(ip, set()).add(host)
+
+    dns_added = 0
+    for d in company.get("domains", []):
+        for rec in (dns_merge or {}).get(d, []) or []:
+            host = rec.get("host")
+            if not host:
+                continue
+            for ip in rec.get("ips", []) or []:
+                host_ips.setdefault(ip, set()).add(host)
+                dns_added += 1
+    if dns_added:
+        print(f"    dnsdumpster: {dns_added} zaznamov host-IP zlucenych do zoznamu")
 
     if args.scan_prefixes:
         added = 0
@@ -410,17 +425,19 @@ def normalize_dnsdumpster(data):
         for entry in items:
             if isinstance(entry, dict) and ("host" in entry or "ips" in entry):
                 ips = _flatten_ips(entry)
+                ip_list = [i["ip"] for i in ips if i["ip"]]
                 records.append({
                     "type": rtype.upper(),
                     "host": entry.get("host", ""),
-                    "value": ", ".join(i["ip"] for i in ips if i["ip"]) or entry.get("target", ""),
+                    "value": ", ".join(ip_list) or entry.get("target", ""),
                     "asn": ", ".join(sorted({i["asn_name"] or i["asn"] for i in ips if (i["asn_name"] or i["asn"])})),
+                    "ips": ip_list,  # pouzite len interne na zlucenie s InternetDB/Shodan udajmi
                 })
             elif isinstance(entry, dict):
                 records.append({"type": rtype.upper(), "host": entry.get("host", entry.get("name", "")),
-                                "value": short(json.dumps(entry, ensure_ascii=False), 200), "asn": ""})
+                                "value": short(json.dumps(entry, ensure_ascii=False), 200), "asn": "", "ips": []})
             else:
-                records.append({"type": rtype.upper(), "host": "", "value": str(entry), "asn": ""})
+                records.append({"type": rtype.upper(), "host": "", "value": str(entry), "asn": "", "ips": []})
     records.sort(key=lambda r: (r["type"], r["host"], r["value"]))
     return records
 
@@ -431,29 +448,38 @@ def fetch_dns_records(domain, api_key):
     return normalize_dnsdumpster(data)
 
 
-def build_dns_section(companies, api_key, previous_dns):
+def fetch_all_dns(companies, api_key, previous_dns):
+    """Stiahne DNS zaznamy pre vsetky domeny (raz za domenu) a vrati dve veci:
+    - dns_domains_out: na zobrazenie v zalozke "Vsetky DNS zaznamy"
+    - dns_merge: {domena: zaznamy} na zlucenie do host_ips jednotlivych firiem,
+      aby hosty najdene cez dnsdumpster dostali rovnake Shodan detaily ako ostatne."""
     domains = sorted({d for c in companies for d in c.get("domains", [])})
-    out = {}
+    dns_domains_out, dns_merge = {}, {}
     if not api_key:
         print("[!] DNSDUMPSTER_API_KEY nie je nastaveny, zalozka DNS zaznamov sa nedopocita "
               "(ponechavam predosle data, ak existuju)", file=sys.stderr)
         for d in domains:
-            out[d] = previous_dns.get(d) or {"generated": None, "stale": True, "records": [], "count": 0}
-        return out
+            prev = previous_dns.get(d) or {"generated": None, "stale": True, "records": [], "count": 0}
+            dns_domains_out[d] = prev
+            dns_merge[d] = prev.get("records", [])
+        return dns_domains_out, dns_merge
     for d in domains:
         try:
             records = fetch_dns_records(d, api_key)
-            out[d] = {"generated": now_iso(), "stale": False, "records": records, "count": len(records)}
+            dns_domains_out[d] = {"generated": now_iso(), "stale": False, "records": records, "count": len(records)}
+            dns_merge[d] = records
             print(f"[+] dnsdumpster {d}: {len(records)} zaznamov")
         except Exception as e:  # noqa: BLE001
             print(f"[!] dnsdumpster {d}: {e}", file=sys.stderr)
             if d in previous_dns:
                 old = dict(previous_dns[d]); old["stale"] = True
-                out[d] = old
+                dns_domains_out[d] = old
+                dns_merge[d] = old.get("records", [])
             else:
-                out[d] = {"generated": None, "stale": True, "records": [], "count": 0, "error": str(e)}
+                dns_domains_out[d] = {"generated": None, "stale": True, "records": [], "count": 0, "error": str(e)}
+                dns_merge[d] = []
         time.sleep(1.5)  # slusne tempo voci API
-    return out
+    return dns_domains_out, dns_merge
 
 
 def load_previous(mode):
@@ -475,12 +501,17 @@ def main():
 
     companies = json.loads(COMPANIES_FILE.read_text(encoding="utf-8"))
     previous = load_previous(args.mode)
-    memo, collected = {}, {}
 
+    prev_full = load_json(OUT_FILE, {})
+    prev_dns = (prev_full.get("dns") or {}).get("domains", {})
+    print("[*] DNSDumpster: stahovanie DNS zaznamov")
+    dns_domains, dns_merge = fetch_all_dns(companies, env("DNSDUMPSTER_API_KEY"), prev_dns)
+
+    memo, collected = {}, {}
     for c in companies:
         print(f"[*] {c['name']} ({c['id']})")
         try:
-            collected[c["id"]] = collect(c, args, memo)
+            collected[c["id"]] = collect(c, args, memo, dns_merge)
         except Exception as e:  # noqa: BLE001
             print(f"[!] {c['id']} zlyhalo: {e}", file=sys.stderr)
 
@@ -519,10 +550,6 @@ def main():
 
     if not any(c["assets"] for c in out_companies) and not env("DNSDUMPSTER_API_KEY"):
         sys.exit("Ziadne data pre ziadnu firmu. Neprepisujem existujuci vystup.")
-
-    prev_full = load_json(OUT_FILE, {})
-    prev_dns = (prev_full.get("dns") or {}).get("domains", {})
-    dns_domains = build_dns_section(companies, env("DNSDUMPSTER_API_KEY"), prev_dns)
 
     save_json(OUT_FILE, {
         "generated": now_iso(), "mode": args.mode, "companies": out_companies,
