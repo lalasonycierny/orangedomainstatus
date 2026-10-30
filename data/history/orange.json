@@ -1,7 +1,7 @@
 {
  "213-151-206-134.static.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "213-151-206-134.static.orange.sk"
   ],
@@ -26,7 +26,7 @@
  },
  "78-141-77-248.static.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "78-141-77-248.static.orange.sk"
   ],
@@ -57,7 +57,7 @@
  },
  "85-237-231-24.static.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "85-237-231-24.static.orange.sk"
   ],
@@ -85,7 +85,7 @@
  },
  "accessmanagement.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "accessmanagement.orange.sk",
    "apis.ocp.orange.sk",
@@ -126,7 +126,7 @@
  },
  "aes-test.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "aes-test.orange.sk"
   ],
@@ -153,7 +153,7 @@
  },
  "aes.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "aes.orange.sk"
   ],
@@ -180,7 +180,7 @@
  },
  "alert1.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "alert1.onlineochrana.orange.sk"
   ],
@@ -205,7 +205,7 @@
  },
  "alert2.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "alert2.onlineochrana.orange.sk"
   ],
@@ -232,7 +232,7 @@
  },
  "anonym01-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "anonym01-stage.orange.sk"
   ],
@@ -257,7 +257,7 @@
  },
  "api.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "api.orange.sk"
   ],
@@ -282,7 +282,7 @@
  },
  "apigw1.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "apigw1.onlineochrana.orange.sk"
   ],
@@ -309,7 +309,7 @@
  },
  "apigw2.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "apigw2.onlineochrana.orange.sk"
   ],
@@ -336,7 +336,7 @@
  },
  "apis.oct.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "apis.oct.orange.sk",
    "apist.orange.sk",
@@ -363,7 +363,7 @@
  },
  "apit.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "apit.orange.sk"
   ],
@@ -388,9 +388,10 @@
  },
  "app01-sagem.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "app01-sagem.gtm.orange.sk"
+   "app01-sagem.gtm.orange.sk",
+   "app01.gtm.orange.sk"
   ],
   "snapshots": [
    {
@@ -414,12 +415,35 @@
      80,
      8080
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     80,
+     443,
+     8080
+    ]
    }
   ]
  },
  "app01.devel.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "app01.devel.orange.sk",
    "oauth01.devel.orange.sk"
@@ -445,7 +469,7 @@
  },
  "app01.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "app01.gtm-stage.orange.sk",
    "pcportal01.gtm-stage.orange.sk"
@@ -510,7 +534,7 @@
  },
  "auth-int.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "auth-int.orange.sk",
    "tb1n.orange.sk"
@@ -536,7 +560,7 @@
  },
  "autodiscover.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "autodiscover.orange.sk",
    "owa.orange.sk"
@@ -562,7 +586,7 @@
  },
  "autodiscover.predajca.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "autodiscover.predajca.orange.sk"
   ],
@@ -584,12 +608,28 @@
     "ports": [
      80
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "ba.guest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ba.guest.orange.sk",
    "guest.orange.sk",
@@ -617,7 +657,7 @@
  },
  "backup-demo.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "backup-demo.cloud.orange.sk"
   ],
@@ -642,7 +682,7 @@
  },
  "backup.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "backup.cloud.orange.sk"
   ],
@@ -670,7 +710,7 @@
  },
  "bb.guest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "bb.guest.orange.sk"
   ],
@@ -695,7 +735,7 @@
  },
  "beta.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "beta.orange.sk",
    "chat.orange.sk",
@@ -730,7 +770,7 @@
  },
  "biznis.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "biznis.orange.sk",
    "login.orange.sk",
@@ -763,7 +803,7 @@
  },
  "bloom-api.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "bloom-api.orange.sk"
   ],
@@ -791,7 +831,7 @@
  },
  "bloom-cdn.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "bloom-cdn.orange.sk"
   ],
@@ -819,7 +859,7 @@
  },
  "cag-test.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "cag-test.orange.sk"
   ],
@@ -844,7 +884,7 @@
  },
  "cag.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "cag.orange.sk"
   ],
@@ -869,7 +909,7 @@
  },
  "callcentrum.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "callcentrum.hvps.orange.sk"
   ],
@@ -897,7 +937,7 @@
  },
  "cf-prov.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "cf-prov.gtm.orange.sk"
   ],
@@ -922,7 +962,7 @@
  },
  "chry-acs.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "chry-acs.orange.sk"
   ],
@@ -954,7 +994,7 @@
  },
  "ciscodm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ciscodm.bwks.orange.sk"
   ],
@@ -979,9 +1019,10 @@
  },
  "ciscodm.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "ciscodm.hvps.orange.sk"
+   "ciscodm.hvps.orange.sk",
+   "dm.hvps.orange.sk"
   ],
   "snapshots": [
    {
@@ -1006,9 +1047,10 @@
  },
  "ciscodm.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "ciscodm.hvpstest.orange.sk"
+   "ciscodm.hvpstest.orange.sk",
+   "yealinkdm.hvpstest.orange.sk"
   ],
   "snapshots": [
    {
@@ -1033,7 +1075,7 @@
  },
  "ciscotestdm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ciscotestdm.bwks.orange.sk"
   ],
@@ -1058,7 +1100,7 @@
  },
  "citrix-ag.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "citrix-ag.orange.sk"
   ],
@@ -1083,7 +1125,7 @@
  },
  "citrix-rsa.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "citrix-rsa.orange.sk"
   ],
@@ -1108,7 +1150,7 @@
  },
  "citrix-simau.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "citrix-simau.orange.sk"
   ],
@@ -1133,7 +1175,7 @@
  },
  "citrix.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "citrix.orange.sk"
   ],
@@ -1158,7 +1200,7 @@
  },
  "cnt01.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "cnt01.gtm-stage.orange.sk"
   ],
@@ -1186,7 +1228,7 @@
  },
  "cnt01.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "cnt01.gtm.orange.sk"
   ],
@@ -1213,7 +1255,7 @@
  },
  "ctx-external.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ctx-external.orange.sk"
   ],
@@ -1238,7 +1280,7 @@
  },
  "customercare.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "customercare.onlineochrana.orange.sk"
   ],
@@ -1263,7 +1305,7 @@
  },
  "ddos.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ddos.orange.sk"
   ],
@@ -1290,7 +1332,7 @@
  },
  "demo-vmrc.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "demo-vmrc.cloud.orange.sk"
   ],
@@ -1315,7 +1357,7 @@
  },
  "demo.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "demo.cloud.orange.sk"
   ],
@@ -1343,7 +1385,7 @@
  },
  "demo.ou.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "demo.ou.orange.sk",
    "office.ou.orange.sk"
@@ -1372,7 +1414,7 @@
  },
  "denylist-t.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "denylist-t.orange.sk"
   ],
@@ -1397,7 +1439,7 @@
  },
  "denylist.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "denylist.orange.sk"
   ],
@@ -1422,7 +1464,7 @@
  },
  "dialin.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "dialin.orange.sk",
    "falcon.orange.sk",
@@ -1519,10 +1561,9 @@
  },
  "dm.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "dm.hvpstest.orange.sk",
-   "yealinkdm.hvpstest.orange.sk"
+   "dm.hvpstest.orange.sk"
   ],
   "snapshots": [
    {
@@ -1547,7 +1588,7 @@
  },
  "drop1-dov.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop1-dov.onlineochrana.orange.sk"
   ],
@@ -1572,7 +1613,7 @@
  },
  "drop1.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop1.onlineochrana.orange.sk"
   ],
@@ -1601,7 +1642,7 @@
  },
  "drop2-dov.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop2-dov.onlineochrana.orange.sk"
   ],
@@ -1626,7 +1667,7 @@
  },
  "drop2.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop2.onlineochrana.orange.sk"
   ],
@@ -1656,7 +1697,7 @@
  },
  "drop3-dov.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop3-dov.onlineochrana.orange.sk"
   ],
@@ -1681,7 +1722,7 @@
  },
  "drop3.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop3.onlineochrana.orange.sk"
   ],
@@ -1711,7 +1752,7 @@
  },
  "drop4-dov.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop4-dov.onlineochrana.orange.sk"
   ],
@@ -1736,7 +1777,7 @@
  },
  "drop4.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "drop4.onlineochrana.orange.sk"
   ],
@@ -1766,7 +1807,7 @@
  },
  "epay.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "epay.orange.sk"
   ],
@@ -1923,7 +1964,7 @@
  },
  "epaytest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "epaytest.orange.sk"
   ],
@@ -1948,7 +1989,7 @@
  },
  "eudm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "eudm.orange.sk"
   ],
@@ -2412,7 +2453,7 @@
  },
  "git.ci.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "git.ci.orange.sk"
   ],
@@ -2439,7 +2480,7 @@
  },
  "graphql01.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "graphql01.gtm-stage.orange.sk"
   ],
@@ -2515,12 +2556,84 @@
     "ports": [
      3001
     ]
+   },
+   {
+    "counts": {
+     "critical": 3,
+     "high": 17,
+     "low": 3,
+     "medium": 11,
+     "unknown": 0
+    },
+    "cve_count": 34,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-44487",
+     "CVE-2025-23419",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     3001
+    ]
    }
   ]
  },
  "graphql01.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "graphql01.gtm.orange.sk"
   ],
@@ -2630,12 +2743,118 @@
      80,
      3001
     ]
+   },
+   {
+    "counts": {
+     "critical": 3,
+     "high": 16,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 32,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
+   },
+   {
+    "counts": {
+     "critical": 3,
+     "high": 17,
+     "low": 3,
+     "medium": 11,
+     "unknown": 0
+    },
+    "cve_count": 34,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2023-44487",
+     "CVE-2025-23419",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     3001
+    ]
    }
   ]
  },
  "graphql02.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "graphql02.gtm-stage.orange.sk"
   ],
@@ -2676,12 +2895,49 @@
     "ports": [
      3002
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     3002
+    ]
    }
   ]
  },
  "graphql02.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "graphql02.gtm.orange.sk"
   ],
@@ -2722,12 +2978,49 @@
     "max_cvss": null,
     "max_severity": "none",
     "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     3002
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "idp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "idp.orange.sk",
    "idp1.orange.sk"
@@ -2768,7 +3061,7 @@
  },
  "idp2.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "idp2.orange.sk"
   ],
@@ -2795,7 +3088,7 @@
  },
  "img.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "img.orange.sk"
   ],
@@ -2838,7 +3131,7 @@
  },
  "imspp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "imspp.orange.sk"
   ],
@@ -2863,7 +3156,7 @@
  },
  "int-smtp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "int-smtp.orange.sk"
   ],
@@ -2890,7 +3183,7 @@
  },
  "jitsi.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "jitsi.cloud.orange.sk",
    "meet.cloud.orange.sk"
@@ -2916,7 +3209,7 @@
  },
  "kontrolpanel.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "kontrolpanel.orange.sk"
   ],
@@ -2941,7 +3234,7 @@
  },
  "legacydm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "legacydm.bwks.orange.sk"
   ],
@@ -2966,7 +3259,7 @@
  },
  "legacytestdm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "legacytestdm.bwks.orange.sk"
   ],
@@ -2991,7 +3284,7 @@
  },
  "login.wifi.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "login.wifi.orange.sk"
   ],
@@ -3018,7 +3311,7 @@
  },
  "mail.predajca.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "mail.predajca.orange.sk",
    "sts.predajca.orange.sk"
@@ -3048,7 +3341,7 @@
  },
  "meet.uc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "meet.uc.orange.sk"
   ],
@@ -3075,7 +3368,7 @@
  },
  "micore.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "micore.orange.sk"
   ],
@@ -3103,7 +3396,7 @@
  },
  "microsoft365.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "microsoft365.orange.sk"
   ],
@@ -3200,12 +3493,105 @@
      8443,
      8880
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880,
+     22082
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8317,
+     8443,
+     8880,
+     12263
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443,
+     2052,
+     2053,
+     2082,
+     2083,
+     2086,
+     2087,
+     2095,
+     2096,
+     8080,
+     8443,
+     8880
+    ]
    }
   ]
  },
  "misentry1.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "misentry1.orange.sk"
   ],
@@ -3230,7 +3616,7 @@
  },
  "mitcore.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "mitcore.orange.sk"
   ],
@@ -3258,7 +3644,7 @@
  },
  "mitsentry1.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "mitsentry1.orange.sk"
   ],
@@ -3285,7 +3671,7 @@
  },
  "monitoringvozidiel.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "monitoringvozidiel.orange.sk"
   ],
@@ -3407,7 +3793,7 @@
  },
  "msg001.uc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "msg001.uc.orange.sk"
   ],
@@ -3432,7 +3818,7 @@
  },
  "msm60.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "msm60.cloud.orange.sk",
    "msmajernikova60.cloud.orange.sk",
@@ -3460,7 +3846,7 @@
  },
  "ntrapp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ntrapp.orange.sk"
   ],
@@ -3485,7 +3871,7 @@
  },
  "ntv-st01-vod01-bts10-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ntv-st01-vod01-bts10-stage.orange.sk"
   ],
@@ -3514,7 +3900,7 @@
  },
  "ntv-st01-vod01-sld02-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ntv-st01-vod01-sld02-stage.orange.sk"
   ],
@@ -3543,7 +3929,7 @@
  },
  "ntv-st01-vod02-bts10-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ntv-st01-vod02-bts10-stage.orange.sk"
   ],
@@ -3571,7 +3957,7 @@
  },
  "ntv-st01-vod02-sld02-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ntv-st01-vod02-sld02-stage.orange.sk"
   ],
@@ -3599,7 +3985,7 @@
  },
  "oauth01.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "oauth01.gtm-stage.orange.sk"
   ],
@@ -3629,7 +4015,7 @@
  },
  "oauth01.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "oauth01.gtm.orange.sk"
   ],
@@ -3659,7 +4045,7 @@
  },
  "oblak-vmrc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "oblak-vmrc.orange.sk"
   ],
@@ -3684,7 +4070,7 @@
  },
  "oblak.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "oblak.orange.sk"
   ],
@@ -3711,7 +4097,7 @@
  },
  "oblak2.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "oblak2.cloud.orange.sk"
   ],
@@ -3738,7 +4124,7 @@
  },
  "office.uc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "office.uc.orange.sk"
   ],
@@ -3765,7 +4151,7 @@
  },
  "onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "onlineochrana.orange.sk"
   ],
@@ -3792,10 +4178,9 @@
  },
  "onlinerecepcia.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "onlinerecepcia.hvps.orange.sk",
-   "www.onlinerecepcia.hvps.orange.sk"
+   "onlinerecepcia.hvps.orange.sk"
   ],
   "snapshots": [
    {
@@ -3816,12 +4201,30 @@
      80,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
    }
   ]
  },
  "otp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "otp.orange.sk"
   ],
@@ -3849,7 +4252,7 @@
  },
  "output.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "output.orange.sk"
   ],
@@ -3879,7 +4282,7 @@
  },
  "predajne.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "predajne.orange.sk"
   ],
@@ -3907,7 +4310,7 @@
  },
  "prieskumy.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "prieskumy.orange.sk"
   ],
@@ -3932,7 +4335,7 @@
  },
  "push-stretto.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "push-stretto.orange.sk"
   ],
@@ -3957,7 +4360,7 @@
  },
  "pushtest-stretto.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "pushtest-stretto.orange.sk"
   ],
@@ -3982,7 +4385,7 @@
  },
  "rc.uc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "rc.uc.orange.sk"
   ],
@@ -4007,7 +4410,7 @@
  },
  "s3.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "s3.orange.sk",
    "s3.s3.orange.sk"
@@ -4033,7 +4436,7 @@
  },
  "sap-bo-mobile.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sap-bo-mobile.orange.sk"
   ],
@@ -4058,7 +4461,7 @@
  },
  "sif.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sif.orange.sk"
   ],
@@ -4083,7 +4486,7 @@
  },
  "sip.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sip.orange.sk"
   ],
@@ -4108,7 +4511,7 @@
  },
  "sip01.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sip01.orange.sk"
   ],
@@ -4133,7 +4536,7 @@
  },
  "sip02.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sip02.orange.sk"
   ],
@@ -4158,7 +4561,7 @@
  },
  "skinner.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "skinner.orange.sk"
   ],
@@ -4183,7 +4586,7 @@
  },
  "sl1.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sl1.onlineochrana.orange.sk"
   ],
@@ -4210,7 +4613,7 @@
  },
  "sl2.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "sl2.onlineochrana.orange.sk"
   ],
@@ -4237,7 +4640,7 @@
  },
  "smsgw-test.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "smsgw-test.orange.sk"
   ],
@@ -4262,7 +4665,7 @@
  },
  "smsgw.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "smsgw.orange.sk"
   ],
@@ -4287,7 +4690,7 @@
  },
  "smtp01.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "smtp01.orange.sk"
   ],
@@ -4314,7 +4717,7 @@
  },
  "smtp02.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "smtp02.orange.sk"
   ],
@@ -4341,7 +4744,7 @@
  },
  "smz.cloudprebiznis.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "smz.cloudprebiznis.orange.sk",
    "smzwp.cloudprebiznis.orange.sk"
@@ -4367,7 +4770,7 @@
  },
  "speedmeter-bb-new.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "speedmeter-bb-new.orange.sk"
   ],
@@ -4401,7 +4804,7 @@
  },
  "speedmeter-bb.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "speedmeter-bb.orange.sk"
   ],
@@ -4485,7 +4888,7 @@
  },
  "speedmeter-ke.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "speedmeter-ke.orange.sk"
   ],
@@ -4519,7 +4922,7 @@
  },
  "speedmeter.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "speedmeter.orange.sk"
   ],
@@ -4548,7 +4951,7 @@
  },
  "ssoui1.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ssoui1.onlineochrana.orange.sk"
   ],
@@ -4575,7 +4978,7 @@
  },
  "ssoui2.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "ssoui2.onlineochrana.orange.sk"
   ],
@@ -4602,7 +5005,7 @@
  },
  "techpark-vdc-vmrc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "techpark-vdc-vmrc.orange.sk"
   ],
@@ -4627,7 +5030,7 @@
  },
  "techpark-vdc.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "techpark-vdc.orange.sk"
   ],
@@ -4655,7 +5058,7 @@
  },
  "testhuavpp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "testhuavpp.orange.sk"
   ],
@@ -4680,7 +5083,7 @@
  },
  "trk.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "trk.orange.sk"
   ],
@@ -4706,9 +5109,40 @@
    }
   ]
  },
+ "tv.orange.sk": {
+  "first_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
+  "names": [
+   "tv.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 1,
+     "low": 0,
+     "medium": 1,
+     "unknown": 0
+    },
+    "cve_count": 2,
+    "cve_ids": [
+     "CVE-2023-44487",
+     "CVE-2025-23419"
+    ],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     80,
+     8080
+    ]
+   }
+  ]
+ },
  "vac-demo.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vac-demo.cloud.orange.sk",
    "vac-pp.cloud.orange.sk"
@@ -4736,7 +5170,7 @@
  },
  "vac.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vac.cloud.orange.sk"
   ],
@@ -4763,7 +5197,7 @@
  },
  "vcda-demo.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vcda-demo.cloud.orange.sk",
    "vcg-pp.cloud.orange.sk"
@@ -4789,7 +5223,7 @@
  },
  "vcda-oblak.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vcda-oblak.cloud.orange.sk"
   ],
@@ -4814,7 +5248,7 @@
  },
  "vcda-techpark.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vcda-techpark.cloud.orange.sk"
   ],
@@ -4839,7 +5273,7 @@
  },
  "vcg.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vcg.cloud.orange.sk"
   ],
@@ -4864,7 +5298,7 @@
  },
  "voip1.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip1.hvps.orange.sk"
   ],
@@ -4889,7 +5323,7 @@
  },
  "voip1.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip1.hvpstest.orange.sk"
   ],
@@ -4914,7 +5348,7 @@
  },
  "voip2.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip2.hvps.orange.sk"
   ],
@@ -4939,7 +5373,7 @@
  },
  "voip2.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip2.hvpstest.orange.sk"
   ],
@@ -4966,7 +5400,7 @@
  },
  "voip3.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip3.hvps.orange.sk"
   ],
@@ -4991,7 +5425,7 @@
  },
  "voip3.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voip3.hvpstest.orange.sk"
   ],
@@ -5016,7 +5450,7 @@
  },
  "voipdm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voipdm.bwks.orange.sk"
   ],
@@ -5041,7 +5475,7 @@
  },
  "voiptestdm.bwks.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "voiptestdm.bwks.orange.sk"
   ],
@@ -5066,7 +5500,7 @@
  },
  "vpn01.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vpn01.orange.sk"
   ],
@@ -5093,7 +5527,7 @@
  },
  "vpn02.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vpn02.orange.sk"
   ],
@@ -5118,7 +5552,7 @@
  },
  "vpn03.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "vpn03.orange.sk"
   ],
@@ -5146,7 +5580,7 @@
  },
  "webapp.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "webapp.orange.sk"
   ],
@@ -5173,7 +5607,7 @@
  },
  "webchat.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "webchat.orange.sk"
   ],
@@ -5200,7 +5634,7 @@
  },
  "webconf.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "webconf.orange.sk"
   ],
@@ -5225,7 +5659,7 @@
  },
  "websheet-apple-test.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "websheet-apple-test.orange.sk"
   ],
@@ -5252,7 +5686,7 @@
  },
  "websocket01-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "websocket01-stage.orange.sk"
   ],
@@ -5282,7 +5716,7 @@
  },
  "websocket01.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "websocket01.orange.sk"
   ],
@@ -5307,7 +5741,7 @@
  },
  "wep.onlineochrana.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "wep.onlineochrana.orange.sk"
   ],
@@ -5334,7 +5768,7 @@
  },
  "wiki.cloud.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "wiki.cloud.orange.sk"
   ],
@@ -5363,7 +5797,7 @@
  },
  "wvp01.gtm-stage.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "wvp01.gtm-stage.orange.sk"
   ],
@@ -5401,12 +5835,46 @@
     "max_cvss": null,
     "max_severity": "none",
     "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "wvp01.gtm.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "wvp01.gtm.orange.sk"
   ],
@@ -5433,7 +5901,7 @@
  },
  "www.callcentrum.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "www.callcentrum.hvps.orange.sk"
   ],
@@ -5461,7 +5929,7 @@
  },
  "www.callcentrum.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "www.callcentrum.hvpstest.orange.sk"
   ],
@@ -5488,7 +5956,7 @@
  },
  "www.hvps-en.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "www.hvps-en.orange.sk",
    "www.hvps.orange.sk"
@@ -5517,9 +5985,10 @@
  },
  "www.hvpstest-en.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
-   "www.hvpstest-en.orange.sk"
+   "www.hvpstest-en.orange.sk",
+   "www.hvpstest.orange.sk"
   ],
   "snapshots": [
    {
@@ -5833,7 +6302,7 @@
  },
  "www.nahravanie.hvps.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "www.nahravanie.hvps.orange.sk"
   ],
@@ -5859,9 +6328,37 @@
    }
   ]
  },
+ "www.onlinerecepcia.hvps.orange.sk": {
+  "first_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
+  "names": [
+   "www.onlinerecepcia.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
+   }
+  ]
+ },
  "www.onlinerecepcia.hvpstest.orange.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-29T21:06:45+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
   "names": [
    "www.onlinerecepcia.hvpstest.orange.sk"
   ],
@@ -5877,6 +6374,33 @@
     "cve_count": 0,
     "cve_ids": [],
     "date": "2026-10-29T21:06:45+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   }
+  ]
+ },
+ "yealinkdm.hvps.orange.sk": {
+  "first_seen": "2026-10-30T04:02:02+00:00",
+  "last_seen": "2026-10-30T04:02:02+00:00",
+  "names": [
+   "yealinkdm.hvps.orange.sk"
+  ],
+  "snapshots": [
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-10-30T04:02:02+00:00",
     "kev_count": 0,
     "max_cvss": null,
     "max_severity": "none",
