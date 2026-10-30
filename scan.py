@@ -11,10 +11,17 @@ predtym existovali a teraz sa nenasli, su oznacene ako "zmiznute".
 
 Vystup: docs/data/assets.json (cita ho docs/index.html)
 
+Volitelne: ak je nastaveny DNSDUMPSTER_API_KEY, pre kazdu domenu z companies.json
+sa raz denne stiahnu vsetky DNS zaznamy cez dnsdumpster.com API (A, NS, MX, TXT,
+CNAME...) a zobrazia sa na stranke v samostatnej zalozke "Vsetky DNS zaznamy".
+Bezplatny ucet dnsdumpster.com vracia max. 50 zaznamov na domenu.
+
 Premenne prostredia:
-  PUBLISH_MODE   summary | full   (default: summary)
-  SCAN_PREFIXES  1 = dopytaj aj IP z prefixov ASN (default: 0)
-  MAX_IPS        limit IP z prefixov na firmu     (default: 500)
+  PUBLISH_MODE        summary | full   (default: summary)
+  SCAN_PREFIXES       1 = dopytaj aj IP z prefixov ASN (default: 0)
+  MAX_IPS             limit IP z prefixov na firmu     (default: 500)
+  DNSDUMPSTER_API_KEY API kluc z dnsdumpster.com (volitelne; bez neho sa
+                       zalozka DNS zaznamov nedopocita a ponecha predosle data)
 
 summary = hostname, porty a POCTY zranitelnosti (bez IP a bez CVE ID/popisov).
 full    = aj IP, CVE ID, popisy, CPE a historia obsahuje aj CVE ID.
@@ -49,11 +56,12 @@ def now_iso():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
-def http_json(url, timeout=60, retries=3):
-    """GET -> JSON. None pri 404, vynimka pri inych chybach."""
+def http_json(url, timeout=60, retries=3, headers=None):
+    """GET -> JSON. None pri 404, vynimka pri inych chybach (napr. 401/403/429 po vycerpani pokusov)."""
+    hdrs = {**UA, **(headers or {})}
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers=UA)
+            req = urllib.request.Request(url, headers=hdrs)
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.loads(r.read().decode("utf-8", errors="replace"))
         except urllib.error.HTTPError as e:
@@ -193,7 +201,7 @@ def collect(company, args, memo):
     prefixes = []
     for a in company.get("asns", []):
         p = get_prefixes(a)
-        print(f"    AS{a}: {len(p)} prefixov")
+        print(f"    {str(a).upper() if str(a).upper().startswith('AS') else 'AS' + str(a)}: {len(p)} prefixov")
         prefixes += p
 
     host_ips = {}
@@ -380,6 +388,74 @@ def apply_history(cid, assets, mode):
     return disappeared[:50]
 
 
+# ---------- DNSDumpster: vsetky DNS zaznamy pre domenu ----------
+def _flatten_ips(entry):
+    """dnsdumpster vracia pri A/NS/MX zaznamoch zoznam ip objektov {ip, asn, asn_name, ptr,...}."""
+    out = []
+    for ip in entry.get("ips", []) or []:
+        if isinstance(ip, dict):
+            out.append({"ip": ip.get("ip", ""), "asn": ip.get("asn", ""),
+                        "asn_name": ip.get("asn_name", ""), "ptr": ip.get("ptr", "")})
+        elif ip:
+            out.append({"ip": str(ip), "asn": "", "asn_name": "", "ptr": ""})
+    return out
+
+
+def normalize_dnsdumpster(data):
+    """Zjednoti rozne tvary odpovede (a/ns/mx/txt/cname/soa...) do plocheho zoznamu zaznamov."""
+    records = []
+    for rtype, items in (data or {}).items():
+        if not isinstance(items, list):
+            continue
+        for entry in items:
+            if isinstance(entry, dict) and ("host" in entry or "ips" in entry):
+                ips = _flatten_ips(entry)
+                records.append({
+                    "type": rtype.upper(),
+                    "host": entry.get("host", ""),
+                    "value": ", ".join(i["ip"] for i in ips if i["ip"]) or entry.get("target", ""),
+                    "asn": ", ".join(sorted({i["asn_name"] or i["asn"] for i in ips if (i["asn_name"] or i["asn"])})),
+                })
+            elif isinstance(entry, dict):
+                records.append({"type": rtype.upper(), "host": entry.get("host", entry.get("name", "")),
+                                "value": short(json.dumps(entry, ensure_ascii=False), 200), "asn": ""})
+            else:
+                records.append({"type": rtype.upper(), "host": "", "value": str(entry), "asn": ""})
+    records.sort(key=lambda r: (r["type"], r["host"], r["value"]))
+    return records
+
+
+def fetch_dns_records(domain, api_key):
+    url = f"https://api.dnsdumpster.com/domain/{urllib.parse.quote(domain)}"
+    data = http_json(url, timeout=60, retries=2, headers={"X-API-Key": api_key})
+    return normalize_dnsdumpster(data)
+
+
+def build_dns_section(companies, api_key, previous_dns):
+    domains = sorted({d for c in companies for d in c.get("domains", [])})
+    out = {}
+    if not api_key:
+        print("[!] DNSDUMPSTER_API_KEY nie je nastaveny, zalozka DNS zaznamov sa nedopocita "
+              "(ponechavam predosle data, ak existuju)", file=sys.stderr)
+        for d in domains:
+            out[d] = previous_dns.get(d) or {"generated": None, "stale": True, "records": [], "count": 0}
+        return out
+    for d in domains:
+        try:
+            records = fetch_dns_records(d, api_key)
+            out[d] = {"generated": now_iso(), "stale": False, "records": records, "count": len(records)}
+            print(f"[+] dnsdumpster {d}: {len(records)} zaznamov")
+        except Exception as e:  # noqa: BLE001
+            print(f"[!] dnsdumpster {d}: {e}", file=sys.stderr)
+            if d in previous_dns:
+                old = dict(previous_dns[d]); old["stale"] = True
+                out[d] = old
+            else:
+                out[d] = {"generated": None, "stale": True, "records": [], "count": 0, "error": str(e)}
+        time.sleep(1.5)  # slusne tempo voci API
+    return out
+
+
 def load_previous(mode):
     """Predosle data firiem - pouzijeme ich len ak boli zapisane v rovnakom rezime."""
     d = load_json(OUT_FILE, {})
@@ -441,10 +517,17 @@ def main():
                                   "generated": None, "stale": True, "assets": [],
                                   "disappeared": [], "changes_summary": {"new": 0, "changed": 0, "disappeared": 0}})
 
-    if not any(c["assets"] for c in out_companies):
+    if not any(c["assets"] for c in out_companies) and not env("DNSDUMPSTER_API_KEY"):
         sys.exit("Ziadne data pre ziadnu firmu. Neprepisujem existujuci vystup.")
 
-    save_json(OUT_FILE, {"generated": now_iso(), "mode": args.mode, "companies": out_companies})
+    prev_full = load_json(OUT_FILE, {})
+    prev_dns = (prev_full.get("dns") or {}).get("domains", {})
+    dns_domains = build_dns_section(companies, env("DNSDUMPSTER_API_KEY"), prev_dns)
+
+    save_json(OUT_FILE, {
+        "generated": now_iso(), "mode": args.mode, "companies": out_companies,
+        "dns": {"generated": now_iso(), "domains": dns_domains},
+    })
     print(f"[+] Ulozene -> {OUT_FILE} (rezim {args.mode})")
 
 
