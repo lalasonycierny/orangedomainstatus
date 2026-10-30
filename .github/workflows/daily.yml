@@ -30,6 +30,8 @@ jobs:
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}     # summary (default) | full
           SCAN_PREFIXES: ${{ vars.SCAN_PREFIXES }}   # 1 = skenuj aj prefixy
           MAX_IPS: ${{ vars.MAX_IPS }}
+          # Secrets (nie Variables) -> Settings -> Secrets and variables -> Actions -> Secrets
+          DNSDUMPSTER_API_KEY: ${{ secrets.DNSDUMPSTER_API_KEY }}
         run: python scan.py
 
       - name: Commit results
