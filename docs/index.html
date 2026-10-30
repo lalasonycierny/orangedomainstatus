@@ -66,6 +66,10 @@
   .warn { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:8px 12px; margin-bottom:12px; color:var(--muted); }
   .note { color:var(--muted); font-size:12px; margin-top:12px; }
   .ghost { opacity:.75; }
+  .dns-domain h2 { margin:18px 0 6px; }
+  .dns-domain .meta { color:var(--muted); font-size:12px; margin-bottom:6px; }
+  .rtype { font-family:ui-monospace,Consolas,monospace; font-size:12px; font-weight:700;
+    padding:1px 6px; border:1px solid var(--line); border-radius:4px; background:var(--card); }
 </style>
 </head>
 <body>
@@ -73,40 +77,54 @@
 <div class="sub" id="meta">Nacitavam...</div>
 <div class="tabs" id="tabs"></div>
 <div id="warn"></div>
-<div class="stats" id="stats"></div>
 
-<div class="bar">
-  <input id="q" type="search" placeholder="Hladat hostname, port, CVE, IP...">
-  <select id="sev">
-    <option value="">Kritickost: vsetky</option>
-    <option value="critical">Critical</option><option value="high">High</option>
-    <option value="medium">Medium</option><option value="low">Low</option>
-    <option value="unknown">Unknown</option><option value="none">Bez CVE</option>
-  </select>
-  <select id="chf">
-    <option value="">Zmeny: vsetky</option>
-    <option value="changed">Len zmenene / nove</option>
-  </select>
-  <button id="expand">Rozbalit vsetky CVE</button>
-  <button id="csv">Export CSV</button>
-  <button id="json">Export JSON</button>
+<div id="asset-view">
+  <div class="stats" id="stats"></div>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="Hladat hostname, port, CVE, IP...">
+    <select id="sev">
+      <option value="">Kritickost: vsetky</option>
+      <option value="critical">Critical</option><option value="high">High</option>
+      <option value="medium">Medium</option><option value="low">Low</option>
+      <option value="unknown">Unknown</option><option value="none">Bez CVE</option>
+    </select>
+    <select id="chf">
+      <option value="">Zmeny: vsetky</option>
+      <option value="changed">Len zmenene / nove</option>
+    </select>
+    <button id="expand">Rozbalit vsetky CVE</button>
+    <button id="csv">Export CSV</button>
+    <button id="json">Export JSON</button>
+  </div>
+
+  <div class="wrap"><table>
+    <thead><tr id="head"></tr></thead>
+    <tbody id="body"></tbody>
+  </table></div>
+
+  <div id="gone-section" style="display:none">
+    <h2>Zmiznute hosty</h2>
+    <div class="wrap"><table><thead><tr>
+      <th>Host</th><th>Naposledy videny</th><th>Prvy krat videny</th><th>Posledna kritickost</th>
+    </tr></thead><tbody id="gone-body"></tbody></table></div>
+  </div>
+
+  <div class="note">Pasivne OSINT data (crt.sh, DNS, Shodan InternetDB/CVEDB), aktualizovane denne.
+  Zelena = novy/pridany prvok, cervena = odstraneny/zmiznuty prvok oproti predoslemu behu.
+  CVE su odhad podla verzie softveru, nie overena zranitelnost; udaje mozu byt zastarane.</div>
 </div>
 
-<div class="wrap"><table>
-  <thead><tr id="head"></tr></thead>
-  <tbody id="body"></tbody>
-</table></div>
-
-<div id="gone-section" style="display:none">
-  <h2>Zmiznute hosty</h2>
-  <div class="wrap"><table><thead><tr>
-    <th>Host</th><th>Naposledy videny</th><th>Prvy krat videny</th><th>Posledna kritickost</th>
-  </tr></thead><tbody id="gone-body"></tbody></table></div>
+<div id="dns-view" style="display:none">
+  <div class="bar">
+    <input id="dq" type="search" placeholder="Hladat v DNS zaznamoch (host, hodnota, typ)...">
+    <button id="dcsv">Export CSV</button>
+    <button id="djson">Export JSON</button>
+  </div>
+  <div id="dns-domains"></div>
+  <div class="note">Zdroj: dnsdumpster.com API. Bezplatny ucet vracia max. 50 zaznamov na domenu, preto
+  nemusi ist o uplny zoznam. Aktualizuje sa denne spolu s ostatnymi datami.</div>
 </div>
-
-<div class="note">Pasivne OSINT data (crt.sh, DNS, Shodan InternetDB/CVEDB), aktualizovane denne.
-Zelena = novy/pridany prvok, cervena = odstraneny/zmiznuty prvok oproti predoslemu behu.
-CVE su odhad podla verzie softveru, nie overena zranitelnost; udaje mozu byt zastarane.</div>
 
 <script>
 const SEV = ["critical","high","medium","low","unknown","none"];
@@ -159,6 +177,8 @@ function filtered() {
     });
 }
 
+const DNS_TAB = "__dns__";
+
 function renderTabs() {
   const box = document.getElementById("tabs"); box.replaceChildren();
   for (const c of DATA.companies) {
@@ -169,6 +189,12 @@ function renderTabs() {
     if (cs.disappeared) label += " ⚠" + cs.disappeared;
     b.textContent = label;
     b.onclick = () => { active = c.id; location.hash = c.id; renderAll(); };
+    box.appendChild(b);
+  }
+  if (DATA.dns) {
+    const total = Object.values(DATA.dns.domains || {}).reduce((s, d) => s + (d.count || 0), 0);
+    const b = el("button", "tab" + (active === DNS_TAB ? " active" : ""), "Vsetky DNS zaznamy (" + total + ")");
+    b.onclick = () => { active = DNS_TAB; location.hash = DNS_TAB; renderAll(); };
     box.appendChild(b);
   }
 }
@@ -300,9 +326,76 @@ function renderStats() {
   if (!full()) w.appendChild(el("div", "warn", "Detaily CVE (ID a popisy) su vypnute: rezim 'summary'. Pri zmenach sa zobrazuju len pocty podla kritickosti."));
 }
 
+function dnsFiltered() {
+  const q = document.getElementById("dq").value.trim().toLowerCase();
+  const out = {};
+  for (const [domain, info] of Object.entries((DATA.dns || {}).domains || {})) {
+    const recs = (info.records || []).filter(r =>
+      !q || (r.type + " " + r.host + " " + r.value + " " + (r.asn||"")).toLowerCase().includes(q));
+    out[domain] = { ...info, records: recs };
+  }
+  return out;
+}
+
+function renderDnsView() {
+  const box = document.getElementById("dns-domains"); box.replaceChildren();
+  const domains = dnsFiltered();
+  const names = Object.keys(domains).sort();
+  if (!names.length) { box.appendChild(el("div", "empty", "Ziadne DNS data. Nastav DNSDUMPSTER_API_KEY a spusti beh.")); return; }
+  for (const domain of names) {
+    const info = domains[domain];
+    const sec = el("div", "dns-domain");
+    sec.appendChild(el("h2", "", domain));
+    const meta = el("div", "meta",
+      (info.generated ? "aktualizovane: " + fmtDate(info.generated) : "zatial nenacitane") +
+      "  |  zaznamov: " + info.records.length + (info.stale ? "  |  POZOR: stare data (posledny beh zlyhal)" : ""));
+    sec.appendChild(meta);
+    if (!info.records.length) {
+      sec.appendChild(el("div", "empty", "Ziadne zaznamy."));
+    } else {
+      const table = el("table");
+      const thead = el("thead"), htr = el("tr");
+      ["Typ", "Host", "Hodnota", "ASN / Poskytovatel"].forEach(h => htr.appendChild(el("th", "", h)));
+      thead.appendChild(htr); table.appendChild(thead);
+      const tbody = el("tbody");
+      info.records.forEach(r => {
+        const tr = el("tr");
+        const t = el("td"); t.appendChild(el("span", "rtype", r.type)); tr.appendChild(t);
+        tr.appendChild(el("td", "", r.host || "-"));
+        tr.appendChild(el("td", "", r.value || "-"));
+        tr.appendChild(el("td", "", r.asn || "-"));
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      const wrap = el("div", "wrap"); wrap.appendChild(table);
+      sec.appendChild(wrap);
+    }
+    box.appendChild(sec);
+  }
+}
+
+document.getElementById("dq").oninput = renderDnsView;
+document.getElementById("dcsv").onclick = () => {
+  const lines = [["domain", "type", "host", "value", "asn"].join(",")];
+  for (const [domain, info] of Object.entries(dnsFiltered()))
+    for (const r of info.records) lines.push([domain, r.type, r.host, r.value, r.asn].map(csvCell).join(","));
+  download("dns-records.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
+};
+document.getElementById("djson").onclick = () => download("dns-records.json", "application/json", JSON.stringify(dnsFiltered(), null, 2));
+
 function renderAll() {
-  renderTabs(); renderStats(); renderTable();
-  document.getElementById("expand").style.display = full() ? "" : "none";
+  renderTabs();
+  const isDns = active === DNS_TAB;
+  document.getElementById("asset-view").style.display = isDns ? "none" : "";
+  document.getElementById("dns-view").style.display = isDns ? "" : "none";
+  if (isDns) {
+    document.getElementById("meta").textContent = DATA.dns && DATA.dns.generated
+      ? "DNS zaznamy aktualizovane: " + fmtDate(DATA.dns.generated) : "DNS zaznamy zatial nie su k dispozicii.";
+    renderDnsView();
+  } else {
+    renderStats(); renderTable();
+    document.getElementById("expand").style.display = full() ? "" : "none";
+  }
 }
 
 function download(name, type, text) {
@@ -336,10 +429,16 @@ document.getElementById("chf").onchange = renderTable;
 fetch("data/assets.json", {cache: "no-store"}).then(r => r.json()).then(d => {
   DATA = d;
   const h = location.hash.slice(1);
-  active = (d.companies.find(c => c.id === h) || d.companies[0] || {}).id;
-  document.getElementById("meta").textContent = d.generated
-    ? "Posledna aktualizacia: " + new Date(d.generated).toLocaleString("sk-SK") + " | rezim: " + d.mode
-    : "Zatial ziadne data - spusti workflow 'Daily scan'.";
+  if (h === DNS_TAB) {
+    active = DNS_TAB;
+  } else {
+    active = (d.companies.find(c => c.id === h) || d.companies[0] || {}).id;
+  }
+  if (active !== DNS_TAB) {
+    document.getElementById("meta").textContent = d.generated
+      ? "Posledna aktualizacia: " + new Date(d.generated).toLocaleString("sk-SK") + " | rezim: " + d.mode
+      : "Zatial ziadne data - spusti workflow 'Daily scan'.";
+  }
   renderAll();
 }).catch(() => { document.getElementById("meta").textContent = "Nepodarilo sa nacitat data."; });
 </script>
