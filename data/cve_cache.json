@@ -6075,6 +6075,13 @@
   "kev": false,
   "summary": "Apache HTTP Server versions 2.4.20 to 2.4.43 When trace/debug was enabled for the HTTP/2 module and on certain traffic edge patterns, logging statements were made on the wrong connection, causing concurrent use of memory pools. Configuring the LogLevel of mod_http2 above \"info\" will mitigate this…"
  },
+ "CVE-2020-12062": {
+  "cvss": 7.5,
+  "epss": 0.02232,
+  "fetched": "2026-10-31T03:59:54+00:00",
+  "kev": false,
+  "summary": "The scp client in OpenSSH 8.2 incorrectly sends duplicate responses to the server upon a utimes system call failure, which allows a malicious unprivileged user on the remote server to overwrite arbitrary files in the client's download directory by creating a crafted subdirectory anywhere on the…"
+ },
  "CVE-2020-12723": {
   "cvss": 7.5,
   "epss": 0.05971,
@@ -6907,6 +6914,13 @@
   "fetched": "2026-10-30T21:39:45+00:00",
   "kev": false,
   "summary": "Exim 4 before 4.94.2 has Execution with Unnecessary Privileges. By leveraging a delete_pid_file race condition, a local user can delete arbitrary files as root. This involves the -oP and -oPX options."
+ },
+ "CVE-2021-28041": {
+  "cvss": 7.1,
+  "epss": 0.03513,
+  "fetched": "2026-10-31T03:59:54+00:00",
+  "kev": false,
+  "summary": "ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host."
  },
  "CVE-2021-32785": {
   "cvss": 5.3,
