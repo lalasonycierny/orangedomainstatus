@@ -1,7 +1,7 @@
 {
  "10 mx09.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "10 mx09.swan.sk"
   ],
@@ -28,7 +28,7 @@
  },
  "10 mx10.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "10 mx10.swan.sk"
   ],
@@ -55,7 +55,7 @@
  },
  "10 mx11.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "10 mx11.swan.sk"
   ],
@@ -82,7 +82,7 @@
  },
  "10 mx12.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "10 mx12.swan.sk"
   ],
@@ -104,12 +104,28 @@
     "ports": [
      25
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-01T04:06:28+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "4ka.sk",
    "stats.4ka.sk",
@@ -139,7 +155,7 @@
  },
  "auth1.ns.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "auth1.ns.swan.sk"
   ],
@@ -161,12 +177,28 @@
     "ports": [
      53
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-01T04:06:28+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "auth2.ns.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "auth2.ns.swan.sk"
   ],
@@ -188,12 +220,28 @@
     "ports": [
      53
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-01T04:06:28+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "auth3.ns.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "auth3.ns.swan.sk"
   ],
@@ -218,7 +266,7 @@
  },
  "auth4.ns.swan.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "auth4.ns.swan.sk"
   ],
@@ -240,12 +288,28 @@
     "ports": [
      53
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-01T04:06:28+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
    }
   ]
  },
  "chat.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "chat.4ka.sk"
   ],
@@ -270,7 +334,7 @@
  },
  "chatbot-preprod.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "chatbot-preprod.4ka.sk",
    "chatbot-test.4ka.sk",
@@ -300,7 +364,7 @@
  },
  "comm.upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "comm.upomienka.4ka.sk"
   ],
@@ -325,7 +389,7 @@
  },
  "e-prieskumy.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "e-prieskumy.4ka.sk",
    "www.e-prieskumy.4ka.sk"
@@ -354,7 +418,7 @@
  },
  "posta-wp1.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "posta-wp1.4ka.sk"
   ],
@@ -381,7 +445,7 @@
  },
  "spotreba.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "spotreba.4ka.sk"
   ],
@@ -409,7 +473,7 @@
  },
  "tracking.upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "tracking.upomienka.4ka.sk"
   ],
@@ -437,7 +501,7 @@
  },
  "tst-posta-wp1.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "tst-posta-wp1.4ka.sk"
   ],
@@ -465,7 +529,7 @@
  },
  "upomienka.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "upomienka.4ka.sk"
   ],
@@ -527,7 +591,7 @@
  },
  "webtest-docker.4ka.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-10-31T03:59:54+00:00",
+  "last_seen": "2026-11-01T04:06:28+00:00",
   "names": [
    "webtest-docker.4ka.sk"
   ],
