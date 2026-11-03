@@ -265,6 +265,13 @@
   "kev": false,
   "summary": "Race condition in the ssl3_read_bytes function in s3_pkt.c in OpenSSL through 1.0.1g, when SSL_MODE_RELEASE_BUFFERS is enabled, allows remote attackers to inject data across sessions or cause a denial of service (use-after-free and parsing error) via an SSL connection in a multithreaded environment."
  },
+ "CVE-2010-5312": {
+  "cvss": 6.1,
+  "epss": 0.18351,
+  "fetched": "2026-11-03T04:06:29+00:00",
+  "kev": false,
+  "summary": "Cross-site scripting (XSS) vulnerability in jquery.ui.dialog.js in the Dialog widget in jQuery UI before 1.10.0 allows remote attackers to inject arbitrary web script or HTML via the title option."
+ },
  "CVE-2011-0014": {
   "cvss": 5.0,
   "epss": 0.09854,
