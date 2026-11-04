@@ -2197,6 +2197,13 @@
   "kev": false,
   "summary": "An issue was discovered in PHP 5.x and 7.x, when the configuration uses apache2handler/mod_php or php-fpm with OpCache enabled. With 5.x after 5.6.28 or 7.x after 7.0.13, the issue is resolved in a non-default configuration with the opcache.validate_permission=1 setting. The vulnerability details…"
  },
+ "CVE-2015-9251": {
+  "cvss": 6.1,
+  "epss": 0.29726,
+  "fetched": "2026-11-04T04:09:53+00:00",
+  "kev": false,
+  "summary": "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
+ },
  "CVE-2015-9253": {
   "cvss": 6.5,
   "epss": 0.04176,
