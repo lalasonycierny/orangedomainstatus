@@ -16,15 +16,13 @@ sa raz denne stiahnu vsetky DNS zaznamy cez dnsdumpster.com API (A, NS, MX, TXT,
 CNAME...) a zobrazia sa na stranke v samostatnej zalozke "Vsetky DNS zaznamy".
 Bezplatny ucet dnsdumpster.com vracia max. 50 zaznamov na domenu.
 
-Volitelne: ak je nastaveny CENSYS_API_KEY (Personal Access Token z platform.censys.io),
-ku kazdej IP sa navyse dopyta Censys host lookup (bezplatny pre free ucet) a najdene
-CVE sa pripoja k existujucim zo Shodanu - kazda zranitelnost ma oznaceny zdroj
-("Shodan", "Censys", alebo oboje, ak ju nahlasia obe sluzby). Volania su limitovane
-premennou CENSYS_MAX_CALLS na beh a vysledky sa cachuju (data/censys_cache.json) na
-7 dni, aby sa zbytocne nemrhalo bezplatnym kreditom (typicky 500 volani na ucet).
-Presny tvar odpovede Censys host endpointu nie je oficialne zdokumentovany do detailu,
-preto sa CVE hladaju vo vysledku vseobecne (akykolvek "CVE-RRRR-xxxxx" retazec) - over
-po prvom behu v logu, ci sa nasli a su ocakavane.
+Volitelne: ak je nastaveny LEAKIX_API_KEY, ku kazdej IP sa navyse dopyta LeakIX host
+lookup (https://leakix.net/host/{ip}) a najdene CVE (z tagov sluzieb/leakov v tvare
+"cve-RRRR-xxxxx") sa pripoja k existujucim zo Shodanu - kazda zranitelnost ma oznaceny
+zdroj ("Shodan", "LeakIX", alebo oboje, ak ju nahlasia obe sluzby). Volania su
+limitovane premennou LEAKIX_MAX_CALLS na beh a vysledky sa cachuju (data/leakix_cache.json)
+na 7 dni, aby sa zbytocne nemrhalo bezplatnym kreditom. LeakIX vacsinou neudava CVSS skore
+k tagu, preto taketo CVE maju kritickost "unknown", kym sa nenajde zhoda v Shodan CVEDB.
 
 Premenne prostredia:
   PUBLISH_MODE        summary | full   (default: summary)
@@ -32,8 +30,8 @@ Premenne prostredia:
   MAX_IPS             limit IP z prefixov na firmu     (default: 500)
   DNSDUMPSTER_API_KEY API kluc z dnsdumpster.com (volitelne; bez neho sa
                        zalozka DNS zaznamov nedopocita a ponecha predosle data)
-  CENSYS_API_KEY       Personal Access Token z platform.censys.io (volitelne)
-  CENSYS_MAX_CALLS     max. poctov volani Censys API za jeden beh (default 100)
+  LEAKIX_API_KEY       API kluc z leakix.net (volitelne)
+  LEAKIX_MAX_CALLS     max. poctov volani LeakIX API za jeden beh (default 100)
 
 summary = hostname, porty a POCTY zranitelnosti (bez IP a bez CVE ID/popisov).
 full    = aj IP, CVE ID, popisy, CPE a historia obsahuje aj CVE ID.
@@ -57,7 +55,7 @@ from pathlib import Path
 UA = {"User-Agent": "Mozilla/5.0 (asset-status-osint)"}
 OUT_FILE = Path("docs/data/assets.json")
 CACHE_FILE = Path("data/cve_cache.json")
-CENSYS_CACHE_FILE = Path("data/censys_cache.json")
+LEAKIX_CACHE_FILE = Path("data/leakix_cache.json")
 HISTORY_DIR = Path("data/history")
 COMPANIES_FILE = Path(os.environ.get("COMPANIES_FILE", "companies.json"))
 SEV_ORDER = ["critical", "high", "medium", "low", "unknown", "none"]
@@ -211,61 +209,41 @@ def enrich_cves(cve_ids, threads=5):
     return cache
 
 
-# ---------- Censys: doplnkove CVE z host lookup (bezplatny pre free ucet) ----------
-def _find_cves_recursive(obj, found):
-    """Prejde cely JSON strom a vytiahne vsetko, co vyzera ako CVE zaznam.
-    Censys schema nie je plne zdokumentovana, preto hladame vseobecne podla
-    kluca 'cve_id'/'cve' a podla vzoru CVE-RRRR-xxxxx kdekolvek v texte."""
-    if isinstance(obj, dict):
-        cid = obj.get("cve_id") or obj.get("cveId") or obj.get("cve")
-        if isinstance(cid, str) and CVE_ID_RE.fullmatch(cid.upper()):
-            cid = cid.upper()
-            sev = obj.get("severity") or obj.get("risk_severity")
-            cvss = obj.get("cvss_score") or obj.get("cvss") or obj.get("score")
-            cvss = cvss if isinstance(cvss, (int, float)) else None
-            desc = obj.get("description") or obj.get("name") or obj.get("summary") or ""
-            entry = found.setdefault(cid, {"cvss": None, "severity_hint": None, "summary": ""})
-            if cvss is not None:
-                entry["cvss"] = cvss
-            if isinstance(sev, str) and not entry["severity_hint"]:
-                entry["severity_hint"] = sev
-            if desc and not entry["summary"]:
-                entry["summary"] = short(str(desc))
-        for v in obj.values():
-            _find_cves_recursive(v, found)
-    elif isinstance(obj, list):
-        for item in obj:
-            _find_cves_recursive(item, found)
-
-
-def normalize_censys_cves(host_data):
+# ---------- LeakIX: doplnkove CVE z host lookup ----------
+def normalize_leakix_cves(host_data):
+    """LeakIX vracia {"Services":[...], "Leaks":[...]}, kazda polozka moze mat
+    pole 'tags' s hodnotami ako 'cve-2021-26084' a textovy popis v 'summary'.
+    Pre istotu sa navyse prejde cela odpoved regexom, ak by CVE bolo inde."""
     found = {}
-    _find_cves_recursive(host_data, found)
+    events = []
+    if isinstance(host_data, dict):
+        events += host_data.get("Services") or []
+        events += host_data.get("Leaks") or []
+    for ev in events:
+        if not isinstance(ev, dict):
+            continue
+        summary = ev.get("summary") or ev.get("Summary") or ""
+        for tag in (ev.get("tags") or []):
+            if not isinstance(tag, str):
+                continue
+            cid = tag.upper()
+            if CVE_ID_RE.fullmatch(cid):
+                entry = found.setdefault(cid, {"summary": ""})
+                if summary and not entry["summary"]:
+                    entry["summary"] = short(str(summary))
     for cid in CVE_ID_RE.findall(json.dumps(host_data or {})):
-        found.setdefault(cid.upper(), {"cvss": None, "severity_hint": None, "summary": ""})
-    out = []
-    for cid, info in found.items():
-        cvss = info["cvss"]
-        if cvss is not None:
-            sev = severity(cvss)
-        else:
-            hint = (info["severity_hint"] or "").lower()
-            sev = hint if hint in SEV_ORDER else "unknown"
-        out.append({"id": cid, "cvss": cvss, "severity": sev, "kev": False,
-                    "summary": info["summary"], "source": "Censys"})
-    return out
+        found.setdefault(cid.upper(), {"summary": ""})
+    return [{"id": cid, "cvss": None, "severity": "unknown", "kev": False,
+            "summary": info["summary"], "source": "LeakIX"} for cid, info in found.items()]
 
 
-def fetch_censys_host(ip, api_key):
-    url = f"https://api.platform.censys.io/v3/global/asset/host/{ip}"
-    data = http_json(url, timeout=30, retries=2, headers={
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/vnd.censys.api.v3.host.v1+json",
-    })
-    return normalize_censys_cves(data)
+def fetch_leakix_host(ip, api_key):
+    url = f"https://leakix.net/host/{ip}"
+    data = http_json(url, timeout=30, retries=2, headers={"api-key": api_key, "Accept": "application/json"})
+    return normalize_leakix_cves(data)
 
 
-def _censys_fresh(entry):
+def _leakix_fresh(entry):
     try:
         age = datetime.now(timezone.utc) - datetime.fromisoformat(entry["fetched"])
         return age < CACHE_TTL and "cves" in entry
@@ -273,46 +251,47 @@ def _censys_fresh(entry):
         return False
 
 
-def enrich_censys(ips, api_key, max_calls):
+def enrich_leakix(ips, api_key, max_calls):
     """Vrati {ip: [cve, ...]}. Cachuje na CACHE_TTL a dodrzuje max_calls za beh,
-    aby sa neminul bezplatny kredit (typicky 500 volani na ucet)."""
-    cache = load_json(CENSYS_CACHE_FILE, {})
+    aby sa neminul bezplatny kredit."""
+    cache = load_json(LEAKIX_CACHE_FILE, {})
     if not api_key:
-        print("[!] CENSYS_API_KEY nie je nastaveny, Censys obohatenie sa preskakuje "
+        print("[!] LEAKIX_API_KEY nie je nastaveny, LeakIX obohatenie sa preskakuje "
               "(pouzivam predoslu cache, ak existuje)", file=sys.stderr)
         return {ip: v.get("cves", []) for ip, v in cache.items()}
 
-    todo = [ip for ip in sorted(ips, key=ipaddress.ip_address) if ip not in cache or not _censys_fresh(cache[ip])]
-    print(f"[*] Censys: {len(ips)} IP celkovo, {len(todo)} treba overit (limit tohto behu: {max_calls})")
+    todo = [ip for ip in sorted(ips, key=ipaddress.ip_address) if ip not in cache or not _leakix_fresh(cache[ip])]
+    print(f"[*] LeakIX: {len(ips)} IP celkovo, {len(todo)} treba overit (limit tohto behu: {max_calls})")
     calls = 0
     for ip in todo:
         if calls >= max_calls:
-            print(f"[!] Censys: dosiahnuty limit {max_calls} volani na tento beh, zvysok preskakujem "
+            print(f"[!] LeakIX: dosiahnuty limit {max_calls} volani na tento beh, zvysok preskakujem "
                   "(dobehnu nasledujuci den)", file=sys.stderr)
             break
         try:
-            cves = fetch_censys_host(ip, api_key)
+            cves = fetch_leakix_host(ip, api_key)
             cache[ip] = {"fetched": now_iso(), "cves": cves}
         except Exception as e:  # noqa: BLE001
-            print(f"[!] Censys {ip}: {e}", file=sys.stderr)
+            print(f"[!] LeakIX {ip}: {e}", file=sys.stderr)
         calls += 1
         time.sleep(0.3)
-    save_json(CENSYS_CACHE_FILE, cache)
-    print(f"[+] Censys: vykonanych {calls} volani, cache ma {len(cache)} IP")
+    save_json(LEAKIX_CACHE_FILE, cache)
+    print(f"[+] LeakIX: vykonanych {calls} volani, cache ma {len(cache)} IP")
     return {ip: v.get("cves", []) for ip, v in cache.items()}
 
 
-def merge_cves(shodan_cves, censys_cves):
+def merge_cves(shodan_cves, extra_cves):
     """Zluci CVE z dvoch zdrojov do jedneho zoznamu, kazda s poľom 'source'.
-    Ak CVE nahlasia obidva zdroje, source sa spoji a doplnia sa chybajuce udaje."""
+    Ak CVE nahlasia obidva zdroje, source sa spoji (napr. 'Shodan + LeakIX')
+    a doplnia sa chybajuce udaje (prednost ma hodnota, ktora uz existuje)."""
     by_id = {}
     for c in shodan_cves:
         by_id[c["id"]] = {**c, "source": "Shodan"}
-    for c in censys_cves:
+    for c in extra_cves:
         if c["id"] in by_id:
             existing = by_id[c["id"]]
-            if "Censys" not in existing["source"]:
-                existing["source"] = existing["source"] + " + Censys"
+            if c["source"] not in existing["source"]:
+                existing["source"] = existing["source"] + " + " + c["source"]
             if existing.get("cvss") is None and c.get("cvss") is not None:
                 existing["cvss"] = c["cvss"]
                 existing["severity"] = c["severity"]
@@ -385,12 +364,12 @@ def collect(company, args, memo, dns_merge=None):
     return host_ips, prefixes, raw
 
 
-def build_assets(raw, host_ips, prefixes, cache, mode, censys_map=None):
+def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None):
     def in_prefix(ip):
         addr = ipaddress.ip_address(ip)
         return any(addr in p for p in prefixes if p.version == addr.version)
 
-    censys_map = censys_map or {}
+    leakix_map = leakix_map or {}
     assets = []
     for ip, d in raw.items():
         shodan_cves = []
@@ -400,7 +379,7 @@ def build_assets(raw, host_ips, prefixes, cache, mode, censys_map=None):
             shodan_cves.append({"id": cid, "cvss": cvss, "severity": severity(cvss),
                                 "kev": bool(info.get("kev")), "epss": info.get("epss"),
                                 "summary": info.get("summary", "")})
-        cves = merge_cves(shodan_cves, censys_map.get(ip, []))
+        cves = merge_cves(shodan_cves, leakix_map.get(ip, []))
         counts = {s: sum(1 for c in cves if c["severity"] == s)
                   for s in ("critical", "high", "medium", "low", "unknown")}
         scores = [c["cvss"] for c in cves if c["cvss"] is not None]
@@ -648,14 +627,14 @@ def main():
     cache = enrich_cves(all_cves)
 
     all_ips = {ip for _, _, raw in collected.values() for ip in raw}
-    censys_max_calls = int(env("CENSYS_MAX_CALLS") or 100)
-    censys_map = enrich_censys(all_ips, env("CENSYS_API_KEY"), censys_max_calls)
+    leakix_max_calls = int(env("LEAKIX_MAX_CALLS") or 100)
+    leakix_map = enrich_leakix(all_ips, env("LEAKIX_API_KEY"), leakix_max_calls)
 
     out_companies = []
     for c in companies:
         got = collected.get(c["id"])
         if got and (got[0] or got[2]):
-            assets = build_assets(got[2], got[0], got[1], cache, args.mode, censys_map)
+            assets = build_assets(got[2], got[0], got[1], cache, args.mode, leakix_map)
             disappeared = apply_history(c["id"], assets, args.mode)
             assets.sort(key=lambda a: (SEV_ORDER.index(a["max_severity"]), -a["cve_count"],
                                        0 if a.get("changes") else 1,
