@@ -221,6 +221,7 @@ function cveBlock(a) {
     } else head.appendChild(el("span", "", c.id));
     head.appendChild(el("span", "", "  " + c.severity.toUpperCase() + " " + (c.cvss ?? "?") + (c.kev ? "  [KEV]" : "")));
     box.appendChild(head);
+    if (c.source) box.appendChild(el("span", "badge " + c.severity, "zdroj: " + c.source));
     box.appendChild(el("div", "desc", c.summary || "Popis nie je k dispozicii."));
     wrap.appendChild(box);
   });
@@ -413,7 +414,7 @@ document.getElementById("csv").onclick = () => {
     a.names.join(";"), ...(f ? [a.ip] : []), a.ports.join(";"), a.max_severity, a.max_cvss,
     a.counts.critical, a.counts.high, a.counts.medium, a.counts.low, a.counts.unknown, a.kev_count,
     a.is_new ? "yes" : "no", JSON.stringify(a.changes || {}),
-    ...(f ? [(a.cves || []).map(c => c.id + " (" + c.severity + " " + (c.cvss ?? "?") + "): " + (c.summary || "")).join(" | ")] : [])
+    ...(f ? [(a.cves || []).map(c => c.id + " [" + (c.source||"?") + "] (" + c.severity + " " + (c.cvss ?? "?") + "): " + (c.summary || "")).join(" | ")] : [])
   ].map(csvCell).join(","));
   download(active + "-assets.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
 };
