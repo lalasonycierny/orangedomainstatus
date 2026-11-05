@@ -2680,6 +2680,13 @@
   "kev": false,
   "summary": "The make_http_soap_request function in ext/soap/php_http.c in PHP before 5.4.44, 5.5.x before 5.5.28, 5.6.x before 5.6.12, and 7.x before 7.0.4 allows remote attackers to obtain sensitive information from process memory or cause a denial of service (type confusion and application crash) via crafted…"
  },
+ "CVE-2016-3282": {
+  "cvss": 7.8,
+  "epss": 0.26291,
+  "fetched": "2026-11-05T04:13:15+00:00",
+  "kev": false,
+  "summary": "Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013 SP1, Word 2013 RT SP1, Word 2016, Word for Mac 2011, Word 2016 for Mac, Office Compatibility Pack SP3, Word Viewer, Word Automation Services on SharePoint Server 2010 SP2, Word Automation Services on SharePoint Server 2013 SP1,…"
+ },
  "CVE-2016-3424": {
   "cvss": 4.9,
   "epss": 0.02151,
@@ -3625,6 +3632,13 @@
   "kev": false,
   "summary": "The php_wddx_push_element function in ext/wddx/wddx.c in PHP before 5.6.29 and 7.x before 7.0.14 allows remote attackers to cause a denial of service (out-of-bounds read and memory corruption) or possibly have unspecified other impact via an empty boolean element in a wddxPacket XML document."
  },
+ "CVE-2017-0254": {
+  "cvss": 7.8,
+  "epss": 0.19817,
+  "fetched": "2026-11-05T04:13:15+00:00",
+  "kev": false,
+  "summary": "Microsoft Word 2007, Office 2010 SP2, Word 2010 SP2, Office Compatibility Pack SP3, Office for Mac 2011, Office for Mac 2016, Microsoft Office Web Apps 2010 SP2, Office Web Apps Server 2013 SP1, Word 2013 RT SP1, Word 2013 SP1, Word Automation Services on Microsoft SharePoint Server 2013 SP1,…"
+ },
  "CVE-2017-1000369": {
   "cvss": 4.0,
   "epss": 0.00518,
@@ -4395,6 +4409,13 @@
   "kev": false,
   "summary": "The GNU Multiple Precision Arithmetic Library (GMP) interfaces for PHP through 7.1.4 allow attackers to cause a denial of service (memory consumption and application crash) via operations on long strings. NOTE: the vendor disputes this, stating \"There is no security issue here, because GMP safely…"
  },
+ "CVE-2017-8569": {
+  "cvss": 8.8,
+  "epss": 0.05377,
+  "fetched": "2026-11-05T04:14:54+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server allows an elevation of privilege vulnerability due to the way that it sanitizes a specially crafted web request to an affected SharePoint server, aka \"SharePoint Server XSS Vulnerability\"."
+ },
  "CVE-2017-8923": {
   "cvss": 9.8,
   "epss": 0.07191,
@@ -4443,6 +4464,20 @@
   "fetched": "2026-10-29T21:06:08+00:00",
   "kev": false,
   "summary": "The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.1.1a (Affected 1.1.1)."
+ },
+ "CVE-2018-0792": {
+  "cvss": 8.8,
+  "epss": 0.28338,
+  "fetched": "2026-11-05T04:16:03+00:00",
+  "kev": false,
+  "summary": "Microsoft Word 2016 in Microsoft Office 2016 allows a remote code execution vulnerability due to the way objects are handled in memory, aka \"Microsoft Word Remote Code Execution Vulnerability\". This CVE is unique from CVE-2018-0794."
+ },
+ "CVE-2018-0864": {
+  "cvss": 5.4,
+  "epss": 0.02566,
+  "fetched": "2026-11-05T04:16:03+00:00",
+  "kev": false,
+  "summary": "SharePoint Project Server 2013 and SharePoint Enterprise Server 2016 allow an information disclosure vulnerability due to how web requests are handled, aka \"Microsoft SharePoint Information Disclosure Vulnerability\"."
  },
  "CVE-2018-10545": {
   "cvss": 4.7,
@@ -5333,6 +5368,20 @@
   "kev": false,
   "summary": "In PHP through 5.6.33, 7.0.x before 7.0.28, 7.1.x through 7.1.14, and 7.2.x through 7.2.2, there is a stack-based buffer under-read while parsing an HTTP response in the php_stream_url_wrap_http_ex function in ext/standard/http_fopen_wrapper.c. This subsequently results in copying a large string."
  },
+ "CVE-2018-8149": {
+  "cvss": 5.4,
+  "epss": 0.02801,
+  "fetched": "2026-11-05T04:16:03+00:00",
+  "kev": false,
+  "summary": "An elevation of privilege vulnerability exists when Microsoft SharePoint Server does not properly sanitize a specially crafted web request to an affected SharePoint server, aka \"Microsoft SharePoint Elevation of Privilege Vulnerability.\" This affects Microsoft SharePoint Server, Microsoft…"
+ },
+ "CVE-2018-8155": {
+  "cvss": 5.4,
+  "epss": 0.02801,
+  "fetched": "2026-11-05T04:16:33+00:00",
+  "kev": false,
+  "summary": "An elevation of privilege vulnerability exists when Microsoft SharePoint Server does not properly sanitize a specially crafted web request to an affected SharePoint server, aka \"Microsoft SharePoint Elevation of Privilege Vulnerability.\" This affects Microsoft SharePoint. This CVE ID is unique from…"
+ },
  "CVE-2018-8956": {
   "cvss": 5.3,
   "epss": 0.03144,
@@ -5388,6 +5437,13 @@
   "fetched": "2026-10-29T21:06:14+00:00",
   "kev": false,
   "summary": "A vulnerability was found in Apache HTTP Server 2.4.0 to 2.4.38. When the path component of a request URL contains multiple consecutive slashes ('/'), directives such as LocationMatch and RewriteRule must account for duplicates in regular expressions while other aspects of the servers processing…"
+ },
+ "CVE-2019-0950": {
+  "cvss": 5.7,
+  "epss": 0.02461,
+  "fetched": "2026-11-05T04:18:12+00:00",
+  "kev": false,
+  "summary": "A spoofing vulnerability exists when Microsoft SharePoint Server does not properly sanitize a specially crafted web request to an affected SharePoint server, aka 'Microsoft SharePoint Spoofing Vulnerability'. This CVE ID is unique from CVE-2019-0949, CVE-2019-0951."
  },
  "CVE-2019-10081": {
   "cvss": 7.5,
@@ -6355,6 +6411,13 @@
   "kev": false,
   "summary": "scp in OpenSSH through 8.3p1 allows command injection in the scp.c toremote function, as demonstrated by backtick characters in the destination argument. NOTE: the vendor reportedly has stated that they intentionally omit validation of \"anomalous argument transfers\" because that could \"stand a…"
  },
+ "CVE-2020-17089": {
+  "cvss": 7.1,
+  "epss": 0.02892,
+  "fetched": "2026-11-05T04:18:42+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Elevation of Privilege Vulnerability"
+ },
  "CVE-2020-1927": {
   "cvss": 6.1,
   "epss": 0.56691,
@@ -6936,6 +6999,48 @@
   "kev": false,
   "summary": "ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host."
  },
+ "CVE-2021-28450": {
+  "cvss": 5.0,
+  "epss": 0.02395,
+  "fetched": "2026-11-05T04:21:01+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Denial of Service Vulnerability"
+ },
+ "CVE-2021-28453": {
+  "cvss": 7.8,
+  "epss": 0.04053,
+  "fetched": "2026-11-05T04:21:01+00:00",
+  "kev": false,
+  "summary": "Microsoft Word Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-28474": {
+  "cvss": 8.8,
+  "epss": 0.50768,
+  "fetched": "2026-11-05T04:21:01+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-31963": {
+  "cvss": 7.1,
+  "epss": 0.02121,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-31964": {
+  "cvss": 7.6,
+  "epss": 0.0151,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
+ "CVE-2021-31965": {
+  "cvss": 5.7,
+  "epss": 0.0452,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Information Disclosure Vulnerability"
+ },
  "CVE-2021-32785": {
   "cvss": 5.3,
   "epss": 0.02731,
@@ -6970,6 +7075,41 @@
   "fetched": "2026-10-29T21:06:30+00:00",
   "kev": false,
   "summary": "A crafted method sent through HTTP/2 will bypass validation and be forwarded by mod_proxy, which can lead to request splitting or cache poisoning. This issue affects Apache HTTP Server 2.4.17 to 2.4.48."
+ },
+ "CVE-2021-34467": {
+  "cvss": 7.1,
+  "epss": 0.06593,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-34468": {
+  "cvss": 7.1,
+  "epss": 0.02147,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-34517": {
+  "cvss": 5.3,
+  "epss": 0.01966,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
+ "CVE-2021-34519": {
+  "cvss": 5.3,
+  "epss": 0.06136,
+  "fetched": "2026-11-05T04:22:40+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Information Disclosure Vulnerability"
+ },
+ "CVE-2021-34520": {
+  "cvss": 8.1,
+  "epss": 0.04425,
+  "fetched": "2026-11-05T04:22:41+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
  },
  "CVE-2021-34798": {
   "cvss": 7.5,
@@ -7342,6 +7482,34 @@
   "kev": false,
   "summary": "In Apache HTTP Server 2.4.53 and earlier, a malicious request to a lua script that calls r:parsebody(0) may cause a denial of service due to no default limit on possible input size."
  },
+ "CVE-2022-30158": {
+  "cvss": 8.8,
+  "epss": 0.03394,
+  "fetched": "2026-11-05T04:25:13+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2022-30159": {
+  "cvss": 5.5,
+  "epss": 0.0278,
+  "fetched": "2026-11-05T04:25:14+00:00",
+  "kev": false,
+  "summary": "Microsoft Office Information Disclosure Vulnerability"
+ },
+ "CVE-2022-30171": {
+  "cvss": 5.5,
+  "epss": 0.02619,
+  "fetched": "2026-11-05T04:25:19+00:00",
+  "kev": false,
+  "summary": "Microsoft Office Information Disclosure Vulnerability"
+ },
+ "CVE-2022-30172": {
+  "cvss": 5.5,
+  "epss": 0.02793,
+  "fetched": "2026-11-05T04:25:28+00:00",
+  "kev": false,
+  "summary": "Microsoft Office Information Disclosure Vulnerability"
+ },
  "CVE-2022-30556": {
   "cvss": 7.5,
   "epss": 0.05268,
@@ -7461,6 +7629,27 @@
   "kev": false,
   "summary": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of…"
  },
+ "CVE-2022-41036": {
+  "cvss": 8.8,
+  "epss": 0.02128,
+  "fetched": "2026-11-05T04:25:47+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2022-41037": {
+  "cvss": 8.8,
+  "epss": 0.02128,
+  "fetched": "2026-11-05T04:25:25+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2022-41038": {
+  "cvss": 8.8,
+  "epss": 0.03388,
+  "fetched": "2026-11-05T04:25:27+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
  "CVE-2022-4304": {
   "cvss": 5.9,
   "epss": 0.23509,
@@ -7474,6 +7663,13 @@
   "fetched": "2026-10-29T21:06:34+00:00",
   "kev": false,
   "summary": "The function PEM_read_bio_ex() reads a PEM file from a BIO and parses and decodes the \"name\" (e.g. \"CERTIFICATE\"), any header data and the payload data. If the function succeeds then the \"name_out\", \"header\" and \"data\" arguments are populated with pointers to buffers containing the relevant decoded…"
+ },
+ "CVE-2022-44690": {
+  "cvss": 8.8,
+  "epss": 0.82081,
+  "fetched": "2026-11-05T04:25:27+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
  },
  "CVE-2022-4900": {
   "cvss": 6.2,
@@ -7516,6 +7712,27 @@
   "fetched": "2026-10-29T21:06:35+00:00",
   "kev": false,
   "summary": "The function X509_VERIFY_PARAM_add0_policy() is documented to implicitly enable the certificate policy check when doing certificate verification. However the implementation of the function does not enable the check which allows certificates with invalid or incorrect policies to pass the certificate…"
+ },
+ "CVE-2023-21742": {
+  "cvss": 8.8,
+  "epss": 0.55786,
+  "fetched": "2026-11-05T04:25:25+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2023-21743": {
+  "cvss": 5.3,
+  "epss": 0.01155,
+  "fetched": "2026-11-05T04:25:25+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Security Feature Bypass Vulnerability"
+ },
+ "CVE-2023-21744": {
+  "cvss": 8.8,
+  "epss": 0.02922,
+  "fetched": "2026-11-05T04:25:29+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
  },
  "CVE-2023-21977": {
   "cvss": 4.9,
@@ -7629,6 +7846,13 @@
   "kev": false,
   "summary": "Every `named` instance configured to run as a recursive resolver maintains a cache database holding the responses to the queries it has recently sent to authoritative servers. The size limit for that cache database can be configured using the `max-cache-size` statement in the configuration file; it…"
  },
+ "CVE-2023-28288": {
+  "cvss": 8.1,
+  "epss": 0.06233,
+  "fetched": "2026-11-05T04:25:29+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
  "CVE-2023-31122": {
   "cvss": 7.5,
   "epss": 0.0304,
@@ -7650,12 +7874,61 @@
   "kev": false,
   "summary": "HTTP::Tiny before 0.083, a Perl core module since 5.13.9 and available standalone on CPAN, has an insecure default TLS configuration where users must opt in to verify certificates."
  },
+ "CVE-2023-33134": {
+  "cvss": 8.8,
+  "epss": 0.02568,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2023-33157": {
+  "cvss": 8.8,
+  "epss": 0.38161,
+  "fetched": "2026-11-05T04:25:28+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Remote Code Execution Vulnerability"
+ },
+ "CVE-2023-33159": {
+  "cvss": 8.8,
+  "epss": 0.013,
+  "fetched": "2026-11-05T04:25:29+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
+ "CVE-2023-33160": {
+  "cvss": 8.8,
+  "epss": 0.04316,
+  "fetched": "2026-11-05T04:25:29+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
  "CVE-2023-3341": {
   "cvss": 7.5,
   "epss": 0.02958,
   "fetched": "2026-10-30T21:39:45+00:00",
   "kev": false,
   "summary": "The code that processes control channel messages sent to `named` calls certain functions recursively during packet parsing. Recursion depth is only limited by the maximum accepted packet size; depending on the environment, this may cause the packet-parsing code to run out of available stack memory,…"
+ },
+ "CVE-2023-36762": {
+  "cvss": 7.3,
+  "epss": 0.00836,
+  "fetched": "2026-11-05T04:25:29+00:00",
+  "kev": false,
+  "summary": "Microsoft Word Remote Code Execution Vulnerability"
+ },
+ "CVE-2023-36764": {
+  "cvss": 8.8,
+  "epss": 0.02116,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Elevation of Privilege Vulnerability"
+ },
+ "CVE-2023-36894": {
+  "cvss": 6.5,
+  "epss": 0.02066,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Information Disclosure Vulnerability"
  },
  "CVE-2023-3817": {
   "cvss": 5.3,
@@ -7832,6 +8105,20 @@
   "kev": false,
   "summary": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL to crash leading to a potential Denial of Service attack Impact summary: Applications loading files in the PKCS12 format from untrusted sources might terminate abruptly. A file in PKCS12 format can contain certificates…"
  },
+ "CVE-2024-21318": {
+  "cvss": 8.8,
+  "epss": 0.30801,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-21426": {
+  "cvss": 7.8,
+  "epss": 0.03901,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
  "CVE-2024-24795": {
   "cvss": 6.3,
   "epss": 0.02874,
@@ -7846,12 +8133,47 @@
   "kev": false,
   "summary": "php-svg-lib is a scalable vector graphics (SVG) file parsing/rendering library. Prior to version 0.5.2, php-svg-lib fails to validate that font-family doesn't contain a PHAR url, which might leads to RCE on PHP < 8.0, and doesn't validate if external references are allowed. This might leads to…"
  },
+ "CVE-2024-26251": {
+  "cvss": 6.8,
+  "epss": 0.01395,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
  "CVE-2024-27316": {
   "cvss": 7.5,
   "epss": 0.91327,
   "fetched": "2026-10-29T21:06:37+00:00",
   "kev": false,
   "summary": "HTTP/2 incoming headers exceeding the limit are temporarily buffered in nghttp2 in order to generate an informative HTTP 413 response. If a client does not stop sending headers, this leads to memory exhaustion."
+ },
+ "CVE-2024-30043": {
+  "cvss": 6.5,
+  "epss": 0.56408,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Information Disclosure Vulnerability"
+ },
+ "CVE-2024-30044": {
+  "cvss": 7.2,
+  "epss": 0.80767,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-30100": {
+  "cvss": 7.8,
+  "epss": 0.01182,
+  "fetched": "2026-11-05T04:25:30+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-32987": {
+  "cvss": 7.5,
+  "epss": 0.02337,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Information Disclosure Vulnerability"
  },
  "CVE-2024-3566": {
   "cvss": 9.8,
@@ -7866,6 +8188,48 @@
   "fetched": "2026-10-29T21:06:37+00:00",
   "kev": false,
   "summary": "Serving WebSocket protocol upgrades over a HTTP/2 connection could result in a Null Pointer dereference, leading to a crash of the server process, degrading performance."
+ },
+ "CVE-2024-38018": {
+  "cvss": 8.8,
+  "epss": 0.5118,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-38023": {
+  "cvss": 7.2,
+  "epss": 0.529,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-38024": {
+  "cvss": 7.2,
+  "epss": 0.45219,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-38094": {
+  "cvss": 7.2,
+  "epss": 0.50892,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": true,
+  "summary": "Microsoft SharePoint Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-38227": {
+  "cvss": 7.2,
+  "epss": 0.08157,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-38228": {
+  "cvss": 7.2,
+  "epss": 0.04178,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
  },
  "CVE-2024-38472": {
   "cvss": 7.5,
@@ -7951,6 +8315,27 @@
   "kev": false,
   "summary": "Server-Side Request Forgery (SSRF) in Apache HTTP Server on Windows allows to potentially leak NTLM hashes to a malicious server via mod_rewrite or apache expressions that pass unvalidated request input. This issue affects Apache HTTP Server: from 2.4.0 through 2.4.63. Note: The Apache HTTP Server…"
  },
+ "CVE-2024-43464": {
+  "cvss": 7.2,
+  "epss": 0.36297,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-43466": {
+  "cvss": 6.5,
+  "epss": 0.04501,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Denial of Service Vulnerability"
+ },
+ "CVE-2024-43503": {
+  "cvss": 7.8,
+  "epss": 0.0065,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Elevation of Privilege Vulnerability"
+ },
  "CVE-2024-47252": {
   "cvss": 7.5,
   "epss": 0.00795,
@@ -7958,12 +8343,75 @@
   "kev": false,
   "summary": "Insufficient escaping of user-supplied data in mod_ssl in Apache HTTP Server 2.4.63 and earlier allows an untrusted SSL/TLS client to insert escape characters into log files in some configurations. In a logging configuration where CustomLog is used with \"%{varname}x\" or \"%{varname}c\" to log…"
  },
+ "CVE-2024-49062": {
+  "cvss": 6.5,
+  "epss": 0.03224,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Information Disclosure Vulnerability"
+ },
+ "CVE-2024-49064": {
+  "cvss": 6.5,
+  "epss": 0.02541,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Information Disclosure Vulnerability"
+ },
+ "CVE-2024-49065": {
+  "cvss": 5.5,
+  "epss": 0.01104,
+  "fetched": "2026-11-05T04:25:31+00:00",
+  "kev": false,
+  "summary": "Microsoft Office Remote Code Execution Vulnerability"
+ },
+ "CVE-2024-49068": {
+  "cvss": 8.2,
+  "epss": 0.01617,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Elevation of Privilege Vulnerability"
+ },
+ "CVE-2024-49070": {
+  "cvss": 7.4,
+  "epss": 0.02267,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Remote Code Execution Vulnerability"
+ },
  "CVE-2024-5458": {
   "cvss": 5.3,
   "epss": 0.12117,
   "fetched": "2026-10-29T21:06:38+00:00",
   "kev": false,
   "summary": "In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, due to a code logic error, filtering functions such as filter_var when validating URLs (FILTER_VALIDATE_URL) for certain types of URLs the function will result in invalid user information (username + password part of…"
+ },
+ "CVE-2025-21344": {
+  "cvss": 7.8,
+  "epss": 0.00879,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2025-21348": {
+  "cvss": 7.2,
+  "epss": 0.01833,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2025-21393": {
+  "cvss": 6.3,
+  "epss": 0.01057,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Spoofing Vulnerability"
+ },
+ "CVE-2025-21400": {
+  "cvss": 8.0,
+  "epss": 0.34248,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
  },
  "CVE-2025-23048": {
   "cvss": 9.1,
@@ -7986,6 +8434,34 @@
   "kev": false,
   "summary": "A vulnerability was found in OpenSSH when the VerifyHostKeyDNS option is enabled. A machine-in-the-middle attack can be performed by a malicious machine impersonating a legit server. This issue occurs due to how OpenSSH mishandles error codes in specific conditions when verifying the host key. For…"
  },
+ "CVE-2025-29976": {
+  "cvss": 7.8,
+  "epss": 0.00644,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Improper privilege management in Microsoft Office SharePoint allows an authorized attacker to elevate privileges locally."
+ },
+ "CVE-2025-30378": {
+  "cvss": 7.0,
+  "epss": 0.01417,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-30382": {
+  "cvss": 7.8,
+  "epss": 0.02607,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-30384": {
+  "cvss": 7.4,
+  "epss": 0.0139,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code locally."
+ },
  "CVE-2025-32728": {
   "cvss": 4.3,
   "epss": 0.00197,
@@ -7999,6 +8475,34 @@
   "fetched": "2026-10-29T21:06:38+00:00",
   "kev": false,
   "summary": "In certain proxy configurations, a denial of service attack against Apache HTTP Server versions 2.4.26 through to 2.4.63 can be triggered by untrusted clients causing an assertion in mod_proxy_http2. Configurations affected are a reverse proxy is configured for an HTTP/2 backend, with…"
+ },
+ "CVE-2025-49701": {
+  "cvss": 8.8,
+  "epss": 0.01293,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Improper authorization in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2025-49703": {
+  "cvss": 7.8,
+  "epss": 0.0077,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-49704": {
+  "cvss": 8.8,
+  "epss": 0.99995,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": true,
+  "summary": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2025-49712": {
+  "cvss": 8.8,
+  "epss": 0.20686,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
  },
  "CVE-2025-49812": {
   "cvss": 7.4,
@@ -8014,6 +8518,41 @@
   "kev": false,
   "summary": "Late Release of Memory after Effective Lifetime vulnerability in Apache HTTP Server. This issue affects Apache HTTP Server: from 2.4.17 up to 2.4.63. Users are recommended to upgrade to version 2.4.64, which fixes the issue."
  },
+ "CVE-2025-53760": {
+  "cvss": 7.1,
+  "epss": 0.18934,
+  "fetched": "2026-11-05T04:25:32+00:00",
+  "kev": false,
+  "summary": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
+ "CVE-2025-53770": {
+  "cvss": 9.8,
+  "epss": 0.99999,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": true,
+  "summary": "Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized attacker to execute code over a network. Microsoft is aware that an exploit for CVE-2025-53770 exists in the wild. Microsoft is preparing and fully testing a comprehensive update to address this…"
+ },
+ "CVE-2025-53771": {
+  "cvss": 6.5,
+  "epss": 0.9989,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Improper authentication in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2025-54897": {
+  "cvss": 8.8,
+  "epss": 0.21748,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2025-54906": {
+  "cvss": 7.8,
+  "epss": 0.00835,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Free of memory not on the heap in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
  "CVE-2025-55753": {
   "cvss": 7.5,
   "epss": 0.0045,
@@ -8027,6 +8566,48 @@
   "fetched": "2026-10-29T21:06:39+00:00",
   "kev": false,
   "summary": "Apache HTTP Server 2.4.65 and earlier with Server Side Includes (SSI) enabled and mod_cgid (but not mod_cgi) passes the shell-escaped query string to #exec cmd=\"...\" directives. This issue affects Apache HTTP Server before 2.4.66. Users are recommended to upgrade to version 2.4.66, which fixes the…"
+ },
+ "CVE-2025-59221": {
+  "cvss": 7.0,
+  "epss": 0.00387,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-59222": {
+  "cvss": 7.8,
+  "epss": 0.00466,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-59228": {
+  "cvss": 8.8,
+  "epss": 0.01363,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2025-59232": {
+  "cvss": 7.1,
+  "epss": 0.00484,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2025-59235": {
+  "cvss": 7.1,
+  "epss": 0.00653,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2025-59237": {
+  "cvss": 8.8,
+  "epss": 0.02461,
+  "fetched": "2026-11-05T04:25:33+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
  },
  "CVE-2025-59362": {
   "cvss": 4.0,
@@ -8048,6 +8629,41 @@
   "fetched": "2026-10-29T21:06:39+00:00",
   "kev": false,
   "summary": "Squid is a caching proxy for the Web. In Squid versions prior to 7.2, a failure to redact HTTP authentication credentials in error handling allows information disclosure. The vulnerability allows a script to bypass browser security protections and learn the credentials a trusted client uses to…"
+ },
+ "CVE-2025-62204": {
+  "cvss": 8.0,
+  "epss": 0.02208,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2025-62555": {
+  "cvss": 7.0,
+  "epss": 0.0052,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-62558": {
+  "cvss": 7.8,
+  "epss": 0.00637,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-62559": {
+  "cvss": 7.8,
+  "epss": 0.00637,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2025-62562": {
+  "cvss": 7.8,
+  "epss": 0.0081,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Outlook allows an unauthorized attacker to execute code locally."
  },
  "CVE-2025-65082": {
   "cvss": 6.5,
@@ -8196,6 +8812,76 @@
   "kev": false,
   "summary": "If a BIND resolver is performing DNSSEC validation and encounters a maliciously crafted zone, the resolver may consume excessive CPU. Authoritative-only servers are generally unaffected, although there are circumstances where authoritative servers may make recursive queries (see:…"
  },
+ "CVE-2026-20943": {
+  "cvss": 7.0,
+  "epss": 0.00646,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Untrusted search path in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-20945": {
+  "cvss": 4.6,
+  "epss": 0.19075,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-20947": {
+  "cvss": 8.8,
+  "epss": 0.18442,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of special elements used in an sql command ('sql injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-20948": {
+  "cvss": 7.8,
+  "epss": 0.00597,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Untrusted pointer dereference in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-20951": {
+  "cvss": 7.8,
+  "epss": 0.00794,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-20958": {
+  "cvss": 5.4,
+  "epss": 0.00348,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to disclose information over a network."
+ },
+ "CVE-2026-20959": {
+  "cvss": 4.6,
+  "epss": 0.07681,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-20963": {
+  "cvss": 9.8,
+  "epss": 0.29201,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": true,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network."
+ },
+ "CVE-2026-21260": {
+  "cvss": 7.5,
+  "epss": 0.01521,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Exposure of sensitive information to an unauthorized actor in Microsoft Office Outlook allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-21511": {
+  "cvss": 7.5,
+  "epss": 0.03967,
+  "fetched": "2026-11-05T04:25:34+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office Outlook allows an unauthorized attacker to perform spoofing over a network."
+ },
  "CVE-2026-22795": {
   "cvss": 5.5,
   "epss": 0.00173,
@@ -8216,6 +8902,34 @@
   "fetched": "2026-10-29T21:06:40+00:00",
   "kev": false,
   "summary": "An escalation of privilege bug in various modules in Apache HTTP 2.4.66 and earlier allows local .htaccess authors to read files with the privileges of the httpd user. Users are recommended to upgrade to version 2.4.67, which fixes this issue."
+ },
+ "CVE-2026-26105": {
+  "cvss": 8.1,
+  "epss": 0.01232,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-26106": {
+  "cvss": 8.8,
+  "epss": 0.01455,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-26113": {
+  "cvss": 8.4,
+  "epss": 0.00576,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Untrusted pointer dereference in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-26114": {
+  "cvss": 8.8,
+  "epss": 0.03147,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
  },
  "CVE-2026-28387": {
   "cvss": 8.1,
@@ -8287,6 +9001,13 @@
   "kev": false,
   "summary": "BIND servers that are configured to use TKEY-based authentication via GSS-API tokens are vulnerable to excessive memory consumption when receiving and processing maliciously-constructed packets. Typically these servers will be found in Active Directory integrated DNS deployments and/or…"
  },
+ "CVE-2026-32201": {
+  "cvss": 6.5,
+  "epss": 0.43378,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": true,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
  "CVE-2026-32748": {
   "cvss": 7.5,
   "epss": 0.09065,
@@ -8307,6 +9028,27 @@
   "fetched": "2026-10-29T21:06:41+00:00",
   "kev": false,
   "summary": "A NULL pointer dereference in the mod_authn_socache in Apache HTTP Server 2.4.66 and earlier allows an unauthenticated remote user to crash a child process in a caching forward proxy configuration. Users are recommended to upgrade to version 2.4.67, which fixes this issue."
+ },
+ "CVE-2026-33110": {
+  "cvss": 8.8,
+  "epss": 0.01967,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-33112": {
+  "cvss": 8.8,
+  "epss": 0.31124,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-33113": {
+  "cvss": 5.4,
+  "epss": 0.00522,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
  },
  "CVE-2026-33515": {
   "cvss": 6.5,
@@ -8420,12 +9162,47 @@
   "kev": false,
   "summary": "OpenSSH before 10.3 mishandles the authorized_keys principals option in uncommon scenarios involving a principals list in conjunction with a Certificate Authority that makes certain use of comma characters."
  },
+ "CVE-2026-35439": {
+  "cvss": 8.8,
+  "epss": 0.02032,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
  "CVE-2026-3592": {
   "cvss": 5.3,
   "epss": 0.00406,
   "fetched": "2026-10-30T21:39:45+00:00",
   "kev": false,
   "summary": "BIND resolvers are vulnerable to an amplified resource consumption/exhaustion attack. If a victim resolver makes a query to a specially crafted zone, the resolver will consume disproportionate resources. This issue affects BIND 9 versions 9.11.0 through 9.16.50, 9.18.0 through 9.18.48, 9.20.0…"
+ },
+ "CVE-2026-40357": {
+  "cvss": 8.8,
+  "epss": 0.01698,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-40365": {
+  "cvss": 8.8,
+  "epss": 0.00961,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-40367": {
+  "cvss": 8.4,
+  "epss": 0.00453,
+  "fetched": "2026-11-05T04:25:35+00:00",
+  "kev": false,
+  "summary": "Access of resource using incompatible type ('type confusion') in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-40368": {
+  "cvss": 8.0,
+  "epss": 0.01818,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
  },
  "CVE-2026-40684": {
   "cvss": 5.9,
@@ -8546,12 +9323,152 @@
   "kev": false,
   "summary": "Buffer Underwrite vulnerability in Apache HTTP Server on crafted regular expressions in the configuration. This issue affects Apache HTTP Server: from 2.4.0 through 2.4.67. Users are recommended to upgrade to version 2.4.68, which fixes the issue."
  },
+ "CVE-2026-44819": {
+  "cvss": 7.8,
+  "epss": 0.00455,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-44821": {
+  "cvss": 5.5,
+  "epss": 0.00465,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-44824": {
+  "cvss": 7.8,
+  "epss": 0.00455,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
  "CVE-2026-45447": {
   "cvss": 8.8,
   "epss": 0.04002,
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "Issue summary: A specially crafted PKCS#7 or S/MIME signed message could trigger a use-after-free during PKCS#7 signature verification. Impact summary: A use-after-free may result in process crashes, heap corruption, or potentially remote code execution. When processing a PKCS#7 or S/MIME signed…"
+ },
+ "CVE-2026-45453": {
+  "cvss": 5.4,
+  "epss": 0.0051,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45454": {
+  "cvss": 6.5,
+  "epss": 0.0163,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-45456": {
+  "cvss": 8.4,
+  "epss": 0.00438,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Access of resource using incompatible type ('type confusion') in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-45458": {
+  "cvss": 8.4,
+  "epss": 0.00438,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-45462": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:36+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45464": {
+  "cvss": 5.4,
+  "epss": 0.0051,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45465": {
+  "cvss": 5.4,
+  "epss": 0.0051,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45467": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45468": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45471": {
+  "cvss": 7.8,
+  "epss": 0.00455,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Untrusted pointer dereference in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-45475": {
+  "cvss": 7.8,
+  "epss": 0.00455,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-45479": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45481": {
+  "cvss": 7.3,
+  "epss": 0.00687,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45483": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office Project Server allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-45484": {
+  "cvss": 8.8,
+  "epss": 0.35216,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
+ "CVE-2026-45485": {
+  "cvss": 3.3,
+  "epss": 0.00437,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-45659": {
+  "cvss": 8.8,
+  "epss": 0.80242,
+  "fetched": "2026-11-05T04:25:37+00:00",
+  "kev": true,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
  },
  "CVE-2026-46729": {
   "cvss": 7.5,
@@ -8560,12 +9477,68 @@
   "kev": false,
   "summary": "NULL Pointer Dereference vulnerability in Apache HTTP Servers mod_heartmonitor over unicast listener. This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68."
  },
+ "CVE-2026-47294": {
+  "cvss": 8.0,
+  "epss": 0.00609,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of special elements used in an os command ('os command injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-47298": {
+  "cvss": 8.0,
+  "epss": 0.00669,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper authorization in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
  "CVE-2026-47360": {
   "cvss": 7.5,
   "epss": 0.00386,
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache HTTP Server's mod_session_cookie module. When SessionCookieRemove changes across internal redirects, the session cookie may still be passed to a backend server. This issue affects Apache HTTP Server: from 2.4.0…"
+ },
+ "CVE-2026-47636": {
+  "cvss": 5.4,
+  "epss": 0.0051,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-47637": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-47638": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-47639": {
+  "cvss": 5.4,
+  "epss": 0.0051,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-47640": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:26:11+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-47641": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
  },
  "CVE-2026-47729": {
   "cvss": 6.5,
@@ -8580,6 +9553,20 @@
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "Missing authentication checks in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause a denial of service (forced re-authentication) via forged Authorization headers when Digest authentication is enabled…"
+ },
+ "CVE-2026-48560": {
+  "cvss": 5.4,
+  "epss": 0.00937,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-48562": {
+  "cvss": 4.6,
+  "epss": 0.00505,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
  },
  "CVE-2026-48840": {
   "cvss": 5.3,
@@ -8609,12 +9596,26 @@
   "kev": false,
   "summary": "Squid is a caching proxy for the Web. Prior to 7.6, due to an improper input validation bug in cache digest reply handling (peerDigestSwapInMask in src/peer_digest.cc), Squid is vulnerable to a heap-based buffer overflow: a cache digest's on-the-wire size may be larger than the mask_size declared…"
  },
+ "CVE-2026-50522": {
+  "cvss": 9.8,
+  "epss": 0.03042,
+  "fetched": "2026-11-05T04:25:38+00:00",
+  "kev": true,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network."
+ },
  "CVE-2026-53994": {
   "cvss": 7.5,
   "epss": 0.00424,
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "ProFTPD mod_sftp contains a heap-based buffer overflow reachable by an authenticated SFTP user. The fxp_packet_read() function accepts the attacker-supplied 32-bit big-endian SFTP packet length without a minimum sanity check. A value of 0 causes an unsigned subtraction elsewhere in the read path to…"
+ },
+ "CVE-2026-54108": {
+  "cvss": 6.5,
+  "epss": 0.01079,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "External control of file name or path in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
  },
  "CVE-2026-54872": {
   "cvss": 3.7,
@@ -8644,6 +9645,230 @@
   "kev": false,
   "summary": "Issue summary: A non-constant-time optimized implementation of scalar point multiplication is used for SM2 private key operations on ARM64 and RISC-V platforms. Impact summary: An attacker able to measure the time taken by, or to observe the cache-line access pattern of SM2 signing or decryption on…"
  },
+ "CVE-2026-55016": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55019": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55020": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55021": {
+  "cvss": 7.3,
+  "epss": 0.00946,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55023": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55026": {
+  "cvss": 6.2,
+  "epss": 0.00449,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Integer overflow or wraparound in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55027": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55028": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:25:39+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55030": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55032": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:26:13+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55033": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Integer overflow or wraparound in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55034": {
+  "cvss": 7.3,
+  "epss": 0.00946,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55035": {
+  "cvss": 5.5,
+  "epss": 0.00574,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55038": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55040": {
+  "cvss": 9.1,
+  "epss": 0.69536,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": true,
+  "summary": "Weak authentication in Microsoft Office SharePoint allows an unauthorized attacker to bypass a security feature over a network."
+ },
+ "CVE-2026-55045": {
+  "cvss": 8.4,
+  "epss": 0.00446,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55047": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55050": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55051": {
+  "cvss": 6.5,
+  "epss": 0.00911,
+  "fetched": "2026-11-05T04:25:40+00:00",
+  "kev": false,
+  "summary": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to disclose information over a network."
+ },
+ "CVE-2026-55052": {
+  "cvss": 8.8,
+  "epss": 0.0094,
+  "fetched": "2026-11-05T04:25:41+00:00",
+  "kev": false,
+  "summary": "Missing authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
+ "CVE-2026-55055": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:41+00:00",
+  "kev": false,
+  "summary": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55121": {
+  "cvss": 5.5,
+  "epss": 0.00513,
+  "fetched": "2026-11-05T04:25:41+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55124": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:26:14+00:00",
+  "kev": false,
+  "summary": "Improper validation of specified type of input in Microsoft Office Word allows an unauthorized attacker to disclose information locally."
+ },
+ "CVE-2026-55125": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:41+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55126": {
+  "cvss": 7.3,
+  "epss": 0.00649,
+  "fetched": "2026-11-05T04:25:42+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55127": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:42+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55128": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:42+00:00",
+  "kev": false,
+  "summary": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55130": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:43+00:00",
+  "kev": false,
+  "summary": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55132": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:43+00:00",
+  "kev": false,
+  "summary": "Double free in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55134": {
+  "cvss": 7.8,
+  "epss": 0.00571,
+  "fetched": "2026-11-05T04:25:43+00:00",
+  "kev": false,
+  "summary": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-55135": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:25:43+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-55142": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:26:17+00:00",
+  "kev": false,
+  "summary": "Numeric truncation error in Microsoft Office Word allows an unauthorized attacker to disclose information locally."
+ },
  "CVE-2026-56153": {
   "cvss": 7.5,
   "epss": 0.00498,
@@ -8657,6 +9882,27 @@
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...}) This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68."
+ },
+ "CVE-2026-56157": {
+  "cvss": 5.4,
+  "epss": 0.00496,
+  "fetched": "2026-11-05T04:25:47+00:00",
+  "kev": false,
+  "summary": "Improper access control in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-56164": {
+  "cvss": 5.3,
+  "epss": 0.01011,
+  "fetched": "2026-11-05T04:25:47+00:00",
+  "kev": true,
+  "summary": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network."
+ },
+ "CVE-2026-56192": {
+  "cvss": 5.5,
+  "epss": 0.00595,
+  "fetched": "2026-11-05T04:26:21+00:00",
+  "kev": false,
+  "summary": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information locally."
  },
  "CVE-2026-56449": {
   "cvss": 7.5,
@@ -8679,12 +9925,33 @@
   "kev": false,
   "summary": "Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session->bbtmp re-entrancy This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68."
  },
+ "CVE-2026-58277": {
+  "cvss": 8.8,
+  "epss": 0.0094,
+  "fetched": "2026-11-05T04:27:21+00:00",
+  "kev": false,
+  "summary": "Improper authorization in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
  "CVE-2026-58415": {
   "cvss": 5.3,
   "epss": 0.00533,
   "fetched": "2026-10-29T21:06:44+00:00",
   "kev": false,
   "summary": "Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory This issue affects…"
+ },
+ "CVE-2026-58639": {
+  "cvss": 6.5,
+  "epss": 0.00911,
+  "fetched": "2026-11-05T04:27:22+00:00",
+  "kev": false,
+  "summary": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-58644": {
+  "cvss": 9.8,
+  "epss": 0.15873,
+  "fetched": "2026-11-05T04:26:14+00:00",
+  "kev": true,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network."
  },
  "CVE-2026-5946": {
   "cvss": 7.5,
@@ -8763,6 +10030,41 @@
   "kev": false,
   "summary": "ssh in OpenSSH before 10.4 can have a use-after-free when a server changes its host key during a key re-exchange. (This outcome occurs only on the client side.)"
  },
+ "CVE-2026-62826": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:26:48+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-62827": {
+  "cvss": 8.8,
+  "epss": 0.0094,
+  "fetched": "2026-11-05T04:26:50+00:00",
+  "kev": false,
+  "summary": "Improper authentication in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
+ "CVE-2026-62837": {
+  "cvss": 6.5,
+  "epss": 0.0123,
+  "fetched": "2026-11-05T04:26:21+00:00",
+  "kev": false,
+  "summary": "Relative path traversal in Microsoft Office SharePoint allows an authorized attacker to disclose information over a network."
+ },
+ "CVE-2026-62839": {
+  "cvss": 6.5,
+  "epss": 0.00911,
+  "fetched": "2026-11-05T04:26:54+00:00",
+  "kev": false,
+  "summary": "Insufficiently protected credentials in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-62917": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:26:48+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
  "CVE-2026-63045": {
   "cvss": 7.5,
   "epss": 0.00472,
@@ -8791,6 +10093,27 @@
   "kev": false,
   "summary": "Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when…"
  },
+ "CVE-2026-63514": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:26:50+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-63516": {
+  "cvss": 6.5,
+  "epss": 0.01874,
+  "fetched": "2026-11-05T04:26:51+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-63520": {
+  "cvss": 8.1,
+  "epss": 0.00956,
+  "fetched": "2026-11-05T04:26:51+00:00",
+  "kev": false,
+  "summary": "Improper input validation in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network."
+ },
  "CVE-2026-63686": {
   "cvss": 7.5,
   "epss": 0.00478,
@@ -8805,6 +10128,62 @@
   "kev": false,
   "summary": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') response smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi and a crafted uwsgi response with Transfer-Encoding. This issue affects Apache HTTP Server: from 2.4.30 through 2.4.68."
  },
+ "CVE-2026-64900": {
+  "cvss": 7.3,
+  "epss": 0.00649,
+  "fetched": "2026-11-05T04:26:55+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-64901": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:26:55+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-64902": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:26:55+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-64916": {
+  "cvss": 4.6,
+  "epss": 0.00583,
+  "fetched": "2026-11-05T04:26:55+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-64921": {
+  "cvss": 8.8,
+  "epss": 0.0094,
+  "fetched": "2026-11-05T04:26:56+00:00",
+  "kev": false,
+  "summary": "Missing authentication for critical function in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
+ },
+ "CVE-2026-65658": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:27:21+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-65660": {
+  "cvss": 8.8,
+  "epss": 0.08189,
+  "fetched": "2026-11-05T04:27:21+00:00",
+  "kev": true,
+  "summary": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-65663": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:27:54+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
  "CVE-2026-66140": {
   "cvss": 8.4,
   "epss": 0.00386,
@@ -8818,6 +10197,41 @@
   "fetched": "2026-10-30T21:39:45+00:00",
   "kev": false,
   "summary": "Exim before 4.99.5 allows .forward privilege escalation because force_command for a pipe transport is mishandled."
+ },
+ "CVE-2026-66805": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:27:23+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-66808": {
+  "cvss": 8.8,
+  "epss": 0.02044,
+  "fetched": "2026-11-05T04:27:24+00:00",
+  "kev": false,
+  "summary": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-69943": {
+  "cvss": 8.8,
+  "epss": 0.01161,
+  "fetched": "2026-11-05T04:27:24+00:00",
+  "kev": false,
+  "summary": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network."
+ },
+ "CVE-2026-70306": {
+  "cvss": 9.3,
+  "epss": 0.01009,
+  "fetched": "2026-11-05T04:27:24+00:00",
+  "kev": false,
+  "summary": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network."
+ },
+ "CVE-2026-70324": {
+  "cvss": 8.8,
+  "epss": 0.0094,
+  "fetched": "2026-11-05T04:27:24+00:00",
+  "kev": false,
+  "summary": "Server-side request forgery (ssrf) in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network."
  },
  "CVE-2026-72897": {
   "cvss": 7.5,
