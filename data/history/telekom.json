@@ -1,7 +1,7 @@
 {
  "0 telekom-sk.mail.protection.outlook.com": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "0 telekom-sk.mail.protection.outlook.com"
   ],
@@ -28,7 +28,7 @@
  },
  "101ems.telekom.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "101ems.telekom.sk"
   ],
@@ -53,7 +53,7 @@
  },
  "acs.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "acs.telekom.sk"
   ],
@@ -82,7 +82,7 @@
  },
  "admin.cloud.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "admin.cloud.telekom.sk"
   ],
@@ -107,7 +107,7 @@
  },
  "admin.tarsius.nike.cust.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "admin.tarsius.nike.cust.telekom.sk",
    "api.tarsius.nike.cust.telekom.sk"
@@ -137,7 +137,7 @@
  },
  "admin.tarsius.skoda.cust.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "admin.tarsius.skoda.cust.telekom.sk",
    "api.tarsius.skoda.cust.telekom.sk"
@@ -167,7 +167,7 @@
  },
  "analytics.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "analytics.telekom.sk",
    "crt.analytics.telekom.sk"
@@ -467,7 +467,7 @@
  },
  "api-analytics.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "api-analytics.telekom.sk"
   ],
@@ -495,7 +495,7 @@
  },
  "api1.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "api1.telekom.sk"
   ],
@@ -520,7 +520,7 @@
  },
  "apigw-ext.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "apigw-ext.telekom.sk"
   ],
@@ -548,7 +548,7 @@
  },
  "autodiscover.external.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "autodiscover.external.telekom.sk"
   ],
@@ -609,7 +609,7 @@
  },
  "autodiscover.predajna.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "autodiscover.predajna.telekom.sk"
   ],
@@ -636,7 +636,7 @@
  },
  "autodiscover.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "autodiscover.telekom.sk"
   ],
@@ -697,7 +697,7 @@
  },
  "bsp.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "bsp.telekom.sk"
   ],
@@ -722,7 +722,7 @@
  },
  "bspt.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "bspt.telekom.sk"
   ],
@@ -768,7 +768,7 @@
  },
  "cap.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "cap.telekom.sk"
   ],
@@ -795,7 +795,7 @@
  },
  "cappor.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "cappor.telekom.sk",
    "db.cappor.telekom.sk"
@@ -825,7 +825,7 @@
  },
  "citrix.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "citrix.telekom.sk",
    "ecitrix.telekom.sk"
@@ -851,7 +851,7 @@
  },
  "cloud.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "cloud.telekom.sk",
    "m.telekom.sk",
@@ -878,7 +878,7 @@
  },
  "cloudportal.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "cloudportal.telekom.sk"
   ],
@@ -905,7 +905,7 @@
  },
  "cloudvpn.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "cloudvpn.telekom.sk"
   ],
@@ -930,7 +930,7 @@
  },
  "db.kaufland-hotspot.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "db.kaufland-hotspot.telekom.sk",
    "kaufland-hotspot.telekom.sk"
@@ -959,7 +959,7 @@
  },
  "db.tale-hotspot.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "db.tale-hotspot.telekom.sk",
    "tale-hotspot.telekom.sk"
@@ -1262,7 +1262,7 @@
  },
  "dc.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dc.telekom.sk"
   ],
@@ -1287,7 +1287,7 @@
  },
  "ditra.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ditra.telekom.sk"
   ],
@@ -1312,7 +1312,7 @@
  },
  "dm.vvn-test.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dm.vvn-test.telekom.sk"
   ],
@@ -1358,7 +1358,7 @@
  },
  "dm.vvn.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dm.vvn.telekom.sk"
   ],
@@ -1383,7 +1383,7 @@
  },
  "dms.vvn.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dms.vvn.telekom.sk"
   ],
@@ -1408,7 +1408,7 @@
  },
  "dns.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dns.telekom.sk",
    "ns2.telecom.sk"
@@ -1458,40 +1458,6 @@
     },
     "cve_count": 0,
     "cve_ids": [],
-    "date": "2026-10-29T21:06:45+00:00",
-    "kev_count": 0,
-    "max_cvss": null,
-    "max_severity": "none",
-    "ports": []
-   },
-   {
-    "counts": {
-     "critical": 0,
-     "high": 0,
-     "low": 0,
-     "medium": 0,
-     "unknown": 0
-    },
-    "cve_count": 0,
-    "cve_ids": [],
-    "date": "2026-10-29T21:06:45+00:00",
-    "kev_count": 0,
-    "max_cvss": null,
-    "max_severity": "none",
-    "ports": [
-     53
-    ]
-   },
-   {
-    "counts": {
-     "critical": 0,
-     "high": 0,
-     "low": 0,
-     "medium": 0,
-     "unknown": 0
-    },
-    "cve_count": 0,
-    "cve_ids": [],
     "date": "2026-10-30T04:02:02+00:00",
     "kev_count": 0,
     "max_cvss": null,
@@ -2223,6 +2189,74 @@
     "cve_count": 0,
     "cve_ids": [],
     "date": "2026-11-05T04:30:01+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     53
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     53
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": []
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
     "kev_count": 0,
     "max_cvss": null,
     "max_severity": "none",
@@ -2234,7 +2268,7 @@
  },
  "dokuwiki-panip.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dokuwiki-panip.telekom.sk",
    "git-panip.telekom.sk",
@@ -2263,7 +2297,7 @@
  },
  "dummy.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "dummy.telekom.sk",
    "nahravanie-hovorov.telekom.sk"
@@ -3532,7 +3566,7 @@
  },
  "eshop.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "eshop.telekom.sk"
   ],
@@ -3939,12 +3973,49 @@
      80,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     443
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
    }
   ]
  },
  "ews1.vvn.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ews1.vvn.telekom.sk",
    "ews2.vvn.telekom.sk",
@@ -3973,7 +4044,7 @@
  },
  "expe01.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "expe01.telekom.sk",
    "jabber.telekom.sk"
@@ -3999,7 +4070,7 @@
  },
  "expe02.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "expe02.telekom.sk",
    "jabber.telekom.sk"
@@ -4025,7 +4096,7 @@
  },
  "fax2mail.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "fax2mail.telekom.sk",
    "mail2fax.telekom.sk"
@@ -4055,7 +4126,7 @@
  },
  "faz.sdwancc.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "faz.sdwancc.telekom.sk",
    "fmg.sdwancc.telekom.sk"
@@ -4084,7 +4155,7 @@
  },
  "fic.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "fic.telekom.sk"
   ],
@@ -4109,7 +4180,7 @@
  },
  "forum-stage.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "forum-stage.telekom.sk"
   ],
@@ -4143,7 +4214,7 @@
  },
  "genesys-byoc.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "genesys-byoc.telekom.sk"
   ],
@@ -4168,7 +4239,7 @@
  },
  "hybrid.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "hybrid.telekom.sk",
    "st-mail.telekom.sk"
@@ -4194,7 +4265,7 @@
  },
  "ict-support.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ict-support.telekom.sk"
   ],
@@ -4223,7 +4294,7 @@
  },
  "ict-tech-support.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ict-tech-support.telekom.sk",
    "otrs.ict.telekom.sk",
@@ -4252,7 +4323,7 @@
  },
  "ict-znuny.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ict-znuny.telekom.sk"
   ],
@@ -5115,7 +5186,7 @@
  },
  "ict.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ict.telekom.sk"
   ],
@@ -5144,7 +5215,7 @@
  },
  "icttt.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "icttt.telekom.sk"
   ],
@@ -5516,12 +5587,130 @@
      80,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 11,
+     "high": 50,
+     "low": 8,
+     "medium": 29,
+     "unknown": 0
+    },
+    "cve_count": 98,
+    "cve_ids": [
+     "CVE-2007-3205",
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-1390",
+     "CVE-2009-2299",
+     "CVE-2009-3765",
+     "CVE-2009-3766",
+     "CVE-2009-3767",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2220",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2015-9253",
+     "CVE-2017-7272",
+     "CVE-2017-7963",
+     "CVE-2017-8923",
+     "CVE-2018-19395",
+     "CVE-2018-19396",
+     "CVE-2019-0190",
+     "CVE-2019-9637",
+     "CVE-2019-9638",
+     "CVE-2019-9639",
+     "CVE-2019-9641",
+     "CVE-2020-11579",
+     "CVE-2022-31628",
+     "CVE-2022-31629",
+     "CVE-2022-4900",
+     "CVE-2024-25117",
+     "CVE-2024-3566",
+     "CVE-2024-42516",
+     "CVE-2024-43204",
+     "CVE-2024-43394",
+     "CVE-2024-47252",
+     "CVE-2025-23048",
+     "CVE-2025-49630",
+     "CVE-2025-49812",
+     "CVE-2025-53020",
+     "CVE-2025-55753",
+     "CVE-2025-58098",
+     "CVE-2025-59775",
+     "CVE-2025-65082",
+     "CVE-2025-66200",
+     "CVE-2026-109619",
+     "CVE-2026-28780",
+     "CVE-2026-29167",
+     "CVE-2026-29168",
+     "CVE-2026-29169",
+     "CVE-2026-29170",
+     "CVE-2026-34355",
+     "CVE-2026-34356",
+     "CVE-2026-35189",
+     "CVE-2026-35191",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-42535",
+     "CVE-2026-42536",
+     "CVE-2026-42772",
+     "CVE-2026-43951",
+     "CVE-2026-44119",
+     "CVE-2026-44185",
+     "CVE-2026-44186",
+     "CVE-2026-44631",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-48913",
+     "CVE-2026-49975",
+     "CVE-2026-54872",
+     "CVE-2026-54873",
+     "CVE-2026-54875",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-72897",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-75804",
+     "CVE-2026-75805",
+     "CVE-2026-75806",
+     "CVE-2026-77696",
+     "CVE-2026-79768",
+     "CVE-2026-84782",
+     "CVE-2026-84784",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 1,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     443
+    ]
    }
   ]
  },
  "iot.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "iot.telekom.sk"
   ],
@@ -5551,7 +5740,7 @@
  },
  "kdeje.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "kdeje.telekom.sk"
   ],
@@ -5576,7 +5765,7 @@
  },
  "lojalita-biznis-a.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "lojalita-biznis-a.telekom.sk",
    "lojalita-biznis-b.telekom.sk",
@@ -5618,7 +5807,7 @@
  },
  "meraki.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "meraki.telekom.sk"
   ],
@@ -5643,7 +5832,7 @@
  },
  "moja-firma.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "moja-firma.telekom.sk",
    "www.moja-firma.telekom.sk"
@@ -5669,7 +5858,7 @@
  },
  "mojafirma.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "mojafirma.telekom.sk",
    "www.mojafirma.telekom.sk"
@@ -5697,7 +5886,7 @@
  },
  "mwfp.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "mwfp.telekom.sk"
   ],
@@ -5725,7 +5914,7 @@
  },
  "mwfrinta.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "mwfrinta.telekom.sk"
   ],
@@ -5753,7 +5942,7 @@
  },
  "mwftsta.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "mwftsta.telekom.sk"
   ],
@@ -5796,7 +5985,7 @@
  },
  "nip.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "nip.telekom.sk"
   ],
@@ -5821,7 +6010,7 @@
  },
  "o365customer.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "o365customer.telekom.sk"
   ],
@@ -5846,7 +6035,7 @@
  },
  "oldmail.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "oldmail.telekom.sk"
   ],
@@ -5871,7 +6060,7 @@
  },
  "omniapi.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "omniapi.telekom.sk",
    "omnichannel.telekom.sk"
@@ -5902,7 +6091,7 @@
  },
  "oneportal.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "oneportal.telekom.sk"
   ],
@@ -6165,12 +6354,49 @@
      80,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
    }
   ]
  },
  "openstack.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "openstack.telekom.sk"
   ],
@@ -6199,7 +6425,7 @@
  },
  "partner.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "partner.telekom.sk"
   ],
@@ -6224,7 +6450,7 @@
  },
  "pbx-tls.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "pbx-tls.telekom.sk"
   ],
@@ -6249,7 +6475,7 @@
  },
  "perf-t-app.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "perf-t-app.telekom.sk",
    "staging-t-app.telekom.sk"
@@ -6295,7 +6521,7 @@
  },
  "pma.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "pma.telekom.sk"
   ],
@@ -6320,7 +6546,7 @@
  },
  "podpora.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "podpora.telekom.sk"
   ],
@@ -6345,7 +6571,7 @@
  },
  "portal.vvn-test.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "portal.vvn-test.telekom.sk"
   ],
@@ -6422,7 +6648,7 @@
  },
  "posta.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "posta.telekom.sk"
   ],
@@ -6447,7 +6673,7 @@
  },
  "prieskum.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "prieskum.telekom.sk",
    "www.prieskum.telekom.sk"
@@ -6476,7 +6702,7 @@
  },
  "public-analytics.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "public-analytics.telekom.sk"
   ],
@@ -6504,7 +6730,7 @@
  },
  "ra.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra.telekom.sk"
   ],
@@ -6531,7 +6757,7 @@
  },
  "ra1.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra1.telekom.sk"
   ],
@@ -6558,7 +6784,7 @@
  },
  "ra2.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra2.telekom.sk"
   ],
@@ -6585,7 +6811,7 @@
  },
  "ra3.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra3.telekom.sk"
   ],
@@ -6612,7 +6838,7 @@
  },
  "ra4.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra4.telekom.sk"
   ],
@@ -6637,7 +6863,7 @@
  },
  "ra5.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ra5.telekom.sk"
   ],
@@ -6664,7 +6890,7 @@
  },
  "ragw2.sdwan.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "ragw2.sdwan.telekom.sk"
   ],
@@ -6691,7 +6917,7 @@
  },
  "raportal.sdwan.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "raportal.sdwan.telekom.sk"
   ],
@@ -6718,7 +6944,7 @@
  },
  "rcs-go-test.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "rcs-go-test.telekom.sk",
    "rcs-go.telekom.sk"
@@ -6747,7 +6973,7 @@
  },
  "roaming.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "roaming.telekom.sk"
   ],
@@ -9150,12 +9376,416 @@
      61616,
      63676
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     2,
+     11,
+     13,
+     15,
+     17,
+     19,
+     37,
+     49,
+     53,
+     80,
+     175,
+     221,
+     285,
+     314,
+     340,
+     443,
+     445,
+     480,
+     541,
+     587,
+     591,
+     593,
+     666,
+     772,
+     873,
+     902,
+     990,
+     993,
+     1027,
+     1099,
+     1198,
+     1604,
+     1605,
+     1801,
+     1883,
+     1956,
+     1970,
+     2067,
+     2081,
+     2087,
+     2121,
+     2126,
+     2154,
+     2201,
+     2202,
+     2222,
+     2224,
+     2250,
+     2345,
+     2352,
+     2423,
+     2443,
+     2506,
+     3006,
+     3016,
+     3042,
+     3050,
+     3057,
+     3060,
+     3073,
+     3076,
+     3082,
+     3117,
+     3129,
+     3130,
+     3137,
+     3156,
+     3165,
+     3183,
+     3211,
+     3341,
+     3389,
+     3409,
+     3410,
+     3443,
+     3524,
+     3551,
+     3559,
+     3590,
+     3791,
+     3794,
+     4022,
+     4063,
+     4117,
+     4150,
+     4165,
+     4190,
+     4250,
+     4282,
+     4321,
+     4401,
+     4506,
+     4646,
+     4700,
+     4949,
+     5003,
+     5007,
+     5080,
+     5222,
+     5223,
+     5240,
+     5252,
+     5269,
+     5271,
+     5272,
+     5351,
+     5432,
+     5439,
+     5552,
+     5567,
+     5593,
+     5608,
+     5858,
+     5905,
+     5906,
+     5996,
+     6001,
+     6005,
+     6006,
+     6008,
+     6060,
+     6432,
+     6500,
+     6603,
+     6653,
+     6667,
+     6755,
+     6998,
+     7005,
+     7105,
+     7171,
+     7348,
+     7373,
+     7403,
+     7480,
+     7535,
+     7634,
+     7788,
+     7822,
+     8026,
+     8027,
+     8041,
+     8056,
+     8070,
+     8100,
+     8113,
+     8126,
+     8143,
+     8144,
+     8149,
+     8155,
+     8158,
+     8160,
+     8161,
+     8166,
+     8170,
+     8171,
+     8190,
+     8195,
+     8199,
+     8222,
+     8284,
+     8291,
+     8315,
+     8383,
+     8385,
+     8403,
+     8419,
+     8420,
+     8424,
+     8435,
+     8445,
+     8453,
+     8457,
+     8465,
+     8470,
+     8475,
+     8493,
+     8494,
+     8528,
+     8556,
+     8575,
+     8591,
+     8593,
+     8595,
+     8606,
+     8640,
+     8649,
+     8686,
+     8706,
+     8708,
+     8731,
+     8789,
+     8812,
+     8822,
+     8830,
+     8831,
+     8832,
+     8835,
+     8852,
+     8862,
+     8868,
+     8899,
+     8902,
+     8911,
+     8912,
+     8988,
+     9003,
+     9020,
+     9023,
+     9026,
+     9041,
+     9050,
+     9059,
+     9073,
+     9074,
+     9089,
+     9097,
+     9102,
+     9115,
+     9124,
+     9140,
+     9141,
+     9146,
+     9148,
+     9160,
+     9169,
+     9185,
+     9186,
+     9204,
+     9208,
+     9289,
+     9303,
+     9312,
+     9418,
+     9529,
+     9530,
+     9600,
+     9611,
+     9758,
+     9761,
+     9797,
+     9811,
+     9885,
+     9909,
+     9916,
+     9929,
+     9988,
+     9999,
+     10013,
+     10030,
+     10048,
+     10081,
+     10087,
+     10100,
+     10101,
+     10200,
+     10205,
+     10240,
+     10380,
+     10397,
+     10554,
+     10894,
+     10911,
+     11110,
+     11701,
+     12000,
+     12019,
+     12082,
+     12106,
+     12108,
+     12120,
+     12156,
+     12157,
+     12164,
+     12178,
+     12187,
+     12191,
+     12204,
+     12238,
+     12250,
+     12251,
+     12252,
+     12261,
+     12276,
+     12281,
+     12288,
+     12295,
+     12304,
+     12305,
+     12322,
+     12328,
+     12335,
+     12357,
+     12377,
+     12393,
+     12414,
+     12419,
+     12425,
+     12426,
+     12428,
+     12458,
+     12461,
+     12499,
+     12524,
+     12531,
+     12533,
+     12535,
+     12546,
+     12556,
+     12557,
+     12574,
+     12902,
+     13333,
+     14104,
+     14147,
+     14402,
+     14897,
+     15038,
+     15503,
+     16002,
+     16019,
+     16024,
+     16027,
+     16032,
+     16068,
+     16085,
+     16098,
+     17776,
+     17778,
+     18038,
+     18043,
+     18053,
+     18078,
+     18102,
+     18111,
+     19000,
+     19015,
+     19902,
+     20018,
+     20050,
+     20070,
+     20151,
+     20325,
+     21025,
+     21236,
+     21239,
+     21285,
+     21292,
+     21322,
+     21328,
+     22082,
+     22556,
+     22705,
+     30006,
+     30007,
+     30027,
+     30029,
+     32764,
+     35002,
+     35101,
+     35522,
+     37777,
+     38080,
+     38520,
+     40029,
+     40471,
+     41800,
+     44158,
+     44303,
+     45555,
+     45886,
+     47080,
+     49502,
+     49688,
+     50160,
+     51007,
+     53400,
+     55000,
+     55475,
+     55554,
+     57779,
+     58585,
+     59012,
+     61616,
+     62237,
+     63676
+    ]
    }
   ]
  },
  "sbc-sprinklr.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "sbc-sprinklr.telekom.sk"
   ],
@@ -9180,7 +9810,7 @@
  },
  "sdwan.versa.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "sdwan.versa.telekom.sk"
   ],
@@ -9207,7 +9837,7 @@
  },
  "sdwan1.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "sdwan1.telekom.sk"
   ],
@@ -9275,7 +9905,7 @@
  },
  "sip-trunk.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "sip-trunk.telekom.sk"
   ],
@@ -9300,7 +9930,7 @@
  },
  "smsapi.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "smsapi.telekom.sk",
    "smsdirect.telekom.sk"
@@ -9325,12 +9955,33 @@
      80,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-06T04:17:02+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     25,
+     80,
+     443,
+     9005
+    ]
    }
   ]
  },
  "sst-nonprod.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "sst-nonprod.telekom.sk",
    "sst.telekom.sk"
@@ -9359,7 +10010,7 @@
  },
  "static.eshop.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "static.eshop.telekom.sk"
   ],
@@ -9461,7 +10112,7 @@
  },
  "stip-static-0.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-0.185-19-72.telekom.sk"
   ],
@@ -9486,7 +10137,7 @@
  },
  "stip-static-1.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-1.185-19-72.telekom.sk"
   ],
@@ -9511,7 +10162,7 @@
  },
  "stip-static-10.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-10.185-19-72.telekom.sk"
   ],
@@ -9536,7 +10187,7 @@
  },
  "stip-static-100.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-100.185-19-72.telekom.sk"
   ],
@@ -9603,7 +10254,7 @@
  },
  "stip-static-101.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-101.185-19-72.telekom.sk"
   ],
@@ -9628,7 +10279,7 @@
  },
  "stip-static-102.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-102.185-19-72.telekom.sk"
   ],
@@ -9653,7 +10304,7 @@
  },
  "stip-static-103.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-103.185-19-72.telekom.sk"
   ],
@@ -9678,7 +10329,7 @@
  },
  "stip-static-104.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-104.185-19-72.telekom.sk"
   ],
@@ -9703,7 +10354,7 @@
  },
  "stip-static-105.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-105.185-19-72.telekom.sk"
   ],
@@ -9728,7 +10379,7 @@
  },
  "stip-static-106.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-106.185-19-72.telekom.sk"
   ],
@@ -9753,7 +10404,7 @@
  },
  "stip-static-107.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-107.185-19-72.telekom.sk"
   ],
@@ -9778,7 +10429,7 @@
  },
  "stip-static-108.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-108.185-19-72.telekom.sk"
   ],
@@ -9803,7 +10454,7 @@
  },
  "stip-static-109.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-109.185-19-72.telekom.sk"
   ],
@@ -9828,7 +10479,7 @@
  },
  "stip-static-11.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-11.185-19-72.telekom.sk"
   ],
@@ -9853,7 +10504,7 @@
  },
  "stip-static-110.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-110.185-19-72.telekom.sk"
   ],
@@ -9878,7 +10529,7 @@
  },
  "stip-static-111.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-111.185-19-72.telekom.sk"
   ],
@@ -9903,7 +10554,7 @@
  },
  "stip-static-112.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-112.185-19-72.telekom.sk"
   ],
@@ -9928,7 +10579,7 @@
  },
  "stip-static-113.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-113.185-19-72.telekom.sk"
   ],
@@ -9953,7 +10604,7 @@
  },
  "stip-static-114.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-114.185-19-72.telekom.sk"
   ],
@@ -9978,7 +10629,7 @@
  },
  "stip-static-115.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-115.185-19-72.telekom.sk"
   ],
@@ -10003,7 +10654,7 @@
  },
  "stip-static-116.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-116.185-19-72.telekom.sk"
   ],
@@ -10028,7 +10679,7 @@
  },
  "stip-static-117.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-117.185-19-72.telekom.sk"
   ],
@@ -10053,7 +10704,7 @@
  },
  "stip-static-119.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-119.185-19-72.telekom.sk"
   ],
@@ -10078,7 +10729,7 @@
  },
  "stip-static-12.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-12.185-19-72.telekom.sk"
   ],
@@ -10103,7 +10754,7 @@
  },
  "stip-static-120.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-120.185-19-72.telekom.sk"
   ],
@@ -10128,7 +10779,7 @@
  },
  "stip-static-121.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-121.185-19-72.telekom.sk"
   ],
@@ -10153,7 +10804,7 @@
  },
  "stip-static-122.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-122.185-19-72.telekom.sk"
   ],
@@ -10178,7 +10829,7 @@
  },
  "stip-static-123.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-123.185-19-72.telekom.sk"
   ],
@@ -10203,7 +10854,7 @@
  },
  "stip-static-124.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-124.185-19-72.telekom.sk"
   ],
@@ -10228,7 +10879,7 @@
  },
  "stip-static-125.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-125.185-19-72.telekom.sk"
   ],
@@ -10253,7 +10904,7 @@
  },
  "stip-static-126.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-126.185-19-72.telekom.sk"
   ],
@@ -10278,7 +10929,7 @@
  },
  "stip-static-127.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-127.185-19-72.telekom.sk"
   ],
@@ -10303,7 +10954,7 @@
  },
  "stip-static-128.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-128.185-19-72.telekom.sk"
   ],
@@ -10328,7 +10979,7 @@
  },
  "stip-static-129.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-129.185-19-72.telekom.sk"
   ],
@@ -10371,7 +11022,7 @@
  },
  "stip-static-13.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-13.185-19-72.telekom.sk"
   ],
@@ -10396,7 +11047,7 @@
  },
  "stip-static-130.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-130.185-19-72.telekom.sk"
   ],
@@ -10421,7 +11072,7 @@
  },
  "stip-static-131.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-131.185-19-72.telekom.sk"
   ],
@@ -10446,7 +11097,7 @@
  },
  "stip-static-132.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-132.185-19-72.telekom.sk"
   ],
@@ -10471,7 +11122,7 @@
  },
  "stip-static-133.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-133.185-19-72.telekom.sk"
   ],
@@ -10496,7 +11147,7 @@
  },
  "stip-static-134.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-134.185-19-72.telekom.sk"
   ],
@@ -10521,7 +11172,7 @@
  },
  "stip-static-135.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-135.185-19-72.telekom.sk"
   ],
@@ -10546,7 +11197,7 @@
  },
  "stip-static-136.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-136.185-19-72.telekom.sk"
   ],
@@ -10571,7 +11222,7 @@
  },
  "stip-static-137.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-137.185-19-72.telekom.sk"
   ],
@@ -10596,7 +11247,7 @@
  },
  "stip-static-138.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-138.185-19-72.telekom.sk"
   ],
@@ -10621,7 +11272,7 @@
  },
  "stip-static-139.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-139.185-19-72.telekom.sk"
   ],
@@ -10646,7 +11297,7 @@
  },
  "stip-static-14.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-14.185-19-72.telekom.sk"
   ],
@@ -10673,7 +11324,7 @@
  },
  "stip-static-140.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-140.185-19-72.telekom.sk"
   ],
@@ -10698,7 +11349,7 @@
  },
  "stip-static-141.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-141.185-19-72.telekom.sk"
   ],
@@ -10723,7 +11374,7 @@
  },
  "stip-static-142.185-19-72.telekom.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "stip-static-142.185-19-72.telekom.sk"
   ],
@@ -10748,7 +11399,7 @@
  },
  "t-app.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "t-app.telekom.sk"
   ],
@@ -10791,7 +11442,7 @@
  },
  "tapigw-ext.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "tapigw-ext.telekom.sk"
   ],
@@ -10874,7 +11525,7 @@
  },
  "telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "telekom.sk",
    "www.telekom.sk"
@@ -10900,7 +11551,7 @@
  },
  "test-t-app.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "test-t-app.telekom.sk"
   ],
@@ -10946,7 +11597,7 @@
  },
  "test2-t-app.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "test2-t-app.telekom.sk"
   ],
@@ -10990,7 +11641,7 @@
  },
  "test3-t-app.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "test3-t-app.telekom.sk"
   ],
@@ -11017,7 +11668,7 @@
  },
  "tmsp.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "tmsp.telekom.sk"
   ],
@@ -11045,7 +11696,7 @@
  },
  "tower.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "tower.telekom.sk"
   ],
@@ -11070,7 +11721,7 @@
  },
  "tscreen.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "tscreen.telekom.sk",
    "tshops.telekom.sk"
@@ -11132,7 +11783,7 @@
  },
  "tufin.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "tufin.telekom.sk"
   ],
@@ -11157,7 +11808,7 @@
  },
  "twic.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "twic.telekom.sk"
   ],
@@ -11182,7 +11833,7 @@
  },
  "uctovnictvo.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "uctovnictvo.telekom.sk"
   ],
@@ -11207,7 +11858,7 @@
  },
  "validate.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "validate.telekom.sk"
   ],
@@ -16596,7 +17247,7 @@
  },
  "vysielackydb.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "vysielackydb.telekom.sk"
   ],
@@ -16793,7 +17444,7 @@
  },
  "webex-site.scph.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "webex-site.scph.telekom.sk"
   ],
@@ -16818,7 +17469,7 @@
  },
  "whistleblower.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "whistleblower.telekom.sk"
   ],
@@ -17104,7 +17755,7 @@
  },
  "whps.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "whps.telekom.sk"
   ],
@@ -17129,7 +17780,7 @@
  },
  "wic.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "wic.telekom.sk"
   ],
@@ -17172,7 +17823,7 @@
  },
  "xpweext.scph.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "xpweext.scph.telekom.sk"
   ],
@@ -17197,7 +17848,7 @@
  },
  "young-test.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "young-test.telekom.sk"
   ],
@@ -17222,7 +17873,7 @@
  },
  "young.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "young.telekom.sk"
   ],
@@ -17250,7 +17901,7 @@
  },
  "zona.telekom.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-05T04:30:01+00:00",
+  "last_seen": "2026-11-06T04:17:02+00:00",
   "names": [
    "zona.telekom.sk"
   ],
