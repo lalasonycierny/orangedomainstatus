@@ -4318,6 +4318,27 @@
   "kev": false,
   "summary": "While parsing an IPAddressFamily extension in an X.509 certificate, it is possible to do a one-byte overread. This would result in an incorrect text display of the certificate. This bug has been present since 2006 and is present in all versions of OpenSSL before 1.0.2m and 1.1.0g."
  },
+ "CVE-2017-3736": {
+  "cvss": 6.5,
+  "epss": 0.10133,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "There is a carry propagating bug in the x86_64 Montgomery squaring procedure in OpenSSL before 1.0.2m and 1.1.0 before 1.1.0g. No EC algorithms are affected. Analysis suggests that attacks against RSA and DSA as a result of this defect would be very difficult to perform and are not believed likely.…"
+ },
+ "CVE-2017-3737": {
+  "cvss": 5.9,
+  "epss": 0.78675,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "OpenSSL 1.0.2 (starting from version 1.0.2b) introduced an \"error state\" mechanism. The intent was that if a fatal error occurred during a handshake then OpenSSL would move into the error state and would immediately fail if you attempted to continue the handshake. This works as designed for the…"
+ },
+ "CVE-2017-3738": {
+  "cvss": 5.9,
+  "epss": 0.13411,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "There is an overflow bug in the AVX2 Montgomery multiplication procedure used in exponentiation with 1024-bit moduli. No EC algorithms are affected. Analysis suggests that attacks against RSA and DSA as a result of this defect would be very difficult to perform and are not believed likely. Attacks…"
+ },
  "CVE-2017-6451": {
   "cvss": 7.8,
   "epss": 0.00481,
@@ -4465,12 +4486,40 @@
   "kev": false,
   "summary": "Apache httpd allows remote attackers to read secret data from process memory if the Limit directive can be set in a user's .htaccess file, or if httpd.conf has certain misconfigurations, aka Optionsbleed. This affects the Apache HTTP Server through 2.2.34 and 2.4.x through 2.4.27. The attacker…"
  },
+ "CVE-2018-0732": {
+  "cvss": 7.5,
+  "epss": 0.4701,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This…"
+ },
+ "CVE-2018-0734": {
+  "cvss": 5.9,
+  "epss": 0.12154,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.1a (Affected 1.1.1). Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL…"
+ },
  "CVE-2018-0735": {
   "cvss": 5.9,
   "epss": 0.04724,
   "fetched": "2026-11-06T04:14:47+00:00",
   "kev": false,
   "summary": "The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.1.1a (Affected 1.1.1)."
+ },
+ "CVE-2018-0737": {
+  "cvss": 5.9,
+  "epss": 0.11597,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "The OpenSSL RSA Key generation algorithm has been shown to be vulnerable to a cache timing side channel attack. An attacker with sufficient access to mount cache timing attacks during the RSA key generation process could recover the private key. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h).…"
+ },
+ "CVE-2018-0739": {
+  "cvss": 6.5,
+  "epss": 0.18596,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "Constructed ASN.1 types with a recursive definition (such as can be found in PKCS7) could eventually exceed the stack given malicious input with excessive recursion. This could result in a Denial Of Service attack. There are no such structures used within SSL/TLS that come from untrusted sources so…"
  },
  "CVE-2018-0792": {
   "cvss": 8.8,
@@ -5312,6 +5361,13 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Server component of Oracle MySQL (subcomponent: InnoDB). Supported versions that are affected are 5.7.23 and prior and 8.0.12 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…"
  },
+ "CVE-2018-5407": {
+  "cvss": 4.7,
+  "epss": 0.03418,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "Simultaneous Multi-threading (SMT) in processors can enable local users to exploit software vulnerable to timing attacks via a side-channel timing attack on 'port contention'."
+ },
  "CVE-2018-5711": {
   "cvss": 5.5,
   "epss": 0.13204,
@@ -5497,23 +5553,72 @@
  "CVE-2019-11041": {
   "cvss": 4.8,
   "epss": 0.0442,
-  "fetched": "2026-10-29T21:06:22+00:00",
+  "fetched": "2026-11-09T04:15:22+00:00",
   "kev": false,
   "summary": "When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.1.x below 7.1.31, 7.2.x below 7.2.21 and 7.3.x below 7.3.8 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to…"
  },
  "CVE-2019-11042": {
   "cvss": 4.8,
   "epss": 0.0442,
-  "fetched": "2026-10-29T21:06:15+00:00",
+  "fetched": "2026-11-09T04:15:22+00:00",
   "kev": false,
   "summary": "When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.1.x below 7.1.31, 7.2.x below 7.2.21 and 7.3.x below 7.3.8 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to…"
  },
  "CVE-2019-11043": {
   "cvss": 8.7,
-  "epss": 0.99748,
-  "fetched": "2026-10-29T21:06:15+00:00",
+  "epss": 0.99783,
+  "fetched": "2026-11-09T04:15:22+00:00",
   "kev": true,
   "summary": "In PHP versions 7.1.x below 7.1.33, 7.2.x below 7.2.24 and 7.3.x below 7.3.11 in certain configurations of FPM setup it is possible to cause FPM module to write past allocated buffers into the space reserved for FCGI protocol data, thus opening the possibility of remote code execution."
+ },
+ "CVE-2019-11044": {
+  "cvss": 3.7,
+  "epss": 0.05124,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0 on Windows, PHP link() function accepts filenames with embedded \\0 byte and treats them as terminating at that byte. This could lead to security vulnerabilities, e.g. in applications checking paths that the code is allowed to access."
+ },
+ "CVE-2019-11045": {
+  "cvss": 3.7,
+  "epss": 0.08818,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0, PHP DirectoryIterator class accepts filenames with embedded \\0 byte and treats them as terminating at that byte. This could lead to security vulnerabilities, e.g. in applications checking paths that the code is allowed to access."
+ },
+ "CVE-2019-11046": {
+  "cvss": 3.7,
+  "epss": 0.04116,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0, PHP bcmath extension functions on some systems, including Windows, can be tricked into reading beyond the allocated space by supplying it with string containing characters that are identified as numeric by the OS but aren't ASCII…"
+ },
+ "CVE-2019-11047": {
+  "cvss": 4.8,
+  "epss": 0.07473,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure…"
+ },
+ "CVE-2019-11048": {
+  "cvss": 5.3,
+  "epss": 0.06264,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.31, 7.3.x below 7.3.18 and 7.4.x below 7.4.6, when HTTP file uploads are allowed, supplying overly long filenames or field names could lead PHP engine to try to allocate oversized memory storage, hit the memory limit and stop processing the request, without cleaning…"
+ },
+ "CVE-2019-11049": {
+  "cvss": 6.5,
+  "epss": 0.04218,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.13 and 7.4.0 on Windows, when supplying custom headers to mail() function, due to mistake introduced in commit 78f4b4a2dcf92ddbccea1bb95f8390a18ac3342e, if the header is supplied in lowercase, this can result in double-freeing certain memory locations."
+ },
+ "CVE-2019-11050": {
+  "cvss": 4.8,
+  "epss": 0.07624,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.2.x below 7.2.26, 7.3.x below 7.3.13 and 7.4.0 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure…"
  },
  "CVE-2019-11358": {
   "cvss": 6.1,
@@ -5532,7 +5637,7 @@
  "CVE-2019-13224": {
   "cvss": 9.8,
   "epss": 0.04047,
-  "fetched": "2026-10-29T21:06:22+00:00",
+  "fetched": "2026-11-09T04:15:22+00:00",
   "kev": false,
   "summary": "A use-after-free in onig_new_deluxe() in regext.c in Oniguruma 6.9.2 allows attackers to potentially cause information disclosure, denial of service, or possibly code execution by providing a crafted regular expression. The attacker provides a pair of a regex pattern and a string, with a multi-byte…"
  },
@@ -5550,12 +5655,40 @@
   "kev": false,
   "summary": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind before 2.9.10. It is related to com.zaxxer.hikari.HikariConfig."
  },
+ "CVE-2019-1547": {
+  "cvss": 4.7,
+  "epss": 0.01129,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "Normally in OpenSSL EC groups always have a co-factor present and this is used in side channel resistant code paths. However, in some cases, it is possible to construct a group using explicit parameters (instead of using a named curve). In those cases it is possible that such a group does not have…"
+ },
+ "CVE-2019-1551": {
+  "cvss": 5.3,
+  "epss": 0.14298,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "There is an overflow bug in the x64_64 Montgomery squaring procedure used in exponentiation with 512-bit moduli. No EC algorithms are affected. Analysis suggests that attacks against 2-prime RSA1024, 3-prime RSA1536, and DSA1024 as a result of this defect would be very difficult to perform and are…"
+ },
+ "CVE-2019-1552": {
+  "cvss": 3.3,
+  "epss": 0.00695,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "OpenSSL has internal defaults for a directory tree where it can find a configuration file as well as certificates used for verification in TLS. This directory is most commonly referred to as OPENSSLDIR, and is configurable with the --prefix / --openssldir configuration options. For OpenSSL versions…"
+ },
  "CVE-2019-1559": {
   "cvss": 5.9,
   "epss": 0.17139,
   "fetched": "2026-11-06T04:14:57+00:00",
   "kev": false,
   "summary": "If an application encounters a fatal protocol error and then calls SSL_shutdown() twice (once to send a close_notify, and once to receive one) then OpenSSL can respond differently to the calling application if a 0 byte record is received with invalid padding compared to if a 0 byte record is…"
+ },
+ "CVE-2019-1563": {
+  "cvss": 3.7,
+  "epss": 0.03838,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "In situations where an attacker receives automated notification of the success or failure of a decryption attempt an attacker, after sending a very large number of messages to be decrypted, can recover a CMS/PKCS7 transported encryption key or decrypt any RSA encrypted message that was encrypted…"
  },
  "CVE-2019-15846": {
   "cvss": 9.8,
@@ -5570,6 +5703,13 @@
   "fetched": "2026-11-06T04:14:57+00:00",
   "kev": false,
   "summary": "Apache HTTP Server versions 2.4.6 to 2.4.46 mod_proxy_wstunnel configured on an URL that is not necessarily Upgraded by the origin server was tunneling the whole connection regardless, thus allowing for subsequent requests on the same connection to pass through with no HTTP validation,…"
+ },
+ "CVE-2019-19246": {
+  "cvss": 7.5,
+  "epss": 0.02966,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "Oniguruma through 6.9.3, as used in PHP 7.3.x and other products, has a heap-based buffer over-read in str_lower_case_match in regexec.c."
  },
  "CVE-2019-19269": {
   "cvss": 4.9,
@@ -6446,6 +6586,13 @@
   "kev": false,
   "summary": "Server or client applications that call the SSL_check_chain() function during or after a TLS 1.3 handshake may crash due to a NULL pointer dereference as a result of incorrect handling of the \"signature_algorithms_cert\" TLS extension. The crash occurs if an invalid or unrecognised signature…"
  },
+ "CVE-2020-1968": {
+  "cvss": 3.7,
+  "epss": 0.04903,
+  "fetched": "2026-11-09T04:15:22+00:00",
+  "kev": false,
+  "summary": "The Raccoon attack exploits a flaw in the TLS specification which can lead to an attacker being able to compute the pre-master secret in connections which have used a Diffie-Hellman (DH) based ciphersuite. In such a case this would result in the attacker being able to eavesdrop on all encrypted…"
+ },
  "CVE-2020-1971": {
   "cvss": 5.9,
   "epss": 0.06994,
@@ -6768,6 +6915,97 @@
   "kev": false,
   "summary": "An issue was discovered in openfortivpn 1.11.0 when used with OpenSSL before 1.0.2. tunnel.c mishandles certificate validation because hostname comparisons do not consider '\\0' characters, as demonstrated by a good.example.com\\x00evil.example.com attack."
  },
+ "CVE-2020-7059": {
+  "cvss": 6.5,
+  "epss": 0.07402,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "When using fgetss() function to read data with stripping tags, in PHP versions 7.2.x below 7.2.27, 7.3.x below 7.3.14 and 7.4.x below 7.4.2 it is possible to supply data that will cause this function to read past the allocated buffer. This may lead to information disclosure or crash."
+ },
+ "CVE-2020-7060": {
+  "cvss": 6.5,
+  "epss": 0.08888,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "When using certain mbstring functions to convert multibyte encodings, in PHP versions 7.2.x below 7.2.27, 7.3.x below 7.3.14 and 7.4.x below 7.4.2 it is possible to supply data that will cause function mbfl_filt_conv_big5_wchar to read past the allocated buffer. This may lead to information…"
+ },
+ "CVE-2020-7061": {
+  "cvss": 6.5,
+  "epss": 0.04075,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.15 and 7.4.x below 7.4.3, while extracting PHAR files on Windows using phar extension, certain content inside PHAR file could lead to one-byte read past the allocated buffer. This could potentially lead to information disclosure or crash."
+ },
+ "CVE-2020-7062": {
+  "cvss": 7.5,
+  "epss": 0.03581,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.28, 7.3.x below 7.3.15 and 7.4.x below 7.4.3, when using file upload functionality, if upload progress tracking is enabled, but session.upload_progress.cleanup is set to 0 (disabled), and the file upload fails, the upload procedure would try to clean up data that…"
+ },
+ "CVE-2020-7063": {
+  "cvss": 5.5,
+  "epss": 0.01594,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.28, 7.3.x below 7.3.15 and 7.4.x below 7.4.3, when creating PHAR archive using PharData::buildFromIterator() function, the files are added with default permissions (0666, or all access) even if the original files on the filesystem were with more restrictive…"
+ },
+ "CVE-2020-7064": {
+  "cvss": 6.5,
+  "epss": 0.04295,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.9, 7.3.x below 7.3.16 and 7.4.x below 7.4.4, while parsing EXIF data with exif_read_data() function, it is possible for malicious data to cause PHP to read one byte of uninitialized memory. This could potentially lead to information disclosure or crash."
+ },
+ "CVE-2020-7065": {
+  "cvss": 7.4,
+  "epss": 0.04883,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.16 and 7.4.x below 7.4.4, while using mb_strtolower() function with UTF-32LE encoding, certain invalid strings could cause PHP to overwrite stack-allocated buffer. This could lead to memory corruption, crashes and potentially code execution."
+ },
+ "CVE-2020-7066": {
+  "cvss": 5.3,
+  "epss": 0.02767,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.29, 7.3.x below 7.3.16 and 7.4.x below 7.4.4, while using get_headers() with user-supplied URL, if the URL contains zero (\\0) character, the URL will be silently truncated at it. This may cause some software to make incorrect assumptions about the target of the…"
+ },
+ "CVE-2020-7067": {
+  "cvss": 7.5,
+  "epss": 0.0443,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.30, 7.3.x below 7.3.17 and 7.4.x below 7.4.5, if PHP is compiled with EBCDIC support (uncommon), urldecode() function can be made to access locations past the allocated memory, due to erroneously using signed numbers as array indexes."
+ },
+ "CVE-2020-7068": {
+  "cvss": 4.8,
+  "epss": 0.01661,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.33, 7.3.x below 7.3.21 and 7.4.x below 7.4.9, while processing PHAR files using phar extension, phar_parse_zipfile could be tricked into accessing freed memory, which could lead to a crash or information disclosure."
+ },
+ "CVE-2020-7069": {
+  "cvss": 5.4,
+  "epss": 0.02055,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.34, 7.3.x below 7.3.23 and 7.4.x below 7.4.11, when AES-CCM mode is used with openssl_encrypt() function with 12 bytes IV, only first 7 bytes of the IV is actually used. This can lead to both decreased security and incorrect encryption data."
+ },
+ "CVE-2020-7070": {
+  "cvss": 4.3,
+  "epss": 0.05029,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.2.x below 7.2.34, 7.3.x below 7.3.23 and 7.4.x below 7.4.11, when PHP is processing incoming HTTP cookie values, the cookie names are url-decoded. This may lead to cookies with prefixes like __Host confused with cookies that decode to such prefix, thus leading to an attacker being…"
+ },
+ "CVE-2020-7071": {
+  "cvss": 5.3,
+  "epss": 0.02902,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.26, 7.4.x below 7.4.14 and 8.0.0, when validating URL with functions like filter_var($url, FILTER_VALIDATE_URL), PHP will accept an URL with invalid password as valid URL. This may lead to functions that rely on URL being valid to mis-parse the URL and produce wrong…"
+ },
  "CVE-2020-8015": {
   "cvss": 8.4,
   "epss": 0.00528,
@@ -6894,6 +7132,48 @@
   "kev": false,
   "summary": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 5.7.33 and prior and 8.0.23 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL…"
  },
+ "CVE-2021-21702": {
+  "cvss": 5.3,
+  "epss": 0.03152,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.27, 7.4.x below 7.4.15 and 8.0.x below 8.0.2, when using SOAP extension to connect to a SOAP server, a malicious SOAP server could return malformed XML data as a response that would cause PHP to access a null pointer and thus cause a crash."
+ },
+ "CVE-2021-21703": {
+  "cvss": 7.8,
+  "epss": 0.01426,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x up to and including 7.3.31, 7.4.x below 7.4.25 and 8.0.x below 8.0.12, when running PHP FPM SAPI with main FPM daemon process running as root and child worker processes running as lower-privileged users, it is possible for the child processes to access memory shared with the…"
+ },
+ "CVE-2021-21704": {
+  "cvss": 5.0,
+  "epss": 0.01796,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.29, 7.4.x below 7.4.21 and 8.0.x below 8.0.8, when using Firebird PDO driver extension, a malicious database server could cause crashes in various database functions, such as getAttribute(), execute(), fetch() and others by returning invalid response data that is not…"
+ },
+ "CVE-2021-21705": {
+  "cvss": 4.3,
+  "epss": 0.02091,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.29, 7.4.x below 7.4.21 and 8.0.x below 8.0.8, when using URL validation functionality via filter_var() function with FILTER_VALIDATE_URL parameter, an URL with invalid password field can be accepted as valid. This can lead to the code incorrectly parsing the URL and…"
+ },
+ "CVE-2021-21706": {
+  "cvss": 5.3,
+  "epss": 0.01517,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.31, 7.4.x below 7.4.24 and 8.0.x below 8.0.11, in Microsoft Windows environment, ZipArchive::extractTo may be tricked into writing a file outside target directory when extracting a ZIP file, thus potentially causing files to be created or overwritten, subject to OS…"
+ },
+ "CVE-2021-21707": {
+  "cvss": 5.3,
+  "epss": 0.25315,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "In PHP versions 7.3.x below 7.3.33, 7.4.x below 7.4.26 and 8.0.x below 8.0.13, certain XML parsing functions, like simplexml_load_file(), URL-decode the filename passed to them. If that filename contains URL-encoded NUL character, this may cause the function to interpret this as the end of the…"
+ },
  "CVE-2021-2171": {
   "cvss": 4.4,
   "epss": 0.01803,
@@ -6970,6 +7250,20 @@
   "fetched": "2026-11-06T04:15:06+00:00",
   "kev": false,
   "summary": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise…"
+ },
+ "CVE-2021-23840": {
+  "cvss": 7.5,
+  "epss": 0.50732,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating…"
+ },
+ "CVE-2021-23841": {
+  "cvss": 5.9,
+  "epss": 0.0741,
+  "fetched": "2026-11-09T04:15:23+00:00",
+  "kev": false,
+  "summary": "The OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if…"
  },
  "CVE-2021-25220": {
   "cvss": 6.8,
