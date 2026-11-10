@@ -268,7 +268,7 @@
  "CVE-2010-5312": {
   "cvss": 6.1,
   "epss": 0.18351,
-  "fetched": "2026-11-03T04:06:29+00:00",
+  "fetched": "2026-11-10T04:08:48+00:00",
   "kev": false,
   "summary": "Cross-site scripting (XSS) vulnerability in jquery.ui.dialog.js in the Dialog widget in jQuery UI before 1.10.0 allows remote attackers to inject arbitrary web script or HTML via the title option."
  },
@@ -824,6 +824,13 @@
   "fetched": "2026-11-06T04:14:24+00:00",
   "kev": false,
   "summary": "Multiple cross-site scripting (XSS) vulnerabilities in the balancer_handler function in the manager interface in mod_proxy_balancer.c in the mod_proxy_balancer module in the Apache HTTP Server 2.2.x before 2.2.24-dev and 2.4.x before 2.4.4 allow remote attackers to inject arbitrary web script or…"
+ },
+ "CVE-2012-6708": {
+  "cvss": 6.1,
+  "epss": 0.08632,
+  "fetched": "2026-11-10T04:08:48+00:00",
+  "kev": false,
+  "summary": "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string,…"
  },
  "CVE-2013-0166": {
   "cvss": 5.0,
@@ -7005,6 +7012,13 @@
   "fetched": "2026-11-09T04:15:23+00:00",
   "kev": false,
   "summary": "In PHP versions 7.3.x below 7.3.26, 7.4.x below 7.4.14 and 8.0.0, when validating URL with functions like filter_var($url, FILTER_VALIDATE_URL), PHP will accept an URL with invalid password as valid URL. This may lead to functions that rely on URL being valid to mis-parse the URL and produce wrong…"
+ },
+ "CVE-2020-7656": {
+  "cvss": 6.1,
+  "epss": 0.06428,
+  "fetched": "2026-11-10T04:08:48+00:00",
+  "kev": false,
+  "summary": "jquery prior to 1.9.0 allows Cross-site Scripting attacks via the load method. The load method fails to recognize and remove \"<script>\" HTML tags that contain a whitespace character, i.e: \"</script >\", which results in the enclosed script logic to be executed."
  },
  "CVE-2020-8015": {
   "cvss": 8.4,
