@@ -2207,7 +2207,7 @@
  "CVE-2015-9251": {
   "cvss": 6.1,
   "epss": 0.29726,
-  "fetched": "2026-11-04T04:09:53+00:00",
+  "fetched": "2026-11-11T04:13:54+00:00",
   "kev": false,
   "summary": "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed."
  },
