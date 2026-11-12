@@ -32,6 +32,14 @@ Premenne prostredia:
                        zalozka DNS zaznamov nedopocita a ponecha predosle data)
   LEAKIX_API_KEY       API kluc z leakix.net (volitelne)
   LEAKIX_MAX_CALLS     max. poctov volani LeakIX API za jeden beh (default 100)
+  MAX_PREFIX_DETAILS   kolko IP prefixov na firmu sa ma obohatit o RIPE whois
+                        detail (netname/descr/country) za beh (default 100)
+
+Nova zalozka "IP rozsahy (RIPE/BGP)": pre kazdu firmu s nastavenym ASN v companies.json
+zobrazi vsetky jej announced prefixy z RIPEstat, s whois detailom a heuristickou
+klasifikaciou (ci ide o zakaznicky/CGNAT rozsah alebo nie). Ciste pasivne, bez
+API kluca. AKTIVNE SKENOVANIE (masscan/nmap) TU NIE JE IMPLEMENTOVANE - vyzaduje
+pisomne povolenie vlastnika siete a nehodi sa spustat z verejneho GitHub Actions.
 
 summary = hostname, porty a POCTY zranitelnosti (bez IP a bez CVE ID/popisov).
 full    = aj IP, CVE ID, popisy, CPE a historia obsahuje aj CVE ID.
@@ -127,6 +135,73 @@ def get_prefixes(asn):
             out.append(ipaddress.ip_network(p["prefix"], strict=False))
         except (ValueError, KeyError):
             pass
+    return out
+
+
+# ---------- RIPE whois detail na prefix (pre zalozku "IP rozsahy") ----------
+CUSTOMER_HINTS_RE = re.compile(
+    r"(customer|cust[-_]|dsl|adsl|vdsl|gpon|pon[-_]|cgnat|cg-nat|dynamic|dyn[-_]|"
+    r"residential|mobile|lte|broadband|pppoe|cable[-_ ]?modem|wifi|retail|home[-_ ]?user)",
+    re.IGNORECASE,
+)
+
+
+def fetch_prefix_whois(prefix_str):
+    """RIPEstat whois pre jeden konkretny prefix - vrati netname/descr/country/org,
+    ak su v RIPE databaze. Bezplatne, bez API kluca."""
+    url = "https://stat.ripe.net/data/whois/data.json?resource=" + urllib.parse.quote(prefix_str)
+    data = http_json(url, timeout=30, retries=2)
+    merged = {}
+    for rec in (data or {}).get("data", {}).get("records", []):
+        for kv in rec:
+            k = (kv.get("key") or "").lower()
+            v = kv.get("value")
+            if k and v and k not in merged:
+                merged[k] = v
+    return merged
+
+
+def classify_prefix(info):
+    """Vseobecna heuristika podla netname/descr - NIE je doveryhodna klasifikacia,
+    len napoveda na rozlisenie zakazanickych/CGNAT rozsahov od ostatnych."""
+    text = " ".join(str(v) for v in info.values())
+    return "customer" if CUSTOMER_HINTS_RE.search(text) else "unknown"
+
+
+def build_ranges_section(companies, max_prefix_details):
+    """Pre kazdu firmu s nastavenym ASN stiahne vsetky announced prefixy (RIPEstat)
+    a pre prvych max_prefix_details z nich aj whois detail (netname/descr/country)
+    s heuristickou klasifikaciou. Cisto pasivne, bez API kluca, legalne pre
+    kohokolvek - toto je krok "zistit, co patri firme na urovni IP"."""
+    out = {}
+    for c in companies:
+        asns = c.get("asns", [])
+        prefixes = []
+        for a in asns:
+            prefixes += get_prefixes(a)
+        prefixes = sorted(set(prefixes), key=lambda p: (p.version, p.num_addresses))
+        rows = []
+        for p in prefixes[:max_prefix_details]:
+            try:
+                info = fetch_prefix_whois(str(p))
+            except Exception as e:  # noqa: BLE001
+                print(f"[!] RIPE whois {p}: {e}", file=sys.stderr)
+                info = {}
+            rows.append({
+                "cidr": str(p), "size": p.num_addresses,
+                "netname": info.get("netname", ""), "descr": info.get("descr", ""),
+                "country": info.get("country", ""),
+                "org": info.get("org-name") or info.get("org", ""),
+                "classification": classify_prefix(info),
+            })
+            time.sleep(0.3)
+        out[c["id"]] = {
+            "name": c["name"], "asns": asns, "prefix_count": len(prefixes),
+            "shown": len(rows), "skipped": max(0, len(prefixes) - max_prefix_details),
+            "rows": rows, "generated": now_iso(),
+        }
+        if asns:
+            print(f"[+] {c['id']}: {len(prefixes)} prefixov z RIPE, whois detail pre {len(rows)}")
     return out
 
 
@@ -660,12 +735,17 @@ def main():
                                   "generated": None, "stale": True, "assets": [],
                                   "disappeared": [], "changes_summary": {"new": 0, "changed": 0, "disappeared": 0}})
 
-    if not any(c["assets"] for c in out_companies) and not env("DNSDUMPSTER_API_KEY"):
+    has_asns = any(c.get("asns") for c in companies)
+    if not any(c["assets"] for c in out_companies) and not env("DNSDUMPSTER_API_KEY") and not has_asns:
         sys.exit("Ziadne data pre ziadnu firmu. Neprepisujem existujuci vystup.")
+
+    max_prefix_details = int(env("MAX_PREFIX_DETAILS") or 100)
+    ranges = build_ranges_section(companies, max_prefix_details)
 
     save_json(OUT_FILE, {
         "generated": now_iso(), "mode": args.mode, "companies": out_companies,
         "dns": {"generated": now_iso(), "domains": dns_domains},
+        "ranges": {"generated": now_iso(), "companies": ranges},
     })
     print(f"[+] Ulozene -> {OUT_FILE} (rezim {args.mode})")
 
