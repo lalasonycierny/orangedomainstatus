@@ -126,6 +126,26 @@
   nemusi ist o uplny zoznam. Aktualizuje sa denne spolu s ostatnymi datami.</div>
 </div>
 
+<div id="ranges-view" style="display:none">
+  <div class="warn">Klasifikacia "zakaznicky rozsah" je len heuristika podla netname/descr v RIPE databaze
+  (DSL, CGNAT, mobilne siete a pod.) - nie je to spolahlive urcenie vlastnictva. "Neoverene" znamena,
+  ze rozsah NEVYZERA ako zakaznicky, nie ze ide urcite o firemnu infrastrukturu.</div>
+  <div class="bar">
+    <input id="rq" type="search" placeholder="Hladat CIDR, netname, popis, krajinu...">
+    <select id="rclass">
+      <option value="">Klasifikacia: vsetky</option>
+      <option value="unknown">Neoverene (nie je zakaznicky)</option>
+      <option value="customer">Zakaznicky / CGNAT rozsah</option>
+    </select>
+    <button id="rcsv">Export CSV</button>
+    <button id="rjson">Export JSON</button>
+  </div>
+  <div id="ranges-companies"></div>
+  <div class="note">Zdroj: RIPEstat (whois + announced-prefixes), cisto pasivne, bez API kluca.
+  Pre firmu bez nastaveneho ASN v companies.json sa nic nezobrazi. Aktivne skenovanie portov
+  (masscan/nmap) tu zamerne nie je implementovane - vyzaduje pisomne povolenie vlastnika siete.</div>
+</div>
+
 <script>
 const SEV = ["critical","high","medium","low","unknown","none"];
 const rank = s => SEV.indexOf(s);
@@ -178,6 +198,7 @@ function filtered() {
 }
 
 const DNS_TAB = "__dns__";
+const RANGES_TAB = "__ranges__";
 
 function renderTabs() {
   const box = document.getElementById("tabs"); box.replaceChildren();
@@ -195,6 +216,12 @@ function renderTabs() {
     const total = Object.values(DATA.dns.domains || {}).reduce((s, d) => s + (d.count || 0), 0);
     const b = el("button", "tab" + (active === DNS_TAB ? " active" : ""), "Vsetky DNS zaznamy (" + total + ")");
     b.onclick = () => { active = DNS_TAB; location.hash = DNS_TAB; renderAll(); };
+    box.appendChild(b);
+  }
+  if (DATA.ranges) {
+    const total = Object.values(DATA.ranges.companies || {}).reduce((s, c) => s + (c.prefix_count || 0), 0);
+    const b = el("button", "tab" + (active === RANGES_TAB ? " active" : ""), "IP rozsahy (RIPE/BGP) (" + total + ")");
+    b.onclick = () => { active = RANGES_TAB; location.hash = RANGES_TAB; renderAll(); };
     box.appendChild(b);
   }
 }
@@ -384,15 +411,91 @@ document.getElementById("dcsv").onclick = () => {
 };
 document.getElementById("djson").onclick = () => download("dns-records.json", "application/json", JSON.stringify(dnsFiltered(), null, 2));
 
+function rangesFiltered() {
+  const q = document.getElementById("rq").value.trim().toLowerCase();
+  const cls = document.getElementById("rclass").value;
+  const out = {};
+  for (const [cid, info] of Object.entries((DATA.ranges || {}).companies || {})) {
+    const rows = (info.rows || []).filter(r =>
+      (!cls || r.classification === cls) &&
+      (!q || (r.cidr + " " + r.netname + " " + r.descr + " " + r.country + " " + r.org).toLowerCase().includes(q)));
+    out[cid] = { ...info, rows };
+  }
+  return out;
+}
+
+function renderRangesView() {
+  const box = document.getElementById("ranges-companies"); box.replaceChildren();
+  const companies = rangesFiltered();
+  const ids = Object.keys(companies).filter(cid => (companies[cid].asns || []).length);
+  if (!ids.length) { box.appendChild(el("div", "empty", "Ziadna firma nema v companies.json nastavene ASN.")); return; }
+  for (const cid of ids) {
+    const info = companies[cid];
+    const sec = el("div", "dns-domain");
+    sec.appendChild(el("h2", "", info.name + " - " + (info.asns || []).join(", ")));
+    const skippedTxt = info.skipped ? ("  |  preskocenych (nad limit): " + info.skipped) : "";
+    sec.appendChild(el("div", "meta",
+      "celkovo prefixov: " + info.prefix_count + "  |  zobrazenych s detailom: " + info.shown + skippedTxt +
+      (info.generated ? "  |  aktualizovane: " + fmtDate(info.generated) : "")));
+    if (!info.rows.length) {
+      sec.appendChild(el("div", "empty", "Ziadne zaznamy (pre dany filter alebo firmu)."));
+    } else {
+      const table = el("table");
+      const thead = el("thead"), htr = el("tr");
+      ["CIDR", "Velkost", "Netname", "Popis", "Krajina", "Organizacia", "Klasifikacia"].forEach(h => htr.appendChild(el("th", "", h)));
+      thead.appendChild(htr); table.appendChild(thead);
+      const tbody = el("tbody");
+      info.rows.forEach(r => {
+        const tr = el("tr");
+        const cidrTd = el("td");
+        const link = el("a", "", r.cidr);
+        link.href = "https://bgp.he.net/net/" + r.cidr;
+        link.target = "_blank"; link.rel = "noopener noreferrer";
+        cidrTd.appendChild(link);
+        tr.appendChild(cidrTd);
+        tr.appendChild(el("td", "", String(r.size)));
+        tr.appendChild(el("td", "", r.netname || "-"));
+        tr.appendChild(el("td", "", r.descr || "-"));
+        tr.appendChild(el("td", "", r.country || "-"));
+        tr.appendChild(el("td", "", r.org || "-"));
+        const clsTd = el("td");
+        clsTd.appendChild(el("span", "badge " + (r.classification === "customer" ? "medium" : "unknown"),
+          r.classification === "customer" ? "zakaznicky/CGNAT" : "neoverene"));
+        tr.appendChild(clsTd);
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+      const wrap = el("div", "wrap"); wrap.appendChild(table);
+      sec.appendChild(wrap);
+    }
+    box.appendChild(sec);
+  }
+}
+
+document.getElementById("rq").oninput = renderRangesView;
+document.getElementById("rclass").onchange = renderRangesView;
+document.getElementById("rcsv").onclick = () => {
+  const lines = [["company", "cidr", "size", "netname", "descr", "country", "org", "classification"].join(",")];
+  for (const [cid, info] of Object.entries(rangesFiltered()))
+    for (const r of info.rows) lines.push([info.name, r.cidr, r.size, r.netname, r.descr, r.country, r.org, r.classification].map(csvCell).join(","));
+  download("ip-ranges.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
+};
+document.getElementById("rjson").onclick = () => download("ip-ranges.json", "application/json", JSON.stringify(rangesFiltered(), null, 2));
+
 function renderAll() {
   renderTabs();
-  const isDns = active === DNS_TAB;
-  document.getElementById("asset-view").style.display = isDns ? "none" : "";
+  const isDns = active === DNS_TAB, isRanges = active === RANGES_TAB;
+  document.getElementById("asset-view").style.display = (isDns || isRanges) ? "none" : "";
   document.getElementById("dns-view").style.display = isDns ? "" : "none";
+  document.getElementById("ranges-view").style.display = isRanges ? "" : "none";
   if (isDns) {
     document.getElementById("meta").textContent = DATA.dns && DATA.dns.generated
       ? "DNS zaznamy aktualizovane: " + fmtDate(DATA.dns.generated) : "DNS zaznamy zatial nie su k dispozicii.";
     renderDnsView();
+  } else if (isRanges) {
+    document.getElementById("meta").textContent = DATA.ranges && DATA.ranges.generated
+      ? "IP rozsahy aktualizovane: " + fmtDate(DATA.ranges.generated) : "IP rozsahy zatial nie su k dispozicii.";
+    renderRangesView();
   } else {
     renderStats(); renderTable();
     document.getElementById("expand").style.display = full() ? "" : "none";
@@ -432,10 +535,12 @@ fetch("data/assets.json", {cache: "no-store"}).then(r => r.json()).then(d => {
   const h = location.hash.slice(1);
   if (h === DNS_TAB) {
     active = DNS_TAB;
+  } else if (h === RANGES_TAB) {
+    active = RANGES_TAB;
   } else {
     active = (d.companies.find(c => c.id === h) || d.companies[0] || {}).id;
   }
-  if (active !== DNS_TAB) {
+  if (active !== DNS_TAB && active !== RANGES_TAB) {
     document.getElementById("meta").textContent = d.generated
       ? "Posledna aktualizacia: " + new Date(d.generated).toLocaleString("sk-SK") + " | rezim: " + d.mode
       : "Zatial ziadne data - spusti workflow 'Daily scan'.";
