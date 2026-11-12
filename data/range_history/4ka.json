@@ -1,0 +1,872 @@
+{
+ "185.130.220.0/22": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20151210",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.161.174.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-COMCRAFT-NET-2",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.161.175.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "COMCRAFT s.r.o.",
+    "netname": "SK-COMCRAFT-NET",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.220.120.0/22": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20170912",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.108.132.0/23": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Computer and Network Consulting",
+    "netname": "CNC-SK",
+    "org": "ORG-Ca995-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.110.186.0/23": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-SK",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.58.192.0/22": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Bratislava",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.58.196.0/23": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Bratislava",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.172.0/22": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.224.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Bratislava",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.225.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Bratislava",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.226.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-RES-KE-SK",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.227.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Bratislava",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.228.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-RES-KE-SK",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.229.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-RES-KE-SK",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.230.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-RES-KE-SK",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.231.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SWAN-NET",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.12.128.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20010302",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.168.0.0/16": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-960927",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.245.78.0/23": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "ORG-IS580-RIPE",
+    "org": "ORG-IS580-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.46.64.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-19970207",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.62.16.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Hanulova 17/23",
+    "netname": "DEMAX-SK",
+    "org": "ORG-JSDS1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.62.17.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Hanulova 17/23",
+    "netname": "DEMAX-SK",
+    "org": "ORG-JSDS1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.72.0.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20010302",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.98.0.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-930819",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.98.134.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Hruba Borsa",
+    "netname": "GTI-134-135",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:1ba0::/32": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20040518",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "212.26.160.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20010302",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "212.26.176.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "customer",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "SWAN a.s.",
+    "netname": "ADSL-NET-SWAN",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "212.81.0.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-981102",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "213.215.64.0/18": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20001222",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "213.215.72.0/22": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "SWAN, a.s.",
+    "netname": "SK-SWAN-BA",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "217.118.96.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20010212",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "217.172.144.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20040225",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "217.67.16.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20030630",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "217.75.64.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20001227",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "217.75.82.0/23": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20001227",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a00:1298::/32": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20090820",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a02:770::/32": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20080909",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a06:dbc0::/29": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20151210",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a07:c387::/32": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-DIT-20160729",
+    "org": "ORG-DIS50-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "62.152.224.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20030206",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "62.168.64.0/18": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-970506",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "62.197.192.0/18": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20020722",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "62.197.222.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "SWAN PK, s. r. o.",
+    "netname": "SK-SWAN-PK",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "62.65.160.0/19": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20020125",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "80.250.240.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20051114",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "81.88.128.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20020614",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "82.119.224.0/20": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20040218",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "83.168.128.0/18": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20040406",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "84.245.126.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20050316",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "84.245.64.0/18": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20050316",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "84.245.94.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "SWAN PK, s. r. o.",
+    "netname": "SK-SWAN-PK",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "84.245.97.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "SWAN PK, s. r. o.",
+    "netname": "SK-SWAN-PK",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.248.0.0/16": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20050120",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.248.234.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20050120",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.248.240.0/24": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "Socialna poistovna",
+    "netname": "SK-SOCPO-BA",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "94.124.144.0/21": {
+  "first_seen": "2026-11-12T20:14:35+00:00",
+  "last_seen": "2026-11-12T20:14:35+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:14:35+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20080805",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ }
+}

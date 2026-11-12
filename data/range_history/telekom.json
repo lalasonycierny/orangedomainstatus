@@ -1,0 +1,722 @@
+{
+ "178.40.0.0/15": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20100202",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.19.72.0/22": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20130220",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.58.102.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "General_plastic",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.58.103.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "GP-Technology",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.200.143.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "JAVYS-NET",
+    "org": "ORG-Javs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.201.110.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Czech republic",
+    "netname": "RAIFFEISENBANK-CZ",
+    "org": "ORG-RA416-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.228.234.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "VZP-CR",
+    "org": "ORG-VCP1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.150.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CNBNET",
+    "org": "ORG-TCNB1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.245.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Czech Environmental Institute",
+    "netname": "ENVINET",
+    "org": "ORG-MZP1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.7.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Prague",
+    "netname": "MZCRNET",
+    "org": "ORG-MOHO1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.96.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Prague",
+    "netname": "MPO",
+    "org": "ORG-MoIa3-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.97.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Prague",
+    "netname": "MPO",
+    "org": "ORG-MoIa3-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.84.98.0/23": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Prague",
+    "netname": "MPO",
+    "org": "ORG-MoIa3-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.154.224.0/19": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-960126",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.169.224.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "JABLOTRON",
+    "org": "ORG-JAA7-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.48.241.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZSO-NET",
+    "org": "ORG-CSO2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.50.215.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "JT",
+    "org": "ORG-JBA9-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.146.128.0/19": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-961128",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.146.130.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Slovak Telekom",
+    "netname": "ST-IPDEV130-NET",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.216.240.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "RSD-PI-CZ",
+    "org": "ORG-Rsad1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.91.0.0/17": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-970226",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:678:c14::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZ-RADIOMOBIL-20200124",
+    "org": "ORG-AEMC1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:67c:1314::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "VZP-CR",
+    "org": "ORG-VCP1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:67c:16c0::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZSO6-PI-CZ",
+    "org": "ORG-CSO2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:67c:1bc4::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "UPVV6-PI-CZ",
+    "org": "ORG-UPV2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:67c:2cc0::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZ-GTS-20141203",
+    "org": "ORG-SPH4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2001:67c:2f9c::/48": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZ-RSD-20160218",
+    "org": "ORG-Rsad1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "212.5.192.0/19": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-980825",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "213.160.160.0/19": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20010504",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "213.81.128.0/17": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20010514",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a00:12a8::/29": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20090826",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a00:6bc0::/40": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "ANECT infrastructure",
+    "netname": "ANECT",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a01:5f7::/32": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "COOLHOUSING-TMB",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "78.98.0.0/15": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20070502",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "84.47.0.0/17": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20041012",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.239.68.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "Ceska_televize",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.239.69.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "Ceska_televize",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.239.80.0/23": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZ-ANECT-20050616",
+    "org": "ORG-AA190-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.239.82.0/23": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CZ-ANECT-20050616",
+    "org": "ORG-AA190-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.239.84.0/22": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Hyperflex_demo",
+    "netname": "ANECT",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.248.31.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-SWAN-20050120",
+    "org": "ORG-SPA43-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.248.74.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "Migoli s. r. o.",
+    "netname": "SK-MIGOLI-RASLAVICE",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "87.197.0.0/16": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20050629",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.127.0.0/16": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20061024",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.195.106.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CSSZ-CZ",
+    "org": "ORG-CSSZ1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.195.107.0/24": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "CSSZ-CZ",
+    "org": "ORG-CSSZ1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.245.16.0/23": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "CZ",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "COOLHOUSING-TMB",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "95.102.0.0/15": {
+  "first_seen": "2026-11-12T20:13:33+00:00",
+  "last_seen": "2026-11-12T20:13:33+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:33+00:00",
+    "descr": "",
+    "netname": "SK-TELECOM-20090209",
+    "org": "ORG-ST4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ }
+}

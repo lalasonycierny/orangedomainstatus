@@ -1,0 +1,257 @@
+{
+ "109.230.0.0/18": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20100210",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "178.143.0.0/16": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20100804",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.50.212.0/22": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20140319",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "193.193.170.0/24": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-VEZ",
+    "org": "ORG-VSE1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "194.1.185.0/24": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "TECHNOPOL",
+    "org": "ORG-TA764-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.3.168.0/22": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-PROFI-NET",
+    "org": "ORG-PRFN1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "195.78.44.0/23": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "ul. 1 maja 709",
+    "netname": "SK-ORANGE-PROFI-NET",
+    "org": "ORG-PRFN1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "213.151.192.0/18": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "PROVIDER Local Registry",
+    "netname": "SK-ORANGE-20000511",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a01:c840::/28": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "ORANGE SLOVAKIA",
+    "netname": "SK-ORANGE-20100720",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "5.178.48.0/20": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20120806",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "78.141.64.0/18": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20070713",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "85.237.224.0/19": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20050527",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "90.64.0.0/17": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "Orange Slovensko, a.s.",
+    "netname": "OSK-EXT-201406",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "90.64.128.0/17": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "Orange Slovensko, a.s.",
+    "netname": "OSK-EXT-201811",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "92.180.192.0/18": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "Orange Slovensko, a.s.",
+    "netname": "OSK-EXT-202102",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "92.52.0.0/18": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20080117",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "95.105.128.0/17": {
+  "first_seen": "2026-11-12T20:12:40+00:00",
+  "last_seen": "2026-11-12T20:12:40+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:12:40+00:00",
+    "descr": "",
+    "netname": "SK-ORANGE-20081201",
+    "org": "ORG-OSa4-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ }
+}

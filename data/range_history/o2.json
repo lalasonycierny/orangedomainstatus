@@ -1,0 +1,167 @@
+{
+ "151.236.224.0/20": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-TO2SK-20120816",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "185.103.144.0/22": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-BS-20150608",
+    "org": "ORG-OBSS2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a03:6947:1800::/40": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "CZE-SVK",
+    "org": "",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "2a06:2c40::/29": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-BS-20150608",
+    "org": "ORG-OBSS2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "31.3.32.0/19": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-TO2SK-20110406",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "37.152.96.0/19": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-TO2SK-20120312",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "37.58.0.0/20": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-TO2SK-20120116",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "46.34.224.0/19": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-TO2SK-20101006",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "90.176.0.0/19": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "",
+    "netname": "SK-BS-20061017",
+    "org": "ORG-OBSS2-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.191.69.0/24": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "O2 Slovakia s.r.o.",
+    "netname": "SK-O2-STATIC-POOL-20180523-01",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ },
+ "91.191.80.0/22": {
+  "first_seen": "2026-11-12T20:13:43+00:00",
+  "last_seen": "2026-11-12T20:13:43+00:00",
+  "snapshots": [
+   {
+    "classification": "unknown",
+    "country": "SK",
+    "date": "2026-11-12T20:13:43+00:00",
+    "descr": "O2 Slovakia s.r.o.",
+    "netname": "SK-O2-STATIC-POOL-20180523-02",
+    "org": "ORG-TOSs1-RIPE",
+    "source": "heuristic"
+   }
+  ]
+ }
+}
