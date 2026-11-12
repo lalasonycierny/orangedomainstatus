@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/cve_cache.json data/leakix_cache.json data/history
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
           if git diff --cached --quiet; then
             echo "Bez zmien."
           else
