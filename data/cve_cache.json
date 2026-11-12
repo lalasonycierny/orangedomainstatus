@@ -8420,6 +8420,13 @@
   "kev": false,
   "summary": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL to crash leading to a potential Denial of Service attack Impact summary: Applications loading files in the PKCS12 format from untrusted sources might terminate abruptly. A file in PKCS12 format can contain certificates…"
  },
+ "CVE-2024-12797": {
+  "cvss": 7.4,
+  "epss": 0.01857,
+  "fetched": "2026-11-12T08:11:12+00:00",
+  "kev": false,
+  "summary": "Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authenticate a server may fail to notice that the server was not authenticated, because handshakes don't abort as expected when the SSL_VERIFY_PEER verification mode is set. Impact summary: TLS and DTLS connections using raw public keys…"
+ },
  "CVE-2024-21318": {
   "cvss": 8.8,
   "epss": 0.30801,
@@ -8699,6 +8706,20 @@
   "fetched": "2026-11-06T04:15:10+00:00",
   "kev": false,
   "summary": "In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, due to a code logic error, filtering functions such as filter_var when validating URLs (FILTER_VALIDATE_URL) for certain types of URLs the function will result in invalid user information (username + password part of…"
+ },
+ "CVE-2024-6119": {
+  "cvss": 7.5,
+  "epss": 0.66582,
+  "fetched": "2026-11-12T08:11:12+00:00",
+  "kev": false,
+  "summary": "Issue summary: Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address resulting in abnormal termination of the application process. Impact summary: Abnormal termination of an application can a cause a denial of…"
+ },
+ "CVE-2025-15467": {
+  "cvss": 8.8,
+  "epss": 0.74793,
+  "fetched": "2026-11-12T08:11:12+00:00",
+  "kev": false,
+  "summary": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with maliciously crafted AEAD parameters can trigger a stack buffer overflow. Impact summary: A stack buffer overflow may lead to a crash, causing Denial of Service, or potentially remote code execution. When parsing CMS…"
  },
  "CVE-2025-21344": {
   "cvss": 7.8,
@@ -9231,6 +9252,13 @@
   "fetched": "2026-11-06T04:15:12+00:00",
   "kev": false,
   "summary": "Issue summary: A type confusion vulnerability exists in the signature verification of signed PKCS#7 data where an ASN1_TYPE union member is accessed without first validating the type, causing an invalid or NULL pointer dereference when processing malformed PKCS#7 data. Impact summary: An…"
+ },
+ "CVE-2026-23918": {
+  "cvss": 8.8,
+  "epss": 0.49727,
+  "fetched": "2026-11-12T08:11:12+00:00",
+  "kev": false,
+  "summary": "Double Free and possible RCE vulnerability in Apache HTTP Server with the HTTP/2 protocol. This issue affects Apache HTTP Server: 2.4.66. Users are recommended to upgrade to version 2.4.67, which fixes the issue."
  },
  "CVE-2026-24072": {
   "cvss": 8.8,
