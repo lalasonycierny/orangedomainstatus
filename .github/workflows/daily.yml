@@ -34,6 +34,7 @@ jobs:
           DNSDUMPSTER_API_KEY: ${{ secrets.DNSDUMPSTER_API_KEY }}
           LEAKIX_API_KEY: ${{ secrets.LEAKIX_API_KEY }}
           LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}   # volitelne, default 100/beh
+          MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }} # volitelne, default 100 prefixov/firmu
         run: python scan.py
 
       - name: Commit results
