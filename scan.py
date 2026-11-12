@@ -36,14 +36,38 @@ Premenne prostredia:
                         detail (netname/descr/country) za beh (default 100)
 
 Nova zalozka "IP rozsahy (RIPE/BGP)": pre kazdu firmu s nastavenym ASN v companies.json
-zobrazi vsetky jej announced prefixy z RIPEstat, s whois detailom a heuristickou
-klasifikaciou (ci ide o zakaznicky/CGNAT rozsah alebo nie). Ciste pasivne, bez
-API kluca. AKTIVNE SKENOVANIE (masscan/nmap) TU NIE JE IMPLEMENTOVANE - vyzaduje
-pisomne povolenie vlastnika siete a nehodi sa spustat z verejneho GitHub Actions.
+zobrazi vsetky jej announced prefixy z RIPEstat, s whois detailom a klasifikaciou.
+AKTIVNE SKENOVANIE (masscan/nmap) TU NIE JE IMPLEMENTOVANE - vyzaduje pisomne
+povolenie vlastnika siete a nehodi sa spustat z verejneho GitHub Actions.
+
+SPATNA VAZBA VYSSEJ KVALITY (confirmed_ranges.json, volitelny subor v koreni repozitara):
+zoznam rucne overenych prefixov, ktore MAJU VZDY prednost pred automatickou
+heuristikou podla netname/descr. Format (pole objektov):
+  [{"company": "orange", "cidr": "80.80.64.0/19", "classification": "own",
+    "note": "Core datacentrum Bratislava", "confirmed_by": "meno.priezvisko",
+    "confirmed_at": "2026-11-13"}, ...]
+- "company" musi zodpovedat "id" z companies.json.
+- "classification": "own" (potvrdena firemna infrastruktura) alebo "customer"
+  (potvrdeny zakaznicky/CGNAT rozsah, aj keby to heuristika necakala).
+- Zaznam moze pokryvat aj siroky CIDR (napr. cely /19) a automaticky sa aplikuje
+  na vsetky konkretnejsie prefixy, ktore doň spadaju; ak sa prekryva viac
+  zaznamov, pouzije sa ten najspecifickejsi (najdlhsi prefix).
+- Subor je volitelny - bez neho sa pouziva len heuristika ako doteraz.
+Kazdy prefix v zalozke ma navyse HISTORIU (ako hostia): kedy sa prvykrat objavil,
+ci sa zmenila jeho klasifikacia/netname oproti minulemu behu, a zoznam prefixov,
+ktore uz nie su announced (ulozene v data/range_history/<firma>.json).
 
 summary = hostname, porty a POCTY zranitelnosti (bez IP a bez CVE ID/popisov).
 full    = aj IP, CVE ID, popisy, CPE a historia obsahuje aj CVE ID.
           Pouzi len ak je vystup chraneny/autorizovany - inak summary.
+
+Kazdy host (najdeny cez crt.sh/DNS) ma pole "outside_asn": True ak ma domenu
+danej firmy, ale jeho IP NIE JE v ziadnom z prefixov nastavenych ASN tej
+firmy (teda bezi mimo jej vlastnej ASN infrastruktury, napr. na cudzom
+hostingu alebo CDN). False = IP je v niektorom z prefixov. None = firma
+nema v companies.json nastavene ziadne ASN, nedá sa to overit. Tento
+priznak je len True/False/None (neprezradzuje IP), preto je viditelny
+v OBOCH rezimoch (summary aj full).
 """
 import argparse
 import ipaddress
@@ -161,18 +185,139 @@ def fetch_prefix_whois(prefix_str):
     return merged
 
 
-def classify_prefix(info):
+def heuristic_classify(info):
     """Vseobecna heuristika podla netname/descr - NIE je doveryhodna klasifikacia,
     len napoveda na rozlisenie zakazanickych/CGNAT rozsahov od ostatnych."""
     text = " ".join(str(v) for v in info.values())
     return "customer" if CUSTOMER_HINTS_RE.search(text) else "unknown"
 
 
+# ---------- rucne potvrdene rozsahy (spatna vazba vyssej kvality ako heuristika) ----------
+CONFIRMED_RANGES_FILE = Path(os.environ.get("CONFIRMED_RANGES_FILE", "confirmed_ranges.json"))
+RANGE_HISTORY_DIR = Path("data/range_history")
+MAX_RANGE_SNAPSHOTS = 50
+RANGE_DISAPPEARED_KEEP_DAYS = 60
+
+
+def load_confirmed_ranges():
+    """Nacita confirmed_ranges.json - zoznam rucne overenych zaznamov vo formate:
+    [{"company":"orange", "cidr":"80.80.64.0/19", "classification":"own"|"customer",
+      "note":"...", "confirmed_by":"meno", "confirmed_at":"2026-11-13"}, ...]
+    Subor je volitelny; ak chyba alebo je neplatny, pouzije sa len heuristika."""
+    try:
+        data = json.loads(CONFIRMED_RANGES_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    out = []
+    for entry in data if isinstance(data, list) else []:
+        try:
+            net = ipaddress.ip_network(entry["cidr"], strict=False)
+        except (KeyError, ValueError):
+            print(f"[!] confirmed_ranges.json: preskakujem neplatny zaznam {entry!r}", file=sys.stderr)
+            continue
+        out.append({**entry, "_net": net})
+    return out
+
+
+def match_confirmed(prefix_net, confirmed, company_id):
+    """Najde najspecifickejsi (najmensi) rucne potvrdeny zaznam, ktory prefix
+    obsahuje alebo je s nim totozny. Manualne potvrdenie ma VZDY prednost
+    pred heuristikou podla netname/descr."""
+    candidates = [e for e in confirmed if e.get("company") == company_id and
+                  e["_net"].version == prefix_net.version and
+                  (prefix_net == e["_net"] or prefix_net.subnet_of(e["_net"]))]
+    if not candidates:
+        return None
+    return min(candidates, key=lambda e: -e["_net"].prefixlen)  # najspecifickejsi = najdlhsi prefix
+
+
+def classify_prefix(prefix_net, info, confirmed, company_id):
+    """Kombinuje rucne potvrdenie (ak existuje) s heuristikou. Vracia
+    (classification, source, note, confirmed_by, confirmed_at)."""
+    manual = match_confirmed(prefix_net, confirmed, company_id)
+    if manual:
+        return (manual.get("classification", "own"), "manual", manual.get("note", ""),
+                manual.get("confirmed_by", ""), manual.get("confirmed_at", ""))
+    return (heuristic_classify(info), "heuristic", "", "", "")
+
+
+# ---------- historia klasifikacie prefixov (rovnaky princip ako historia hostov) ----------
+def range_snapshot(row):
+    return {"date": now_iso(), "classification": row["classification"], "source": row["source"],
+            "netname": row["netname"], "descr": row["descr"], "country": row["country"], "org": row["org"]}
+
+
+def range_snap_changed(prev, cur):
+    if prev is None:
+        return True
+    keys = ("classification", "source", "netname", "descr", "country", "org")
+    return any(prev.get(k) != cur.get(k) for k in keys)
+
+
+def diff_range_snaps(prev, cur):
+    if prev is None:
+        return {"new_range": True}
+    changes = {}
+    if cur["classification"] != prev.get("classification"):
+        changes["classification_from"] = prev.get("classification")
+        changes["classification_to"] = cur["classification"]
+    if cur["netname"] != prev.get("netname"):
+        changes["netname_from"] = prev.get("netname")
+        changes["netname_to"] = cur["netname"]
+    return changes
+
+
+def apply_range_history(cid, rows):
+    """Analogicke k apply_history() pre hostov: kazdemu prefixu doplni
+    first_seen/is_new/changes/history a vrati zoznam prefixov, ktore predtym
+    boli announced a teraz uz nie su (zmiznute/reassignovane rozsahy)."""
+    path = RANGE_HISTORY_DIR / f"{cid}.json"
+    hist = load_json(path, {})
+    seen = set()
+    for row in rows:
+        key = row["cidr"]
+        seen.add(key)
+        entry = hist.setdefault(key, {"first_seen": now_iso(), "last_seen": None, "snapshots": []})
+        entry["last_seen"] = now_iso()
+        prev = entry["snapshots"][-1] if entry["snapshots"] else None
+        cur = range_snapshot(row)
+        row["is_new"] = prev is None
+        row["first_seen"] = entry["first_seen"]
+        row["changes"] = diff_range_snaps(prev, cur)
+        if range_snap_changed(prev, cur):
+            entry["snapshots"].append(cur)
+            entry["snapshots"] = entry["snapshots"][-MAX_RANGE_SNAPSHOTS:]
+        row["history"] = entry["snapshots"][-20:][::-1]
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=RANGE_DISAPPEARED_KEEP_DAYS)
+    disappeared = []
+    for key, entry in hist.items():
+        if key in seen:
+            continue
+        try:
+            last_seen = datetime.fromisoformat(entry["last_seen"])
+        except (KeyError, ValueError, TypeError):
+            continue
+        if last_seen < cutoff:
+            continue
+        last_snap = entry["snapshots"][-1] if entry["snapshots"] else {}
+        disappeared.append({"cidr": key, "first_seen": entry.get("first_seen"),
+                            "last_seen": entry.get("last_seen"),
+                            "last_classification": last_snap.get("classification", "unknown")})
+    disappeared.sort(key=lambda d: d["last_seen"], reverse=True)
+    save_json(path, hist)
+    return disappeared[:50]
+
+
 def build_ranges_section(companies, max_prefix_details):
     """Pre kazdu firmu s nastavenym ASN stiahne vsetky announced prefixy (RIPEstat)
-    a pre prvych max_prefix_details z nich aj whois detail (netname/descr/country)
-    s heuristickou klasifikaciou. Cisto pasivne, bez API kluca, legalne pre
-    kohokolvek - toto je krok "zistit, co patri firme na urovni IP"."""
+    a pre prvych max_prefix_details z nich aj whois detail (netname/descr/country).
+    Klasifikacia: rucne potvrdenie z confirmed_ranges.json ma VZDY prednost pred
+    heuristikou podla netname/descr. Kazdy prefix ma aj historiu zmien a oznacenie
+    noveho/zmeneneho zaznamu, rovnako ako hostia v ostatnych zalozkach. Cisto
+    pasivne, bez API kluca, legalne pre kohokolvek - toto je krok "zistit, co
+    patri firme na urovni IP"."""
+    confirmed = load_confirmed_ranges()
     out = {}
     for c in companies:
         asns = c.get("asns", [])
@@ -187,21 +332,30 @@ def build_ranges_section(companies, max_prefix_details):
             except Exception as e:  # noqa: BLE001
                 print(f"[!] RIPE whois {p}: {e}", file=sys.stderr)
                 info = {}
+            cls, source, note, confirmed_by, confirmed_at = classify_prefix(p, info, confirmed, c["id"])
             rows.append({
                 "cidr": str(p), "size": p.num_addresses,
                 "netname": info.get("netname", ""), "descr": info.get("descr", ""),
                 "country": info.get("country", ""),
                 "org": info.get("org-name") or info.get("org", ""),
-                "classification": classify_prefix(info),
+                "classification": cls, "source": source, "note": note,
+                "confirmed_by": confirmed_by, "confirmed_at": confirmed_at,
             })
             time.sleep(0.3)
+        disappeared = apply_range_history(c["id"], rows)
+        new_count = sum(1 for r in rows if r.get("is_new"))
+        changed_count = sum(1 for r in rows if r.get("changes") and not r.get("is_new"))
         out[c["id"]] = {
             "name": c["name"], "asns": asns, "prefix_count": len(prefixes),
             "shown": len(rows), "skipped": max(0, len(prefixes) - max_prefix_details),
-            "rows": rows, "generated": now_iso(),
+            "rows": rows, "generated": now_iso(), "disappeared": disappeared,
+            "changes_summary": {"new": new_count, "changed": changed_count, "disappeared": len(disappeared)},
         }
         if asns:
-            print(f"[+] {c['id']}: {len(prefixes)} prefixov z RIPE, whois detail pre {len(rows)}")
+            manual_count = sum(1 for r in rows if r["source"] == "manual")
+            print(f"[+] {c['id']}: {len(prefixes)} prefixov z RIPE, whois detail pre {len(rows)} "
+                  f"({manual_count} rucne potvrdenych), novych {new_count}, zmenenych {changed_count}, "
+                  f"zmiznutych {len(disappeared)}")
     return out
 
 
@@ -458,6 +612,12 @@ def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None):
         counts = {s: sum(1 for c in cves if c["severity"] == s)
                   for s in ("critical", "high", "medium", "low", "unknown")}
         scores = [c["cvss"] for c in cves if c["cvss"] is not None]
+        # outside_asn: True = host MA domenu firmy, ale jeho IP NIE JE v ziadnom
+        # z prefixov nastavenych ASN danej firmy (napr. subdomena bezi na cudzom
+        # hostingu/CDN, nie na vlastnej infrastrukture). None = firma nema v
+        # companies.json nastavene ASN, takze sa to neda overit. Je to len
+        # True/False/None, nie IP adresa, preto sa zobrazuje v OBOCH rezimoch.
+        outside_asn = (not in_prefix(ip)) if prefixes else None
         rec = {
             "names": sorted(host_ips[ip]),
             "ports": sorted(d.get("ports", [])),
@@ -467,10 +627,10 @@ def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None):
             "kev_count": sum(1 for c in cves if c["kev"]),
             "max_severity": next((s for s in SEV_ORDER[:5] if counts.get(s)), "none"),
             "max_cvss": max(scores) if scores else None,
+            "outside_asn": outside_asn,
         }
         if mode == "full":
-            rec.update({"ip": ip, "cpes": d.get("cpes", []), "cves": cves,
-                        "in_asn_prefix": in_prefix(ip) if prefixes else None})
+            rec.update({"ip": ip, "cpes": d.get("cpes", []), "cves": cves})
         elif not rec["names"]:
             continue  # v summary rezime nezverejnujeme anonymne IP
         assets.append(rec)
