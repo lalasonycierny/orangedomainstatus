@@ -93,6 +93,10 @@
       <option value="">Zmeny: vsetky</option>
       <option value="changed">Len zmenene / nove</option>
     </select>
+    <select id="asnf">
+      <option value="">ASN: vsetky</option>
+      <option value="outside">Len mimo ASN</option>
+    </select>
     <button id="expand">Rozbalit vsetky CVE</button>
     <button id="csv">Export CSV</button>
     <button id="json">Export JSON</button>
@@ -127,13 +131,15 @@
 </div>
 
 <div id="ranges-view" style="display:none">
-  <div class="warn">Klasifikacia "zakaznicky rozsah" je len heuristika podla netname/descr v RIPE databaze
-  (DSL, CGNAT, mobilne siete a pod.) - nie je to spolahlive urcenie vlastnictva. "Neoverene" znamena,
+  <div class="warn">Klasifikacia "potvrdene rucne" pochadza z confirmed_ranges.json a ma vzdy prednost.
+  Klasifikacia "heuristika" je len automaticky odhad podla netname/descr v RIPE databaze (DSL, CGNAT,
+  mobilne siete a pod.) - nie je to spolahlive urcenie vlastnictva. "Neoverene" pri heuristike znamena,
   ze rozsah NEVYZERA ako zakaznicky, nie ze ide urcite o firemnu infrastrukturu.</div>
   <div class="bar">
     <input id="rq" type="search" placeholder="Hladat CIDR, netname, popis, krajinu...">
     <select id="rclass">
       <option value="">Klasifikacia: vsetky</option>
+      <option value="own">Firemna infra (potvrdene)</option>
       <option value="unknown">Neoverene (nie je zakaznicky)</option>
       <option value="customer">Zakaznicky / CGNAT rozsah</option>
     </select>
@@ -189,8 +195,10 @@ function filtered() {
   const q = document.getElementById("q").value.trim().toLowerCase();
   const sev = document.getElementById("sev").value;
   const chf = document.getElementById("chf").value;
+  const asnf = document.getElementById("asnf").value;
   return company().assets.filter(a =>
-      (!sev || a.max_severity === sev) && (!q || haystack(a).includes(q)) && (!chf || hasChange(a)))
+      (!sev || a.max_severity === sev) && (!q || haystack(a).includes(q)) &&
+      (!chf || hasChange(a)) && (!asnf || a.outside_asn === true))
     .sort((x, y) => {
       const a = sortVal(x, sortKey), b = sortVal(y, sortKey);
       return (a < b ? -1 : a > b ? 1 : 0) * sortDir;
@@ -298,6 +306,11 @@ function renderTable() {
     const tr = el("tr", a.is_new ? "row-new" : (hasChange(a) ? "row-changed" : ""));
     const names = el("td", "names");
     (a.names.length ? a.names : ["(bez nazvu)"]).forEach(n => names.appendChild(el("div", "", n)));
+    if (a.outside_asn === true) {
+      const b = el("span", "badge medium", "mimo ASN");
+      b.title = "Host ma domenu tejto firmy, ale jeho IP nie je v ziadnom z jej ASN prefixov (napr. cudzi hosting/CDN).";
+      names.appendChild(b);
+    }
     tr.appendChild(names);
     if (full()) tr.appendChild(el("td", "", a.ip));
     const ports = el("td");
@@ -343,7 +356,8 @@ function renderStats() {
   const A = company().assets, cs = company().changes_summary || {}, n = s => A.filter(a => a.max_severity === s).length;
   const items = [["Hosty", A.length, ""], ["Critical", n("critical"), ""], ["High", n("high"), ""],
     ["Medium", n("medium"), ""], ["Low", n("low"), ""], ["Nove", cs.new || 0, "hl-new"],
-    ["Zmenene", cs.changed || 0, ""], ["Zmiznute", cs.disappeared || 0, "hl-gone"]];
+    ["Zmenene", cs.changed || 0, ""], ["Zmiznute", cs.disappeared || 0, "hl-gone"],
+    ["Mimo ASN", A.filter(a => a.outside_asn === true).length, "hl-gone"]];
   const box = document.getElementById("stats"); box.replaceChildren();
   for (const [l, v, cls] of items) {
     const s = el("div", "stat " + cls); s.appendChild(el("b", "", v)); s.appendChild(el("span", "", l)); box.appendChild(s);
@@ -424,6 +438,45 @@ function rangesFiltered() {
   return out;
 }
 
+function classificationBadge(r) {
+  const span = el("span");
+  const label = r.classification === "customer" ? "zakaznicky/CGNAT"
+    : r.classification === "own" ? "firemna infra" : "neoverene";
+  const tone = r.classification === "customer" ? "medium" : r.classification === "own" ? "low" : "unknown";
+  span.appendChild(el("span", "badge " + tone, label));
+  span.appendChild(el("span", "badge " + (r.source === "manual" ? "low" : "unknown"),
+    r.source === "manual" ? "potvrdene rucne" : "heuristika"));
+  return span;
+}
+
+function rangeChangesCell(r) {
+  const td = el("td");
+  if (r.is_new) { td.appendChild(el("span", "badge add", "NOVY PREFIX")); return td; }
+  const c = r.changes || {};
+  if (!Object.keys(c).length) { td.appendChild(el("span", "none", "bez zmien")); return td; }
+  const line = el("div", "changes-line");
+  if (c.classification_from) line.appendChild(el("span", "badge high",
+    "klasifikacia: " + c.classification_from + " → " + c.classification_to));
+  if (c.netname_from !== undefined) line.appendChild(el("span", "badge medium",
+    "netname: " + (c.netname_from || "-") + " → " + (c.netname_to || "-")));
+  td.appendChild(line);
+  return td;
+}
+
+function rangeHistoryBlock(r) {
+  const wrap = el("div", "histlist");
+  if (!r.history || !r.history.length) { wrap.appendChild(el("div", "", "Zatial ziadna historia.")); return wrap; }
+  r.history.forEach(h => {
+    const row = el("div", "hist-row");
+    row.appendChild(el("span", "d", fmtDate(h.date)));
+    row.appendChild(el("span", "badge " + (h.classification === "customer" ? "medium" : h.classification === "own" ? "low" : "unknown"),
+      h.classification + " (" + h.source + ")"));
+    row.appendChild(el("span", "", "netname: " + (h.netname || "-")));
+    wrap.appendChild(row);
+  });
+  return wrap;
+}
+
 function renderRangesView() {
   const box = document.getElementById("ranges-companies"); box.replaceChildren();
   const companies = rangesFiltered();
@@ -432,21 +485,25 @@ function renderRangesView() {
   for (const cid of ids) {
     const info = companies[cid];
     const sec = el("div", "dns-domain");
-    sec.appendChild(el("h2", "", info.name + " - " + (info.asns || []).join(", ")));
+    const cs = info.changes_summary || {};
+    sec.appendChild(el("h2", "", info.name + " - " + (info.asns || []).join(", ") +
+      (cs.new ? "  🆕" + cs.new : "") + (cs.disappeared ? "  ⚠" + cs.disappeared : "")));
     const skippedTxt = info.skipped ? ("  |  preskocenych (nad limit): " + info.skipped) : "";
     sec.appendChild(el("div", "meta",
       "celkovo prefixov: " + info.prefix_count + "  |  zobrazenych s detailom: " + info.shown + skippedTxt +
+      "  |  novych: " + (cs.new || 0) + "  |  zmenenych: " + (cs.changed || 0) +
       (info.generated ? "  |  aktualizovane: " + fmtDate(info.generated) : "")));
     if (!info.rows.length) {
       sec.appendChild(el("div", "empty", "Ziadne zaznamy (pre dany filter alebo firmu)."));
     } else {
       const table = el("table");
       const thead = el("thead"), htr = el("tr");
-      ["CIDR", "Velkost", "Netname", "Popis", "Krajina", "Organizacia", "Klasifikacia"].forEach(h => htr.appendChild(el("th", "", h)));
+      ["CIDR", "Velkost", "Netname", "Popis", "Krajina", "Organizacia", "Klasifikacia", "Zmeny", "Historia"]
+        .forEach(h => htr.appendChild(el("th", "", h)));
       thead.appendChild(htr); table.appendChild(thead);
       const tbody = el("tbody");
       info.rows.forEach(r => {
-        const tr = el("tr");
+        const tr = el("tr", r.is_new ? "row-new" : ((r.changes && Object.keys(r.changes).length) ? "row-changed" : ""));
         const cidrTd = el("td");
         const link = el("a", "", r.cidr);
         link.href = "https://bgp.he.net/net/" + r.cidr;
@@ -459,14 +516,45 @@ function renderRangesView() {
         tr.appendChild(el("td", "", r.country || "-"));
         tr.appendChild(el("td", "", r.org || "-"));
         const clsTd = el("td");
-        clsTd.appendChild(el("span", "badge " + (r.classification === "customer" ? "medium" : "unknown"),
-          r.classification === "customer" ? "zakaznicky/CGNAT" : "neoverene"));
+        clsTd.appendChild(classificationBadge(r));
+        if (r.source === "manual" && (r.note || r.confirmed_by)) {
+          const d = el("div", "meta", (r.note || "") + (r.confirmed_by ? "  (" + r.confirmed_by +
+            (r.confirmed_at ? ", " + r.confirmed_at : "") + ")" : ""));
+          clsTd.appendChild(d);
+        }
         tr.appendChild(clsTd);
+        tr.appendChild(rangeChangesCell(r));
+        const histTd = el("td");
+        const hd = el("details");
+        hd.appendChild(el("summary", "", "Historia (" + (r.history ? r.history.length : 0) + ")"));
+        hd.appendChild(rangeHistoryBlock(r));
+        histTd.appendChild(hd);
+        tr.appendChild(histTd);
         tbody.appendChild(tr);
       });
       table.appendChild(tbody);
       const wrap = el("div", "wrap"); wrap.appendChild(table);
       sec.appendChild(wrap);
+    }
+    const gone = info.disappeared || [];
+    if (gone.length) {
+      sec.appendChild(el("h2", "", "Zmiznute prefixy"));
+      const gtable = el("table");
+      const gthead = el("thead"), ghtr = el("tr");
+      ["CIDR", "Posledna klasifikacia", "Prvykrat videny", "Naposledy videny"].forEach(h => ghtr.appendChild(el("th", "", h)));
+      gthead.appendChild(ghtr); gtable.appendChild(gthead);
+      const gtbody = el("tbody");
+      gone.forEach(g => {
+        const tr = el("tr", "ghost");
+        tr.appendChild(el("td", "", g.cidr));
+        tr.appendChild(el("td", "", g.last_classification));
+        tr.appendChild(el("td", "", fmtDate(g.first_seen)));
+        tr.appendChild(el("td", "", fmtDate(g.last_seen)));
+        gtbody.appendChild(tr);
+      });
+      gtable.appendChild(gtbody);
+      const gwrap = el("div", "wrap"); gwrap.appendChild(gtable);
+      sec.appendChild(gwrap);
     }
     box.appendChild(sec);
   }
@@ -475,9 +563,14 @@ function renderRangesView() {
 document.getElementById("rq").oninput = renderRangesView;
 document.getElementById("rclass").onchange = renderRangesView;
 document.getElementById("rcsv").onclick = () => {
-  const lines = [["company", "cidr", "size", "netname", "descr", "country", "org", "classification"].join(",")];
+  const lines = [["company", "cidr", "size", "netname", "descr", "country", "org", "classification",
+    "source", "note", "confirmed_by", "confirmed_at", "is_new", "changed"].join(",")];
   for (const [cid, info] of Object.entries(rangesFiltered()))
-    for (const r of info.rows) lines.push([info.name, r.cidr, r.size, r.netname, r.descr, r.country, r.org, r.classification].map(csvCell).join(","));
+    for (const r of info.rows) lines.push([
+      info.name, r.cidr, r.size, r.netname, r.descr, r.country, r.org, r.classification,
+      r.source, r.note || "", r.confirmed_by || "", r.confirmed_at || "",
+      r.is_new ? "yes" : "no", (r.changes && Object.keys(r.changes).length) ? "yes" : "no",
+    ].map(csvCell).join(","));
   download("ip-ranges.csv", "text/csv;charset=utf-8", "\ufeff" + lines.join("\r\n"));
 };
 document.getElementById("rjson").onclick = () => download("ip-ranges.json", "application/json", JSON.stringify(rangesFiltered(), null, 2));
@@ -511,11 +604,12 @@ const csvCell = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
 document.getElementById("csv").onclick = () => {
   const f = full();
   const head = ["hosts", ...(f ? ["ip"] : []), "ports", "max_severity", "max_cvss",
-    "critical", "high", "medium", "low", "unknown", "kev", "is_new", "changes", ...(f ? ["cves"] : [])];
+    "critical", "high", "medium", "low", "unknown", "kev", "outside_asn", "is_new", "changes", ...(f ? ["cves"] : [])];
   const lines = [head.join(",")];
   for (const a of filtered()) lines.push([
     a.names.join(";"), ...(f ? [a.ip] : []), a.ports.join(";"), a.max_severity, a.max_cvss,
     a.counts.critical, a.counts.high, a.counts.medium, a.counts.low, a.counts.unknown, a.kev_count,
+    a.outside_asn === true ? "yes" : a.outside_asn === false ? "no" : "n/a",
     a.is_new ? "yes" : "no", JSON.stringify(a.changes || {}),
     ...(f ? [(a.cves || []).map(c => c.id + " [" + (c.source||"?") + "] (" + c.severity + " " + (c.cvss ?? "?") + "): " + (c.summary || "")).join(" | ")] : [])
   ].map(csvCell).join(","));
@@ -529,6 +623,7 @@ document.getElementById("expand").onclick = e => {
 document.getElementById("q").oninput = renderTable;
 document.getElementById("sev").onchange = renderTable;
 document.getElementById("chf").onchange = renderTable;
+document.getElementById("asnf").onchange = renderTable;
 
 fetch("data/assets.json", {cache: "no-store"}).then(r => r.json()).then(d => {
   DATA = d;
