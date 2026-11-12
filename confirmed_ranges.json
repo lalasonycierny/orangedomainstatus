@@ -1,6 +1,1 @@
-[
-  {"company": "orange", "cidr": "80.80.64.0/19", "classification": "own",
-   "note": "Core datacentrum Bratislava", "confirmed_by": "jan.novak", "confirmed_at": "2026-11-13"},
-  {"company": "orange", "cidr": "82.82.0.0/24", "classification": "customer",
-   "note": "Overene s NOC timom", "confirmed_by": "jan.novak", "confirmed_at": "2026-11-13"}
-]
+[]
