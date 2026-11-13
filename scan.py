@@ -34,8 +34,11 @@ Premenne prostredia:
   LEAKIX_MAX_CALLS     max. poctov volani LeakIX API za jeden beh (default 100)
   MAX_PREFIX_DETAILS   kolko IP prefixov na firmu sa ma obohatit o RIPE whois
                         detail (netname/descr/country) za beh (default 100)
-  ZAP_REPORT_PATH       cesta k JSON reportu z OWASP ZAP (volitelne)
-  NUCLEI_REPORT_PATH    cesta k JSONL vystupu z nuclei -jsonl (volitelne)
+  ZAP_REPORT_PATH       cesta/cesty (ciarkou oddelene) k JSON reportom z OWASP
+                        ZAP (volitelne) - viac ciest sa hodi, ak sa skenuje
+                        viac hostname naraz (napr. orange.sk aj www.orange.sk),
+                        kedze jeden moze zlyhat (napr. connection reset) a iny nie
+  NUCLEI_REPORT_PATH    cesta/cesty (ciarkou oddelene) k JSONL vystupu z nuclei -jsonl
   WEBSEC_TARGET_HOSTS   ciarkou oddeleny zoznam hostname, ku ktorym sa smu
                         pripojit ZAP/Nuclei zaznamy (default "orange.sk,www.orange.sk")
 
@@ -615,29 +618,34 @@ def eprint_once(msg):
         print(msg, file=sys.stderr)
 
 
-def build_websec_map(zap_path, nuclei_path, target_hosts):
-    """Nacita ZAP a/alebo Nuclei report a vrati {hostname: [finding,...]}
-    OBMEDZENE LEN na target_hosts - vsetko ostatne sa zahodi s upozornenim,
-    aj keby to subory s reportom obsahovali (bezpecnostna poistka proti
-    omylom roz sirenemu scope)."""
+def build_websec_map(zap_paths, nuclei_paths, target_hosts):
+    """Nacita jeden alebo viac ZAP/Nuclei reportov (ciarkou oddelene cesty -
+    napr. samostatny report pre orange.sk a samostatny pre www.orange.sk,
+    kedze jeden host moze spojenie resetovat a iny nie) a vrati
+    {hostname: [finding,...]}. OBMEDZENE LEN na target_hosts - vsetko
+    ostatne sa zahodi s upozornenim, aj keby to subory s reportom
+    obsahovali (bezpecnostna poistka proti omylom rozsirenemu scope)."""
     allowed = {h.strip().lower() for h in target_hosts if h.strip()}
     merged = {}
-    for path, parser, label in ((zap_path, parse_zap_report, "ZAP"), (nuclei_path, parse_nuclei_report, "Nuclei")):
-        if not path:
+    for raw_paths, parser, label in ((zap_paths, parse_zap_report, "ZAP"), (nuclei_paths, parse_nuclei_report, "Nuclei")):
+        if not raw_paths:
             continue
-        if not Path(path).exists():
-            print(f"[!] {label}: subor {path} neexistuje, preskakujem", file=sys.stderr)
-            continue
-        found = parser(path)
-        for host, findings in found.items():
-            if host not in allowed:
-                print(f"[!] {label}: host '{host}' nie je v WEBSEC_TARGET_HOSTS, "
-                      f"{len(findings)} zaznamov zahadzujem (bezpecnostna poistka)", file=sys.stderr)
+        for path in [p.strip() for p in raw_paths.split(",") if p.strip()]:
+            if not Path(path).exists():
+                print(f"[!] {label}: subor {path} neexistuje, preskakujem (mozno sa pre tento host "
+                      f"nepodarilo sken dokoncit - napr. connection reset)", file=sys.stderr)
                 continue
-            merged.setdefault(host, []).extend(findings)
-        print(f"[+] {label}: {sum(len(v) for v in found.values() if True)} zaznamov nacitanych "
-              f"z {path}, z toho pouzitelnych pre povolene hosty: "
-              f"{sum(len(v) for h, v in found.items() if h in allowed)}")
+            found = parser(path)
+            used = 0
+            for host, findings in found.items():
+                if host not in allowed:
+                    print(f"[!] {label}: host '{host}' nie je v WEBSEC_TARGET_HOSTS, "
+                          f"{len(findings)} zaznamov zahadzujem (bezpecnostna poistka)", file=sys.stderr)
+                    continue
+                merged.setdefault(host, []).extend(findings)
+                used += len(findings)
+            print(f"[+] {label}: {path} -> {sum(len(v) for v in found.values())} zaznamov, "
+                  f"{used} pouzitelnych pre povolene hosty")
     return merged
 
 
