@@ -1,0 +1,141 @@
+name: WebSec scan (ZAP / Nuclei) - orange.sk only
+
+# BEZPECNOSTNA POZNAMKA: toto skenuje LEN domeny z premennej WEBSEC_TARGET_HOSTS
+# (default orange.sk, www.orange.sk). scan.py navyse zahodi vsetko, co by sa
+# omylom tykalo inej domeny. Nemen target bez pisomneho povolenia pre danu domenu.
+#
+# "baseline_and_nuclei" job je PASIVNY/BEZPECNY (ZAP Baseline = len spider +
+# pasivne pravidla, ziadne utocne payloady; Nuclei bezi s vylucenim
+# agresivnych tagov) a da sa spustat automaticky/pravidelne.
+#
+# "zap_full_scan" job je AKTIVNY (posiela utocne payloady - SQLi/XSS a pod.)
+# a je spustitelny LEN RUCNE, s explicitnym potvrdzovacim textom. Nikdy ho
+# nezaraduj do automatickeho planu (cron) bez samostatneho pisomneho schvalenia
+# casoveho okna, rovnako ako pri aktivnom skenovani portov.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_active_scan:
+        description: 'LEN pre "Run ZAP Full Scan" job: napis presne RUN-ACTIVE-SCAN pre potvrdenie'
+        required: false
+        default: ''
+  # Denny automaticky beh (len "baseline_and_nuclei" - pasivny/bezpecny job).
+  # "zap_full_scan" sa planom NIKDY nespusta, iba rucne s explicitnym potvrdenim.
+  schedule:
+    - cron: "30 4 * * *"   # kazdy den 04:30 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  baseline_and_nuclei:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ZAP Baseline scan (pasivny, bezpecny)
+        uses: zaproxy/action-baseline@v0.12.0
+        continue-on-error: true  # ZAP vracia non-zero exit kod, ak najde cokolvek - to je ocakavane
+        with:
+          target: 'https://orange.sk'
+          # -j = pouzit AJAX spider navyse k bežnému; uprav podla potreby
+          cmd_options: '-a'
+          # action-baseline uklada report do ./report_json.json v pracovnom adresari
+
+      - name: Install nuclei
+        run: |
+          curl -sL https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei_amd64_linux.tar.gz \
+            -o /tmp/nuclei.tar.gz || true
+          if [ -f /tmp/nuclei.tar.gz ]; then
+            tar -xzf /tmp/nuclei.tar.gz -C /tmp
+            sudo mv /tmp/nuclei /usr/local/bin/nuclei
+          fi
+          nuclei -version || echo "[!] nuclei sa nepodarilo nainstalovat, tento krok sa preskoci"
+
+      - name: Nuclei scan (bezpecne tagy, bez intruzivnych sablon)
+        continue-on-error: true
+        run: |
+          if command -v nuclei >/dev/null 2>&1; then
+            nuclei -u https://orange.sk \
+              -etags dos,intrusive,fuzz \
+              -jsonl -o nuclei-report.jsonl \
+              -rate-limit 20 -timeout 10
+          else
+            echo "[]" > nuclei-report.jsonl
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scan.py s WEBSEC obohatenim
+        env:
+          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
+          SCAN_PREFIXES: ${{ vars.SCAN_PREFIXES }}
+          MAX_IPS: ${{ vars.MAX_IPS }}
+          DNSDUMPSTER_API_KEY: ${{ secrets.DNSDUMPSTER_API_KEY }}
+          LEAKIX_API_KEY: ${{ secrets.LEAKIX_API_KEY }}
+          LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}
+          MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }}
+          WEBSEC_TARGET_HOSTS: ${{ vars.WEBSEC_TARGET_HOSTS }}  # default v scan.py: orange.sk,www.orange.sk
+          ZAP_REPORT_PATH: report_json.json
+          NUCLEI_REPORT_PATH: nuclei-report.jsonl
+        run: python scan.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
+          if git diff --cached --quiet; then
+            echo "Bez zmien."
+          else
+            git commit -m "WebSec scan (ZAP baseline + Nuclei) $(date -u +%F)"
+            git push
+          fi
+
+  zap_full_scan:
+    # LEN RUCNE, len ak workflow_dispatch input presne zodpoveda potvrdzovaciemu textu.
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.confirm_active_scan == 'RUN-ACTIVE-SCAN'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ZAP Full Scan (AKTIVNY - posiela utocne payloady)
+        uses: zaproxy/action-full-scan@v0.12.0
+        continue-on-error: true
+        with:
+          target: 'https://orange.sk'
+          cmd_options: '-a'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scan.py s WEBSEC obohatenim (Full Scan report)
+        env:
+          PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
+          SCAN_PREFIXES: ${{ vars.SCAN_PREFIXES }}
+          MAX_IPS: ${{ vars.MAX_IPS }}
+          DNSDUMPSTER_API_KEY: ${{ secrets.DNSDUMPSTER_API_KEY }}
+          LEAKIX_API_KEY: ${{ secrets.LEAKIX_API_KEY }}
+          LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}
+          MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }}
+          WEBSEC_TARGET_HOSTS: ${{ vars.WEBSEC_TARGET_HOSTS }}
+          ZAP_REPORT_PATH: report_json.json
+        run: python scan.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
+          if git diff --cached --quiet; then
+            echo "Bez zmien."
+          else
+            git commit -m "WebSec ZAP Full Scan (active) $(date -u +%F)"
+            git push
+          fi
