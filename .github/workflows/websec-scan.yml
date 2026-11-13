@@ -66,6 +66,19 @@ jobs:
             echo "[]" > nuclei-report.jsonl
           fi
 
+      - name: Uloz surove reporty ako artifact (aj pri zlyhani)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: websec-raw-reports-baseline
+          path: |
+            report_json.json
+            report_html.html
+            report_md.md
+            nuclei-report.jsonl
+          if-no-files-found: ignore
+          retention-days: 14
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -110,6 +123,18 @@ jobs:
         with:
           target: 'https://orange.sk'
           cmd_options: '-a'
+
+      - name: Uloz surove reporty ako artifact (aj pri zlyhani)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: websec-raw-reports-fullscan
+          path: |
+            report_json.json
+            report_html.html
+            report_md.md
+          if-no-files-found: ignore
+          retention-days: 14
 
       - uses: actions/setup-python@v5
         with:
