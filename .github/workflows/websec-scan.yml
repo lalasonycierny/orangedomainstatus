@@ -45,14 +45,21 @@ jobs:
           # action-baseline uklada report do ./report_json.json v pracovnom adresari
 
       - name: Install nuclei
+        continue-on-error: true  # nedostupnost/zmena nuclei balicka nesmie zhodit cely job
         run: |
-          curl -sL https://github.com/projectdiscovery/nuclei/releases/latest/download/nuclei_amd64_linux.tar.gz \
-            -o /tmp/nuclei.tar.gz || true
-          if [ -f /tmp/nuclei.tar.gz ]; then
-            tar -xzf /tmp/nuclei.tar.gz -C /tmp
+          set +e
+          ASSET_URL=$(curl -s https://api.github.com/repos/projectdiscovery/nuclei/releases/latest \
+            | grep "browser_download_url.*linux_amd64.zip" | cut -d '"' -f 4 | head -n1)
+          echo "Zistena URL balicka: ${ASSET_URL:-<ZIADNA>}"
+          if [ -n "$ASSET_URL" ]; then
+            curl -sL "$ASSET_URL" -o /tmp/nuclei.zip
+            unzip -o -q /tmp/nuclei.zip -d /tmp
             sudo mv /tmp/nuclei /usr/local/bin/nuclei
+          else
+            echo "[!] Nepodarilo sa zistit URL najnovsieho balicka nuclei z GitHub API"
           fi
-          nuclei -version || echo "[!] nuclei sa nepodarilo nainstalovat, tento krok sa preskoci"
+          nuclei -version || echo "[!] nuclei sa nepodarilo nainstalovat, dalsi krok vytvori prazdny report"
+          exit 0
 
       - name: Nuclei scan (bezpecne tagy, bez intruzivnych sablon)
         continue-on-error: true
