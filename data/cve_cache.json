@@ -8448,6 +8448,13 @@
   "kev": false,
   "summary": "HTTP Response splitting in multiple modules in Apache HTTP Server allows an attacker that can inject malicious response headers into backend applications to cause an HTTP desynchronization attack. Users are recommended to upgrade to version 2.4.59, which fixes this issue."
  },
+ "CVE-2024-2511": {
+  "cvss": 5.9,
+  "epss": 0.59302,
+  "fetched": "2026-11-13T04:11:51+00:00",
+  "kev": false,
+  "summary": "Issue summary: Some non-default TLS server configurations can cause unbounded memory growth when processing TLSv1.3 sessions Impact summary: An attacker may exploit certain server configurations to trigger unbounded memory growth that would lead to a Denial of Service This problem can occur in…"
+ },
  "CVE-2024-25117": {
   "cvss": 6.8,
   "epss": 0.00932,
