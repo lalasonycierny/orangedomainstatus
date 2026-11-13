@@ -35,14 +35,46 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: ZAP Baseline scan (pasivny, bezpecny)
+      # Kazdy cielovy host sa skenuje SAMOSTATNE, pretoze jeden moze sediet za inym
+      # CDN uzlom/IP a resetovat spojenie, zatial co iny moze fungovat normalne.
+      # Chceš pridat dalsi host? Skopiruj dvojicu krokov "ZAP Baseline scan - X" +
+      # "Presun report (X)" pre novy hostname a dopln jeho subor do ZAP_REPORT_PATH
+      # nizsie (ciarkou oddelene) aj do zoznamu -u pre nuclei.
+
+      - name: Oprava prav pre ZAP docker volume (znamy problem action-baseline)
+        run: chmod -R 777 "$GITHUB_WORKSPACE"
+
+      - name: ZAP Baseline scan - orange.sk
         uses: zaproxy/action-baseline@v0.12.0
-        continue-on-error: true  # ZAP vracia non-zero exit kod, ak najde cokolvek - to je ocakavane
+        continue-on-error: true  # zlyhanie/connection reset na jednom hoste nesmie zastavit dalsie
         with:
           target: 'https://orange.sk'
-          # -j = pouzit AJAX spider navyse k bežnému; uprav podla potreby
           cmd_options: '-a'
-          # action-baseline uklada report do ./report_json.json v pracovnom adresari
+
+      - name: Presun report (orange.sk)
+        if: always()
+        run: |
+          mv report_json.json report_json_orange.json 2>/dev/null || true
+          mv report_html.html report_html_orange.html 2>/dev/null || true
+          mv report_md.md report_md_orange.md 2>/dev/null || true
+
+      - name: Oprava prav pre ZAP docker volume (pred dalsim hostom)
+        if: always()
+        run: chmod -R 777 "$GITHUB_WORKSPACE"
+
+      - name: ZAP Baseline scan - www.orange.sk
+        uses: zaproxy/action-baseline@v0.12.0
+        continue-on-error: true
+        with:
+          target: 'https://www.orange.sk'
+          cmd_options: '-a'
+
+      - name: Presun report (www.orange.sk)
+        if: always()
+        run: |
+          mv report_json.json report_json_www.json 2>/dev/null || true
+          mv report_html.html report_html_www.html 2>/dev/null || true
+          mv report_md.md report_md_www.md 2>/dev/null || true
 
       - name: Install nuclei
         continue-on-error: true  # nedostupnost/zmena nuclei balicka nesmie zhodit cely job
@@ -65,7 +97,9 @@ jobs:
         continue-on-error: true
         run: |
           if command -v nuclei >/dev/null 2>&1; then
-            nuclei -u https://orange.sk \
+            # nuclei sa pokusi o kazdy -u cielene; ak jeden zlyha/resetne spojenie,
+            # pokracuje na dalsi a nezastavi cely beh
+            nuclei -u https://orange.sk -u https://www.orange.sk \
               -etags dos,intrusive,fuzz \
               -jsonl -o nuclei-report.jsonl \
               -rate-limit 20 -timeout 10
@@ -79,9 +113,12 @@ jobs:
         with:
           name: websec-raw-reports-baseline
           path: |
-            report_json.json
-            report_html.html
-            report_md.md
+            report_json_orange.json
+            report_html_orange.html
+            report_md_orange.md
+            report_json_www.json
+            report_html_www.html
+            report_md_www.md
             nuclei-report.jsonl
           if-no-files-found: ignore
           retention-days: 14
@@ -100,7 +137,7 @@ jobs:
           LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}
           MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }}
           WEBSEC_TARGET_HOSTS: ${{ vars.WEBSEC_TARGET_HOSTS }}  # default v scan.py: orange.sk,www.orange.sk
-          ZAP_REPORT_PATH: report_json.json
+          ZAP_REPORT_PATH: report_json_orange.json,report_json_www.json
           NUCLEI_REPORT_PATH: nuclei-report.jsonl
         run: python scan.py
 
@@ -124,12 +161,40 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: ZAP Full Scan (AKTIVNY - posiela utocne payloady)
+      - name: Oprava prav pre ZAP docker volume
+        run: chmod -R 777 "$GITHUB_WORKSPACE"
+
+      - name: ZAP Full Scan - orange.sk (AKTIVNY - posiela utocne payloady)
         uses: zaproxy/action-full-scan@v0.12.0
         continue-on-error: true
         with:
           target: 'https://orange.sk'
           cmd_options: '-a'
+
+      - name: Presun report (orange.sk)
+        if: always()
+        run: |
+          mv report_json.json report_json_orange.json 2>/dev/null || true
+          mv report_html.html report_html_orange.html 2>/dev/null || true
+          mv report_md.md report_md_orange.md 2>/dev/null || true
+
+      - name: Oprava prav pre ZAP docker volume (pred dalsim hostom)
+        if: always()
+        run: chmod -R 777 "$GITHUB_WORKSPACE"
+
+      - name: ZAP Full Scan - www.orange.sk (AKTIVNY)
+        uses: zaproxy/action-full-scan@v0.12.0
+        continue-on-error: true
+        with:
+          target: 'https://www.orange.sk'
+          cmd_options: '-a'
+
+      - name: Presun report (www.orange.sk)
+        if: always()
+        run: |
+          mv report_json.json report_json_www.json 2>/dev/null || true
+          mv report_html.html report_html_www.html 2>/dev/null || true
+          mv report_md.md report_md_www.md 2>/dev/null || true
 
       - name: Uloz surove reporty ako artifact (aj pri zlyhani)
         if: always()
@@ -137,9 +202,12 @@ jobs:
         with:
           name: websec-raw-reports-fullscan
           path: |
-            report_json.json
-            report_html.html
-            report_md.md
+            report_json_orange.json
+            report_html_orange.html
+            report_md_orange.md
+            report_json_www.json
+            report_html_www.html
+            report_md_www.md
           if-no-files-found: ignore
           retention-days: 14
 
@@ -157,7 +225,7 @@ jobs:
           LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}
           MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }}
           WEBSEC_TARGET_HOSTS: ${{ vars.WEBSEC_TARGET_HOSTS }}
-          ZAP_REPORT_PATH: report_json.json
+          ZAP_REPORT_PATH: report_json_orange.json,report_json_www.json
         run: python scan.py
 
       - name: Commit results
