@@ -34,6 +34,29 @@ Premenne prostredia:
   LEAKIX_MAX_CALLS     max. poctov volani LeakIX API za jeden beh (default 100)
   MAX_PREFIX_DETAILS   kolko IP prefixov na firmu sa ma obohatit o RIPE whois
                         detail (netname/descr/country) za beh (default 100)
+  ZAP_REPORT_PATH       cesta k JSON reportu z OWASP ZAP (volitelne)
+  NUCLEI_REPORT_PATH    cesta k JSONL vystupu z nuclei -jsonl (volitelne)
+  WEBSEC_TARGET_HOSTS   ciarkou oddeleny zoznam hostname, ku ktorym sa smu
+                        pripojit ZAP/Nuclei zaznamy (default "orange.sk,www.orange.sk")
+
+WEBSEC (OWASP ZAP / Nuclei) - doplnkove zranitelnosti z aktivneho web-scanu,
+LEN pre domeny v WEBSEC_TARGET_HOSTS (default "orange.sk,www.orange.sk").
+Toto skenovanie nerobi scan.py samotny (ten ma pristup len k pasivnym API),
+ale samostatny GitHub Actions job, ktory vyprodukuje dva subory:
+  ZAP_REPORT_PATH     - JSON report zo ZAP (Baseline alebo Full Scan, rovnaky
+                        format, scan.py ich nerozlisuje)
+  NUCLEI_REPORT_PATH  - JSONL vystup z `nuclei -jsonl`
+scan.py ich len precita a zlucii najdene zaznamy do VLASTNEHO zoznamu
+zranitelnosti hosta (ten isty, kde su CVE zo Shodanu a LeakIX), s oznacenim
+zdroja "OWASP ZAP" / "Nuclei". Zhoda sa robi podla hostname (nie IP) - zaznam
+sa pripoji ku kazdemu hostu, ktoreho meno je v WEBSEC_TARGET_HOSTS.
+BEZPECNOSTNA POISTKA: zaznam z WEBSEC sa NIKDY nepripoji k hostu, ktoreho
+meno nie je explicitne vo WEBSEC_TARGET_HOSTS - aj keby subory s reportom
+omylom obsahovali data o inej domene, tie sa zahodia s upozornenim v logu.
+ZAP Baseline je pasivny (len spider + pasivne pravidla, nic neutoci) a da sa
+bezpecne spustat automaticky. ZAP Full Scan a niektore Nuclei sablony su
+aktivne (posielaju utocne payloady) - v prilozenom workflow su preto v
+samostatnom, LEN RUCNE spustitelnom jobe s explicitnym potvrdenim.
 
 Nova zalozka "IP rozsahy (RIPE/BGP)": pre kazdu firmu s nastavenym ASN v companies.json
 zobrazi vsetky jej announced prefixy z RIPEstat, s whois detailom a klasifikaciou.
@@ -509,6 +532,115 @@ def enrich_leakix(ips, api_key, max_calls):
     return {ip: v.get("cves", []) for ip, v in cache.items()}
 
 
+# ---------- WEBSEC: ZAP / Nuclei reporty (len pre explicitne povolene hostname) ----------
+ZAP_RISK_TO_SEV = {"high": "high", "medium": "medium", "low": "low", "informational": "unknown"}
+STRIP_TAGS_RE = re.compile(r"<[^>]+>")
+
+
+def parse_zap_report(path):
+    """ZAP JSON report: {"site":[{"@name": "https://orange.sk", "alerts":[...]}]}.
+    Vrati {hostname(lower): [finding, ...]}. Kazdy alert sa priradi k hostu
+    podla hostname site URL, v ktorom bol najdeny."""
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        eprint_once(f"[!] ZAP report {path}: {e}")
+        return {}
+    out = {}
+    for site in data.get("site", []):
+        host = (urllib.parse.urlparse(site.get("@name", "")).hostname or "").lower()
+        if not host:
+            continue
+        for alert in site.get("alerts", []):
+            riskdesc = (alert.get("riskdesc") or "").split(" ")[0].lower()
+            sev = ZAP_RISK_TO_SEV.get(riskdesc, "unknown")
+            desc = STRIP_TAGS_RE.sub(" ", alert.get("desc", "") or alert.get("name", ""))
+            finding = {
+                "id": "ZAP-" + str(alert.get("pluginid", alert.get("alertRef", "?"))),
+                "cvss": None, "severity": sev, "kev": False,
+                "summary": short(f"{alert.get('name','')}: {desc}"), "source": "OWASP ZAP",
+            }
+            out.setdefault(host, []).append(finding)
+    return out
+
+
+def parse_nuclei_report(path):
+    """Nuclei JSONL (`nuclei -jsonl`): jeden JSON objekt na riadok, s poľami
+    'host', 'template-id' a 'info' (name/severity/description/classification).
+    Vrati {hostname(lower): [finding, ...]}."""
+    out = {}
+    try:
+        lines = Path(path).read_text(encoding="utf-8").splitlines()
+    except OSError as e:
+        eprint_once(f"[!] Nuclei report {path}: {e}")
+        return {}
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        raw_host = rec.get("host") or rec.get("matched-at") or ""
+        host = (urllib.parse.urlparse(raw_host).hostname or raw_host).lower().strip("/")
+        if not host:
+            continue
+        info = rec.get("info", {}) or {}
+        classification = info.get("classification") or {}
+        cve_ids = classification.get("cve-id") or []
+        cid = cve_ids[0].upper() if cve_ids and CVE_ID_RE.fullmatch(str(cve_ids[0]).upper()) else \
+            "NUCLEI-" + str(rec.get("template-id", "?"))
+        sev = (info.get("severity") or "unknown").lower()
+        sev = "unknown" if sev in ("info", "informational", "") else sev
+        if sev not in SEV_ORDER:
+            sev = "unknown"
+        cvss = classification.get("cvss-score")
+        cvss = cvss if isinstance(cvss, (int, float)) else None
+        finding = {
+            "id": cid, "cvss": cvss, "severity": sev if cvss is None else severity(cvss),
+            "kev": False, "summary": short(info.get("description") or info.get("name", "")),
+            "source": "Nuclei",
+        }
+        out.setdefault(host, []).append(finding)
+    return out
+
+
+_EPRINT_SEEN = set()
+
+
+def eprint_once(msg):
+    if msg not in _EPRINT_SEEN:
+        _EPRINT_SEEN.add(msg)
+        print(msg, file=sys.stderr)
+
+
+def build_websec_map(zap_path, nuclei_path, target_hosts):
+    """Nacita ZAP a/alebo Nuclei report a vrati {hostname: [finding,...]}
+    OBMEDZENE LEN na target_hosts - vsetko ostatne sa zahodi s upozornenim,
+    aj keby to subory s reportom obsahovali (bezpecnostna poistka proti
+    omylom roz sirenemu scope)."""
+    allowed = {h.strip().lower() for h in target_hosts if h.strip()}
+    merged = {}
+    for path, parser, label in ((zap_path, parse_zap_report, "ZAP"), (nuclei_path, parse_nuclei_report, "Nuclei")):
+        if not path:
+            continue
+        if not Path(path).exists():
+            print(f"[!] {label}: subor {path} neexistuje, preskakujem", file=sys.stderr)
+            continue
+        found = parser(path)
+        for host, findings in found.items():
+            if host not in allowed:
+                print(f"[!] {label}: host '{host}' nie je v WEBSEC_TARGET_HOSTS, "
+                      f"{len(findings)} zaznamov zahadzujem (bezpecnostna poistka)", file=sys.stderr)
+                continue
+            merged.setdefault(host, []).extend(findings)
+        print(f"[+] {label}: {sum(len(v) for v in found.values() if True)} zaznamov nacitanych "
+              f"z {path}, z toho pouzitelnych pre povolene hosty: "
+              f"{sum(len(v) for h, v in found.items() if h in allowed)}")
+    return merged
+
+
 def merge_cves(shodan_cves, extra_cves):
     """Zluci CVE z dvoch zdrojov do jedneho zoznamu, kazda s poľom 'source'.
     Ak CVE nahlasia obidva zdroje, source sa spoji (napr. 'Shodan + LeakIX')
@@ -593,12 +725,13 @@ def collect(company, args, memo, dns_merge=None):
     return host_ips, prefixes, raw
 
 
-def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None):
+def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None, websec_map=None):
     def in_prefix(ip):
         addr = ipaddress.ip_address(ip)
         return any(addr in p for p in prefixes if p.version == addr.version)
 
     leakix_map = leakix_map or {}
+    websec_map = websec_map or {}
     assets = []
     for ip, d in raw.items():
         shodan_cves = []
@@ -609,6 +742,9 @@ def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None):
                                 "kev": bool(info.get("kev")), "epss": info.get("epss"),
                                 "summary": info.get("summary", "")})
         cves = merge_cves(shodan_cves, leakix_map.get(ip, []))
+        websec_findings = [f for host in host_ips[ip] for f in websec_map.get(host.lower(), [])]
+        if websec_findings:
+            cves = merge_cves(cves, websec_findings)
         counts = {s: sum(1 for c in cves if c["severity"] == s)
                   for s in ("critical", "high", "medium", "low", "unknown")}
         scores = [c["cvss"] for c in cves if c["cvss"] is not None]
@@ -865,11 +1001,14 @@ def main():
     leakix_max_calls = int(env("LEAKIX_MAX_CALLS") or 100)
     leakix_map = enrich_leakix(all_ips, env("LEAKIX_API_KEY"), leakix_max_calls)
 
+    websec_targets = (env("WEBSEC_TARGET_HOSTS") or "orange.sk,www.orange.sk").split(",")
+    websec_map = build_websec_map(env("ZAP_REPORT_PATH"), env("NUCLEI_REPORT_PATH"), websec_targets)
+
     out_companies = []
     for c in companies:
         got = collected.get(c["id"])
         if got and (got[0] or got[2]):
-            assets = build_assets(got[2], got[0], got[1], cache, args.mode, leakix_map)
+            assets = build_assets(got[2], got[0], got[1], cache, args.mode, leakix_map, websec_map)
             disappeared = apply_history(c["id"], assets, args.mode)
             assets.sort(key=lambda a: (SEV_ORDER.index(a["max_severity"]), -a["cve_count"],
                                        0 if a.get("changes") else 1,
