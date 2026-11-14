@@ -5630,7 +5630,7 @@
  "CVE-2019-11358": {
   "cvss": 6.1,
   "epss": 0.8682,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:25+00:00",
   "kev": false,
   "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ property, it could extend the native Object.prototype."
  },
@@ -6260,7 +6260,7 @@
  "CVE-2020-11023": {
   "cvss": 6.9,
   "epss": 0.84887,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:25+00:00",
   "kev": true,
   "summary": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in…"
  },
@@ -6302,7 +6302,7 @@
  "CVE-2020-12062": {
   "cvss": 7.5,
   "epss": 0.02232,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:25+00:00",
   "kev": false,
   "summary": "The scp client in OpenSSH 8.2 incorrectly sends duplicate responses to the server upon a utimes system call failure, which allows a malicious unprivileged user on the remote server to overwrite arbitrary files in the client's download directory by creating a crafted subdirectory anywhere on the…"
  },
@@ -7282,7 +7282,7 @@
  "CVE-2021-25220": {
   "cvss": 6.8,
   "epss": 0.0345,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:25+00:00",
   "kev": false,
   "summary": "BIND 9.11.0 -> 9.11.36 9.12.0 -> 9.16.26 9.17.0 -> 9.18.0 BIND Supported Preview Editions: 9.11.4-S1 -> 9.11.36-S1 9.16.8-S1 -> 9.16.26-S1 Versions of BIND 9 earlier than those shown - back to 9.1.0, including Supported Preview Editions - are also believed to be affected but have not been tested as…"
  },
@@ -7310,7 +7310,7 @@
  "CVE-2021-28041": {
   "cvss": 7.1,
   "epss": 0.03513,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:25+00:00",
   "kev": false,
   "summary": "ssh-agent in OpenSSH before 8.5 has a double free that may be relevant in a few less-common scenarios, such as unconstrained agent-socket access on a legacy operating system, or the forwarding of an agent to an attacker-controlled host."
  },
@@ -7569,7 +7569,7 @@
  "CVE-2022-0396": {
   "cvss": 5.3,
   "epss": 0.02681,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "BIND 9.16.11 -> 9.16.26, 9.17.0 -> 9.18.0 and versions 9.16.11-S1 -> 9.16.26-S1 of the BIND Supported Preview Edition. Specifically crafted TCP streams can cause connections to BIND to remain in CLOSE_WAIT status for an indefinite period of time, even after the client has terminated the connection."
  },
@@ -7765,7 +7765,7 @@
  "CVE-2022-2795": {
   "cvss": 5.3,
   "epss": 0.02291,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "By flooding the target resolver with queries exploiting this flaw an attacker can significantly impair the resolver's performance, effectively denying legitimate clients access to the DNS resolution service."
  },
@@ -7835,14 +7835,14 @@
  "CVE-2022-3080": {
   "cvss": 7.5,
   "epss": 0.02005,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "By sending specific queries to the resolver, an attacker can cause named to crash."
  },
  "CVE-2022-3094": {
   "cvss": 7.5,
   "epss": 0.13213,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "Sending a flood of dynamic DNS updates may cause `named` to allocate large amounts of memory. This, in turn, may cause `named` to exit due to a lack of free memory. We are not aware of any cases where this has been exploited. Memory is allocated prior to the checking of access permissions (ACLs)…"
  },
@@ -7891,7 +7891,7 @@
  "CVE-2022-3736": {
   "cvss": 7.5,
   "epss": 0.48427,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "BIND 9 resolver can crash when stale cache and stale answers are enabled, option `stale-answer-client-timeout` is set to a positive integer, and the resolver receives an RRSIG query. This issue affects BIND 9 versions 9.16.12 through 9.16.36, 9.18.0 through 9.18.10, 9.19.0 through 9.19.8, and…"
  },
@@ -7919,28 +7919,28 @@
  "CVE-2022-37454": {
   "cvss": 9.8,
   "epss": 0.07413,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This occurs in the sponge function interface."
  },
  "CVE-2022-38177": {
   "cvss": 7.5,
   "epss": 0.03288,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "By spoofing the target resolver with responses that have a malformed ECDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources."
  },
  "CVE-2022-38178": {
   "cvss": 7.5,
   "epss": 0.03112,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "By spoofing the target resolver with responses that have a malformed EdDSA signature, an attacker can trigger a small memory leak. It is possible to gradually erode available memory to the point where named crashes for lack of resources."
  },
  "CVE-2022-3924": {
   "cvss": 7.5,
   "epss": 0.15989,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "This issue can affect BIND 9 resolvers with `stale-answer-enable yes;` that also make use of the option `stale-answer-client-timeout`, configured with a value greater than zero. If the resolver receives many queries that require recursion, there will be a corresponding increase in the number of…"
  },
@@ -8157,7 +8157,7 @@
  "CVE-2023-2828": {
   "cvss": 7.5,
   "epss": 0.03696,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "Every `named` instance configured to run as a recursive resolver maintains a cache database holding the responses to the queries it has recently sent to authoritative servers. The size limit for that cache database can be configured using the `max-cache-size` statement in the configuration file; it…"
  },
@@ -8220,7 +8220,7 @@
  "CVE-2023-3341": {
   "cvss": 7.5,
   "epss": 0.02934,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "The code that processes control channel messages sent to `named` calls certain functions recursively during packet parsing. Recursion depth is only limited by the maximum accepted packet size; depending on the environment, this may cause the packet-parsing code to run out of available stack memory,…"
  },
@@ -8304,7 +8304,7 @@
  "CVE-2023-4408": {
   "cvss": 7.5,
   "epss": 0.01387,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "The DNS message parsing code in `named` includes a section whose computational complexity is overly high. It does not cause problems for typical DNS traffic, but crafted queries and responses may cause excessive CPU load on the affected `named` instance by exploiting this flaw. This issue affects…"
  },
@@ -8346,14 +8346,14 @@
  "CVE-2023-50387": {
   "cvss": 7.5,
   "epss": 0.9999,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "Certain DNSSEC aspects of the DNS protocol (in RFC 4033, 4034, 4035, 6840, and related RFCs) allow remote attackers to cause a denial of service (CPU consumption) via one or more DNSSEC responses, aka the \"KeyTrap\" issue. One of the concerns is that, when there is a zone with many DNSKEY and RRSIG…"
  },
  "CVE-2023-50868": {
   "cvss": 7.5,
   "epss": 0.74295,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "The Closest Encloser Proof aspect of the DNS protocol (in RFC 5155 when RFC 9276 guidance is skipped) allows remote attackers to cause a denial of service (CPU consumption for SHA-1 computations) via DNSSEC responses in a random subdomain attack, aka the \"NSEC3\" issue. The RFC 5155 specification…"
  },
@@ -8388,7 +8388,7 @@
  "CVE-2023-5517": {
   "cvss": 7.5,
   "epss": 0.01276,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "A flaw in query-handling code can cause `named` to exit prematurely with an assertion failure when: - `nxdomain-redirect <domain>;` is configured, and - the resolver receives a PTR query for an RFC 1918 address that would normally result in an authoritative NXDOMAIN response. This issue affects…"
  },
@@ -8402,14 +8402,14 @@
  "CVE-2023-5679": {
   "cvss": 7.5,
   "epss": 0.01276,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "A bad interaction between DNS64 and serve-stale may cause `named` to crash with an assertion failure during recursive resolution, when both of these features are enabled. This issue affects BIND 9 versions 9.16.12 through 9.16.45, 9.18.0 through 9.18.21, 9.19.0 through 9.19.19, 9.16.12-S1 through…"
  },
  "CVE-2023-6516": {
   "cvss": 7.5,
   "epss": 0.01097,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "To keep its cache database efficient, `named` running as a recursive resolver occasionally attempts to clean up the database. It uses several methods, including some that are asynchronous: a small chunk of memory pointing to the cache element that can be cleaned up is first allocated and then…"
  },
@@ -9172,7 +9172,7 @@
  "CVE-2026-1519": {
   "cvss": 7.5,
   "epss": 0.01687,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "If a BIND resolver is performing DNSSEC validation and encounters a maliciously crafted zone, the resolver may consume excessive CPU. Authoritative-only servers are generally unaffected, although there are circumstances where authoritative servers may make recursive queries (see:…"
  },
@@ -9368,7 +9368,7 @@
  "CVE-2026-3039": {
   "cvss": 7.5,
   "epss": 0.01086,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "BIND servers that are configured to use TKEY-based authentication via GSS-API tokens are vulnerable to excessive memory consumption when receiving and processing maliciously-constructed packets. Typically these servers will be found in Active Directory integrated DNS deployments and/or…"
  },
@@ -9543,7 +9543,7 @@
  "CVE-2026-3592": {
   "cvss": 5.3,
   "epss": 0.00406,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "BIND resolvers are vulnerable to an amplified resource consumption/exhaustion attack. If a victim resolver makes a query to a specially crafted zone, the resolver will consume disproportionate resources. This issue affects BIND 9 versions 9.11.0 through 9.16.50, 9.18.0 through 9.18.48, 9.20.0…"
  },
@@ -10327,7 +10327,7 @@
  "CVE-2026-5946": {
   "cvss": 7.5,
   "epss": 0.01942,
-  "fetched": "2026-11-07T04:05:05+00:00",
+  "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "Multiple flaws have been identified in `named` related to the handling of DNS messages whose CLASS is not Internet (`IN`) — for example, `CHAOS` or `HESIOD`, or DNS messages that specify meta-classes (`ANY` or `NONE`) in the question section. Specially crafted requests reaching the affected code…"
  },
