@@ -3285,7 +3285,7 @@
  "CVE-2016-7103": {
   "cvss": 6.1,
   "epss": 0.29186,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "Cross-site scripting (XSS) vulnerability in jQuery UI before 1.12.0 might allow remote attackers to inject arbitrary web script or HTML via the closeText parameter of the dialog function."
  },
@@ -7513,21 +7513,21 @@
  "CVE-2021-41182": {
   "cvss": 6.5,
   "epss": 0.39361,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of the `altField` option of the Datepicker widget from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. Any string value passed to the `altField` option is now…"
  },
  "CVE-2021-41183": {
   "cvss": 6.5,
   "epss": 0.08533,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of various `*Text` options of the Datepicker widget from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. The values passed to various `*Text` options are now…"
  },
  "CVE-2021-41184": {
   "cvss": 6.5,
   "epss": 0.40768,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of the `of` option of the `.position()` util from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. Any string value passed to the `of` option is now treated as…"
  },
@@ -7849,7 +7849,7 @@
  "CVE-2022-31160": {
   "cvss": 6.1,
   "epss": 0.0269,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:30+00:00",
   "kev": false,
   "summary": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents…"
  },
@@ -9144,14 +9144,14 @@
  "CVE-2026-11721": {
   "cvss": 7.5,
   "epss": 0.00395,
-  "fetched": "2026-11-08T04:08:50+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "It is possible for an attacker's zone to respond to a query with an RRSIG that has a smaller number of labels than the zone in which the RRSIG is contained. This causes `named` to produce a wildcard name for a zone that is shorter than the attacker's zone, which can result in cache poisoning. For…"
  },
  "CVE-2026-13204": {
   "cvss": 7.5,
   "epss": 0.00523,
-  "fetched": "2026-11-08T04:08:51+00:00",
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "If a provably insecure domain is covered by both an NSEC and NSEC3 record at the parent, and there exist an RRSIG for only one of these types, then BIND may exit unexpectedly with an assertion while validating this proof. This issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through…"
  },
@@ -9164,8 +9164,8 @@
  },
  "CVE-2026-13321": {
   "cvss": 8.6,
-  "epss": 0.00207,
-  "fetched": "2026-11-08T04:08:51+00:00",
+  "epss": 0.00217,
+  "fetched": "2026-11-15T05:49:29+00:00",
   "kev": false,
   "summary": "The BIND resolver accepts validly-signed NSEC records where the \"Next Domain Name\" field points outside the signer's zone. This issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through 9.20.24, 9.21.0 through 9.21.23, 9.11.3-S1 through 9.18.50-S1, and 9.20.9-S1 through 9.20.24-S1."
  },
