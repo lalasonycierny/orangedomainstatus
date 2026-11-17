@@ -268,7 +268,7 @@
  "CVE-2010-5312": {
   "cvss": 6.1,
   "epss": 0.18351,
-  "fetched": "2026-11-10T04:08:48+00:00",
+  "fetched": "2026-11-17T04:10:28+00:00",
   "kev": false,
   "summary": "Cross-site scripting (XSS) vulnerability in jquery.ui.dialog.js in the Dialog widget in jQuery UI before 1.10.0 allows remote attackers to inject arbitrary web script or HTML via the title option."
  },
@@ -6260,7 +6260,7 @@
  "CVE-2020-11022": {
   "cvss": 6.9,
   "epss": 0.99215,
-  "fetched": "2026-11-07T04:05:04+00:00",
+  "fetched": "2026-11-17T04:10:28+00:00",
   "kev": false,
   "summary": "In jQuery starting with 1.12.0 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's DOM manipulation methods (i.e. .html(), .append(), and others) may execute untrusted code. This problem is patched in jQuery 3.5.0."
  },
