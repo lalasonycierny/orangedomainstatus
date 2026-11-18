@@ -7274,15 +7274,15 @@
  },
  "CVE-2021-23840": {
   "cvss": 7.5,
-  "epss": 0.50732,
-  "fetched": "2026-11-09T04:15:23+00:00",
+  "epss": 0.51145,
+  "fetched": "2026-11-18T04:12:42+00:00",
   "kev": false,
   "summary": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating…"
  },
  "CVE-2021-23841": {
   "cvss": 5.9,
-  "epss": 0.0741,
-  "fetched": "2026-11-09T04:15:23+00:00",
+  "epss": 0.07499,
+  "fetched": "2026-11-18T04:12:41+00:00",
   "kev": false,
   "summary": "The OpenSSL public API function X509_issuer_and_serial_hash() attempts to create a unique hash value based on the issuer and serial number data contained within an X509 certificate. However it fails to correctly handle any errors that may occur while parsing the issuer field (which might occur if…"
  },
@@ -7411,6 +7411,13 @@
   "fetched": "2026-11-05T04:22:40+00:00",
   "kev": false,
   "summary": "Microsoft SharePoint Server Remote Code Execution Vulnerability"
+ },
+ "CVE-2021-3449": {
+  "cvss": 5.9,
+  "epss": 0.63542,
+  "fetched": "2026-11-18T04:12:42+00:00",
+  "kev": false,
+  "summary": "An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a…"
  },
  "CVE-2021-34517": {
   "cvss": 5.3,
@@ -8434,6 +8441,13 @@
   "kev": false,
   "summary": "Issue summary: Clients using RFC7250 Raw Public Keys (RPKs) to authenticate a server may fail to notice that the server was not authenticated, because handshakes don't abort as expected when the SSL_VERIFY_PEER verification mode is set. Impact summary: TLS and DTLS connections using raw public keys…"
  },
+ "CVE-2024-13176": {
+  "cvss": 4.6,
+  "epss": 0.00749,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: A timing side-channel which could potentially allow recovering the private key exists in the ECDSA signature computation. Impact summary: A timing side-channel in ECDSA signature computations could allow recovering the private key by an attacker. However, measuring the timing would…"
+ },
  "CVE-2024-21318": {
   "cvss": 8.8,
   "epss": 0.30801,
@@ -8679,6 +8693,13 @@
   "kev": false,
   "summary": "Insufficient escaping of user-supplied data in mod_ssl in Apache HTTP Server 2.4.63 and earlier allows an untrusted SSL/TLS client to insert escape characters into log files in some configurations. In a logging configuration where CustomLog is used with \"%{varname}x\" or \"%{varname}c\" to log…"
  },
+ "CVE-2024-4741": {
+  "cvss": 9.8,
+  "epss": 0.03276,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause memory to be accessed that was previously freed in some situations Impact summary: A use after free can have a range of potential consequences such as the corruption of valid data, crashes or execution of arbitrary code.…"
+ },
  "CVE-2024-49062": {
   "cvss": 6.5,
   "epss": 0.03224,
@@ -8721,12 +8742,26 @@
   "kev": false,
   "summary": "In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, due to a code logic error, filtering functions such as filter_var when validating URLs (FILTER_VALIDATE_URL) for certain types of URLs the function will result in invalid user information (username + password part of…"
  },
+ "CVE-2024-5535": {
+  "cvss": 9.1,
+  "epss": 0.06134,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an empty supported client protocols buffer may cause a crash or memory contents to be sent to the peer. Impact summary: A buffer overread can have a range of potential consequences such as unexpected application beahviour or…"
+ },
  "CVE-2024-6119": {
   "cvss": 7.5,
   "epss": 0.66582,
   "fetched": "2026-11-12T08:11:12+00:00",
   "kev": false,
   "summary": "Issue summary: Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address resulting in abnormal termination of the application process. Impact summary: Abnormal termination of an application can a cause a denial of…"
+ },
+ "CVE-2024-9143": {
+  "cvss": 8.8,
+  "epss": 0.12484,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted explicit values for the field polynomial can lead to out-of-bounds memory reads or writes. Impact summary: Out of bound memory writes can lead to an application crash or even a possibility of a remote code execution,…"
  },
  "CVE-2025-15467": {
   "cvss": 8.8,
@@ -9070,6 +9105,27 @@
   "fetched": "2026-11-13T08:21:52+00:00",
   "kev": false,
   "summary": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer dereference in the PKCS12_item_decrypt_d2i_ex() function. Impact summary: A NULL pointer dereference can trigger a crash which leads to Denial of Service for an application processing PKCS#12 files. The…"
+ },
+ "CVE-2025-9230": {
+  "cvss": 9.8,
+  "epss": 0.01781,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: An application trying to decrypt CMS messages encrypted using password based encryption can trigger an out-of-bounds read and write. Impact summary: This out-of-bounds read may trigger a crash which leads to Denial of Service for an application. The out-of-bounds write can cause a…"
+ },
+ "CVE-2025-9231": {
+  "cvss": 5.9,
+  "epss": 0.01598,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: A timing side-channel which could potentially allow remote recovery of the private key exists in the SM2 algorithm implementation on 64 bit ARM platforms. Impact summary: A timing side-channel in SM2 signature computations on 64 bit ARM platforms could allow recovering the private…"
+ },
+ "CVE-2025-9232": {
+  "cvss": 5.9,
+  "epss": 0.02407,
+  "fetched": "2026-11-18T04:12:41+00:00",
+  "kev": false,
+  "summary": "Issue summary: An application using the OpenSSL HTTP client API functions may trigger an out-of-bounds read if the 'no_proxy' environment variable is set and the host portion of the authority component of the HTTP URL is an IPv6 address. Impact summary: An out-of-bounds read can trigger a crash…"
  },
  "CVE-2026-106552": {
   "cvss": 4.2,
