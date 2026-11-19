@@ -61,6 +61,42 @@ bezpecne spustat automaticky. ZAP Full Scan a niektore Nuclei sablony su
 aktivne (posielaju utocne payloady) - v prilozenom workflow su preto v
 samostatnom, LEN RUCNE spustitelnom jobe s explicitnym potvrdenim.
 
+SPATNA VAZBA K WEBSEC NALEZOM (websec_overrides.json, volitelny subor v
+koreni repozitara) - rovnaky princip ako confirmed_ranges.json:
+  [{"host": "orange.sk", "finding_id": "ZAP-10038", "status": "false_positive",
+    "note": "CSP sa nastavuje na CDN, ZAP skenuje origin", "confirmed_by": "meno",
+    "confirmed_at": "2026-11-13"}]
+"status": "false_positive" odstrani najdenie zo zoznamu zranitelnosti a
+presunie ho medzi "suppressed_findings" (len v rezime full; v summary len
+pocet). "confirmed" ponecha najdenie, len ho oznaci ako rucne overene.
+
+ZALOZKA "Orange-webservice" (len pre firmy vo WEBSERVICE_COMPANIES, default "orange"):
+prehlada cely ASN danej firmy cez reverzne DNS (PTR), vynecha IP s "zakaznickym"
+PTR zaznamom (dynamic/dsl/cgnat/pool a pod., rovnaka heuristika ako pri IP
+rozsahoch) a zvysne hosty obohati o Shodan InternetDB (porty/CVE) a o TLS
+certifikat ziskany PRIAMYM HANDSHAKE na danu IP:443 (CERT_NONE - zamerne aj
+self-signed/necudzie certifikaty, nie len platne pre orange.sk). Toto je
+JEDINY aktivny krok v celom nastroji (priame TCP+TLS spojenie na cielovu IP,
+bez utocneho payloadu - rovnake, co robi bezny prehliadac). Vyzaduje kniznicu
+"cryptography" (pip install cryptography) - bez nej sa certifikaty len
+preskocia, zvysok funguje normalne. Vysledne hosty dedia CELY mechanizmus
+historie/zmien/CVE z bezneho spracovania firiem (su interne pridane do
+zoznamu firiem pod id "<firma>__webservice").
+PTR lookupy a cert. overenia su rozpoctovane na beh (WEBSERVICE_MAX_NEW_PTR
+default 2000, WEBSERVICE_MAX_CERT_PROBES default 200) a cachovane
+(data/webservice_ptr_cache.json, TTL 30 dni) - cely velky ASN sa tak prejde
+postupne cez viacero dni/behov, nie naraz.
+  WEBSERVICE_COMPANIES      ciarkou oddeleny zoznam id firiem (default "orange")
+  WEBSERVICE_MAX_NEW_PTR    novych PTR lookupov za beh (default 2000)
+  WEBSERVICE_MAX_CERT_PROBES TLS cert. overeni za beh (default 200)
+
+HISTORIA USPESNOSTI WEBSEC SKENOVANIA (data/websec_history.json): pre kazdy
+host v WEBSEC_TARGET_HOSTS sa pri kazdom behu s nastavenym ZAP/NUCLEI_REPORT_PATH
+zaznamena, ci ZAP dany host skutocne dosiahol (host sa objavil v jeho reporte,
+aj pri 0 najdeniach) alebo nie (napr. connection reset) - vratane poctu
+po sebe iducich zlyhani. To umoznuje odlisit trvalo blokovany host (napr.
+orange.sk za WAF) od hosta, ktory funguje normalne (napr. www.orange.sk).
+
 Nova zalozka "IP rozsahy (RIPE/BGP)": pre kazdu firmu s nastavenym ASN v companies.json
 zobrazi vsetky jej announced prefixy z RIPEstat, s whois detailom a klasifikaciou.
 AKTIVNE SKENOVANIE (masscan/nmap) TU NIE JE IMPLEMENTOVANE - vyzaduje pisomne
@@ -101,6 +137,7 @@ import json
 import os
 import re
 import socket
+import ssl
 import sys
 import time
 import urllib.error
@@ -335,6 +372,162 @@ def apply_range_history(cid, rows):
     return disappeared[:50]
 
 
+# ---------- Orange-webservice: non-customer hosty cez reverzne DNS nad ASN ----------
+try:
+    from cryptography import x509
+    from cryptography.hazmat.backends import default_backend
+    from cryptography.x509.oid import NameOID
+    HAVE_CRYPTOGRAPHY = True
+except ImportError:
+    HAVE_CRYPTOGRAPHY = False
+
+PTR_CACHE_FILE = Path("data/webservice_ptr_cache.json")
+PTR_CACHE_TTL = timedelta(days=30)
+WEBSERVICE_HISTORY_SUFFIX = "__webservice"
+
+
+def reverse_dns(ip, timeout=2.0):
+    """PTR lookup pre jednu IP. Cisto pasivne (len dotaz na DNS resolver,
+    netyka sa priamo infrastruktury ciela)."""
+    old_timeout = socket.getdefaulttimeout()
+    socket.setdefaulttimeout(timeout)
+    try:
+        return socket.gethostbyaddr(str(ip))[0]
+    except (socket.herror, socket.gaierror, OSError):
+        return None
+    finally:
+        socket.setdefaulttimeout(old_timeout)
+
+
+def sweep_ptr(prefixes, max_new, cache):
+    """Prejde IP v prefixoch, pre nove/stare zaznamy spravi PTR lookup (max_new
+    novych za beh, zvysok sa cachuje a pokracuje nasledujuci beh), a vrati
+    {ip: ptr_hostname} LEN pre tie, co maju PTR zaznam a NEVYZERAJU ako
+    zakaznicky/CGNAT rozsah (filter cez CUSTOMER_HINTS_RE na samotnom PTR mene)."""
+    kept, checked_now = {}, 0
+    now = datetime.now(timezone.utc)
+    for net in prefixes:
+        if net.version != 4:
+            continue  # cele IPv6 rozsahy sa prakticky nedaju takto prehladat
+        for ip in net.hosts():
+            ip_s = str(ip)
+            entry = cache.get(ip_s)
+            fresh = entry and "checked_at" in entry and \
+                (now - datetime.fromisoformat(entry["checked_at"])) < PTR_CACHE_TTL
+            if not fresh:
+                if checked_now >= max_new:
+                    continue  # rozpocet na tento beh vycerpany, zvysok dobehne inokedy
+                ptr = reverse_dns(ip_s)
+                cache[ip_s] = {"ptr": ptr, "checked_at": now_iso()}
+                entry = cache[ip_s]
+                checked_now += 1
+            ptr = entry.get("ptr")
+            if ptr and not CUSTOMER_HINTS_RE.search(ptr):
+                kept[ip_s] = ptr
+    print(f"[*] PTR sweep: {checked_now} novych lookupov tento beh, {len(kept)} "
+          f"nezakaznickych hostov s PTR najdenych (z cache aj novych)")
+    return kept
+
+
+def probe_tls_cert(ip, port=443, timeout=5.0):
+    """Priamy TLS handshake na ip:port (CERT_NONE - zamerne neoverujeme
+    retazec dovery, chceme vidiet aj self-signed/nespravny certifikat).
+    Vrati info o certifikate alebo None, ak sa nepodarilo pripojit/nie je TLS."""
+    if not HAVE_CRYPTOGRAPHY:
+        return None
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    try:
+        with socket.create_connection((ip, port), timeout=timeout) as sock:
+            with ctx.wrap_socket(sock, server_hostname=ip) as ssock:
+                der = ssock.getpeercert(binary_form=True)
+    except Exception:  # noqa: BLE001 - akakolvek chyba spojenia/TLS = proste nie je HTTPS
+        return None
+    try:
+        cert = x509.load_der_x509_certificate(der, default_backend())
+        cn_attrs = cert.subject.get_attributes_for_oid(NameOID.COMMON_NAME)
+        cn = cn_attrs[0].value if cn_attrs else ""
+        try:
+            sans = cert.extensions.get_extension_for_class(
+                x509.SubjectAlternativeName).value.get_values_for_type(x509.DNSName)
+        except x509.ExtensionNotFound:
+            sans = []
+        self_signed = cert.subject == cert.issuer
+        issuer_cn_attrs = cert.issuer.get_attributes_for_oid(NameOID.COMMON_NAME)
+        issuer_cn = issuer_cn_attrs[0].value if issuer_cn_attrs else str(cert.issuer.rfc4514_string())
+        names = [n.lower() for n in ([cn] + sans) if n]
+        return {
+            "cert_cn": cn, "cert_sans": sans[:10], "cert_issuer": issuer_cn,
+            "cert_self_signed": self_signed,
+            "cert_matches_orange": any("orange.sk" in n for n in names),
+        }
+    except Exception:  # noqa: BLE001 - malformovany/neocakavany tvar certifikatu
+        return None
+
+
+def build_webservice_section(companies, args, memo, cache, leakix_map, websec_map, websec_overrides, allowed_ids):
+    """Pre firmy v allowed_ids (default len 'orange') prejde ich ASN, najde
+    hosty s nezakaznickym PTR zaznamom, obohati ich o Shodan InternetDB a o
+    TLS certifikat (priamy handshake - jediny aktivny krok v tomto nastroji).
+    Vystupom su "company"-tvar zaznamy (rovnaka struktura ako bezne firmy),
+    takze dedia CELY existujuci mechanizmus historie/zmien/CVE bez upravy."""
+    ptr_cache = load_json(PTR_CACHE_FILE, {})
+    max_new_ptr = int(os.environ.get("WEBSERVICE_MAX_NEW_PTR") or 2000)
+    max_cert_probes = int(os.environ.get("WEBSERVICE_MAX_CERT_PROBES") or 200)
+    mode = args.mode
+    out = []
+    for c in companies:
+        if c["id"] not in allowed_ids:
+            continue
+        prefixes = []
+        for a in c.get("asns", []):
+            prefixes += get_prefixes(a)
+        if not prefixes:
+            continue
+        print(f"[*] Orange-webservice ({c['id']}): PTR sweep nad {len(prefixes)} prefixmi")
+        host_ips_raw = sweep_ptr(prefixes, max_new_ptr, ptr_cache)  # {ip: ptr}
+        host_ips = {ip: {ptr} for ip, ptr in host_ips_raw.items()}
+
+        todo = [ip for ip in host_ips if ip not in memo]
+        print(f"    InternetDB: {len(todo)} novych IP z {len(host_ips)}")
+        with ThreadPoolExecutor(min(args.threads, 5)) as ex:
+            for ip, data in ex.map(internetdb, todo):
+                memo[ip] = data
+        raw = {ip: (memo.get(ip) or {}) for ip in host_ips}
+
+        assets = build_assets(raw, host_ips, prefixes, cache, mode, leakix_map, websec_map, websec_overrides)
+        # TLS certifikat - len pre obmedzeny pocet za beh (rozpocet), zvysne IP
+        # dobehnu v dalsich behoch; uprednostnuju sa tie s najvyssou kritickostou
+        assets.sort(key=lambda a: SEV_ORDER.index(a["max_severity"]))
+        probed = 0
+        for a in assets:
+            ip = a.get("ip")
+            if not ip or probed >= max_cert_probes:
+                continue
+            cert = probe_tls_cert(ip)
+            if cert:
+                a.update(cert)
+            probed += 1
+        print(f"    TLS cert: {probed} IP overenych tento beh")
+
+        cid = c["id"] + WEBSERVICE_HISTORY_SUFFIX
+        disappeared = apply_history(cid, assets, mode)
+        assets.sort(key=lambda a: (SEV_ORDER.index(a["max_severity"]), -a["cve_count"],
+                                   0 if a.get("changes") else 1, a["names"][0] if a["names"] else ""))
+        new_count = sum(1 for a in assets if a.get("is_new"))
+        changed_count = sum(1 for a in assets if a.get("changes") and not a.get("is_new"))
+        out.append({
+            "id": cid, "name": "Orange-webservice", "domains": [],
+            "generated": now_iso(), "stale": False, "assets": assets, "disappeared": disappeared,
+            "changes_summary": {"new": new_count, "changed": changed_count, "disappeared": len(disappeared)},
+        })
+        print(f"[+] Orange-webservice ({c['id']}): {len(assets)} hostov, {probed} cert. overenych, "
+              f"novych {new_count}, zmenenych {changed_count}, zmiznutych {len(disappeared)}")
+    save_json(PTR_CACHE_FILE, ptr_cache)
+    return out
+
+
 def build_ranges_section(companies, max_prefix_details):
     """Pre kazdu firmu s nastavenym ASN stiahne vsetky announced prefixy (RIPEstat)
     a pre prvych max_prefix_details z nich aj whois detail (netname/descr/country).
@@ -554,6 +747,7 @@ def parse_zap_report(path):
         host = (urllib.parse.urlparse(site.get("@name", "")).hostname or "").lower()
         if not host:
             continue
+        out.setdefault(host, [])  # host je registrovany aj pri 0 alertoch - znamena, ze ZAP ho skutocne dosiahol
         for alert in site.get("alerts", []):
             riskdesc = (alert.get("riskdesc") or "").split(" ")[0].lower()
             sev = ZAP_RISK_TO_SEV.get(riskdesc, "unknown")
@@ -622,11 +816,12 @@ def build_websec_map(zap_paths, nuclei_paths, target_hosts):
     """Nacita jeden alebo viac ZAP/Nuclei reportov (ciarkou oddelene cesty -
     napr. samostatny report pre orange.sk a samostatny pre www.orange.sk,
     kedze jeden host moze spojenie resetovat a iny nie) a vrati
-    {hostname: [finding,...]}. OBMEDZENE LEN na target_hosts - vsetko
-    ostatne sa zahodi s upozornenim, aj keby to subory s reportom
-    obsahovali (bezpecnostna poistka proti omylom rozsirenemu scope)."""
+    ({hostname: [finding,...]}, {hostname-skutocne-dosiahnuty-ZAPom}).
+    OBMEDZENE LEN na target_hosts - vsetko ostatne sa zahodi s upozornenim,
+    aj keby to subory s reportom obsahovali (bezpecnostna poistka proti
+    omylom rozsirenemu scope)."""
     allowed = {h.strip().lower() for h in target_hosts if h.strip()}
-    merged = {}
+    merged, zap_reached = {}, set()
     for raw_paths, parser, label in ((zap_paths, parse_zap_report, "ZAP"), (nuclei_paths, parse_nuclei_report, "Nuclei")):
         if not raw_paths:
             continue
@@ -642,11 +837,83 @@ def build_websec_map(zap_paths, nuclei_paths, target_hosts):
                     print(f"[!] {label}: host '{host}' nie je v WEBSEC_TARGET_HOSTS, "
                           f"{len(findings)} zaznamov zahadzujem (bezpecnostna poistka)", file=sys.stderr)
                     continue
+                if label == "ZAP":
+                    zap_reached.add(host)  # registrovany aj pri 0 najdeniach = ZAP ho skutocne dosiahol
                 merged.setdefault(host, []).extend(findings)
                 used += len(findings)
             print(f"[+] {label}: {path} -> {sum(len(v) for v in found.values())} zaznamov, "
                   f"{used} pouzitelnych pre povolene hosty")
-    return merged
+    return merged, zap_reached
+
+
+# ---------- WEBSEC spatna vazba: potlacenie false positive / rucne potvrdenie ----------
+WEBSEC_OVERRIDES_FILE = Path(os.environ.get("WEBSEC_OVERRIDES_FILE", "websec_overrides.json"))
+
+
+def load_websec_overrides():
+    """websec_overrides.json - rucne overene zaznamy vo formate:
+    [{"host":"orange.sk", "finding_id":"ZAP-10038", "status":"false_positive",
+      "note":"...", "confirmed_by":"meno", "confirmed_at":"2026-11-13"}, ...]
+    status: "false_positive" (najdenie sa odstrani zo zoznamu a presunie medzi
+    potlacene) alebo "confirmed" (najdenie ostava, len sa oznaci ako rucne
+    overene). Subor je volitelny."""
+    try:
+        data = json.loads(WEBSEC_OVERRIDES_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    return [e for e in data if isinstance(e, dict) and e.get("host") and e.get("finding_id")]
+
+
+def apply_websec_overrides(cves, hostnames, overrides):
+    """Vrati (ponechane_cves, potlacene). hostnames su mena tohto hosta (asset),
+    porovnavaju sa s override['host'] case-insensitive."""
+    names_lower = {h.lower() for h in hostnames}
+    relevant = {o["finding_id"]: o for o in overrides if o["host"].lower() in names_lower}
+    if not relevant:
+        return cves, []
+    kept, suppressed = [], []
+    for c in cves:
+        o = relevant.get(c["id"])
+        if o and o.get("status") == "false_positive":
+            suppressed.append({**c, "note": o.get("note", ""), "confirmed_by": o.get("confirmed_by", ""),
+                               "confirmed_at": o.get("confirmed_at", "")})
+            continue
+        if o and o.get("status") == "confirmed":
+            c = {**c, "manually_confirmed": True, "confirm_note": o.get("note", "")}
+        kept.append(c)
+    return kept, suppressed
+
+
+# ---------- WEBSEC historia uspesnosti skenovania (per host) ----------
+WEBSEC_HISTORY_FILE = Path("data/websec_history.json")
+MAX_WEBSEC_SNAPSHOTS = 90
+
+
+def record_websec_history(target_hosts, zap_reached, finding_counts):
+    """Zaznamena kazdy beh, ci ZAP dany host skutocne dosiahol (status 'ok')
+    alebo nie (status 'failed' - napr. connection reset). Vrati prehlad so
+    streakom po sebe iducich zlyhani, aby bolo vidno opakovane problematicke
+    hosty (presne situacia s orange.sk vs www.orange.sk)."""
+    hist = load_json(WEBSEC_HISTORY_FILE, {})
+    summary = {}
+    for host in target_hosts:
+        host = host.strip().lower()
+        if not host:
+            continue
+        entry = hist.setdefault(host, {"history": []})
+        status = "ok" if host in zap_reached else "failed"
+        entry["history"].append({"date": now_iso(), "status": status, "findings": finding_counts.get(host, 0)})
+        entry["history"] = entry["history"][-MAX_WEBSEC_SNAPSHOTS:]
+        streak = 0
+        for snap in reversed(entry["history"]):
+            if snap["status"] == "failed":
+                streak += 1
+            else:
+                break
+        summary[host] = {"status": status, "consecutive_failures": streak,
+                         "history": entry["history"][-20:][::-1]}
+    save_json(WEBSEC_HISTORY_FILE, hist)
+    return summary
 
 
 def merge_cves(shodan_cves, extra_cves):
@@ -733,7 +1000,7 @@ def collect(company, args, memo, dns_merge=None):
     return host_ips, prefixes, raw
 
 
-def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None, websec_map=None):
+def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None, websec_map=None, websec_overrides=None):
     def in_prefix(ip):
         addr = ipaddress.ip_address(ip)
         return any(addr in p for p in prefixes if p.version == addr.version)
@@ -753,6 +1020,7 @@ def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None, websec_m
         websec_findings = [f for host in host_ips[ip] for f in websec_map.get(host.lower(), [])]
         if websec_findings:
             cves = merge_cves(cves, websec_findings)
+        cves, suppressed = apply_websec_overrides(cves, host_ips[ip], websec_overrides or [])
         counts = {s: sum(1 for c in cves if c["severity"] == s)
                   for s in ("critical", "high", "medium", "low", "unknown")}
         scores = [c["cvss"] for c in cves if c["cvss"] is not None]
@@ -772,9 +1040,10 @@ def build_assets(raw, host_ips, prefixes, cache, mode, leakix_map=None, websec_m
             "max_severity": next((s for s in SEV_ORDER[:5] if counts.get(s)), "none"),
             "max_cvss": max(scores) if scores else None,
             "outside_asn": outside_asn,
+            "suppressed_count": len(suppressed),
         }
         if mode == "full":
-            rec.update({"ip": ip, "cpes": d.get("cpes", []), "cves": cves})
+            rec.update({"ip": ip, "cpes": d.get("cpes", []), "cves": cves, "suppressed_findings": suppressed})
         elif not rec["names"]:
             continue  # v summary rezime nezverejnujeme anonymne IP
         assets.append(rec)
@@ -1010,13 +1279,22 @@ def main():
     leakix_map = enrich_leakix(all_ips, env("LEAKIX_API_KEY"), leakix_max_calls)
 
     websec_targets = (env("WEBSEC_TARGET_HOSTS") or "orange.sk,www.orange.sk").split(",")
-    websec_map = build_websec_map(env("ZAP_REPORT_PATH"), env("NUCLEI_REPORT_PATH"), websec_targets)
+    websec_map, zap_reached = build_websec_map(env("ZAP_REPORT_PATH"), env("NUCLEI_REPORT_PATH"), websec_targets)
+    websec_overrides = load_websec_overrides()
+    websec_status = {}
+    if env("ZAP_REPORT_PATH") or env("NUCLEI_REPORT_PATH"):
+        finding_counts = {h: len(v) for h, v in websec_map.items()}
+        websec_status = record_websec_history(websec_targets, zap_reached, finding_counts)
+        for host, s in websec_status.items():
+            if s["consecutive_failures"] >= 3:
+                print(f"[!] WEBSEC: {host} zlyhava {s['consecutive_failures']}x za sebou "
+                      f"(ZAP ho nedosiahol - skontroluj, ci nie je trvalo blokovany)", file=sys.stderr)
 
     out_companies = []
     for c in companies:
         got = collected.get(c["id"])
         if got and (got[0] or got[2]):
-            assets = build_assets(got[2], got[0], got[1], cache, args.mode, leakix_map, websec_map)
+            assets = build_assets(got[2], got[0], got[1], cache, args.mode, leakix_map, websec_map, websec_overrides)
             disappeared = apply_history(c["id"], assets, args.mode)
             assets.sort(key=lambda a: (SEV_ORDER.index(a["max_severity"]), -a["cve_count"],
                                        0 if a.get("changes") else 1,
@@ -1049,10 +1327,18 @@ def main():
     max_prefix_details = int(env("MAX_PREFIX_DETAILS") or 100)
     ranges = build_ranges_section(companies, max_prefix_details)
 
+    webservice_allowed = {h.strip() for h in (env("WEBSERVICE_COMPANIES") or "orange").split(",") if h.strip()}
+    out_companies += build_webservice_section(
+        companies, args, memo, cache, leakix_map, websec_map, websec_overrides, webservice_allowed)
+
+    if not websec_status:
+        websec_status = (prev_full.get("websec_status") or {}).get("hosts", {})
+
     save_json(OUT_FILE, {
         "generated": now_iso(), "mode": args.mode, "companies": out_companies,
         "dns": {"generated": now_iso(), "domains": dns_domains},
         "ranges": {"generated": now_iso(), "companies": ranges},
+        "websec_status": {"generated": now_iso(), "hosts": websec_status},
     })
     print(f"[+] Ulozene -> {OUT_FILE} (rezim {args.mode})")
 
