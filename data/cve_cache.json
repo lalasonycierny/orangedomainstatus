@@ -828,7 +828,7 @@
  "CVE-2012-6708": {
   "cvss": 6.1,
   "epss": 0.08632,
-  "fetched": "2026-11-10T04:08:48+00:00",
+  "fetched": "2026-11-19T05:59:19+00:00",
   "kev": false,
   "summary": "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '<' character anywhere in the string,…"
  },
@@ -7023,7 +7023,7 @@
  "CVE-2020-7656": {
   "cvss": 6.1,
   "epss": 0.06428,
-  "fetched": "2026-11-10T04:08:48+00:00",
+  "fetched": "2026-11-19T05:59:19+00:00",
   "kev": false,
   "summary": "jquery prior to 1.9.0 allows Cross-site Scripting attacks via the load method. The load method fails to recognize and remove \"<script>\" HTML tags that contain a whitespace character, i.e: \"</script >\", which results in the enclosed script logic to be executed."
  },
