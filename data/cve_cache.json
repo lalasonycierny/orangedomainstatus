@@ -8399,6 +8399,13 @@
   "kev": false,
   "summary": "OpenSSH through 10.0, when common types of DRAM are used, might allow row hammer attacks (for authentication bypass) because the integer value of authenticated in mm_answer_authpassword does not resist flips of a single bit. NOTE: this is applicable to a certain threat model of attacker-victim…"
  },
+ "CVE-2023-5363": {
+  "cvss": 7.5,
+  "epss": 0.03939,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: A bug has been identified in the processing of key and initialisation vector (IV) lengths. This can lead to potential truncation or overruns during the initialisation of some symmetric ciphers. Impact summary: A truncation in the IV can result in non-uniqueness, which could result in…"
+ },
  "CVE-2023-5517": {
   "cvss": 7.5,
   "epss": 0.01276,
@@ -8419,6 +8426,20 @@
   "fetched": "2026-11-14T04:07:26+00:00",
   "kev": false,
   "summary": "A bad interaction between DNS64 and serve-stale may cause `named` to crash with an assertion failure during recursive resolution, when both of these features are enabled. This issue affects BIND 9 versions 9.16.12 through 9.16.45, 9.18.0 through 9.18.21, 9.19.0 through 9.19.19, 9.16.12-S1 through…"
+ },
+ "CVE-2023-6129": {
+  "cvss": 6.5,
+  "epss": 0.02323,
+  "fetched": "2026-11-19T12:33:51+00:00",
+  "kev": false,
+  "summary": "Issue summary: The POLY1305 MAC (message authentication code) implementation contains a bug that might corrupt the internal state of applications running on PowerPC CPU based platforms if the CPU provides vector instructions. Impact summary: If an attacker can influence whether the POLY1305 MAC…"
+ },
+ "CVE-2023-6237": {
+  "cvss": 5.9,
+  "epss": 0.02533,
+  "fetched": "2026-11-19T12:33:49+00:00",
+  "kev": false,
+  "summary": "Issue summary: Checking excessively long invalid RSA public keys may take a long time. Impact summary: Applications that use the function EVP_PKEY_public_check() to check RSA public keys may experience long delays. Where the key that is being checked has been obtained from an untrusted source this…"
  },
  "CVE-2023-6516": {
   "cvss": 7.5,
@@ -8686,6 +8707,13 @@
   "kev": false,
   "summary": "Microsoft SharePoint Elevation of Privilege Vulnerability"
  },
+ "CVE-2024-4603": {
+  "cvss": 5.3,
+  "epss": 0.01226,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: Checking excessively long DSA keys or parameters may be very slow. Impact summary: Applications that use the functions EVP_PKEY_param_check() or EVP_PKEY_public_check() to check a DSA public key or DSA parameters may experience long delays. Where the key or parameters that are being…"
+ },
  "CVE-2024-47252": {
   "cvss": 7.5,
   "epss": 0.00795,
@@ -8752,7 +8780,7 @@
  "CVE-2024-6119": {
   "cvss": 7.5,
   "epss": 0.66582,
-  "fetched": "2026-11-12T08:11:12+00:00",
+  "fetched": "2026-11-19T12:33:50+00:00",
   "kev": false,
   "summary": "Issue summary: Applications performing certificate name checks (e.g., TLS clients checking server certificates) may attempt to read an invalid memory address resulting in abnormal termination of the application process. Impact summary: Abnormal termination of an application can a cause a denial of…"
  },
@@ -8766,7 +8794,7 @@
  "CVE-2025-15467": {
   "cvss": 8.8,
   "epss": 0.74793,
-  "fetched": "2026-11-12T08:11:12+00:00",
+  "fetched": "2026-11-19T12:33:50+00:00",
   "kev": false,
   "summary": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with maliciously crafted AEAD parameters can trigger a stack buffer overflow. Impact summary: A stack buffer overflow may lead to a crash, causing Denial of Service, or potentially remote code execution. When parsing CMS…"
  },
@@ -9442,6 +9470,20 @@
   "kev": false,
   "summary": "BIND servers that are configured to use TKEY-based authentication via GSS-API tokens are vulnerable to excessive memory consumption when receiving and processing maliciously-constructed packets. Typically these servers will be found in Active Directory integrated DNS deployments and/or…"
  },
+ "CVE-2026-31789": {
+  "cvss": 9.8,
+  "epss": 0.00253,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: Converting an excessively large OCTET STRING value to a hexadecimal string leads to a heap buffer overflow on 32 bit platforms. Impact summary: A heap buffer overflow may lead to a crash or possibly an attacker controlled code execution or other undefined behavior. If an attacker can…"
+ },
+ "CVE-2026-31790": {
+  "cvss": 7.5,
+  "epss": 0.01049,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: Applications using RSASVE key encapsulation to establish a secret encryption key can send contents of an uninitialized memory buffer to a malicious peer. Impact summary: The uninitialized buffer might contain sensitive data from the previous execution of the application process which…"
+ },
  "CVE-2026-32201": {
   "cvss": 6.5,
   "epss": 0.43378,
@@ -9539,6 +9581,13 @@
   "fetched": "2026-11-13T08:21:53+00:00",
   "kev": false,
   "summary": "Issue summary: Parsing a crafted DER-encoded ASN.1 structure with a primitive element whose content exceeds 2 gigabytes in length may cause a heap buffer over-read on 64-bit Unix and Unix-like platforms. Impact summary: The heap buffer over-read may crash the application (Denial of Service) or to…"
+ },
+ "CVE-2026-34182": {
+  "cvss": 9.1,
+  "epss": 0.01057,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue Summary: Cryptographic Message Services (CMS) processing fails to perform sufficient input validation on the cipher and tag length fields of AuthEnvelopedData containers, leading to various potential compromises. Impact Summary: Attackers making use of these vulnerabilities may achieve…"
  },
  "CVE-2026-34355": {
   "cvss": 7.5,
@@ -9722,6 +9771,20 @@
   "kev": false,
   "summary": "Issue summary: A specially crafted password-encrypted CMS message can trigger a NULL pointer dereference during CMS decryption. Impact summary: This NULL pointer dereference leads to an application crash and a Denial of Service. The CMS PasswordRecipientInfo.keyDerivationAlgorithm field is defined…"
  },
+ "CVE-2026-42767": {
+  "cvss": 5.9,
+  "epss": 0.00557,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: An attacker-controlled CMP (Certificate Management Protocol) server could trigger a NULL pointer dereference in a CMP client application. Impact summary: A NULL pointer dereference causes a crash of the application and a Denial of Service. An attacker controlling a CMP server (or…"
+ },
+ "CVE-2026-42770": {
+  "cvss": 3.7,
+  "epss": 0.00503,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42) peer key, the peer key is not properly checked for the subgroup membership. Impact summary: A malicious peer which presents an X9.42 key carrying the victim's p and g parameters, a forged q = r (a small prime factor of the…"
+ },
  "CVE-2026-42772": {
   "cvss": 5.3,
   "epss": 0.00497,
@@ -9784,6 +9847,20 @@
   "fetched": "2026-11-05T04:25:36+00:00",
   "kev": false,
   "summary": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally."
+ },
+ "CVE-2026-45445": {
+  "cvss": 7.5,
+  "epss": 0.00704,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: When an application drives an AES-OCB context through the public EVP_Cipher() one-shot interface, the application-supplied initialisation vector (IV) is silently discarded. Impact summary: Every message encrypted under the same key uses the same effective nonce regardless of the IV…"
+ },
+ "CVE-2026-45446": {
+  "cvss": 4.8,
+  "epss": 0.00439,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: The implementations of AES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) mishandle the authentication of AAD (Additional Authenticated Data) with an empty ciphertext allowing a forgery of such messages. Impact summary: An attacker can forge empty messages with arbitrary AAD to the…"
  },
  "CVE-2026-45447": {
   "cvss": 8.8,
@@ -10513,6 +10590,27 @@
   "kev": false,
   "summary": "Improper validation of FTP PASV reply address in mod_proxy_ftp in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows, in forward proxy configurations, an untrusted FTP server to cause the proxy to open a data connection to an arbitrary third-party host via a…"
  },
+ "CVE-2026-63072": {
+  "cvss": 7.5,
+  "epss": 0.00916,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: OpenSSL CMS decryption sizes the key-unwrap output buffer based on querying the unwrapped key size, but the AES-WRAP-PAD unwrap primitive can write and cleanse more bytes than that query reports, causing an 8-byte out-of-bounds heap write. Impact summary: An attacker who supplies a…"
+ },
+ "CVE-2026-63074": {
+  "cvss": 5.9,
+  "epss": 0.00588,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: The OpenSSL Certificate Management Protocol (CMP) caches additional certificates (extraCerts) sent in a CMP message, but never expunges them (for instance if they are invalid). If a server reuses an OSSL_CMP_CTX frequently, this cache of extraCerts may grow unboundedly, and a…"
+ },
+ "CVE-2026-63076": {
+  "cvss": 7.5,
+  "epss": 0.01602,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: OpenSSL CMP password based protection verification only checks whether the protectionAlg parameter was not NULL and not its ASN.1 type, before treating it as a PBMParameter. A crafted message can contain a parameter of a different type, which is then dereferenced as an invalid…"
+ },
  "CVE-2026-63090": {
   "cvss": 8.8,
   "epss": 0.00929,
@@ -10722,6 +10820,13 @@
   "fetched": "2026-11-13T08:21:55+00:00",
   "kev": false,
   "summary": "Issue summary: A signed integer overflow when sizing the destination buffer for Unicode output in ASN1_mbstring_ncopy() can lead to a heap buffer overflow. Impact summary: A heap buffer overflow may lead to a crash or possibly attacker controlled code execution or other undefined behaviour. In…"
+ },
+ "CVE-2026-75803": {
+  "cvss": 9.1,
+  "epss": 0.00254,
+  "fetched": "2026-11-19T12:33:50+00:00",
+  "kev": false,
+  "summary": "Issue summary: ChaCha20-Poly1305 and AES-OCB decryption with an empty ciphertext can report success without verifying the supplied authentication tag when the operation is finalized by calling the EVP_Cipher() function. Impact summary: Applications calling EVP_Cipher() on an empty ciphertext and…"
  },
  "CVE-2026-75804": {
   "cvss": 5.3,
