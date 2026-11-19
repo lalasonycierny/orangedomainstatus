@@ -466,12 +466,18 @@ def probe_tls_cert(ip, port=443, timeout=5.0):
         return None
 
 
-def build_webservice_section(companies, args, memo, cache, leakix_map, websec_map, websec_overrides, allowed_ids):
+def build_webservice_section(companies, args, memo, cache, leakix_map, websec_map, websec_overrides, allowed_ids, ranges):
     """Pre firmy v allowed_ids (default len 'orange') prejde ich ASN, najde
     hosty s nezakaznickym PTR zaznamom, obohati ich o Shodan InternetDB a o
     TLS certifikat (priamy handshake - jediny aktivny krok v tomto nastroji).
     Vystupom su "company"-tvar zaznamy (rovnaka struktura ako bezne firmy),
-    takze dedia CELY existujuci mechanizmus historie/zmien/CVE bez upravy."""
+    takze dedia CELY existujuci mechanizmus historie/zmien/CVE bez upravy.
+
+    DOLEZITE: prefixy uz klasifikovane zalozkou "IP rozsahy" (parameter
+    `ranges`, rovnaky beh) ako "customer" sa do PTR sweepu VOBEC nezaradia -
+    bez tohto by sa rozpocet PTR lookupov takmer isto minul v obrovskych
+    DSL/CGNAT blokoch skor, nez by sa dostal k malym, pravdepodobne firemnym
+    /24 rozsahom. Zvysne (nezakaznicke) prefixy sa radia od najmensich."""
     ptr_cache = load_json(PTR_CACHE_FILE, {})
     max_new_ptr = int(os.environ.get("WEBSERVICE_MAX_NEW_PTR") or 2000)
     max_cert_probes = int(os.environ.get("WEBSERVICE_MAX_CERT_PROBES") or 200)
@@ -480,12 +486,26 @@ def build_webservice_section(companies, args, memo, cache, leakix_map, websec_ma
     for c in companies:
         if c["id"] not in allowed_ids:
             continue
-        prefixes = []
+        all_prefixes = []
         for a in c.get("asns", []):
-            prefixes += get_prefixes(a)
-        if not prefixes:
+            all_prefixes += get_prefixes(a)
+        if not all_prefixes:
             continue
-        print(f"[*] Orange-webservice ({c['id']}): PTR sweep nad {len(prefixes)} prefixmi")
+        rows_by_cidr = {r["cidr"]: r for r in (ranges.get(c["id"], {}) or {}).get("rows", [])}
+        prefixes = sorted(
+            {p for p in all_prefixes if str(p) in rows_by_cidr and rows_by_cidr[str(p)]["classification"] != "customer"},
+            key=lambda p: (p.version, p.num_addresses),
+        )
+        excluded_customer = sum(1 for cidr, r in rows_by_cidr.items() if r["classification"] == "customer")
+        unclassified = len(all_prefixes) - len(rows_by_cidr)
+        print(f"[*] Orange-webservice ({c['id']}): {len(all_prefixes)} prefixov celkovo, "
+              f"{excluded_customer} vynechanych ako customer, {unclassified} este neklasifikovanych "
+              f"(nad limit MAX_PREFIX_DETAILS), {len(prefixes)} ide do PTR sweepu")
+        if not prefixes:
+            print(f"[!] Orange-webservice ({c['id']}): ziadny nezakaznicky klasifikovany prefix zatial "
+                  f"k dispozicii - zvys MAX_PREFIX_DETAILS, aby zalozka 'IP rozsahy' klasifikovala viac "
+                  f"prefixov naraz, alebo pockaj na dalsie behy", file=sys.stderr)
+            continue
         host_ips_raw = sweep_ptr(prefixes, max_new_ptr, ptr_cache)  # {ip: ptr}
         host_ips = {ip: {ptr} for ip, ptr in host_ips_raw.items()}
 
@@ -496,7 +516,7 @@ def build_webservice_section(companies, args, memo, cache, leakix_map, websec_ma
                 memo[ip] = data
         raw = {ip: (memo.get(ip) or {}) for ip in host_ips}
 
-        assets = build_assets(raw, host_ips, prefixes, cache, mode, leakix_map, websec_map, websec_overrides)
+        assets = build_assets(raw, host_ips, all_prefixes, cache, mode, leakix_map, websec_map, websec_overrides)
         # TLS certifikat - len pre obmedzeny pocet za beh (rozpocet), zvysne IP
         # dobehnu v dalsich behoch; uprednostnuju sa tie s najvyssou kritickostou
         assets.sort(key=lambda a: SEV_ORDER.index(a["max_severity"]))
@@ -1329,7 +1349,7 @@ def main():
 
     webservice_allowed = {h.strip() for h in (env("WEBSERVICE_COMPANIES") or "orange").split(",") if h.strip()}
     out_companies += build_webservice_section(
-        companies, args, memo, cache, leakix_map, websec_map, websec_overrides, webservice_allowed)
+        companies, args, memo, cache, leakix_map, websec_map, websec_overrides, webservice_allowed, ranges)
 
     if not websec_status:
         websec_status = (prev_full.get("websec_status") or {}).get("hosts", {})
