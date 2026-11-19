@@ -9211,6 +9211,13 @@
   "kev": false,
   "summary": "It is possible for an attacker's zone to respond to a query with an RRSIG that has a smaller number of labels than the zone in which the RRSIG is contained. This causes `named` to produce a wildcard name for a zone that is shorter than the attacker's zone, which can result in cache poisoning. For…"
  },
+ "CVE-2026-119618": {
+  "cvss": 8.1,
+  "epss": 0.01583,
+  "fetched": "2026-11-19T04:14:25+00:00",
+  "kev": false,
+  "summary": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE. This issue affects Apache HTTP Server: from 2.4.55 through 2.4.70. Affected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42."
+ },
  "CVE-2026-13204": {
   "cvss": 7.5,
   "epss": 0.00523,
