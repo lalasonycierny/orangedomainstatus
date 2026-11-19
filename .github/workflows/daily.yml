@@ -23,6 +23,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: pip install --quiet cryptography
+
       - name: Run scan
         env:
           # Firmy a domeny sa nastavuju v companies.json.
@@ -35,13 +38,16 @@ jobs:
           LEAKIX_API_KEY: ${{ secrets.LEAKIX_API_KEY }}
           LEAKIX_MAX_CALLS: ${{ vars.LEAKIX_MAX_CALLS }}   # volitelne, default 100/beh
           MAX_PREFIX_DETAILS: ${{ vars.MAX_PREFIX_DETAILS }} # volitelne, default 100 prefixov/firmu
+          WEBSERVICE_COMPANIES: ${{ vars.WEBSERVICE_COMPANIES }}           # volitelne, default "orange"
+          WEBSERVICE_MAX_NEW_PTR: ${{ vars.WEBSERVICE_MAX_NEW_PTR }}       # volitelne, default 2000
+          WEBSERVICE_MAX_CERT_PROBES: ${{ vars.WEBSERVICE_MAX_CERT_PROBES }} # volitelne, default 200
         run: python scan.py
 
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history data/webservice_ptr_cache.json
           if git diff --cached --quiet; then
             echo "Bez zmien."
           else
