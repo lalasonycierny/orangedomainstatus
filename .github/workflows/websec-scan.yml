@@ -128,6 +128,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: pip install --quiet cryptography
+
       - name: Run scan.py s WEBSEC obohatenim
         env:
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
@@ -146,7 +149,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history data/websec_history.json data/webservice_ptr_cache.json
           if git diff --cached --quiet; then
             echo "Bez zmien."
           else
@@ -217,6 +220,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: pip install --quiet cryptography
+
       - name: Run scan.py s WEBSEC obohatenim (Full Scan report)
         env:
           PUBLISH_MODE: ${{ vars.PUBLISH_MODE }}
@@ -234,7 +240,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history
+          git add docs/data data/cve_cache.json data/leakix_cache.json data/history data/range_history data/websec_history.json data/webservice_ptr_cache.json
           if git diff --cached --quiet; then
             echo "Bez zmien."
           else
