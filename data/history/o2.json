@@ -1,7 +1,7 @@
 {
  "0888.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "0888.o2.sk"
   ],
@@ -96,12 +96,31 @@
     "ports": [
      80
     ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 0,
+     "low": 0,
+     "medium": 0,
+     "unknown": 0
+    },
+    "cve_count": 0,
+    "cve_ids": [],
+    "date": "2026-11-23T12:56:57+00:00",
+    "kev_count": 0,
+    "max_cvss": null,
+    "max_severity": "none",
+    "ports": [
+     80,
+     443
+    ]
    }
   ]
  },
  "10 smtp-in.o2.cz": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "10 smtp-in.o2.cz"
   ],
@@ -183,31 +202,14 @@
  },
  "400m.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "400m.o2.sk",
    "akademia.o2.sk",
    "darujme.o2.sk",
-   "odporuc.o2.sk",
-   "roaming.o2.sk",
-   "rospoznai.o2.sk",
-   "rospoznaj.o2.sk",
-   "rozoznai.o2.sk",
-   "rozoznaj.o2.sk",
-   "rozpoznai.o2.sk",
-   "rozpoznaj.o2.sk",
-   "stahujeme.o2.sk",
    "www.400m.o2.sk",
    "www.akademia.o2.sk",
-   "www.darujme.o2.sk",
-   "www.odporuc.o2.sk",
-   "www.roaming.o2.sk",
-   "www.rospoznai.o2.sk",
-   "www.rospoznaj.o2.sk",
-   "www.rozoznai.o2.sk",
-   "www.rozoznaj.o2.sk",
-   "www.rozpoznai.o2.sk",
-   "www.rozpoznaj.o2.sk"
+   "www.darujme.o2.sk"
   ],
   "snapshots": [
    {
@@ -234,7 +236,7 @@
  },
  "5dovsetkychsieti.o2.sk": {
   "first_seen": "2026-11-07T04:06:16+00:00",
-  "last_seen": "2026-11-07T04:06:16+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "5dovsetkychsieti.o2.sk",
    "aplikacie.o2.sk",
@@ -269,7 +271,7 @@
  },
  "api-exponea.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "api-exponea.o2.sk"
   ],
@@ -297,7 +299,7 @@
  },
  "api.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "api.o2.sk"
   ],
@@ -324,7 +326,7 @@
  },
  "app.langfusedev.azure.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "app.langfusedev.azure.o2.sk"
   ],
@@ -352,10 +354,9 @@
  },
  "asistent.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "asistent.o2.sk",
-   "www.o2services.o2.sk"
+   "asistent.o2.sk"
   ],
   "snapshots": [
    {
@@ -415,7 +416,7 @@
  },
  "autodiscover.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "autodiscover.o2.sk"
   ],
@@ -443,7 +444,7 @@
  },
  "biznisportal.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "biznisportal.o2.sk"
   ],
@@ -643,7 +644,7 @@
  },
  "business.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "business.o2.sk",
    "www.business.o2.sk"
@@ -673,7 +674,7 @@
  },
  "cdn-exponea.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "cdn-exponea.o2.sk"
   ],
@@ -701,7 +702,7 @@
  },
  "chat.o2.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "chat.o2.sk"
   ],
@@ -744,7 +745,7 @@
  },
  "chatvo.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "chatvo.o2.sk"
   ],
@@ -769,7 +770,7 @@
  },
  "chyba.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "chyba.o2.sk"
   ],
@@ -797,10 +798,9 @@
  },
  "commhub-lp.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "commhub-lp.o2.sk",
-   "efaktura.o2.sk"
+   "commhub-lp.o2.sk"
   ],
   "snapshots": [
    {
@@ -1215,24 +1215,70 @@
      179,
      443
     ]
+   },
+   {
+    "counts": {
+     "critical": 3,
+     "high": 18,
+     "low": 3,
+     "medium": 10,
+     "unknown": 0
+    },
+    "cve_count": 34,
+    "cve_ids": [
+     "CVE-2007-4723",
+     "CVE-2009-0796",
+     "CVE-2009-2299",
+     "CVE-2011-1176",
+     "CVE-2011-2688",
+     "CVE-2012-3526",
+     "CVE-2012-4001",
+     "CVE-2012-4360",
+     "CVE-2013-0941",
+     "CVE-2013-0942",
+     "CVE-2013-2765",
+     "CVE-2013-4365",
+     "CVE-2026-106023",
+     "CVE-2026-119618",
+     "CVE-2026-42356",
+     "CVE-2026-42528",
+     "CVE-2026-46729",
+     "CVE-2026-47360",
+     "CVE-2026-48005",
+     "CVE-2026-56153",
+     "CVE-2026-56154",
+     "CVE-2026-56449",
+     "CVE-2026-57941",
+     "CVE-2026-58415",
+     "CVE-2026-59685",
+     "CVE-2026-59797",
+     "CVE-2026-63045",
+     "CVE-2026-63292",
+     "CVE-2026-63686",
+     "CVE-2026-63718",
+     "CVE-2026-73636",
+     "CVE-2026-73637",
+     "CVE-2026-79768",
+     "CVE-2026-93546"
+    ],
+    "date": "2026-11-23T12:56:57+00:00",
+    "kev_count": 0,
+    "max_cvss": 9.8,
+    "max_severity": "critical",
+    "ports": [
+     80,
+     179,
+     443
+    ]
    }
   ]
  },
  "datujzodpovedne.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "datujzodpovedne.o2.sk",
-   "dobravec.o2.sk",
-   "livechat.services.o2.sk",
-   "oslavujeme.o2.sk",
-   "services.o2.sk",
-   "spolocnost.o2.sk",
-   "www.datujzodpovedne.o2.sk",
-   "www.dobravec.o2.sk",
-   "www.oslavujeme.o2.sk",
-   "www.services.o2.sk",
-   "www.spolocnost.o2.sk"
+   "www.datujzodpovedne.o2.sk"
   ],
   "snapshots": [
    {
@@ -2434,7 +2480,7 @@
  },
  "dev-o2-tv-hisense.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "dev-o2-tv-hisense.o2.sk"
   ],
@@ -2900,7 +2946,7 @@
  },
  "dev-o2-tv-lg.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "dev-o2-tv-lg.o2.sk"
   ],
@@ -3089,7 +3135,7 @@
  },
  "dev-o2-tv-samsung.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "dev-o2-tv-samsung.o2.sk"
   ],
@@ -3498,16 +3544,14 @@
  },
  "dev.api.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "dev.api.o2.sk",
    "edu.api.o2.sk",
    "ppt.api-o2tv.o2.sk",
    "ppt.api.o2.sk",
-   "ppt.mtls.o2.sk",
    "tst.api-o2tv.o2.sk",
-   "tst.api.o2.sk",
-   "tst.mtls.o2.sk"
+   "tst.api.o2.sk"
   ],
   "snapshots": [
    {
@@ -3558,10 +3602,9 @@
  },
  "dev.api2.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "dev.api2.o2.sk",
-   "dev.mtls2.o2.sk"
+   "dev.api2.o2.sk"
   ],
   "snapshots": [
    {
@@ -4041,7 +4084,7 @@
  },
  "dns.iol.cz": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "dns.iol.cz"
   ],
@@ -4302,7 +4345,7 @@
  },
  "edu.asistent.o2.sk": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "edu.asistent.o2.sk"
   ],
@@ -4327,10 +4370,9 @@
  },
  "elementai.azure.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "elementai.azure.o2.sk",
-   "elementaitest.azure.o2.sk"
+   "elementai.azure.o2.sk"
   ],
   "snapshots": [
    {
@@ -4399,7 +4441,7 @@
  },
  "elementaitest.azure.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "elementaitest.azure.o2.sk"
   ],
@@ -5112,7 +5154,7 @@
  },
  "ns2.tel.cz": {
   "first_seen": "2026-10-30T21:39:46+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "ns2.tel.cz"
   ],
@@ -5170,6 +5212,49 @@
     "date": "2026-11-02T04:13:47+00:00",
     "kev_count": 0,
     "max_cvss": 7.5,
+    "max_severity": "high",
+    "ports": [
+     53
+    ]
+   },
+   {
+    "counts": {
+     "critical": 0,
+     "high": 20,
+     "low": 0,
+     "medium": 4,
+     "unknown": 0
+    },
+    "cve_count": 24,
+    "cve_ids": [
+     "CVE-2021-25220",
+     "CVE-2022-0396",
+     "CVE-2022-2795",
+     "CVE-2022-3080",
+     "CVE-2022-3094",
+     "CVE-2022-3736",
+     "CVE-2022-38177",
+     "CVE-2022-38178",
+     "CVE-2022-3924",
+     "CVE-2023-2828",
+     "CVE-2023-3341",
+     "CVE-2023-4408",
+     "CVE-2023-50387",
+     "CVE-2023-50868",
+     "CVE-2023-5517",
+     "CVE-2023-5679",
+     "CVE-2023-6516",
+     "CVE-2026-11721",
+     "CVE-2026-13204",
+     "CVE-2026-13321",
+     "CVE-2026-1519",
+     "CVE-2026-3039",
+     "CVE-2026-3592",
+     "CVE-2026-5946"
+    ],
+    "date": "2026-11-23T12:56:57+00:00",
+    "kev_count": 0,
+    "max_cvss": 8.6,
     "max_severity": "high",
     "ports": [
      53
@@ -7336,10 +7421,9 @@
  },
  "ppt.api2.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "ppt.api2.o2.sk",
-   "ppt.mtls2.o2.sk"
+   "ppt.api2.o2.sk"
   ],
   "snapshots": [
    {
@@ -7447,7 +7531,7 @@
  },
  "ppt.asistent.o2.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "ppt.asistent.o2.sk"
   ],
@@ -7474,10 +7558,9 @@
  },
  "ppt.design-system.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "ppt.design-system.o2.sk",
-   "ppt.o2.sk"
+   "ppt.design-system.o2.sk"
   ],
   "snapshots": [
    {
@@ -12967,10 +13050,9 @@
  },
  "tst.api2.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "tst.api2.o2.sk",
-   "tst.mtls2.o2.sk"
+   "tst.api2.o2.sk"
   ],
   "snapshots": [
    {
@@ -13037,7 +13119,7 @@
  },
  "tst.asistent.o2.sk": {
   "first_seen": "2026-10-31T03:59:54+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "tst.asistent.o2.sk"
   ],
@@ -13080,10 +13162,9 @@
  },
  "tst.design-system.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
-   "tst.design-system.o2.sk",
-   "tst.o2.sk"
+   "tst.design-system.o2.sk"
   ],
   "snapshots": [
    {
@@ -14038,7 +14119,7 @@
  },
  "www.budlaska.o2.sk": {
   "first_seen": "2026-10-29T21:06:45+00:00",
-  "last_seen": "2026-11-20T04:12:13+00:00",
+  "last_seen": "2026-11-23T12:56:57+00:00",
   "names": [
    "www.budlaska.o2.sk"
   ],
